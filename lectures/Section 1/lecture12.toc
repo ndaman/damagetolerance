@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{mixed mode fracture}{4}{0}{1}
+\beamer@sectionintoc {2}{exam}{36}{0}{2}
+\beamer@sectionintoc {3}{stress intensity}{70}{0}{3}
+\beamer@sectionintoc {4}{plastic zone}{83}{0}{4}

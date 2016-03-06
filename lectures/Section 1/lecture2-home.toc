@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Fracture Mechanics}{4}{0}{1}
+\beamer@sectionintoc {2}{Stress Intensity}{8}{0}{2}
+\beamer@sectionintoc {3}{Common stress intensity factors}{13}{0}{3}
+\beamer@sectionintoc {4}{3D crack shapes}{22}{0}{4}
+\beamer@sectionintoc {5}{examples}{40}{0}{5}

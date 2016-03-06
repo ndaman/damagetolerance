@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{exam notes}{4}{0}{1}
+\beamer@sectionintoc {2}{stress intensity}{6}{0}{2}
+\beamer@sectionintoc {3}{fracture toughness}{14}{0}{3}
+\beamer@sectionintoc {4}{residual strength}{22}{0}{4}
+\beamer@sectionintoc {5}{stiffeners}{33}{0}{5}
+\beamer@sectionintoc {6}{multiple site damage}{35}{0}{6}
+\beamer@sectionintoc {7}{mixed mode fracture}{42}{0}{7}
+\beamer@sectionintoc {8}{extra credit}{44}{0}{8}
+\beamer@sectionintoc {9}{review problems}{47}{0}{9}

@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{About Me}{3}{0}{1}
+\beamer@sectionintoc {2}{Syllabus and Schedule}{11}{0}{2}
+\beamer@sectionintoc {3}{Course Overview}{20}{0}{3}
+\beamer@sectionintoc {4}{Fracture Mechanics}{28}{0}{4}
+\beamer@sectionintoc {5}{Stress Intensity}{32}{0}{5}
+\beamer@sectionintoc {6}{Plotting}{37}{0}{6}

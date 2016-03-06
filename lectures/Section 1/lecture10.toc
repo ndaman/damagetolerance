@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{residual strength review}{4}{0}{1}
+\beamer@sectionintoc {2}{stiffeners}{6}{0}{2}
+\beamer@sectionintoc {3}{severed stiffeners}{28}{0}{3}
+\beamer@sectionintoc {4}{crack stoppers}{43}{0}{4}
+\beamer@sectionintoc {5}{multiple site damage}{49}{0}{5}

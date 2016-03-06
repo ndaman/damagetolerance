@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{thickness effects}{5}{0}{1}
+\beamer@sectionintoc {2}{fracture toughness review}{10}{0}{2}
+\beamer@sectionintoc {3}{residual strength}{12}{0}{3}
+\beamer@sectionintoc {4}{fedderson approach}{25}{0}{4}
+\beamer@sectionintoc {5}{proof testing}{27}{0}{5}

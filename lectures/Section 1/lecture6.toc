@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{fracture toughness}{4}{0}{1}
+\beamer@sectionintoc {2}{plane strain, brittle}{32}{0}{2}
+\beamer@sectionintoc {3}{plane stress, ductile}{48}{0}{3}

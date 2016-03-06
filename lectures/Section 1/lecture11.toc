@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{stiffener review}{8}{0}{1}
+\beamer@sectionintoc {2}{multiple site damage}{14}{0}{2}
+\beamer@sectionintoc {3}{mixed mode fracture}{39}{0}{3}

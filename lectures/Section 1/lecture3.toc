@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{review}{5}{0}{1}
+\beamer@sectionintoc {2}{2D cracks at a hole}{10}{0}{2}
+\beamer@sectionintoc {3}{superposition}{38}{0}{3}
+\beamer@sectionintoc {4}{compounding}{44}{0}{4}
+\beamer@sectionintoc {5}{curved boundaries}{49}{0}{5}
