@@ -1,0 +1,139 @@
+% !TeX program = xelatex
+\documentclass[10pt]{beamer}
+
+\usetheme{metropolis}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
+\usepackage{pgfopts}
+\usepackage{amsmath}
+\usepackage{structuralanalysis}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{chngcntr}
+\usepackage{wasysym}
+\usepackage{mathtools}
+\usepackage{alphalph}
+\usepackage{xcolor}
+\usepackage[showdow=false, en-US]{datetime2}
+\usepackage{hyperref}
+
+\newcommand{\highlight}[1]{%
+	\colorbox{red!50}{$\displaystyle#1$}}
+
+\setcounter{lecture}{14}
+\counterwithin{equation}{lecture}
+\makeatletter
+\def\user@resume{resume}
+\def\user@intermezzo{intermezzo}
+%
+\newcounter{previousequation}
+\newcounter{lastsubequation}
+\newcounter{savedparentequation}
+\setcounter{savedparentequation}{1}
+% 
+\renewenvironment{subequations}[1][]{%
+	\def\user@decides{#1}%
+	\setcounter{previousequation}{\value{equation}}%
+	\ifx\user@decides\user@resume 
+	\setcounter{equation}{\value{savedparentequation}}%
+	\else  
+	\ifx\user@decides\user@intermezzo
+	\refstepcounter{equation}%
+	\else
+	\setcounter{lastsubequation}{0}%
+	\refstepcounter{equation}%
+	\fi\fi
+	\protected@edef\theHparentequation{%
+		\@ifundefined {theHequation}\theequation \theHequation}%
+	\protected@edef\theparentequation{\theequation}%
+	\setcounter{parentequation}{\value{equation}}%
+	\ifx\user@decides\user@resume 
+	\setcounter{equation}{\value{lastsubequation}}%
+	\else
+	\setcounter{equation}{0}%
+	\fi
+	\def\theequation  {\theparentequation  \alph{equation}}%
+	\def\theHequation {\theHparentequation \alph{equation}}%
+	\ignorespaces
+}{%
+%  \arabic{equation};\arabic{savedparentequation};\arabic{lastsubequation}
+\ifx\user@decides\user@resume
+\setcounter{lastsubequation}{\value{equation}}%
+\setcounter{equation}{\value{previousequation}}%
+\else
+\ifx\user@decides\user@intermezzo
+\setcounter{equation}{\value{parentequation}}%
+\else
+\setcounter{lastsubequation}{\value{equation}}%
+\setcounter{savedparentequation}{\value{parentequation}}%
+\setcounter{equation}{\value{parentequation}}%
+\fi\fi
+%  \arabic{equation};\arabic{savedparentequation};\arabic{lastsubequation}
+\ignorespacesafterend
+}
+\makeatother
+\title{AE 737 - Mechanics of Damage Tolerance}
+\subtitle{Lecture \arabic{lecture}}
+\date{Last Updated: \today\ at \DTMcurrenttime}
+\author{Dr. Nicholas Smith}
+\institute{Wichita State University, Department of Aerospace Engineering}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo/logo}}
+
+\begin{document}
+
+\maketitle
+\begin{frame}{schedule}
+	\begin{itemize}
+		\item 10 Mar - Exam return, Final Project discussion, Project abstract assigned
+		\item 22 Mar - Stress based fatigue, Homework 6 assigned
+		\item 24 Mar - Stress based fatigue
+		\item 29 Mar - Influence of notches on fatigue, Homework 7 assigned, Homework 6 due
+		\item 31 Mar - Strain based fatigue, project abstract due
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{outline}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{exam}
+
+\begin{frame}{exam}
+	\begin{itemize}[<+->]
+		\item 4 questions
+		\item Bring a scientific calculator (or graphing)
+		\item Specific equations or correction factors (i.e. modified MSD or $\beta$ for stiffeners) will be given where needed
+		\item Equation sheet is posted on Blackboard
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<handout:0>{solutions}
+	on board
+\end{frame}
+
+\section{final project}
+
+\begin{frame}{general description}
+	\begin{itemize}[<+->]
+		\item This is in place of a final exam
+		\item Should demonstrate your understanding of the course as a whole
+		\item Choose any real object
+		\item Needs to undergo some cyclic loading (for fatigue)
+		\item Materials, loads, and any other "given" data can be made up
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{overview}
+	\begin{itemize}[<+->]
+		\item Estimate stress intensity factor at some critical location
+		\item Estimate residual strength (use a "typical" crack length)
+		\item Estimate crack growth and propagation (fatigue)
+		\item Suggest reasonable inspection cycle for safe use
+		\item Suggest an improvement to make part more damage tolerant
+	\end{itemize}
+\end{frame}
+
+\end{document}
