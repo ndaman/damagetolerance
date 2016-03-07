@@ -1,6 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{compounding}{5}{0}{1}
-\beamer@sectionintoc {2}{thickness effects}{14}{0}{2}
-\beamer@sectionintoc {3}{residual strength}{29}{0}{3}
-\beamer@sectionintoc {4}{fedderson approach}{57}{0}{4}
-\beamer@sectionintoc {5}{proof testing}{62}{0}{5}

@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{superposition}{5}{0}{1}
-\beamer@sectionintoc {2}{compounding}{9}{0}{2}
-\beamer@sectionintoc {3}{curved boundaries}{15}{0}{3}
-\beamer@sectionintoc {4}{plastic zone}{27}{0}{4}
