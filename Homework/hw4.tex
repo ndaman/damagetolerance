@@ -1,0 +1,110 @@
+%Do not change 
+\documentclass[12pt, oneside]{article}
+\usepackage{amssymb,amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{textpos}
+\usepackage{float}
+%\usepackage{color}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-3dplot}
+\usepackage{pgfopts}
+\usepackage{wasysym}
+\usepackage{structuralanalysis}
+\usepackage{fancyhdr}
+\usepackage[en-US]{datetime2}
+
+\fancyhead[R]{\small Last Updated: \today\ at \DTMcurrenttime}
+\pagestyle{fancy}
+
+% You may add the packages you need here
+
+
+
+\begin{document}
+% Do not modify 
+
+
+%Do not modify
+\begin{textblock*}{4cm}(-1.7cm,-2.3cm)
+\noindent {\scriptsize AE737 Spring 2016} 
+\end{textblock*}
+
+%Do not modify other than putting your name where stated
+\begin{textblock*}{8cm}(12.5cm,-1cm)
+\noindent {Name: } 
+\end{textblock*}
+%Do not modify other than typing your acknowledgement where stated
+\begin{textblock*}{13.5cm}(-1.7cm,-1.8cm)
+%\noindent \textit{\footnotesize Acknowledgement: Your acknowledgement for collaboration and other sources goes here. } 
+\end{textblock*}
+
+\vspace{1cm}
+
+%Do not modify other than typing the homework number after #
+\begin{center}
+\textbf{\Large Homework 4}
+
+\textbf{Due 25 Feb 2016}
+\end{center}
+
+
+%Rest should contain your solution for the homework. Feel free to improvise in ways that you believe make grading easier.
+\begin{enumerate}
+
+%look up information on MIL-HDBK pages
+\begin{figure}[H]
+	\item Use the MIL-HDBK pages copied in your text (pp. 136-143) to look up the following yield stress values. Use the A-basis for all values.
+	%not 2024-T3 clad, t=0.04; 7075-T6 bare t=0.071, 7178-T6 clad t=0.064
+	\begin{enumerate}
+		\item 2024-T351 bare, t=0.25, LT direction %64 ksi
+		\item 2024-T351 bare, t=0.25, L direction %64 ksi
+		\item 7075-T651 bare, t=0.5, LT direction %77 ksi
+		\item 7075-T651 bare, t=0.5, L direction %78 ksi
+		\item 7178-T651 bare, t=0.4, LT direction %84 ksi
+		\item 7178-T651 bare, t=0.4, L direction %83 ksi
+	\end{enumerate}
+\end{figure}
+
+%look up fracture toughness
+\begin{figure}[H]
+	\item Use the charts provided in your text (pp. 111-121) to look up fracture toughness for the following conditions, at both room temperature and -65$^\circ$F.
+	\begin{enumerate}
+		\item 2024-T351 bare, t=0.25, T-L direction %rt: 133 ksi-sqrt(in) -65: 133 ksi-sqrt(in)
+		\item 2024-T351 bare, t=0.25, L-T direction %rt: 140 ksi-sqrt(in) -65: 140 ksi-sqrt(in)
+		\item 7075-T651 bare, t=0.5, T-L direction %rt: 43 ksi-sqrt(in) -65: 40 ksi-sqrt(in)
+		\item 7075-T651 bare, t=0.5, L-T direction %rt: 60 ksi-sqrt(in) -65: 47 ksi-sqrt(in)
+		\item 7178-T651 bare, t=0.4, T-L direction %rt: 30 ksi-sqrt(in) -65: 24 ksi-sqrt(in)
+		\item 7178-T651 bare, t=0.4, L-T direction %rt: 34 ksi-sqrt(in) -65: 27 ksi-sqrt(in)
+	\end{enumerate}
+\end{figure}
+
+%fedderson residual strength
+\begin{figure}[H]
+	\item Use the Fedderson approach to plot residual strength vs. crack length for a center-cracked panel ($W=5$ in.) 
+	\begin{enumerate}
+		\item For 2024-T351 bare aluminum, with t=0.25, in the T-L and L-T directions, at room temperature and -65$^\circ$F.
+		\item For 7075-T651 bare aluminum, with t=0.5, in the T-L and L-T directions, at room temperature and -65$^\circ$F.
+		\item For 7178-T651 bare aluminum, with t=0.4, in the T-L and L-T directions, at room temperature and -65$^\circ$F.
+	\end{enumerate}
+\end{figure}
+
+%Smith original problem - what proof test load is needed?
+\begin{figure}[H]
+	\item Based on a proposed inspection cycle and fatigue analysis for a 7178-T651 bare aluminum panel, we need to design a proof test to ensure there are no center-cracks greater than 0.2" long. What proof load must be applied to ensure this condition ($W=8$ in., $t=0.4$ in., check both grain directions, RT and -65$^\circ$F).
+\end{figure}
+
+%Stiffeners
+\begin{figure}[H]
+	\item A 120" diameter fuselage has an axial crack. The crack is centered on a circumferential stiffener. Stiffener spacing is 10", cross-section is 0.3788 in$^2$, skin thickness is 0.1875", and rivet spacing is 1". Use the charts on pp. 167-178  and the tables on pp. 194 - 196 to plot the $\sigma_c$ vs. $a$ curve for the skin under the following cases. Note: use $K_c = 68\text{ ksi} \sqrt{\text{in}}$. Assume a skin stiffness of $E = 11$ Msi and a stiffener stiffness of $E_s = 23.4$ Msi and a stiffener yield strength of $\sigma_{YS} = 120 \text{ksi}$.
+	\begin{enumerate}
+		\item without stiffeners
+		\item with stiffeners
+		\item with stiffeners, but the stiffener centered over the crack is broken
+	\end{enumerate}
+	\textbf{Note:} Ignore net section yield for the skin in this problem
+\end{figure}
+
+\end{enumerate}
+\end{document}
