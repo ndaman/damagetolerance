@@ -1,0 +1,89 @@
+%Do not change 
+\documentclass[12pt, oneside]{article}
+\usepackage{amssymb,amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{textpos}
+\usepackage{float}
+%\usepackage{color}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-3dplot}
+\usepackage{pgfopts}
+\usepackage{wasysym}
+\usepackage{structuralanalysis}
+\usepackage{fancyhdr}
+\usepackage[en-US]{datetime2}
+
+\fancyhead[R]{\small Last Updated: \today\ at \DTMcurrenttime}
+\pagestyle{fancy}
+
+% You may add the packages you need here
+
+
+
+\begin{document}
+% Do not modify 
+
+
+%Do not modify
+\begin{textblock*}{4cm}(-1.7cm,-2.3cm)
+\noindent {\scriptsize AE737 Spring 2016} 
+\end{textblock*}
+
+%Do not modify other than putting your name where stated
+\begin{textblock*}{8cm}(12.5cm,-1cm)
+\noindent {Name: } 
+\end{textblock*}
+%Do not modify other than typing your acknowledgement where stated
+\begin{textblock*}{13.5cm}(-1.7cm,-1.8cm)
+%\noindent \textit{\footnotesize Acknowledgement: Your acknowledgement for collaboration and other sources goes here. } 
+\end{textblock*}
+
+\vspace{1cm}
+
+%Do not modify other than typing the homework number after #
+\begin{center}
+\textbf{\Large Final Project}
+
+\textbf{Due 10 May 2016}
+\end{center}
+
+Choose any real life object which undergoes cyclic loading (could be a car part, pen clip. aircraft wing, any object).
+For this object, identify a location which is either likely to develop a crack due to cyclic loading, or is in some critical location should a crack occur there.
+Using the methods learned in this course
+\begin{itemize}
+	\item estimate the stress intensity factor (you will likely want to consider a plot, or multiple plots to describe the possible conditions)
+	\item estimate the residual strength once a crack has developed
+	\item from some realistic loading cycle, estimate the crack growth
+	\item and crack propagation
+	\item based on the above findings, propose (and justify) an appropriate inspection cycle
+	\item suggest at least one design improvement that could make this object more damage tolerant
+\end{itemize}
+
+You will likely need to make simplifying assumptions and material substitutions at many, if not all, stages of this project.
+Demonstrate your engineering and damage tolerance knowledge by justifying these assumptions and/or substitutions as concretely as possible.
+(For example, if you make the assumption that your part is in plane stress, show how accurate this is by calculating $I$.)
+
+Remember that this project is in place of a final exam.
+While choosing a simple part or crack geometry may be appropriate, full credit will only be given when a thorough understanding of course material has been demonstrated.
+As an example, if your chosen object is most likely to have a center crack in a very wide section, you should consider some extenuating circumstances, such as mixed-mode fracture, adjacent geometry (holes), or multiple-site damage.
+
+Assume that the reader of this report has a basic understanding of fracture mechanics, and is generally trusting of your calculations.
+You need not include calculation details, but you should cite the equations you use, explain the parameters entered into the calculation, and explain what the results mean.
+Plots and figures are generally helpful in understanding the overall results.
+Reports should be no longer than 20 pages.
+
+\newpage
+Projects will be graded on the following rubric
+\begin{itemize}
+	\item Project abstract - 5\% (due 31 March 2016)
+	\item Stress intensity factor analysis - 10\%
+	\item Residual strength analysis - 10\%
+	\item Fatigue crack growth analysis - 10\%
+	\item Fatigue crack propagation analysis - 10\%
+	\item Inspection cycle analysis - 10\%
+	\item Damage tolerant improvement - 20\%
+	\item General presentation, organization, and grammar - 25\%
+\end{itemize}
+\end{document}

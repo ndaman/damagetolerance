@@ -1,0 +1,177 @@
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{float}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Course Name} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\today} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+{\Large \textsc{AE 737 - Mechanics of Damage Tolerance}}
+\end{center}
+\begin{center}
+Spring 2016
+\end{center}
+%\date{September 26, 2014}
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Instructor:} & Dr. Nicholas A Smith & & &  & \textbf{Time:} & TR 4:10 -- 5:25 pm \\ %75 min
+\textbf{Email:} &  \href{mailto:Nicholas.A.Smith@wichita.edu}{Nicholas.A.Smith@wichita.edu} & & & & \textbf{Place:} & 209 Wallace Hall\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+%
+%\noindent\textbf{Course Pages:} \begin{enumerate}
+%\item \url{http://yourWebPage1.com/teaching}
+%\item \url{http://yourWebPage2.com/teaching}
+%\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Office Hours:} TBD, 204 Wallace Hall
+
+\vskip.15in
+\noindent\textbf{Course Textbook:} %\footnotemark
+The text used for this class is made up of notes originally assembled by Dr. Bert L. Smith, which will be prepared by the department. 
+You can pick up your copy of the text in the AE offices (WH 200), the printing cost for this material is \$25 (cash or check only).
+
+\vskip.15in
+\noindent\textbf{Other References:}
+The notes we use in this course provide a very good base, but sometimes supplemental material is beneficial.
+The following texts are recommended as additional references:
+\begin{itemize}
+\item H. Broek, {\textit{The Practical Use of Fracture Mechanics}}
+\item H.L. Ewalds and R.J.H. Wanhill, {\textit{Fracture Mechanics}}
+\item A. F. Grandt, {\textit{Fundamentals of Structural Integrity}}
+\end{itemize} 
+
+% \footnotetext{Downloadable ebook versions are available on AeLP.}
+
+\vskip.15in
+\noindent\textbf{Objectives:}  In this course we will use concepts from fracture mechanics. 
+Students will be asked to determine residual strength and predict crack growth in structures under fatigue loading.
+
+\vskip.15in
+\noindent\textbf{Prerequisites:}
+Instructor's consent (previous experience in solid mechanics, AE333 and AE525, and differential equations, AE555, is advised).
+
+\vspace*{.15in}
+
+\noindent \textbf{Tentative Course Outline:}
+\begin{center} 
+\begin{minipage}{5in}
+\begin{flushleft}
+Stress Intensity \\
+Plastic Zone \\
+Fracture Toughness \\
+Residual Strength \\
+Exam 1 \\
+Fatigue Crack Growth Rate \\
+Fatigue Crack Propagation \\
+Exam 2 \\
+Damage Tolerance
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+
+\vspace*{.15in}
+\noindent\textbf{Homework:} Homework may be submitted either electronically before the class period it is due or in class on the due date.
+It is anticipated that one homework assignment per lecture block (as given in the course outline) will be assigned.
+To be graded, homework must be legible and organized in a manner that makes it easy for me to follow your work.
+Late homework will not be accepted, homework problems submitted out of order will not be graded.
+
+\vspace*{.15in}
+\noindent\textbf{Exams:} There will be two major midterm exams during the semester.
+Exams will be closed-book and closed-notes, but there will be an equation sheet provided.
+
+\vspace*{.15in}
+\noindent\textbf{Final Project:} More information on the final project will be provided at a later time in the course.
+In this final project you will be required to perform residual strength, fatigue, and damage tolerance analysis on a real-life part of your choosing.
+You will use the principles developed in this class to estimate the maximum load your part can carry, a reasonable inspection cycle, etc.
+The part you choose should undergo cyclic loading of some form for a fatigue analysis.
+
+\vspace*{.15in}
+\noindent\textbf{Grading Policy:} Homework (15\%),  Midterm 1 (30\%), Midterm 2 (30\%), Final Project (25\%). 
+Final grades follow a traditional scale of:
+%%insert grading table
+\begin{table}[H]
+\begin{tabular}{cccccccccccc}
+ A & A- & B+ & B & B- & C+ & C & C- & D+ & D & D- & F \\ 
+ 93-100 & 90-93 & 87-90 & 83-87 & 80-83 & 77-80 & 73-77 & 70-73 & 67-70 & 63-67 & 60-63 & 0-60 \\ 
+\end{tabular}
+\end{table}
+Per department policy, final course grades will not be disclosed before the official notifications by the University.
+
+\vskip.15in
+\noindent\textbf{Academic Honesty:}   Lack of knowledge of the academic honesty policy is not a reasonable explanation for a violation.
+You are expected to submit your own work, but this does not exclude working and studying in groups.
+Group study is encouraged, but be sure that you submit your own work.
+
+%%%%%% THE END 
+\end{document} 
