@@ -101,13 +101,61 @@
 
 \section{exam}
 
+%statistics on exam grades, curve
 \begin{frame}{exam}
 	\begin{itemize}[<+->]
-		\item 4 questions
-		\item Bring a scientific calculator (or graphing)
-		\item Specific equations or correction factors (i.e. modified MSD or $\beta$ for stiffeners) will be given where needed
-		\item Equation sheet is posted on Blackboard
+		\item Before curve, average score: 80.3
+		\item Before curve, std dev: 15.8
+		\item High score: 96 (1 student, 3 had 95)
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{exam}
+	\begin{itemize}[<+->]
+		\item Purpose of curve: tighten distribution (goal is to have std dev = 10\%)
+		\item I find one exam that I consider excellent and set that as the high score (95 in this case)
+		\item I find one that I consider "average" and set that to be a C (61 in this case)
+		\item Curve for this exam: Adjusted score = 0.735 (original score) + 30.15
+		\item New average: 89.2, new std dev: 11.6
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{before curve}
+	
+	\begin{tikzpicture}
+	\begin{axis}[
+	ybar,
+	ymin=0,
+	ymax=12
+	]
+	\addplot +[
+	hist={
+		bins=7,
+		data min=50,
+		data max=100
+	}   
+	] table [y index=0] {unadjusted.csv};
+	\end{axis}
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{after curve}
+	
+	\begin{tikzpicture}
+	\begin{axis}[
+	ybar,
+	ymin=0,
+	ymax=12,
+	]
+	\addplot +[
+	hist={
+		bins=7,
+		data min=50,
+		data max=100
+	}   
+	] table [y index=0] {adjusted.csv};
+	\end{axis}
+	\end{tikzpicture}
 \end{frame}
 
 \begin{frame}<handout:0>{solutions}
@@ -137,8 +185,44 @@
 \end{frame}
 
 \begin{frame}{grade breakdown}
-	\begin{itemize}[<>]
-		\item 
+	\begin{itemize}[<+->]
+		\item Per course syllabus, project will be worth 25\% of final grade
+		\item 5\% Project abstract submission and approval
+		\item 10\% for each major component
+		\begin{itemize}
+			\item stress intensity factor
+			\item residual strength
+			\item fatigue (x2, growth and propagation)
+			\item inspection cycle
+		\end{itemize}
+		\item 20\% for damage tolerant improvement
+		\item 20\% general presentation, organization, and grammar
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{project abstract}
+	\begin{itemize}[<+->]
+		\item Main purpose of abstract is for you to make sure your idea fits with project purpose
+		\item I will give you feedback on how to tweak your proposed idea to better meet project purpose
+		\item Abstract submission should be 1-2 pages
+		\item Briefly describe your chosen part, how it undergoes cyclic loading, what location you intend to consider for the stress intensity factor.
+		\item This is like a proposal: convince me that your idea has what it takes to be a great final project
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{justify assumptions}
+	\begin{itemize}[<+->]
+		\item You will need to make many assumptions in order to complete this project
+		\item Clearly state your assumptions and justify them (i.e. if you assume plane strain conditions, justify that by showing how thick your part is)
+		\item Although will not have experimental or FE analysis specific to your part, use concepts from other data in the text (stiffeners, multiple site damage) in a qualitative manner
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{figures}
+	\begin{itemize}[<+->]
+		\item Figures can greatly enhance your project report, if you use them well
+		\item Many readers will jump to figures in a report, include sufficient information in caption and axis labels so a reader with general damage tolerance understanding can understand your figure
+		\item This will interest them in the rest of your paper
 	\end{itemize}
 \end{frame}
 
