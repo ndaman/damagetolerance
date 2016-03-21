@@ -158,7 +158,43 @@
 	\begin{itemize}[<+->]
 		\item $\Delta \sigma$ is known as the stress range, and is the difference between max and min stress
 		\item $\sigma_m$ is the mean stress, and can sometimes be zero, but this is not always the case
-		\item 
+		\item $\sigma_a$ is the stress amplitude, and is the variation about the mean
+		\item We can express all of these in terms of the maximum and minimum stress
+		\begin{align}
+		\Delta \sigma &= \sigma_{max} - \sigma_{min}\\
+		\sigma_m &= \frac{\sigma_{max} + \sigma_{min}}{2}\\
+		\sigma_a &= \frac{\sigma_{max}- \sigma_{min}}{2}
+		\end{align}
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{constant amplitude stressing}
+	\begin{itemize}[<+->]
+		\item It is also common to describe some ratios
+		\item The stress ratio, $R$ is defined as
+		\begin{equation}
+		R = \frac{\sigma_{min}}{\sigma_{max}}
+		\end{equation}
+		\item And the amplitude ratio, $A$ is defined as
+		\begin{equation}
+		A = \frac{\sigma_a}{\sigma_m}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{useful relations}
+	\begin{itemize}
+		\item There are some useful relationships between the above equations
+		\begin{subequations}
+			\begin{align}
+			\Delta \sigma &= 2 \sigma_a = \sigma_{max}(1-R)\\
+			\sigma_m &= \frac{\sigma_{max}}{2}(1+R)\\
+			R &= \frac{1-A}{1+A}\\
+			A &= \frac{1-R}{1+R}
+			\end{align}
+		\end{subequations}
+	\end{itemize}
+\end{frame}
+
+\section{nominal and local stress}
 \end{document}
