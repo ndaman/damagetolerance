@@ -1,0 +1,75 @@
+%Do not change 
+\documentclass[12pt, oneside]{article}
+\usepackage{amssymb,amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{textpos}
+\usepackage{float}
+%\usepackage{color}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{tikz-3dplot}
+\usepackage{pgfopts}
+\usepackage{wasysym}
+\usepackage{structuralanalysis}
+\usepackage{fancyhdr}
+\usepackage[en-US]{datetime2}
+
+\fancyhead[R]{\small Last Updated: \today\ at \DTMcurrenttime}
+\pagestyle{fancy}
+
+% You may add the packages you need here
+
+
+
+\begin{document}
+% Do not modify 
+
+
+%Do not modify
+\begin{textblock*}{4cm}(-1.7cm,-2.3cm)
+\noindent {\scriptsize AE737 Spring 2016} 
+\end{textblock*}
+
+%Do not modify other than putting your name where stated
+\begin{textblock*}{8cm}(12.5cm,-1cm)
+\noindent {Name: } 
+\end{textblock*}
+%Do not modify other than typing your acknowledgement where stated
+\begin{textblock*}{13.5cm}(-1.7cm,-1.8cm)
+%\noindent \textit{\footnotesize Acknowledgement: Your acknowledgement for collaboration and other sources goes here. } 
+\end{textblock*}
+
+\vspace{1cm}
+
+%Do not modify other than typing the homework number after #
+\begin{center}
+\textbf{\Large Homework 6}
+
+\textbf{Due 29 Mar 2016}
+\end{center}
+
+%Rest should contain your solution for the homework. Feel free to improvise in ways that you believe make grading easier.
+\begin{enumerate}
+
+%calculate and plot residual strength for multiple materials
+\begin{figure}[H]
+	\item Plot the fatigue data given in hw6\_data.txt and, using the data, find $\sigma_f^\prime$ and $b$.
+\end{figure}
+
+\begin{figure}[H]
+	\item Use the data and results from problem 1 to estimate the S-N curve for an identical specimen loaded with a mean stress of 30 ksi.
+\end{figure}
+
+\begin{figure}[H]
+	\item The following state of constant amplitude fatigue stress is applied to an un-notched specimen of 2024-T4 aluminum
+	\begin{align*}
+	\sigma_x &= 27 \text{ ksi}\\
+	\sigma_y &= 13 \text{ ksi}\\
+	\tau_{xy} &= 8 \text{ ksi}
+	\end{align*}
+	Predict the number of cycles before failure.
+\end{figure}
+
+\end{enumerate}
+\end{document}
