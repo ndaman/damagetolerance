@@ -273,6 +273,7 @@
 	\end{itemize}
 \end{frame}
 
+\section{general trends}
 %trends in metals
 \begin{frame}{true fracture strength}
 	\begin{itemize}[<+->]
@@ -303,6 +304,7 @@
 		\item Tough materials have intermediate values for both $\epsilon_f^\prime$ and $\sigma_f^\prime$
 		\item This gives a transition life somewhere between brittle and ductile materials
 		\item It is also noteworthy that strain-life for many metals pass through the point $\epsilon_a = 0.01$ and $N_f = 1000$ cycles
+		\item Steels also follow a trend with Brinell Hardness, the higher they are on the HB scale, the lower their transition life
 	\end{itemize}
 \end{frame}
 
@@ -314,12 +316,199 @@
 		\item While "shallow" slopes are around $b=-0.05$, common for hardened metals
 	\end{itemize}
 \end{frame}
+
+\section{other factors affecting fatigue}
 %creep-fatigue interaction
+\begin{frame}{factors affecting fatigue life}
+	\begin{itemize}[<+->]
+		\item Factors other than the stress/strain can effect fatigue life
+		\item At temperatures above one-half the melting temperature (absolute scale), creep-relaxation is significant
+		\item This will cause the strain/stress-life curves to become rate dependent
+		\item Occurs at room temperature for many materials (lead, tin, many polymers)
+		\item At a sufficiently elevated temperature for any material
+	\end{itemize}
+\end{frame}
 
 %surface finish
+\begin{frame}{surface finish}
+	\begin{itemize}[<+->]
+		\item S-N curves (stress-based method) are highly sensitive to surface finish, samples are generally polished
+		\item Strain life curves are not very sensitive to surface finish or residual strength at short lives
+		\item The plastic deformation tends to remove residual stresses
+		\item In high-cycle fatigue, crack initiation is important (poor surface finish allows cracks to form earlier)
+		\item When plastic deformation is present (low-cycle fatigue), cracks form relatively quickly regardless of surface finish
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{surface finish}
+	\begin{itemize}[<+->]
+		\item Since low-cycle fatigue has little effect from surface finish, we could modify the strain life curve by altering only the elastic portion
+		\item If we define the surface effect factor, $m_s$, we can find a new $b_s$ to replace $b$ in the strain-life equation
+		\item[] \begin{equation}
+		b_s = \frac{\log\left(m_s (2N_e)^b\right)}{\log(2N_e)}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{surface treatments}
+	\begin{itemize}[<+->]
+		\item Surfaces are often treated for cosmetic or corrosion purposes, these treatments can affect fatigue life
+		\item Treatments which decrease fatigue life:
+		\begin{itemize}
+			\item Electro-plating (chrome, +corrosion resistance, -fatigue life)
+			\item Grinding improves surface finish, but introduces surface tension, and heat generated can temper quench
+			\item Stamping introduces discontinuities and irregularities
+			\item Forging is generally good for refining grain structure and improving physical properties, but can cause decarburization in steels, which is harmful to fatigue life
+			\item Hot rolling can also cause decarburization
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{surface treatments}
+	\begin{itemize}[<+->]
+		\item Some treatments improve fatigue life:
+		\begin{itemize}
+			\item Cold rolling improves surface finish, introduces residual compressive stress on surface (slows crack initiation on surface)
+			\item Shot peeing introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{size}
+	\begin{itemize}[<+->]
+		\item Size can also have effects on fatigue life
+		\item Larger parts are more susceptible to damage/imperfections at the same stress level
+		\item This is why composites are often made from very small fibers (glass fiber, carbon fiber, ceramic-matrix composites)
+		\item The exact effect of size will depend on material, one study for low carbon steels found
+		\item[] \begin{equation}
+		m_d = \left(\frac{d}{25.4 \text{mm}}\right)^{-0.093}
+		\end{equation}
+		\item Which is then used to re-calculate material constants
+		\begin{equation}
+		\sigma_{fd}^\prime = m_d \sigma_f^\prime, \qquad \epsilon_{fd}^\prime = m_d \epsilon_f^\prime
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{thermal fatigue}
+	\begin{itemize}[<+->]
+		\item Thermal loading can be introduced when two dissimilar parts are attached together, the coefficient of thermal expansion causes them to expand differently, introducing extra stresses due to the temperature change
+		\item If the temperature is significantly different between two sides of a part thermal stresses can also be introduced
+		\item Low temperatures generally cause a material to behave in a more brittle fashion, which alters the fatigue life
+		\item High temperatures cause problems with creep-relaxation and can also affect the crystalline structure
+	\end{itemize}
+\end{frame}
+
+\section{mean stress effects}
 %mean stress
+\begin{frame}{mean stress in strain-based fatigue}
+	\begin{itemize}[<+->]
+		\item In regions where plastic strain is significant, some applied mean stress is likely to be relaxed through cyclic plastic strain
+		\item When the plastic strain is not significant, mean stress will exist
+		\item Mean strain does not generally affect fatigue life
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{morrow approach}
+	\begin{itemize}[<+->]
+		\item Recall the Morrow approach for mean stress effects from the stress-based method
+		\item[]\begin{equation}
+		\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\sigma_f^\prime} = 1
+		\end{equation}
+		\item We can rearrange the equation such that
+		\item[]\begin{equation}
+		\sigma_a = \sigma_f^\prime\left[\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{1}{b}(2N_f)\right]^b
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{morrow approach}
+	\begin{itemize}[<+->]
+		\item If we compare to the stress-life equation ($\sigma_a = \sigma_f^\prime(2N_f)^b$), we see that we can replace $N_f$ with
+		\item[] \begin{equation}
+		\label{eq:nstar}
+		N^* = N_f \left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{1}{b}
+		\end{equation}
+		\item We can now substitute $N^*$ for $N_f$ in the strain-life equation to find
+		\item[] \begin{equation}
+		\epsilon_a = \frac{\sigma_f^\prime}{E} \left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{c}{b} (2 N_f)^c
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{morrow approach}
+	\begin{itemize}[<+->]
+		\item Graphically, we can use the Morrow approach very easily using only the zero-mean stress graph
+		\item From the zero-mean stress graph, find the point corresponding to your applied strain
+		\item For a non zero mean stress, this point represents $(\epsilon_a, N^*)$, we can now solve for $N_f$ using \ref{eq:nstar}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{modified morrow}
+	\begin{itemize}[<+->]
+		\item While the Morrow equation agrees very well with many data, some are better fit with a modification
+		\item In the modified version, it is assumed that the mean stress has no effect on the plastic term
+		\item[] \begin{equation}
+		\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_f}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c
+		\end{equation}
+		\item There is no convenient solution method for this form, and it generally must be solved numerically, or plotted with many families of $\sigma_m$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{smith watson topper}
+	\begin{itemize}[<+->]
+		\item The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product $\sigma_max \epsilon_a$
+		\item After some manipulation, this gives
+		\item[] \begin{equation}
+		\sigma_{max} \epsilon_a = \frac{\left(\sigma_f^\prime\right)^2}{E}(2N_f)^{2b} + \sigma_f^\prime \epsilon_f^\prime (2N_f)^{b+c}
+		\end{equation}
+		\item This method can also be solved graphically if a plot of $\sigma_{max} \epsilon_a$ is made using zero-mean data. All we need to do is find the new $\sigma_{max} \epsilon_a$ point to find a new $N_f$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{comparison}
+	\begin{itemize}[<+->]
+		\item All three methods discussed are in general use
+		\item The Morrow method is very good for steel
+		\item The modified Morrow method gives improved results in many materials
+		\item The SWT approach is very good for general use, but is non-conservative with a compressive mean stress
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{example}
+	
+\end{frame}
+
+\section{multiaxial loading}
 %multiaxial loading
 
+\begin{frame}{multiaxial loading}
+	\begin{itemize}[<+->]
+		\item Multi-axial loading in strain-based fatigue analysis is still an active field of research
+		\item We are currently only capable of handling proportional loads that are in-phase (i.e. have the same frequency)
+		\item If we consider the principal directions where $\sigma_{2a} = \lambda \sigma_{1a}$, we find an expression for the strain-life as
+		\item[] \begin{equation}
+		\epsilon_{1a} = \frac{\frac{\sigma_f^\prime}{E}(1-\nu \lambda)(2N_f)^b + \epsilon_f^\prime(1-0.5\lambda)(2N_f)^c}{\sqrt{1-\lambda+\lambda^2}}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{stress triaxiality factor}
+	\begin{itemize}[<+->]
+		\item Another approach is to consider the stress triaxiality factor
+		\item[] \begin{equation}
+		T = \frac{1+\lambda}{\sqrt{1-\lambda+\lambda^2}}
+		\end{equation}
+		\item Three notable cases of this are
+		\begin{enumerate}
+			\item Pure planar shear: $\lambda=-1, T=0$
+			\item Uniaxial stress: $\lambda=0, T=1$
+			\item Equal biaxial stress: $\lambda=1, T=2$
+		\end{enumerate}
+		\item Marloff suggests the following inclusion of stress triaxiality
+		\item[] \begin{equation}
+		\bar{\epsilon_a} = \frac{\sigma_f^\prime}{E}(2 N_f)^b + 2^{1-T}\epsilon_f^\prime(2N_f)^c
+		\end{equation}
+	\end{itemize}
+\end{frame}
 \end{document}
