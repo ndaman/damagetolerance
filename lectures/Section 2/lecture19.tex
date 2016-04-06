@@ -89,8 +89,8 @@
 		\item 7 Apr - Crack Growth, Stress Spectrum
 		\item 12 Apr - Retardation, Boeing Commercial Method
 		\item 14 Apr - Exam Review, Homework 8 Due
-		\item 19 Apr - Exam 2
-		\item 21 Apr - Exam Solutions, Damage Tolerance
+		\item 19 Apr - Damage Tolerance
+		\item 21 Apr - Exam 2
 %		\item 26 Apr - Damage Tolerance, AFGROW
 %		\item 28 Apr - AFGROW, Finite Elements
 %		\item 3 May - Finite Elements
@@ -136,7 +136,7 @@
 		\item[]\begin{equation}
 		\frac{\sigma_a}{\sigma_{ar}} + \frac{\sigma_m}{\sigma_f^\prime} = 1
 		\end{equation}
-		\item We can rearrange the equation such that
+		\item We can rearrange (and substitute) the equation such that
 		\item[]\begin{equation}
 		\sigma_a = \sigma_f^\prime\left[\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{1}{b}(2N_f)\right]^b
 		\end{equation}
@@ -170,7 +170,7 @@
 		\item While the Morrow equation agrees very well with many data, some are better fit with a modification
 		\item In the modified version, it is assumed that the mean stress has no effect on the plastic term
 		\item[] \begin{equation}
-		\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_f}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c
+		\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c
 		\end{equation}
 		\item There is no convenient solution method for this form, and it generally must be solved numerically, or plotted with many families of $\sigma_m$
 	\end{itemize}
@@ -178,7 +178,7 @@
 
 \begin{frame}{smith watson topper}
 	\begin{itemize}[<+->]
-		\item The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product $\sigma_max \epsilon_a$
+		\item The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product $\sigma_{max} \epsilon_a$
 		\item After some manipulation, this gives
 		\item[] \begin{equation}
 		\sigma_{max} \epsilon_a = \frac{\left(\sigma_f^\prime\right)^2}{E}(2N_f)^{2b} + \sigma_f^\prime \epsilon_f^\prime (2N_f)^{b+c}
@@ -442,7 +442,7 @@
 	\begin{itemize}[<+->]
 		\item The Boeing-Walker growth equation is given as (for $R \ge 0$ )
 		\item[] \begin{equation}
-		\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left[K_max(1-R)^q\right]^p
+		\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left[K_{max}(1-R)^q\right]^p
 		\end{equation}
 	\end{itemize}
 \end{frame}
