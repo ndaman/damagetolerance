@@ -107,6 +107,7 @@
 			\item Damage tolerance is a very broad field, here are some potential things we can discuss for the last few weeks of class
 			\item Non-destructive testing (NDT) (some people use "Evaluation" instead of testing, NDE)
 			\item Finite element techniques and methods for damage and fracture
+			\item Repairing damaged structures
 			\item Damage in composite materials
 			\item AFGROW
 			\item Composite certification 
@@ -114,6 +115,72 @@
 		\end{itemize}
 	\end{frame}
 	
+	\section{review}
+	
+	\begin{frame}{group 1}
+		Find the fatigue life of 2024-T4 aluminum ($\sigma_f^\prime = 131 \text{ ksi}$, $b = -0.102$) under the following load scenario
+		\begin{table}
+		\begin{tabular}{ccc}
+			\hline Stress Term & Min & Max \\ 
+			\hline $\sigma_x$ & 0 & 15 \\ 
+			$\sigma_y$ & -5 & 10 \\ 
+			$\tau_{xy}$ & 5 & 15 \\ 
+			\hline 
+		\end{tabular} 
+	\end{table}
+	\end{frame}
+	
+	\begin{frame}{group 2}
+		Show how to find the cycles to failure for 7075-T6 ($\sigma_f^\prime = 213 \text{ ksi}$, $b=-0.143$, $\epsilon_f^\prime = 0.262$ and $c=-0.619$) with $\epsilon_a = 0.40$ and $\sigma_m = 15 \text{ksi}$
+	\end{frame}
+	
+	\begin{frame}{group 3}
+		Use the Boeing method to find an equivalent load cycle for the following load spectrum.
+		Repeat this calculation using two different "cycle counting" methods.
+		Use material properties for 4340 steel ($p=2.7$, $q=0.84$, $M_T = 70.0$).
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\begin{axis}[
+			domain=0:20,
+			samples=200,
+			xmin=0,   xmax=20,
+			ymin=-3,   ymax=12,
+			ylabel=$\sigma$ (ksi),
+			xlabel=time,
+			ytick={0, 3, 5, 12},
+			yticklabels={0, 3, 5, 12}]
+			\addplot [color=black,mark=none] coordinates { 
+				(0,0)
+				(1,5)
+				(2,0)
+				(3,5)
+				(4,0)
+				(5,5)
+				(6,0)
+				(7,12)
+				(8,3)
+				(9,12)
+				(10,3)
+				(11,5)
+				(12,3)
+				(13,5)
+				(14,3)
+				(15,5)
+				(16,3)};
+			\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}{group 4}
+		For a wide, center-cracked panel with $C=10^{-9}$, $n=4$ and $a_0 = 1.5 \text{ in}$. Assume $\sigma_{YS} = 70 \text{ ksi}$.
+		\begin{enumerate}
+			\item Integrate to find the crack length after 10,000 cycles of $R=0$, $\sigma_{max} = 10 \text{ ksi}$ loading
+			\item Calculate the plane stress plastic zone after an overload of $\sigma = 30 \text{ ksi}$
+			\item Find the Wheeler parameter ($\phi$) for the next cycle of $\sigma_{max} = 10 \text{ ksi}$ loading with $m=1.5$
+		\end{enumerate}
+	\end{frame}
 	\section{damage tolerance}
 	
 	\begin{frame}{definitions}
