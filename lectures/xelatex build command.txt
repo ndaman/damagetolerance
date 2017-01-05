@@ -1,1 +1,0 @@
-xelatex.exe -jobname %_handout -interaction=nonstopmode "\PassOptionsToClass{handout}{beamer}\input{%}" | txs:///compile | txs:///view
