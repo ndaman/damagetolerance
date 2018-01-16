@@ -6,3 +6,4 @@ pandoc
 scipy
 sympy
 xlrd
+plotly
