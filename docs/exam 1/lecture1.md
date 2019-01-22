@@ -128,6 +128,7 @@ January 9, 2019
   - Make checks out to Wichita State University
   - Homework will be given in handouts (via Blackboard/course website)
   - Supplemental textbooks are listed in the syllabus and in the text for further study
+Note: probably available by Thursday
 
 ----
 
