@@ -195,7 +195,7 @@ Grade breakdown
 -  Individual project
 -  More discussion after Exam 1
 
----
+----
 
 ## class expectations
 
