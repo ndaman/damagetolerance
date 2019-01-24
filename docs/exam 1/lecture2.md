@@ -36,16 +36,12 @@ January 9, 2019
 - 31 Jan - Curved Boundaries, Homework 1 Due
 - 5 Feb - Plastic Zone
 
----
+----
 ## office hours
 
--   So far TBD students have participated in Doodle
--   Take advantage of office hours, this is time that I have already set
-    aside for you
--   If the regular office hours do not work for your schedule, send me
-    an e-mail and we can work out a time to meet
--   While in person visits are often the most helpful, I will always try
-    to answer questions as best as I can via e-mail
+-   So far 12/21 students have participated in Doodle
+-   Best option (as of now) is either Monday or Wednesday from 4:00 - 5:00
+-   Next week I plan to finalize, so fill out the Doodle before then
 
 ----
 ## fracture mechanics
@@ -781,11 +777,12 @@ Where `$n = $` number of cracks (1 or 2)
 ----
 ## corner crack on a lug `$a/c \le 1$`
 
-`$$\begin{aligned}
+`$$\require{color}
+\begin{aligned}
   f_\phi &= \left(\left(\frac{a}{c}\cos \phi\right)^2 + \sin^2 \phi \right)^{1/4}\\
   f_x &= \left(1+1.464 \left(\frac{a}{c}\right)^{1.65}\right)^{-1/2}\\
   &\begin{aligned}
-    M_0 &= (1.13 - 0.09x) + \left(-0.54 + \frac{0.89}{0.2 + x}\right)v^2 {    \colorbox{red!50}{$\displaystyle+$}} \\
+    M_0 &= (1.13 - 0.09x) + \left(-0.54 + \frac{0.89}{0.2 + x}\right)v^2 {    \colorbox{red}{$+$}} \\
     &\qquad \left(0.5 - \frac{1}{.65-x} + 14(1-x^{24})\right)v^4
   \end{aligned}
 \end{aligned}$$
