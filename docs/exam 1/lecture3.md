@@ -209,6 +209,7 @@ $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 <div class="right">
 $b=1$ inch
 </div>
+
 ----
 ## group 1
 <div class="left">
