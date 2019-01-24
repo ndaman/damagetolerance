@@ -226,7 +226,7 @@ $b=0.4$ inches
 ![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](images\compounding-group2.svg)<!-- .element width="100%" -->
 </div>
 <div class="right">
-$b=0.4$ inches
+$b=0.4$ inches <br />
 
 Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
 </div>
