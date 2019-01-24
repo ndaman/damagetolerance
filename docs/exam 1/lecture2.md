@@ -26,7 +26,7 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 9, 2019
+January 24, 2019
 
 ---
 ## schedule
@@ -39,7 +39,7 @@ January 9, 2019
 ----
 ## office hours
 
--   So far 12/21 students have participated in Doodle
+-   So far 13/21 students have participated in Doodle
 -   Best option (as of now) is either Monday or Wednesday from 4:00 - 5:00
 -   Next week I plan to finalize, so fill out the Doodle before then
 

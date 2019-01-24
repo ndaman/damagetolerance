@@ -1,3 +1,41 @@
+<style>
+.reveal section img { background:none; border:none; box-shadow:none; }
+.left {
+  left:-15%;
+  top:-10%;
+  text-align: left;
+  float: left;
+  width:45%;
+  height:30vh;
+  z-index:-10;
+}
+.right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: left;
+  z-index:-10;
+  width:48%;
+}
+</style>
+
+## AE 737: Mechanics of Damage Tolerance
+Lecture 4 - Curved Boundaries
+
+Dr. Nicholas Smith
+
+Wichita State University, Department of Aerospace Engineering
+
+January 29, 2019
+
+----
+## schedule
+
+- 29 Jan - Superposition, Compounding
+- 31 Jan - Curved Boundaries, Homework 1 Due
+- 5 Feb - Plastic Zone
+- 7 Feb - Plastic Zone
+
 <span>homework notes</span>
 
 -   Watch units (beam problem, foot-lbs vs. in-lbs)
@@ -282,5 +320,3 @@ stress concentration factors
 <span>interactive page</span>
 
 -   An interactive page with these plots can be accessed here: <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Stress%20Concentration%20Factors.ipynb>
-
-
