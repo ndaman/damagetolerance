@@ -216,7 +216,7 @@ $b=1$ inch
 ![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](images\compounding-group1.svg)<!-- .element width="100%" -->
 </div>
 <div class="right">
-$b=0.4" inches
+$b=0.4$ inches
 </div>
 
 ----
