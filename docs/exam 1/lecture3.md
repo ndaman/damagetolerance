@@ -37,10 +37,6 @@ January 29, 2019
 - 7 Feb - Plastic Zone
 
 ----
-## outline
-
-
-----
 ## office hours
 
 -   With 12/21 students reporting, TODO
@@ -86,7 +82,7 @@ January 29, 2019
 ----
 ## superposition
 
-TODO: insert figure
+![](images\superpsition.svg)TODO: alt text
 
 ----
 ## superposition
@@ -106,12 +102,13 @@ $$\\begin{aligned}
 ----
 ## superposition
 
-TODO: insert figure
+![](images\superposition-bearing.svg) TODO: alt text
 
 ----
 ## example - pressurized crack
 
-TODO: insert figure
+![](images\superposition-pressure.svg)
+TODO: alt text
 
 ----
 ## example - pressurized crack
@@ -122,7 +119,8 @@ TODO: insert figure
 ----
 ## example - pressurized crack
 
-TODO: insert figure
+![](images\superposition-pressure2.svg)
+TODO: alt text
 
 ----
 ## group problems
@@ -139,16 +137,19 @@ TODO: insert figure
 ----
 ## group 2
 
+![](images\superposition-group2.svg)
 TODO: figure
 
 ----
 ## group 3
 
+![](images\superposition-group3.svg)
 TODO: figure
 
 ----
 ## group 4
 
+![](images\superposition-group4.svg)
 TODO: figure
 
 ---
@@ -157,8 +158,8 @@ TODO: figure
 ----
 ## superposition vs. compounding
 
--   In this course, we use “superposition” to combine loading conditions
--   We use “compounding” to combine edge effects
+-   In this course, we use *superposition* to combine loading conditions
+-   We use *compounding* to combine edge effects
 -   Both are very powerful tools and important concepts
 
 ----
@@ -170,15 +171,18 @@ TODO: figure
 -   There are two general methods we use to create a compound correction factor
 
 ----
-## compounding method 1
+## method 1
 
 -   The first method uses linear superposition, and thus is restricted to cases where the effect of each boundary can be assumed to add linearly
 -   While in most cases this is not strictly true, it provides a reasonable approximation
 $$K\_r = \\bar{K} + \\sum\_{i=1}^{N}(K\_i - \\bar{K})$$
+
+----
+## method 1
 -   Where *N* is the number of boundaries, $\\bar{K}$ is the stress intensity factor with no boundaries present and `$K_i$` is the stress intensity factor associated with the `$i^\text{th}$` boundary.
 
 ----
-## compounding method 1
+## method 1
 
 -   We can rewrite this equation as
 $$K\_r = \\sigma \\sqrt{\\pi a} \\beta\_r = \\sigma \\sqrt{\\pi a} + \\sum\_{i=1}^{N}(\\sigma \\sqrt{\\pi a}\\beta\_i - \\sigma \\sqrt{\\pi a})$$
@@ -186,44 +190,49 @@ $$K\_r = \\sigma \\sqrt{\\pi a} \\beta\_r = \\sigma \\sqrt{\\pi a} + \\sum\_{i=1
 $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 
 ----
-## compounding method 2
+## method 2
 
 -   An alternative empirical method approximates the boundary effect as
-`$$\beta_r = \beta_1 \beta_2 ... \beta_N$$$`
+`$$\beta_r = \beta_1 \beta_2 ... \beta_N$$`
 -   If there is no interaction between the boundaries, method 1 and method 2 will give the same result
 
 ----
 ## p. 68 - example 1
 
 -   A crack in a finite-width panel is centered between two stiffeners
--   Assume the $\beta$ correction factor for this stiffener configuration is `$\beta_s$` = 0.9
--   Assume the $\beta$ correction factor for this finite-width panel is `$\beta_w$` = 1.075
+-   Assume the $\beta$ correction factor for this stiffener configuration is `$\beta_s$` = 0.9
+-   Assume the $\beta$ correction factor for this finite-width panel is `$\beta_w$` = 1.075
 -   Use both compounding methods to estimate the stress intensity
 -   How accurate do you expect this to be?
 
 ----
 ## p. 69 - example 3
 
+![](images\example-69-3.svg)
 TODO: insert figure
 
 ----
 ## group 1
+![](images\compounding-group1.svg)
 
 TODO: figure
 
 ----
 ## group 2
 
+![](images\compounding-group2.svg)
 TODO: figure
 
 ----
 ## group 3
 
+![](images\compounding-group3.svg)
 TODO: figure
 
 ----
 ## group 4
 
+![](images\compounding-group4.svg)
 TODO: figure
 
 ---
