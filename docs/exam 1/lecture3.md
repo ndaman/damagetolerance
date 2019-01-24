@@ -13,7 +13,7 @@
   left:31.25%;
   top: 75px;
   float: right;
-  text-align: right;
+  text-align: left;
   z-index:-10;
   width:48%;
 }
@@ -82,7 +82,7 @@ January 29, 2019
 ----
 ## superposition
 
-![](images\superpsition.svg)TODO: alt text
+![To illustrate superposition a crack with both a local splitting force and a remote stress is shown, which is equivalent to the separate loads being treated individually and then added.](images\superpsition.svg)<!-- .element width="80%" -->
 
 ----
 ## superposition
@@ -102,13 +102,12 @@ $$\\begin{aligned}
 ----
 ## superposition
 
-![](images\superposition-bearing.svg) TODO: alt text
+![A crack around a hole is loaded both under remote tension and with a local bearing force. This is equivalent to a crack around a hole with only remote stress added to the same crack with a bearing force acting upwards and remote stress acting downward.](images\superposition-bearing.svg)<!-- .element width="70%" -->
 
 ----
 ## example - pressurized crack
 
-![](images\superposition-pressure.svg)
-TODO: alt text
+![A center crack is subjected to a stress applied locally along the crack face, also known as a pressurized crack.](images\superposition-pressure.svg)<!-- .element width="80%" -->
 
 ----
 ## example - pressurized crack
@@ -119,8 +118,7 @@ TODO: alt text
 ----
 ## example - pressurized crack
 
-![](images\superposition-pressure2.svg)
-TODO: alt text
+![We can address the problem of a pressurized crack by considering the case where a remote stress (with no crack) is equivalent to a cracked body, under remote stress, with a compressive stress acting at the hole to cancel the effect of the crack.](images\superposition-pressure2.svg)<!-- .element width="80%" -->
 
 ----
 ## group problems
@@ -137,20 +135,17 @@ TODO: alt text
 ----
 ## group 2
 
-![](images\superposition-group2.svg)
-TODO: figure
+![An edge crack is subjected to an arbitrary remote force (not centered).](images\superposition-group2.svg)<!-- .element width="60%" -->
 
 ----
 ## group 3
 
-![](images\superposition-group3.svg)
-TODO: figure
+![A crack is subjected to an upward acting local force which is balanced by a remote stress acting downward.](images\superposition-group3.svg)<!-- .element width="20%" -->
 
 ----
 ## group 4
 
-![](images\superposition-group4.svg)
-TODO: figure
+![A crack around a hole is loaded both under remote tension and with a local bearing force.](images\superposition-group4.svg)<!-- .element width="60%" -->
 
 ---
 # compounding
@@ -208,32 +203,52 @@ $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 ----
 ## p. 69 - example 3
 
-![](images\example-69-3.svg)
-TODO: insert figure
-
+<div class="left">
+![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](images\example-69-3.svg)<!-- .element width="100%" -->
+</div>
+<div class="right">
+$b=1$ inch
+</div>
 ----
 ## group 1
-![](images\compounding-group1.svg)
-
-TODO: figure
+<div class="left">
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](images\compounding-group1.svg)<!-- .element width="100%" -->
+</div>
+<div class="right">
+$b=0.4" inches
+</div>
 
 ----
 ## group 2
 
-![](images\compounding-group2.svg)
-TODO: figure
+<div class="left">
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](images\compounding-group2.svg)<!-- .element width="100%" -->
+</div>
+<div class="right">
+$b=0.4" inches
+
+Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
+</div>
 
 ----
 ## group 3
 
-![](images\compounding-group3.svg)
-TODO: figure
+<div class="left">
+![A center crack 0.25 inches long is on a panel 1 inch tall with the right crack tip 0.5 inches away from a 0.5 inch diameter hole.](images\compounding-group3.svg)<!-- .element width="100%" -->
+</div>
+<div class="right">
+Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
+</div>
 
 ----
 ## group 4
 
-![](images\compounding-group4.svg)
-TODO: figure
+<div class="left">
+![A center crack 0.25 inches long is between two holes with the right crack tip 0.5 inches away from a 0.5 inch diameter hole and the left crack tip is 0.25 inches away from a 1 inch diameter hole.](images\compounding-group4.svg)<!-- .element width="100%" -->
+</div>
+<div class="right">
+The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the left crack tip is 0.25 inches away from a 1 inch diameter hole.
+</div>
 
 ---
 # errata and supplemental charts
@@ -244,24 +259,24 @@ TODO: figure
 -   on p. 64 there is a + missing between two terms, see Lecture 2 for the fix
 -   Also on p. 64, in equation 29 it is not clear, but use the `$f_w$` from a previous equation, on p. 56
 -   Some of the black and white figures can be difficult to use, we have scanned and re-created the plots online
--   Interactive versions of compounding figures from p. 50, 71-73 can be found at <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Compounding%20Figures.ipynb>
+-   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Compounding%20Figures.ipynb)
 
 ----
 ## finite height - p. 50
 
-![beta for finite height effects, see text p. 50](images\finite-height.png)
+![beta for finite height effects, see text p. 50 or interactive chart linked in previous slide](images\finite-height.png)
 
 ----
 ## offset crack - p. 71
 
-![beta for offset internal crack, see text p. 71](images\internal-crack.png)
+![beta for offset internal crack, see text p. 71 or interactive chart linked previously](images\internal-crack.png)
 
 ----
 ## crack near hole - p. 72
 
-![beta for the crack tip farther away from a hole, see text p. 72](images\crack-hole-A.png)
+![beta for the crack tip farther away from a hole, see text p. 72 or interactive chart linked previously](images\crack-hole-A.png)
 
 ----
 ## crack near hole - p. 73
 
-![beta for the crack tip closer to a hole, see text p. 73](images\crack-hole-B.png)
+![beta for the crack tip closer to a hole, see text p. 73 or interactive chart linked previously](images\crack-hole-B.png)
