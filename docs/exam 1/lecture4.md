@@ -229,7 +229,7 @@ $$\\begin{aligned}
 
 ----
 ## example 6 (p. 86)
-TODO: insert example
+![See p. 86, there is a short through crack on the edge of a 0.5" deep notch on a 5 inch wide panel with a remote 12 ksi stress applied. The net section stress concentration factor is 2.8, while the global stress concentration factor for a similar panel with a hole is 3.1](images\example-86-6.jpg)
 
 ----
 ## long cracks on curved boundaries
