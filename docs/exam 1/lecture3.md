@@ -45,6 +45,14 @@ January 29, 2019
 -   If the regular office hours do not work for your schedule, send me an e-mail and we can work out a time to meet
 
 ----
+## homework notes
+
+-   Watch units (beam problem, foot-lbs vs. in-lbs)
+-   Significant figures
+-   My grading philosophy
+-   Individual work
+
+----
 ## outline
 
 - Review
