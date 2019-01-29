@@ -249,20 +249,20 @@ $$\\begin{aligned}
 ----
 ## plastic stress intensity ratio
 
--   For an infinitely wide center-cracked panel, we can solve for *K*<sub>*I**e*</sub>/*K*<sub>*I*</sub> symbolically
--   For plane stress we have:
-
+<div class="left">
+For an infinitely wide center-cracked panel, we can solve for *K*<sub>*Ie*</sub>/*K*<sub>*I*</sub> symbolically, in plane stress
+</div>
+<div class="right">
 $$\\begin{aligned}
   K\_I &= \\sigma \\sqrt{\\pi a}\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi(a+r\_p)}\\\\
   r\_p &= \\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi \\left(a+\\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\right)}
 \\end{aligned}$$
+</div>
 
 ----
-## plastic stress intensity ratio
-
--   We square both sides
+## stress intensity ratio
 
 $$\\begin{aligned}
   K\_{Ie}^2 &= \\sigma^2 \\pi \\left(a+\\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\right)\\\\
@@ -270,11 +270,10 @@ $$\\begin{aligned}
   K\_{Ie}^2 - \\frac{\\sigma^2}{2} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2 &= \\sigma^2 \\pi a\\\\
   K\_{Ie}^2\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\right) &= \\sigma^2 \\pi a
 \\end{aligned}$$
+Note: square both sides
 
 ----
 ## plastic stress intensity ratio
-
--   We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\right)$
 
 $$\\begin{aligned}
   K\_{Ie}^2 &= \\frac{\\sigma^2 \\pi a}{1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}}\\\\
@@ -282,6 +281,8 @@ $$\\begin{aligned}
   K\_{Ie} &= \\frac{K\_I}{\\sqrt{1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}}}\\\\
   \\frac{K\_{Ie}}{K\_I} &= \\frac{1}{\\sqrt{1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}}}
 \\end{aligned}$$
+
+Note: We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\right)$
 
 ----
 ## plastic stress intensity ratio
@@ -294,10 +295,15 @@ $$\\begin{aligned}
 ----
 ## example
 
--   You are trying to design an appropriate inspection cycle on a panel
--   One item to consider is the plastic stress intensity ratio, consider the effect of varying crack lengths on the plastic stress intensity ratio.
-
-TODO: figure
+<div class="left">
+<ul>
+<li> You are to design aninspection cycle for a panel </li>
+<li> Consider the plastic stress intensity ratio, and the effect of varying crack lengths on it</li>
+</ul>
+</div>
+<div class="right">
+![an edge crack of length a in a 5 inch wide panel subjected to a remote stress of 8 ksi.](images\intensity-ratio-example.svg)<!-- .element width="70%"-->
+</div>
 
 ----
 ## example
@@ -309,8 +315,8 @@ online example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/
 ----
 ## plastic zone shape
 
--   Although we drew a circle to give a rough idea of the plastic zone in Irwin’s method, this solution was only 1D
--   We considered *θ* = 0.
+-   Although we drew a circle to give a rough idea of the plastic zone in Irwin's method, this solution was only 1D
+-   We considered `$\theta=0$`.
 -   It is advantageous to model the plastic zone shape, we will do so using two different yield theories
 -   Von Mises and Tresca
 
@@ -354,18 +360,20 @@ $$\\begin{aligned}
 ----
 ## Von Mises yield theory
 
--   We can find the plastic zone size, *r*<sub>*p*</sub> by substituting the principal stress relations (\[eq:principal\]) into the distortional strain energy equation (\[eq:distortion\])
-
+-   We can find the plastic zone size, *r*<sub>*p*</sub> by substituting the principal stress relations into the distortional strain energy equation
 -   In plane stress we find
-
 $$\\begin{aligned}
-  2 \\sigma\_{YS}^2 &= \\left( \\sigma\_1 - \\sigma\_2 \\right)^2 + \\left( \\sigma\_2 - 0 \\right)^2 + \\left(0 - \\sigma\_1\\right)^2\\\\
-  &\\begin{aligned}
-  \\mathllap{2 \\sigma\_{YS}^2} &= \\left(\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right) - \\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right)\\right)^2 + \\\\
-  &\\qquad \\left(\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right) - 0\\right)^2 + \\\\
-  &\\qquad \\left(0 - \\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right)\\right)^2
-  \\end{aligned}
+  2 \\sigma\_{YS}^2 &= \\left( \\sigma\_1 - \\sigma\_2 \\right)^2 + \\left( \\sigma\_2 - 0 \\right)^2 + \\left(0 - \\sigma\_1\\right)^2
 \\end{aligned}$$
+
+----
+## Von Mises yield theory
+$$\\small{\\begin{aligned}
+  2 \\sigma\_{YS}^2 &= \\left(\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right) -\\right .\\\\
+  &\\left .\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right)\\right)^2 + \\\\
+  &\\left(\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right) - 0\\right)^2 + \\\\
+  &\\left(0 - \\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right)\\right)^2
+\\end{aligned}}$$
 
 ----
 ## Von Mises yield theory
@@ -380,12 +388,12 @@ $$\\begin{aligned}
 
 -   Tresca yield theory assumes that yielding begins when the maximum shear stress reaches a critical value
 -   In uniaxial tension this gives
-    $$\\tau\_0 = \\tau\_{max} = \\frac{1}{2}\\left(\\sigma\_{max} - \\sigma\_{min}\\right) = \\frac{1}{2} \\left(\\sigma\_{YS} - 0\\right) = \\frac{\\sigma\_{YS}}{2}$$
+$$\\tau\_0 = \\tau\_{max} = \\frac{1}{2}\\left(\\sigma\_{max} - \\sigma\_{min}\\right) = \\frac{1}{2} \\left(\\sigma\_{YS} - 0\\right) = \\frac{\\sigma\_{YS}}{2}$$
 
 ----
 ## Tresca yield theory
 
--   Using (\[eq:principal\]), we see that
+-   Using the results for principal stress we found previously, we see that
 
 $$\\begin{aligned}
   \\sigma\_{max} &= \\frac{K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right)\\\\
@@ -398,8 +406,8 @@ $$r\_p = \\frac{K\_I^2}{2 \\pi \\sigma\_{YS}^2}\\cos^2 \\frac{\\theta}{2}\\left(
 ----
 ## Tresca yield theory
 
--   In plane strain, it is not clear whether *σ*<sub>2</sub> or *σ*<sub>3</sub> will be *σ*<sub>*m**i**n*</sub>
--   We can solve for when *σ*<sub>2</sub> will be *σ*<sub>*m**i**n*</sub>
+-   In plane strain, it is not clear whether `$\sigma_2$` or `$\sigma_3$` will be `$\sigma_{min}$`
+-   We can solve for when `$\sigma_2$` will be `$\sigma_{min}$`
 $$\\begin{aligned}
   \\sigma\_2 &&lt; \\sigma\_3\\\\
   \\frac{K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right) &&lt; \\frac{2\\nu K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\\\
@@ -410,9 +418,9 @@ $$\\begin{aligned}
 ----
 ## Tresca yield theory
 
--   When 2*π* − *θ*<sub>*t*</sub> &lt; *θ* &lt; *θ*<sub>*t*</sub>, *σ*<sub>2</sub> is the minimum, otherwise *σ*<sub>3</sub> is the minimum
+-   When `$2\pi - \theta_t < \theta < \theta_t$`, `$\sigma_2$` is the minimum, otherwise `$\sigma_3$` is the minimum
 -   Note: Error(s) in text p. 101
--   Once we have chosen the appropriate minimum stress (*σ*<sub>2</sub>*o**r**σ*<sub>3</sub>), we can solve for *r*<sub>*p*</sub> as before
+-   Once we have chosen the appropriate minimum stress (`$\sigma_2$` or `$\sigma_3$`), we can solve for *r*<sub>*p*</sub> as before
 
 ----
 ## Tresca yield theory
@@ -425,35 +433,35 @@ $$\\begin{aligned}
 ----
 ## 3D plastic zone shape
 
-![](images\dumbell.png) TODO: alt text
+![An image showing the 3D plastic zone shape, which looks a little bit like a dumbell. The plastic zone is much larger near the surface, where the material behaves as if in plane stress. In the center, where the material behaves more like plane strain, the plastic zone is much smaller.](images\dumbell.png)
 
 ----
 ## example
 online example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Plastic%20Zone%20Shape.ipynb)
 
 ---
-group problems
+# group problems
 
 ----
 ## group one
 
 -   Calculate the plastic zone size for an infinitely wide, center-cracked panel
--   Consider a crack-length of 4 cm, and a yield strength of *σ*<sub>*Y**S*</sub> = 55 MPa, with an applied load of *σ* = 20 MPa
+-   Consider a crack-length of 4 cm, and a yield strength of `$\sigma_{YS}=55 \text{ MPa}$`, with an applied load of `$\sigma = 20 \text{ MPa}$`
 -   Assume the panel is very thin
 
 ----
 ## group two
 
 -   Calculate the plastic zone size for an infinitely wide, center-cracked panel
--   Consider a crack-length of 4 cm, and a yield strength of *σ*<sub>*Y**S*</sub> = 55 MPa, with an applied load of *σ* = 20 MPa
+-   Consider a crack-length of 4 cm, and a yield strength of `$\sigma_{YS}=55 \text{ MPa}$`, with an applied load of `$\sigma = 20 \text{ MPa}$`
 -   Assume the panel is very thick
 
 ----
 ## group three
 
 -   Calculate the plastic zone size for an infinitely wide, center-cracked panel
--   Consider a crack-length of 4 cm, and a yield strength of *σ*<sub>*Y**S*</sub> = 55 MPa, with an applied load of *σ* = 20 MPa
--   The panel thickness is *t* = 0.65 cm
+-   Consider a crack-length of 4 cm, and a yield strength of `$\sigma_{YS}=55 \text{ MPa}$`, with an applied load of `$\sigma = 20 \text{ MPa}$`
+-   The panel thickness is *t* = 0.65 cm
 
 ----
 ## group four
