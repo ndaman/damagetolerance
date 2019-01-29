@@ -20,7 +20,7 @@
 </style>
 
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 5 - Curved Boundaries
+Lecture 5 - Plastic Zone
 
 Dr. Nicholas Smith
 
