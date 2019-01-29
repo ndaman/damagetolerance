@@ -39,8 +39,8 @@ January 29, 2019
 ----
 ## office hours
 
--   With 12/21 students reporting, TODO
--   As a back-up, AE 333 Office Hours are TODO
+-   Office hours will be Mondays from 4:00 - 5:00
+-   As a back-up, AE 333 Office Hours are Fridays from 11:00 - 12:00
 -   Take advantage of office hours, this is time that I have already set aside for you
 -   If the regular office hours do not work for your schedule, send me an e-mail and we can work out a time to meet
 
