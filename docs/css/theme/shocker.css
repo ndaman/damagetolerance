@@ -229,9 +229,10 @@ body {
  * box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
+  margin: 15px 10px;
   background: rgba(255, 255, 255, 0.4);
   border: none;
+  padding: 20px;
   box-shadow: none;  }
 
 .reveal section img.plain {
