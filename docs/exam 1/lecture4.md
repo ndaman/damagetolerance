@@ -23,7 +23,7 @@ January 31, 2019
 
 ----
 ## supplemental material
--   I was unable to find the source for all of Dr. Horn's formulas, but I have made an alternate set of equations (taken from the AFGROW user’s manual) available on Blackboard under supplemental material.
+-   I was unable to find the source for all of Dr. Horn's formulas, but I have made an alternate set of equations (taken from the AFGROW user's manual) available on Blackboard under supplemental material.
 
 ---
 
