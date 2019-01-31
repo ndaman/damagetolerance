@@ -1,24 +1,3 @@
-<style>
-.reveal section img { background:none; border:none; box-shadow:none; }
-.left {
-  left:-15%;
-  top:-10%;
-  text-align: left;
-  float: left;
-  width:45%;
-  height:30vh;
-  z-index:-10;
-}
-.right {
-  left:31.25%;
-  top: 75px;
-  float: right;
-  text-align: left;
-  z-index:-10;
-  width:48%;
-}
-</style>
-
 ## AE 737: Mechanics of Damage Tolerance
 Lecture 5 - Plastic Zone
 
