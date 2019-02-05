@@ -22,6 +22,8 @@ February 12, 2019
 - fracture toughness
 - R-curve
 - thickness effects
+- fracture toughness review
+- residual strength
 
 <!-- /TOC -->
 ---
@@ -171,12 +173,11 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 -   Plot these curves on the same graph as *K*<sub>*R*</sub>
 -   NOTE: *K*<sub>*R*</sub> curve should be plotted vs. *a*<sub>*eff*</sub>, not `$\Delta a$` or `$\Delta a_{eff}$`
 -   *K*<sub>*c*</sub> is the point at which one of the *K*<sub>*I*</sub> curves is the tangent intersection with the *K*<sub>*R*</sub> curve
-`<script>console.log('hello')</script>`
 
 ----
 ## R-Curve examples
 
--   <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Tangent_R-curve.ipynb>
+-   [example](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Tangent_R-curve.ipynb)
 -   Excel Solver
 
 ---
@@ -186,182 +187,138 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 ## thickness effects
 
 -   We already know there is a difference between plane strain and plane stress fracture toughness
-
 -   As a material gets thicker and thicker, it converges to the plane strain solution
-
 -   Thinner specimens tend towards the plane stress solution
-
 -   When a specimen is thinner than some critical thickness, the material behavior is somewhat unknown
-
--   Some materials retain the constant plane stress fracture toughness
-
--   Others exhibit an unpredictable decrease in fracture toughness
-
--   The phenomenon is not well-understood
 
 ----
 ## thickness effects
 
 -   There is also a difference in the fracture surface between thin and thick specimens
-
 -   Thin specimens (in plane stress region) fail due to slant fracture
-
 -   This actually indicates some mixed-mode conditions at failure
-
 -   Thick specimens fail due to square fracture (with a small shear tip near the edges)
-
 -   This is more consistent with pure Mode I
 
 ----
 ## slant fracture
 
-<img src="../Figures/slant" alt="image" /> \[fig:slant\]
+![A slant fracture, where the failure plane rotates 45 degrees from the crack plane, considered a shear mode](images\slant.PNG)
 
 ----
 ## shear lip
 
-<img src="../Figures/shear_lip" alt="image" /> \[fig:shear\_lip\]
+![In this shear lip, there is a long crack that near the end rotates away by 45 degrees creating a shear lip near the surface](images\shear_lip.jpg)
 
-fracture toughness review
-=========================
+---
+# fracture toughness review
 
 ----
 ## group review
 
 -   Group 1 - Sketch *K*<sub>*R*</sub>-curve (for ductile material), explain what it means, how to find *K*<sub>*c*</sub>
-
 -   Group 2 - Sketch *K*<sub>*c*</sub> vs. crack length, explain what’s happening
-
 -   Group 3 - How can we determine whether a panel is in plane strain or plane stress?
-
 -   Group 4 - Sketch *K*<sub>*R*</sub>-curves for ductile and brittle materials, what is the difference?
 
-residual strength
-=================
+---
+# residual strength
 
 ----
 ## residual strength
-
--   In the last chapter we performed some basic residual strength analysis by checking for net section yield
 
 -   As the crack grows, the area of the sample decreases, increasing the net section stress
-
--   The residual strength, *σ*<sub>*R*</sub> is given in terms of the gross area, so as the crack grows the residual strength due to yield decreases
-
--   We can relate the net-section stress to *σ*<sub>*R*</sub> by
-    $$\\sigma\_R = \\sigma\_{YS} \\frac{A\_{net}}{A\_{gross}}$$
+-   The residual strength, `$\sigma_R$` is given in terms of the gross area, so as the crack grows the residual strength due to yield decreases
+-   We can relate the net-section stress to `$\sigma_R$` by
+$$\\sigma\_R = \\sigma\_{YS} \\frac{A\_{net}}{A\_{gross}}$$
 
 ----
 ## residual strength
 
-;
+![Effective yield strength plotted vs. crack length. As the crack gets longer, the actual cross-sectional area decreases so that the effective yield strength also goes down.](images\residual-strength.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
 
 -   For brittle fracture to occur, we need to satisfy the condition
-
--   
-    $$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
+$$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
 
 ----
 ## residual strength
 
-; ;
+![Here the effective K_i is plotted vs. crack length and compared to the net section yield. The lower of the two values will cause failure.](images\residual-tough.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
 
 -   Within the same family of materials (i.e. Aluminum), there is generally a trade-off between yield stress and fracture toughness
-
 -   As we increase the yield strength, we decrease the fracture toughness (and vice versa)
-
 -   Consider a comparison of the following aluminum alloys
-
-    1.  7178-T6, $K\_C = 43 \\text{ ksi} \\sqrt{\\text{in.}}$, *σ*<sub>*Y**S*</sub> = 74ksi
-
-    2.  7075-T6, $K\_C = 68 \\text{ ksi} \\sqrt{\\text{in.}}$, *σ*<sub>*Y**S*</sub> = 63ksi
-
-    3.  2024-T3, $K\_C = 144 \\text{ ksi} \\sqrt{\\text{in.}}$, *σ*<sub>*Y**S*</sub> = 42ksi
+    1.  7178-T6, $K\_C = 43 \\text{ ksi} \\sqrt{\\text{in.}}$, `$\sigma_{YS} = 74$` ksi
+    2.  7075-T6, $K\_C = 68 \\text{ ksi} \\sqrt{\\text{in.}}$, `$\sigma_{YS} = 63$` ksi
+    3.  2024-T3, $K\_C = 144 \\text{ ksi} \\sqrt{\\text{in.}}$, `$\sigma_{YS} = 42$` ksi
 
 ----
 ## residual strength
 
 -   As an example let us consider an edge-cracked panel with $W=6"$ and $t=0.1"$
-
 -   The net section yield condition will be given by
-
--   
-    $$\\sigma\_C = \\sigma\_{YS} \\frac{W-a}{W} = \\sigma\_{YS}\\frac{6-a}{6}$$
-
+$$\\sigma\_C = \\sigma\_{YS} \\frac{W-a}{W} = \\sigma\_{YS}\\frac{6-a}{6}$$
 -   And the fracture condition by
-    $$\\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
+$$\\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
      With
-    $$\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\frac{a}{W}\\right)^2 - 21.72 \\left(\\frac{a}{W}\\right)^3 + 30.39 \\left(\\frac{a}{W}\\right)^4$$
+$$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\frac{a}{W}\\right)^2 - 21.72 \\left(\\frac{a}{W}\\right)^3 + 30.39 \\left(\\frac{a}{W}\\right)^4\}$$
 
 ----
 ## 7178-T6
 
-; ;
+![Residual strength for 7178-T6 aluminum](images\residual-7178.png) <!-- .element width="60%" -->
 
 ----
 ## 7075-T6
 
-; ;
+![Residual strength for 7075-T6 aluminum](images\residual-7075.png) <!-- .element width="60%" -->
 
 ----
 ## 2024-T3
 
-; ;
+![Residual strength for 2024-T3 aluminum](images\residual-2024.png) <!-- .element width="60%" -->
 
 ----
 ## comparison
 
-+\[mark=none\] ----
-## min(42\*(1-x),144/sqrt(3.14\*x\*6)/(1.12-.231\*x+10.55\*x^2-21.72\*x^3+30.39\*x^4))</span>; +\[mark=none\] <span>min(63\*(1-x),68/sqrt(3.14\*x\*6)/(1.12-.231\*x+10.55\*x^2-21.72\*x^3+30.39\*x^4))</span>; +\[mark=none\] <span>min(74\*(1-x),43/sqrt(3.14\*x\*6)/(1.12-.231\*x+10.55\*x^2-21.72\*x^3+30.39\*x^4));
+![A comparison of the residual strength for the previous 3 aluminum alloys](images\residual-aluminum.png) <!-- .element width="60%" -->
 
 ----
 ## using MIL-handbook
 
 -   Uses a different grain nomenclature
 
--   | *K*<sub>*C*</sub> | *σ*<sub>*Y**S*</sub> |
-    |:-----------------:|:--------------------:|
-    |        L-T        |           L          |
-    |        T-L        |          L-T         |
+| *K*<sub>*C*</sub> | `$\sigma_{YS}$` |
+|:-----------------:|:---------------:|
+|        L-T        |           L     |
+|        T-L        |          L-T    |
 
 -   A-Basis vs. B-Basis values are reported (A = 99% of population will meet/exceed value, B = 90% of population)
-
 -   S-Basis - no statistical information available, standard value to be used
 
 ----
 ## using MIL-handbook
 
--   *F*<sub>*t**u*</sub> - ultimate tensile strength
-
--   *F*<sub>*t**y*</sub> - tensile yield strength
-
--   *F*<sub>*c**y*</sub> - compressive yield strength
-
--   *F*<sub>*s**u*</sub> - ultimate shear strength
-
--   *F*<sub>*b**r**u*</sub> - ultimate bearing strength
-
--   *F*<sub>*b**r**y*</sub> - bearing yield strength
-
--   *E* - tensile Young’s Modulus
-
--   *E*<sub>*c*</sub> - compressive Young’s Modulus
-
+-   *F*<sub>*tu*</sub> - ultimate tensile strength
+-   *F*<sub>*ty*</sub> - tensile yield strength
+-   *F*<sub>*cy*</sub> - compressive yield strength
+-   *F*<sub>*su*</sub> - ultimate shear strength
+-   *F*<sub>*bru*</sub> - ultimate bearing strength
+-   *F*<sub>*bry*</sub> - bearing yield strength
+-   *E* - tensile Young's Modulus
+-   *E*<sub>*c*</sub> - compressive Young's Modulus
 -   *G* - shear modulus
-
--   *μ* - Poisson’s ratio
+-   $\mu$ - Poisson's ratio
 
 ----
 ## data
 
 -   Fracture data is on pp. 111-121
-
 -   Tensile data is on pp. 138-143
-
--   *K*<sub>*c*</sub> charts are also available in interactive versions here: <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Fracture%20Toughness%20Figures.ipynb>
+-   *K*<sub>*c*</sub> charts are also available in interactive versions [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Fracture%20Toughness%20Figures.ipynb)
