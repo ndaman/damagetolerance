@@ -67,10 +67,8 @@ $$r\_p = \\frac{1}{6\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 
 -   For panels which lie between plane strain and plane stress states, we use the following expression to estimate the plastic zone size
 $$r\_p = \\frac{1}{I\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
-
 -   Where *I* is defined as
 $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
-
 -   And `$2 \le I \le 6$`
 
 ----
@@ -199,15 +197,17 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## fracture toughness
 
-![](images\KIC_thickness.jpg) TODO: alt text
+![Thin panels have a generally higher fracture toughness, as they are in plane stress. As the panel gets thicker it converges to the plane strain fracture toughness.](images\KIC_thickness.jpg) <!-- .element width="50%" -->
 
 ----
-## fracture toughness
+## unstable cracks
 
--   "Stable" vs. "unstable" crack growth
 -   Stable crack growth means the crack extends only with increased load
 -   Unstable crack growth means the crack will continue to extend indefinitely under the same load
 -   For a perfectly brittle material, there is no stable crack growth, as soon as a critical load is reached, the crack will extend indefinitely
+
+----
+## stable cracks
 -   For an elastic-plastic material, once the load is large enough to extend the crack, it will extend slightly
 -   The load must be continually increased until a critical value causes unstable crack growth
 
@@ -221,7 +221,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## K-curve
 
-TODO: figure
+![A graph showing the fracture toughness of a perfectly brittle material vs. a ductile material. A perfectly brittle material will not have any crack growth until the stress intensity is K_IC, at which point the crack grows indefinitely. A ductile material will have mostly stable crack growth, until reaching a critical value, K_C.](images\k-curve.PNG) <!-- .element width="60%" -->
 
 ----
 ## K-curve
@@ -233,21 +233,26 @@ TODO: figure
 -   Either the maximum *K*<sub>*C*</sub> during a test, or tangent point on *K*<sub>*R*</sub>-curve (R-curve)
 
 ----
-## example - stable crack growth
+## example
 
--   In composites, and adhesives, some work is needed to ensure stable crack growth
--   The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this
+<div class="left">
+<ul>
+  <li>In composites, and adhesives, some work is needed to ensure stable crack growth</li>
+  <li>The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this</li>
+</ul>
+</div>
 
+<div class="right">
 $$\\begin{aligned}
-  \\label{eq:compliance}
   C &= \\frac{\\delta}{P}\\\\
   C &= \\frac{2a^3}{3EI}\\\\
   G &= \\frac{P^2}{2b}\\frac{dC}{da}\\\\
   G &= \\frac{P^2a^2}{bEI}
 \\end{aligned}$$
+</div>
 
 ----
-## example - stable crack growth
+## example
 
 -   For crack growth to be stable we need
 $$\\frac{dG}{da} \\le 0$$
@@ -256,7 +261,7 @@ $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
 -   This is always positive, and thus results in unstable crack growth
 
 ----
-## example - stable crack growth
+## example
 
 -   Under fixed-displacement conditions, we substitute for *P*
 -   We find
@@ -269,13 +274,20 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 ----
 ## plane strain, brittle
 
--   For relatively brittle materials, we don’t need to worry about the R-curve
--   Specimens are made according to these specifications
+<div class="left">
+  <ul>
+    <li>For relatively brittle materials, we don’t need to worry about the R-curve</li>
+    <li>Specimens are made according to these specifications</li>
+  </ul>
+</div>
+
+<div class="right">
 $$\\begin{aligned}
   a \\ge 2.5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2\\\\
   b \\ge 2.5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2\\\\
   W \\ge 5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
+</div>
 
 ----
 ## ASTM E399
@@ -286,49 +298,53 @@ $$\\begin{aligned}
 ----
 ## ASTM E399
 
-![](images\CT.PNG) TODO: alt text
+![A figure from the ASTM standard showing a compact tension specimen](images\CT.PNG) <!-- .element width="50%" -->
 
 ----
 ## ASTM E399
 
-![](images\SENB.PNG) TODO: alt text
+![A figure from the ASTM standard showing a single edge notched bending specimen](images\SENB.PNG) <!-- .element width="70%" -->
 
 ----
 ## ASTM E399
 
-![](images\chevron.PNG) TODO: alt text
+![A figure from the ASTM standard showing how the notches should be machined to promote proper crack shapes](images\chevron.PNG) <!-- .element width="60%" -->
 
 ----
 ## ASTM E399
 
-1.  Machine specimen
-2.  Fatigue crack specimen *K*<sub>*f*</sub> &lt; 0.6*K*<sub>*IC*</sub>
-    -   This is to ensure that the plastic zone size during fatigue is smaller than the plastic zone size during testing
-    -   If *K*<sub>*IC*</sub> has not yet been determined, you may have to guess the first time
+<ol start="3">
+  <li>Machine specimen</li>
+  <li>Fatigue crack specimen *K*<sub>*f*</sub> &lt; 0.6*K*<sub>*IC*</sub></li>
+  <ul>
+    <li>This is to ensure that the plastic zone size during fatigue is smaller than the plastic zone size during testing</li>
+    <li>If *K*<sub>*IC*</sub> has not yet been determined, you may have to guess the first time</li>
+  </ul>
+</ol>
 
 ----
 ## ASTM E399
 
-1.  Mount specimen, attach gage
-2.  Load rate should ensure "static" load conditions. (30 - 150 ksi$\\sqrt{\\text{in.}}$/min.)
-3.  Determine the "provisional" value of *K*<sub>*IC*</sub> (known as *K*<sub>*Q*</sub>)
+<ol start="5">
+  <li>Mount specimen, attach gage</li>
+  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi$\\sqrt{\\text{in.}}$/min.)</li>
+  <li>Determine the "provisional" value of *K*<sub>*IC*</sub> (known as *K*<sub>*Q*</sub>)</li>
+</ol>
 
 ----
 ## ASTM E399
 
-TODO: figure
+![Various different conditions for how the provisional K_IC value is to be found.](images\astm-e399.PNG) <!-- .element width="70%" -->
 
 ----
 ## ASTM E399
 
-1.
-    1.  If the load-displacement curve is like the first figure, with some non-linearity, we let *P*<sub>*Q*</sub> be the point of intersection between the load-displacement curve and a line whose slope is 5% lower than the slope in the elastic region
+- If the load-displacement curve is like the first figure, with some non-linearity, we let *P*<sub>*Q*</sub> be the point of intersection between the load-displacement curve and a line whose slope is 5% lower than the slope in the elastic region
+- "Pop-in" occurs when there is stable crack extension before the plasticity begins. We let *P*<sub>*Q*</sub> bet the point where stable crack extension begins.
 
-    2.  "Pop-in" occurs when there is stable crack extension before the plasticity begins. We let *P*<sub>*Q*</sub> bet the point where stable crack extension begins.
-
-    3.  For a perfectly linear material, *P*<sub>*Q*</sub> = *P*<sub>*max*</sub>.
-
-    4.  
+----
+## ASTM E399
+- For a perfectly linear material, *P*<sub>*Q*</sub> = *P*<sub>*max*</sub>.
 $$\\begin{aligned}
   K\_Q &= \\frac{P\_Q}{BW^{1/2}}f\\left(\\frac{a}{W}\\right) & \\text{Compact Tension}\\\\
   K\_Q &= \\frac{P\_Q}{BW^{3/2}}g\\left(\\frac{a}{W}\\right) & \\text{SENB}
@@ -337,24 +353,23 @@ $$\\begin{aligned}
 ----
 ## ASTM E399
 
-1.  Ensure that your specimen is still valid
-$$\\begin{aligned}
-  a & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
-  b & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
-  W & \\ge 5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2
-\\end{aligned}$$
+<ol start="8">
+  <li>Ensure that your specimen is still valid
+  $$\\begin{aligned}
+    a & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
+    b & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
+    W & \\ge 5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2
+  \\end{aligned}$$</li>
+</ol>
 
 ----
 ## ASTM E399
 
-1.  
-    -   For stable crack extension, check the *P*<sub>*max*</sub>
+-   For stable crack extension, check the *P*<sub>*max*</sub>
 $$\\frac{P\_{max}}{P\_Q} \\le 1.10$$
-
-    -   Check for symmetric crack front, *a*<sub>1</sub>, *a*<sub>2</sub>, and *a*<sub>3</sub> must be within 5% of *a*. *a*<sub>*s*</sub> must be within 10% of *a*.
+-   Check for symmetric crack front, *a*<sub>1</sub>, *a*<sub>2</sub>, and *a*<sub>3</sub> must be within 5% of *a*. *a*<sub>*s*</sub> must be within 10% of *a*.
 $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
-
-    -   Load-displacement should have an initial slope between 0.7 and 1.5
+-   Load-displacement should have an initial slope between 0.7 and 1.5
 
 ---
 # plane stress, ductile
@@ -367,8 +382,12 @@ $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
     -   Thickness
     -   Temperature
     -   Strain rate
+
+----
+## R-curve
+
 -   When done correctly, *K*<sub>*R*</sub> curves are not dependent on initial crack size or the specimen type used
--   ASTM E561
+-   ASTM E561 describes a general procedure
 
 ----
 ## ASTM E561
@@ -380,96 +399,101 @@ $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
 ----
 ## ASTM E561
 
-<img src="../Figures/MT-envelope" alt="image" /> \[fig:MT-envelope\]
+![An image showing how long cracks are allowed to be relative to the center hole in middle-cracked tension specimens](images\MT-envelope.PNG)
 
-<img src="../Figures/MT-notch" alt="image" /> \[fig:MT-notch\]
+![An alternative method with a longer pre-crack in middle-cracked tension specimens](images\MT-notch.PNG)
 
 ----
 ## minimum sample dimensions
 
-<img src="../Figures/MT-minimum" alt="M(T) minimum recommended dimensions" />
+![A table of minimum recommended specimen dimensions for middle-cracked tension specimens.](images\MT-minimum.PNG)
 
-<img src="../Figures/CT-minimum" alt="C(T) minimum recommended dimensions" />
+----
+## minimum sample dimensions
+
+![A table of minimum recommended specimen dimensions for compact tension specimens.](images\CT-minimum.PNG)
 
 ----
 ## effective crack length
 
 -   ASTM E561 describes three ways to obtain the effective crack length during testing
-
     1.  Measure the crack length visually and calculate *r*<sub>*p*</sub>
-
     2.  Measure crack length using "unloading compliance" and adding plastic zone size
-
     3.  Measure the effective crack size directly using "secant compliance"
 
 ----
 ## secant compliance
 
-<img src="../Figures/secant" alt="image" /> \[fig:secant\]
+![A force-displacement curve with secant lines (i.e. average slope) superposed at various locations.](images\secant.PNG) <!-- .element width="40%" -->
 
 ----
 ## secant compliance M(T)
 
 -   Using the slope data from our load-displacement curve, we can calculate the effective crack length using
-    $$\\begin{gathered}
-            EB\\left(\\frac{\\Delta v}{\\Delta P}\\right) = \\frac{2 Y}{W} \\sqrt{\\frac{\\pi a / W}{\\sin (\\pi a / W)}} \\\\
-            \\qquad \\left\[\\frac{2W}{\\pi Y} \\cosh^{-1} \\left(\\frac{\\cosh(\\pi Y/W)}{\\cos (\\pi a / W)}\\right) - \\frac{1+\\nu}{\\sqrt{1 + \\left(\\frac{\\sin(\\pi a/W)}{\\sinh (\\pi Y/W)}\\right)^2}}+\\nu\\right\]
-            \\end{gathered}$$
+$$\\begin{gathered}
+  EB\\left(\\frac{\\Delta v}{\\Delta P}\\right) = \\frac{2 Y}{W} \\sqrt{\\frac{\\pi a / W}{\\sin (\\pi a / W)}} \\\\
+  \\qquad \\left\[\\frac{2W}{\\pi Y} \\cosh^{-1} \\left(\\frac{\\cosh(\\pi Y/W)}{\\cos (\\pi a / W)}\\right) - \\frac{1+\\nu}{\\sqrt{1 + \\left(\\frac{\\sin(\\pi a/W)}{\\sinh (\\pi Y/W)}\\right)^2}}+\\nu\\right\]
+\\end{gathered}$$
 
 ----
 ## secant compliance M(T)
 
 -   This equation is difficult to solve directly for *a* (for M(T) specimens)
-
 -   Instead it is generally solved iteratively
-
 -   The following equations are used to give a good initial guess to use in iterations
-    $$\\begin{aligned}
-            X &= 1 - \\exp \\left\[\\frac{-\\sqrt{\[EB(\\Delta v/ \\Delta P)\]^2 - (2Y/W)^2}}{2.141}\\right\]\\\\
-            &\\begin{aligned}
-            \\mathllap{\\frac{2a}{W}} &= 1.2235X - 0.699032X^2 + 3.25584X^3 - 6.65042X^4 + \\\\
-            &\\qquad5.54X^5 - 1.66989X^6
-            \\end{aligned}
-            \\end{aligned}$$
+
+----
+## secant compliance M(T)
+$$\\begin{aligned}
+  X &= 1 - \\exp \\left\[\\frac{-\\sqrt{\[EB(\\Delta v/ \\Delta P)\]^2 - (2Y/W)^2}}{2.141}\\right\]\\\\
+  &\\begin{aligned}
+  \\frac{2a}{W} &= 1.2235X - 0.699032X^2 + 3.25584X^3 - 6.65042X^4 + \\\\
+  &\\qquad 5.54X^5 - 1.66989X^6
+  \\end{aligned}
+\\end{aligned}$$
 
 ----
 ## secant compliance M(T)
 
--   In the above equations, the following are the definitions of parameters used
-    $$\\begin{aligned}
-            E &= \\qquad \\text{Young's Modulus}\\\\
-            \\Delta v / \\Delta P &= \\qquad \\text{specimen compliance}\\\\
-            B &= \\qquad \\text{specimen thickness}\\\\
-            W &= \\qquad \\text{specimen width}\\\\
-            Y &= \\qquad \\text{half span of the displacement measurement points}\\\\
-            a &= \\qquad \\text{effective crack length}\\\\
-            \\nu &= \\qquad \\text{Poisson's ratio}
-            \\end{aligned}$$
+<div class="left">
+  In the above equations, the following are the definitions of parameters used
+</div>
+<div class="right">
+$$\\begin{aligned}
+  E &= \\qquad \\text{Young's Modulus}\\\\
+  \\Delta v / \\Delta P &= \\qquad \\text{specimen compliance}\\\\
+  B &= \\qquad \\text{specimen thickness}\\\\
+  W &= \\qquad \\text{specimen width}\\\\
+  Y &= \\qquad \\text{half span}\\\\
+  a &= \\qquad \\text{effective crack length}\\\\
+  \\nu &= \\qquad \\text{Poisson's ratio}
+\\end{aligned}$$
+</div>
 
 ----
 ## secant compliance C(T)
 
 -   For C(T) specimens, we use the following equations
-
--   
-    $$EB\\frac{\\Delta v}{\\Delta P} = A\_0 + A\_1\\left(\\frac{a}{W}\\right) + A\_2\\left(\\frac{a}{W}\\right)^2 + A\_3\\left(\\frac{a}{W}\\right)^3 + A\_4\\left(\\frac{a}{W}\\right)^4$$
-
+$$EB\\frac{\\Delta v}{\\Delta P} = A\_0 + A\_1\\left(\\frac{a}{W}\\right) + A\_2\\left(\\frac{a}{W}\\right)^2 + A\_3\\left(\\frac{a}{W}\\right)^3 + A\_4\\left(\\frac{a}{W}\\right)^4$$
 -   The coefficients will differ based on where the displacement is measured from
 
 ----
 ## secant compliance C(T)
 
-<img src="../Figures/CT-KR" alt="image" /> \[fig:CT-KR\]
+![Some dimensions labeled for compact tension specimens](images\CT-KR.PNG) <!-- .element width="50%" -->
 
 ----
 ## secant compliance C(T)
 
-|         location|  *A*<sub>0</sub>|  *A*<sub>1</sub>|  *A*<sub>2</sub>|  *A*<sub>3</sub>|  *A*<sub>4</sub>|
+|         loc     |  *A*<sub>0</sub>|  *A*<sub>1</sub>|  *A*<sub>2</sub>|  *A*<sub>3</sub>|  *A*<sub>4</sub>|
 |----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|
 |  *V*<sub>0</sub>|            120.7|          -1065.3|           4098.0|          -6688.0|           4450.5|
 |  *V*<sub>1</sub>|            103.8|           -930.4|           3610.0|          -5930.5|           3979.0|
 
-|         location|  *C*<sub>0</sub>|  *C*<sub>1</sub>|  *C*<sub>2</sub>|  *C*<sub>3</sub>|  *C*<sub>4</sub>|  *C*<sub>5</sub>|
+----
+## secant compliance C(T)
+
+|         loc     |  *C*<sub>0</sub>|  *C*<sub>1</sub>|  *C*<sub>2</sub>|  *C*<sub>3</sub>|  *C*<sub>4</sub>|  *C*<sub>5</sub>|
 |----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|
 |  *V*<sub>0</sub>|           1.0010|          -4.6695|           18.460|          -236.82|          1214.90|          -2143.6|
 |  *V*<sub>1</sub>|           1.0008|          -4.4473|           15.400|          -180.55|           870.92|          -1411.3|
@@ -478,55 +502,53 @@ $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
 ## secant compliance C(T)
 
 -   Where the initial guess for *a* is provided by
-    $$\\frac{a}{W} = C\_0 + C\_1 U + C\_2 U^2 + C\_3 U^3 + C\_4 U^4 + C\_5 U^5$$
-
+$$\\frac{a}{W} = C\_0 + C\_1 U + C\_2 U^2 + C\_3 U^3 + C\_4 U^4 + C\_5 U^5$$
 -   and *U* is given by
-    $$U = \\frac{1}{1 + \\sqrt{EB\\frac{\\Delta v}{\\Delta P}}}$$
+$$U = \\frac{1}{1 + \\sqrt{EB\\frac{\\Delta v}{\\Delta P}}}$$
 
 ----
 ## buckling
 
 -   If the test is stopped and re-started frequently (to measure crack length by hand or to use the compliance method of crack measurement) buckling can interfere with results
 
-    <img src="../Figures/buckling" alt="image" /> \[fig:buckling\]
+----
+## buckling
+
+![Load-displacement curve after unloading and reloading, showing how this can interfere with results](images\buckling.PNG) <!-- .element width="40%" -->
 
 ----
 ## buckling
 
 -   If buckling is shown to be present in the test, supports can be used to prevent buckling
-
 -   These supports can introduce friction
-
 -   They should be well-lubricated for accurate test results
 
 ----
 ## net section stress
 
 -   One final consideration when dealing with plane stress fracture mechanics is the net section stress
-
 -   For the test to be valid, failure must occur due to fracture, not general static failure
-
--   Static failure will occur when *σ*<sub>*N*</sub> = *σ*<sub>*Y**S*</sub>
+-   Static failure will occur when `$\sigma_N = \sigma_{YS}$`
 
 ----
 ## generate *K*<sub>*R*</sub> curve
 
--   Once the effective crack length and *K*<sub>*I**e*</sub> has been determined for the test, we can generate the *K*<sub>*R*</sub> curve
+-   Once the effective crack length and *K*<sub>*Ie*</sub> has been determined for the test, we can generate the *K*<sub>*R*</sub> curve
+-   The *K*<sub>*R*</sub> curve is quite simply a plot of *K*<sub>*Ie*</sub> vs. *a* for the test performed (i.e. with varying stress and increasing crack length)
 
--   The *K*<sub>*R*</sub> curve is quite simply a plot of *K*<sub>*I**e*</sub> vs. *a* for the test performed (i.e. with varying stress and increasing crack length)
+----
+## initial crack length
 
 -   When the test is performed correctly, the *K*<sub>*R*</sub> curve is not a function of the initial crack length
-
--   For this reason, we often plot *K*<sub>*I**e*</sub> vs. *Δ**a*, to subtract the initial crack length
-
+-   For this reason, we often plot *K*<sub>*Ie*</sub> vs. $\Delta a$, to subtract the initial crack length
 -   We can superpose constant-stress *K*-curves on this graph, the curve which intersects at a tangent point creates the most "standard" definition for *K*<sub>*C*</sub>
 
 ----
 ## example
 
-<img src="../Figures/KR_C188T3_aluminum" alt="K_R Curve for C188-T3 aluminum for varying sample thickness (Boeing and Alcoa)" />
+![K-R curves plotted vs. delta a that align very well](images\KR_C188T3_aluminum.PNG) <!-- .element width="60%" -->
 
 ----
 ## example
 
-<img src="../Figures/KR_C188T3_physical" alt="K_R curve for the same specimens, but without adjusting for the plastic zone size." />
+![K_R curves plotted vs. a, which do not align as well.](images\KR_C188T3_physical.PNG) <!-- .element width="60%" -->
