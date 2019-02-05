@@ -17,6 +17,7 @@ January 31, 2019
 
 ----
 ## outline
+
 - compounding
 - curved boundaries
 - stress concentration factors
