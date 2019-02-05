@@ -77,6 +77,7 @@ $$\\begin{aligned}
 -   We find expressions for `$\beta_L$` (long crack) and `$\beta_S$` (short crack)
 -   We connect `$\beta_S$` to `$\beta_L$` using a straight line from `$\beta_S$` to a tangent intersection with `$\beta_L$`
 
+<!-- missing conversion between crack lengths (it's in the example but should be in the notes too) -->
 ----
 ## long cracks on curved boundaries
 
