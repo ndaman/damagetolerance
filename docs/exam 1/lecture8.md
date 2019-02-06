@@ -272,22 +272,272 @@ $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\fra
 ----
 ## 7178-T6
 
-![Residual strength for 7178-T6 aluminum](images\residual-7178.png) <!-- .element width="60%" -->
+<div class="anything" id="7178">
+<!--
+{
+  "initialize": "function(container) {
+  function makeArr(startValue, stopValue, numVals) {
+      var arr = [];
+      var currValue = startValue;
+      var step = (stopValue-startValue)/(numVals-1);
+      for (var i = 1; i < numVals; i++) {
+        arr.push(currValue + step*i);
+      }
+      return arr;
+    }
+  function toughness(k,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++) {
+      y.push(k/(Math.PI*x[i]*6)**.5/(1.12-.231*x[i]+10.55*x[i]**2-21.72*x[i]**3+30.39*x[i]**4));
+    }
+    return y;
+  }
+  function netsection(s,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++){
+      y.push(s*(1-x[i]));
+    }
+    return y;
+  }
+  var trace1 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'fracture'
+  };
+  trace1.y = toughness(43,trace1.x);
+  var trace2 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'yield'
+  };
+  trace2.y = netsection(74,trace2.x);
+  var data = [trace1, trace2];
+  layout = {
+    xaxis: {
+      title: 'a/W'
+    },
+    yaxis: {
+      title: 'residual strength',
+      range: [0,80]
+    }
+  };
+  Plotly.newPlot('7178', data, layout);
+	}"
+}
+-->
+</div>
 
 ----
 ## 7075-T6
 
-![Residual strength for 7075-T6 aluminum](images\residual-7075.png) <!-- .element width="60%" -->
+<div class="anything" id="7075">
+<!--
+{
+  "initialize": "function(container) {
+  function makeArr(startValue, stopValue, numVals) {
+      var arr = [];
+      var currValue = startValue;
+      var step = (stopValue-startValue)/(numVals-1);
+      for (var i = 1; i < numVals; i++) {
+        arr.push(currValue + step*i);
+      }
+      return arr;
+    }
+  function toughness(k,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++) {
+      y.push(k/(Math.PI*x[i]*6)**.5/(1.12-.231*x[i]+10.55*x[i]**2-21.72*x[i]**3+30.39*x[i]**4));
+    }
+    return y;
+  }
+  function netsection(s,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++){
+      y.push(s*(1-x[i]));
+    }
+    return y;
+  }
+  var trace1 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'fracture'
+  };
+  trace1.y = toughness(68,trace1.x);
+  var trace2 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'yield'
+  };
+  trace2.y = netsection(63,trace2.x);
+  var data = [trace1, trace2];
+  layout = {
+    xaxis: {
+      title: 'a/W'
+    },
+    yaxis: {
+      title: 'residual strength',
+      range: [0, 80]
+    }
+  };
+  Plotly.newPlot('7075', data, layout);
+	}"
+}
+-->
+</div>
 
 ----
 ## 2024-T3
 
-![Residual strength for 2024-T3 aluminum](images\residual-2024.png) <!-- .element width="60%" -->
+<div class="anything" id="2024">
+<!--
+{
+  "initialize": "function(container) {
+  function makeArr(startValue, stopValue, numVals) {
+      var arr = [];
+      var currValue = startValue;
+      var step = (stopValue-startValue)/(numVals-1);
+      for (var i = 1; i < numVals; i++) {
+        arr.push(currValue + step*i);
+      }
+      return arr;
+    }
+  function toughness(k,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++) {
+      y.push(k/(Math.PI*x[i]*6)**.5/(1.12-.231*x[i]+10.55*x[i]**2-21.72*x[i]**3+30.39*x[i]**4));
+    }
+    return y;
+  }
+  function netsection(s,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++){
+      y.push(s*(1-x[i]));
+    }
+    return y;
+  }
+  var trace1 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'fracture'
+  };
+  trace1.y = toughness(144,trace1.x);
+  var trace2 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: 'yield'
+  };
+  trace2.y = netsection(42,trace2.x);
+  var data = [trace1, trace2];
+  layout = {
+    xaxis: {
+      title: 'a/W'
+    },
+    yaxis: {
+      title: 'residual strength',
+      range: [0, 80]
+    }
+  };
+  Plotly.newPlot('2024', data, layout);
+	}"
+}
+-->
+</div>
 
 ----
 ## comparison
 
-![A comparison of the residual strength for the previous 3 aluminum alloys](images\residual-aluminum.png) <!-- .element width="60%" -->
+<div class="anything" id="comparison">
+<!--
+{
+  "initialize": "function(container) {
+  function makeArr(startValue, stopValue, numVals) {
+      var arr = [];
+      var currValue = startValue;
+      var step = (stopValue-startValue)/(numVals-1);
+      for (var i = 1; i < numVals; i++) {
+        arr.push(currValue + step*i);
+      }
+      return arr;
+    }
+  function toughness(k,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++) {
+      y.push(k/(Math.PI*x[i]*6)**.5/(1.12-.231*x[i]+10.55*x[i]**2-21.72*x[i]**3+30.39*x[i]**4));
+    }
+    return y;
+  }
+  function netsection(s,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++){
+      y.push(s*(1-x[i]));
+    }
+    return y;
+  }
+  function minval(k,s,x) {
+    var y = [];
+    for (var i = 0; i < x.length; i++) {
+      var tough = toughness(k,[x[i]])[0];
+      var net = netsection(s,[x[i]])[0];
+      if (net < tough) {
+        y.push(net);
+      }
+      else {
+        y.push(tough);
+      }
+    }
+    return y;
+  }
+  var trace1 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: '7178'
+  };
+  trace1.y = minval(43,74,trace1.x);
+  var trace2 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: '7075'
+  };
+  trace2.y = minval(68,63,trace2.x);
+  var trace3 = {
+    x: makeArr(0,1,200),
+    y: [],
+    mode: 'lines',
+    type: 'scatter',
+    name: '2024'
+  };
+  trace3.y = minval(144,42,trace3.x);
+  var data = [trace1, trace2, trace3];
+  layout = {
+    xaxis: {
+      title: 'a/W'
+    },
+    yaxis: {
+      title: 'residual strength',
+      range: [0,80]
+    }
+  };
+  Plotly.newPlot('comparison', data, layout);
+	}"
+}
+-->
+</div>
 
 ----
 ## using MIL-handbook
