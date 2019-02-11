@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 7, 2019
+February 12, 2019
 
 ----
 ## schedule
 
-- 7 Feb - Plastic Zone, Homework 2 Due
-- 12 Feb - Fracture Toughness
-- 14 Feb - Fracture Toughness, Homework 3 Due
-- 19 Feb - Residual Strength
+- 12 Feb - Plastic Zone, Homework 2 Due
+- 14 Feb - Fracture Toughness
+- 19 Feb - Fracture Toughness, Homework 3 Due
+- 21 Feb - Residual Strength
 
 ----
 ## outline
