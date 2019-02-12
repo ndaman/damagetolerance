@@ -30,7 +30,7 @@ February 12, 2019
 
 -   Previous developments assumed perfectly elastic materials
 -   Most common materials have some plasticity
--   Any stress above the yield stress will undergo plastic deformation (no stress higher than *σ*<sub>*y*</sub> will be present in the material)
+-   Any stress above the yield stress will undergo plastic deformation (no stress higher than $\sigma_y$ will be present in the material)
 
 ----
 ## plastic zone
