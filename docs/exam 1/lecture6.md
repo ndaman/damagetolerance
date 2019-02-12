@@ -215,6 +215,7 @@ $$\\begin{aligned}
   I &= 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2 \\\\
   r\_p &= \\frac{1}{I\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
+[work](https://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Plastic%20Zone%20Example.ipynb)
 
 ---
 # plastic stress intensity ratio
