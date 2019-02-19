@@ -136,22 +136,22 @@ $$\\sigma\_C = \\frac{\\sigma\_U}{SCFI}$$
 ----
 ## stiffener area
 
-![](images\stiffener_area.jpg)
+![Residual strength plotted vs crack length for large and small stiffener cross-sectional areas.](images\stiffener_area.jpg) <!-- .element width="60%" -->
 
 ----
 ## stiffener spacing
 
-![](images\stiffener_spacing.jpg)
+![Residual strength plotted vs crack length for large and small stiffener spacing.](images\stiffener_spacing.jpg) <!-- .element width="60%" -->
 
 ----
 ## rivet spacing
 
-![](images\rivet_spacing.jpg)
+![Residual strength plotted vs crack length for large and small rivet spacing.](images\rivet_spacing.jpg) <!-- .element width="60%" -->
 
 ----
 ## strength and toughness increase
 
-![](images\strength_increase.jpg)
+![Residual strength plotted vs crack length for increased yield strength and increased fracture toughness.](images\strength_increase.jpg)<!-- .element width="60%" -->
 
 ----
 ## example
@@ -170,7 +170,7 @@ $$\\begin{aligned}
 ----
 ## crack stopper
 
-![](images\crack_stoppers.jpg)
+![A crack stopper is a piece of metal placed between the spars and the skin.](images\crack_stoppers.jpg) <!-- .element width="50%" -->
 
 ----
 ## optimal crack stopper
