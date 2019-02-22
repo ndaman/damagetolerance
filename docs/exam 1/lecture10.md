@@ -156,7 +156,7 @@ $$\\sigma\_C = \\frac{\\sigma\_U}{SCFI}$$
 ----
 ## example
 
--   If we consider the case from Swift’s data most similar to our previous example:
+-   If we consider the case from Swift's data most similar to our previous example:
 $$\\begin{aligned}
   P &= 1.0 \\text{ in}\\\\
   A\_{st} &= 0.2538 \\text{ in}^2\\\\
