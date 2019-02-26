@@ -464,7 +464,7 @@ $$\\begin{aligned}
 ----
 ## remote stress
 
--   For equilibrium to be satisfied, we know that
+-   For displacement continuity, we know that
 $$\\left(\\frac{PL}{AE}\\right)\_{Skin} = \\left(\\frac{PL}{AE}\\right)\_{Stiffener}$$
 -   Since *L* is the same, we find
 $$\\frac{S}{E} = \\frac{S\_S}{E\_S}$$
