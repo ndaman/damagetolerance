@@ -17,10 +17,16 @@ March 5, 2019
 
 ----
 ## outline
-
 <!-- TOC START min:1 max:1 link:false update:true -->
-
-
+- exam
+- stress intensity
+- plastic zone
+- fracture toughness
+- residual strength
+- stiffeners
+- multiple site damage
+- mixed-mode fracture
+- review problems
 <!-- TOC END -->
 
 ---
