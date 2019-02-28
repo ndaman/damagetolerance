@@ -201,8 +201,9 @@ Assuming $\sigma = 4\tau$, $K\_{IC} = 60 \\text{ ksi} \\sqrt{\\text{in}}$, and 2
 ----
 ## principal stress
 
--   In the maximum circumferential stress criterion, we found the principal direction in polar coordinates
--   We can also find the principal direction in Cartesian coordinates
+-   In the maximum circumferential stress criterion, we found the principal stress direction near the crack tip in polar coordinates
+-   We can also find the principal direction (if there were no crack) in Cartesian coordinates
+-   **Note:** This is not mathematically rigorous, but much easier to calculate and sometimes it's close enough
 
 ----
 ## principal stress
