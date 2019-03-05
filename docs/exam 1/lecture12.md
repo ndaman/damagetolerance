@@ -37,7 +37,7 @@ March 5, 2019
 
 -   Look at the exam and equation sheet posted on Blackboard
 -   Expect a mixture of quantitative and qualitative questions (some short answer justifications)
--   4 questions
+-   5 questions
 -   I curve all my exams linearly
 -   Pay attention to what the question is asking for and be sure to answer all parts of the question
 -   There will be no T/F section, but those questions in the text can still be useful for review
@@ -45,7 +45,7 @@ March 5, 2019
 ----
 ## equation sheet
 
--   The equation sheet for this exam will be the same as the 2016 equation sheet posted to Blackboard
+-   The equation sheet for this exam will be the same as the previous equation sheet posted to Blackboard
 -   Other specific information and formulas (mixed-mode fracture, stiffener data, etc.) will be given in the problem
 
 ----
