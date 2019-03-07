@@ -1,0 +1,13 @@
+#include html and tex snippets in markdown
+include html.snip
+include tex.snip
+
+#comment
+snippet --
+abbr comment
+	<!-- .element ${1} -->
+
+#figure
+snippet fig
+abbr figure
+        ![${1}](${2})
