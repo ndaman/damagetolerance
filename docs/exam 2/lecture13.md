@@ -17,7 +17,7 @@ March 21, 2019
 
 ----
 ## outline
-
+- test
 
 ---
 # exam
@@ -205,17 +205,18 @@ TODO: figure
 ## fatigue tests
 
 -   The above rotating methods are very common, but in their current configurations can only be used for zero mean stress
+
 -   a reciprocating bend test can be used for non-zero mean stress
 
 ----
 ## reciprocating bend test
 
-![A reciprocating cantilever test allows for a non-zero mean stress.](../images/reciprocating_cantilever.PNG)
+<img src="../Figures/reciprocating_cantilever" alt="A reciprocating cantilever test allows for non-zero mean stress" />
 
 ----
 ## axial fatigue test
 
-![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](../images/servohydraulic.jpg)
+<img src="../Figures/servohydraulic" alt="Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories" />
 
 ----
 ## fatigue tests
