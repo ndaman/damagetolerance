@@ -15,7 +15,6 @@ March 21, 2019
 - 28 Mar - Strain-based fatigue
 - 2 Apr - Crack growth, HW6 Due
 
-
 ----
 ## outline
 
@@ -132,8 +131,8 @@ TODO: figure
 ## constant amplitude stressing
 
 -   `$\delta \sigma$` is known as the stress range, and is the difference between max and min stress
--   `$\sigma_m$` is the mean stress, and can sometimes be zero, but this is not always the case
--   `$\sigma_a$` is the stress amplitude, and is the variation about the mean
+-   ``$\sigma_m$`` is the mean stress, and can sometimes be zero, but this is not always the case
+-   ``$\sigma_a$`` is the stress amplitude, and is the variation about the mean
 -   We can express all of these in terms of the maximum and minimum stress
     $$\\begin{aligned}
             \\Delta \\sigma &= \\sigma\_{max} - \\sigma\_{min}\\\\
@@ -195,29 +194,28 @@ TODO: figure
 ----
 ## rotating cantilever beam
 
-<img src="../Figures/rotating_cantilever" alt="Cantilever beam produces non-uniform stress state" />
+![Stress variation through a cantilever beam](../images/rotating_cantilever)
 
 ----
 ## rotating four-point bend
 
-<img src="../Figures/Rotating_Bending_Machine" alt="Four-point bend gives uniform stress (along top and bottom surfaces)" />
+![Four-point bend test gives uniform stress along the top and bottom surfaces](../images/Rotating_Bending_Machine)
 
 ----
 ## fatigue tests
 
 -   The above rotating methods are very common, but in their current configurations can only be used for zero mean stress
-
 -   a reciprocating bend test can be used for non-zero mean stress
 
 ----
 ## reciprocating bend test
 
-<img src="../Figures/reciprocating_cantilever" alt="A reciprocating cantilever test allows for non-zero mean stress" />
+![A reciprocating cantilever test allows for a non-zero mean stress.](../images/reciprocating_cantilever.PNG)
 
 ----
 ## axial fatigue test
 
-<img src="../Figures/servohydraulic" alt="Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories" />
+![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](../images/servohydraulic.jpg)
 
 ----
 ## fatigue tests
