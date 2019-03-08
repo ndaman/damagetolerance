@@ -17,7 +17,6 @@ March 21, 2019
 
 ----
 ## outline
-- test
 
 ---
 # exam
