@@ -186,12 +186,11 @@ $$\\begin{aligned}
 -   To find enough data to form statistical significance, as well as to fit a curve across all levels of fatigue is very time-consuming
 -   In the following plot, if only one test was performed for each point, the total number of cycles tested would be about 7.3*x*10<sup>7</sup>
 -   For a 100 Hz machine, this represents over 200 hours of consecutive testing
--   Each repetition would further increase the test time required
 
 ----
 ## stress life curves
 
-![](..\images\stress-life.PNG)
+![](..\images\stress-life.PNG) <!-- .element width="50%" -->
 
 ----
 ## stress life curves
@@ -203,7 +202,7 @@ $$\\begin{aligned}
 ----
 ## stress life curves
 
-![](..\images\stress-life-log.PNG)
+![](..\images\stress-life-log.PNG)<!-- .element width="50%" -->
 
 ----
 ## curve fits
@@ -217,12 +216,12 @@ $$\\begin{aligned}
 ----
 ## curve fit
 
-![](..\images\stress-life-fit.PNG)
+![](..\images\stress-life-fit.PNG)<!-- .element width="50%" -->
 
 ----
 ## stress life curves
 
-![](..\images\stress-life-fit-log.PNG)
+![](..\images\stress-life-fit-log.PNG)<!-- .element width="50%" -->
 
 ---
 # fatigue limit
@@ -234,12 +233,17 @@ $$\\begin{aligned}
 -   Below the fatigue limit, this material is considered to have infinite life
 -   This most notably occurs in plain-carbon and low-alloy steels
 -   In these materials, `$\sigma_e$` is considered to be a material property
--   This phenomenon is not typical of aluminum or copper alloys, but is sometimes arbitrarily assigned using whatever the failure stress is at some large number of cycles (10<sup>7</sup> or 10<sup>8</sup>)
 
 ----
 ## fatigue limit
 
-![](..\images\fatigue-limit.PNG)
+-   This phenomenon is not typical of aluminum or copper alloys
+-   It is sometimes arbitrarily assigned using whatever the failure stress is at some large number of cycles (10<sup>7</sup> or 10<sup>8</sup>)
+
+----
+## fatigue limit
+
+![](..\images\fatigue-limit.PNG)<!-- .element width="50%" -->
 
 ----
 ## high and low cycle fatigue
