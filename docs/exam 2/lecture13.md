@@ -184,23 +184,27 @@ $$\\begin{aligned}
 -   We use $\sigma$ for the stress at a point (local stress)
 -   We use *S* as the nominal (global) stress
 -   In simple tension, $\sigma=S$
+
+----
+## notation
+
 -   For many cases (bending, notches), $\sigma \ne S$ in general
 -   We must also be careful to note `$\sigma_y$`, in some cases `$S < \sigma_y$` but at some locations `$\sigma > \sigma_y$`
 
 ----
 ## simple tension
 
-![todo alt text ](../images/p232-a.jpg)
+![todo alt text ](../images/p232-a.jpg) <!-- .element width="50%" -->
 
 ----
 ## bending
 
-![ As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg)
+![ As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg) <!-- .element width="50%" -->
 
 ----
 ## notches
 
-![As long as $\sigma < \sigma_y$, $\sigma$ varies linearly. If $\sigma > \sigma_y$ at any location, however, the relationship is non-linear](../images/p232-c.jpg)
+![As long as $\sigma < \sigma_y$, $\sigma$ varies linearly. If $\sigma > \sigma_y$ at any location, however, the relationship is non-linear](../images/p232-c.jpg) <!-- .element width="50%" -->
 
 ---
 # fatigue tests
@@ -208,12 +212,12 @@ $$\\begin{aligned}
 ----
 ## rotating cantilever beam
 
-![Stress variation through a cantilever beam](../images/rotating_cantilever)
+![Stress variation through a cantilever beam](..\images\rotating_cantilever.png)
 
 ----
 ## rotating four-point bend
 
-![Four-point bend test gives uniform stress along the top and bottom surfaces](../images/Rotating_Bending_Machine)
+![Four-point bend test gives uniform stress along the top and bottom surfaces](..\images\Rotating_Bending_Machine.jpg)
 
 ----
 ## fatigue tests
@@ -224,12 +228,12 @@ $$\\begin{aligned}
 ----
 ## reciprocating bend test
 
-![A reciprocating cantilever test allows for non-zero mean stress](images\reciprocating_cantilever.PNG)
+![A reciprocating cantilever test allows for non-zero mean stress](..\images\reciprocating_cantilever.PNG)
 
 ----
 ## axial fatigue test
 
-![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](images\servohydraulic.jpg)
+![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](..\images\servohydraulic.jpg)
 
 ----
 ## fatigue tests
