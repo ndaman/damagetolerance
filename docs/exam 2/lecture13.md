@@ -228,12 +228,12 @@ $$\\begin{aligned}
 ----
 ## reciprocating bend test
 
-![A reciprocating cantilever test allows for non-zero mean stress](..\images\reciprocating_cantilever.PNG)
+![A reciprocating cantilever test allows for non-zero mean stress](..\images\reciprocating_cantilever.PNG) <!-- .element width="50%" -->
 
 ----
 ## axial fatigue test
 
-![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](..\images\servohydraulic.jpg)
+![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](..\images\servohydraulic.jpg) <!-- .element width="30%" --> 
 
 ----
 ## fatigue tests
@@ -241,6 +241,10 @@ $$\\begin{aligned}
 -   The length of a fatigue test is determined by two factors
     1.  How many cycles it takes for the specified load to cause failure
     2.  The speed of the motor controlling the test
+
+----
+## fatigue tests
+
 -   Servohydraulic machines generally have a speed of 10 - 100 Hz.
 -   At a speed of 100 Hz, it would take 28 hours for 10<sup>7</sup> cycles, 12 days for 10<sup>8</sup> cycles, and nearly 4 months for 10<sup>9</sup> cycles
 -   While some machines can test at very high speeds, the inertia of the sample can interfere with results
