@@ -18,7 +18,13 @@ March 21, 2019
 
 ----
 ## outline
+<!-- TOC START min:1 max:1 link:false update:true -->
+- fatigue
+- nominal and local stress
+- fatigue tests
+- fatigue life analysis
 
+<!-- TOC END -->
 
 ---
 # fatigue
@@ -27,7 +33,7 @@ March 21, 2019
 ## fatigue
 
 -   We refer to damage from repeated, or cyclic loads as fatigue damage
--   Some of the earliest work on fatigue began in the 1800’s
+-   Some of the earliest work on fatigue began in the 1800's
 -   Chains, railway axles, etc.
 -   An estimated 80% of failure expenses are due to fatigue
 
@@ -49,14 +55,18 @@ March 21, 2019
 ----
 ## constant amplitude stressing
 
-![](images\fatigue-constant-amplitude.PNG)
+![](..\images\fatigue-constant-amplitude.PNG) <!-- .element width="50%" -->
 
 ----
 ## constant amplitude stressing
 
--   `$\delta \sigma$` is known as the stress range, and is the difference between max and min stress
+-   `$\Delta \sigma$` is known as the stress range, and is the difference between max and min stress
 -   `$\sigma_m$` is the mean stress, and can sometimes be zero, but this is not always the case
 -   `$\sigma_a$` is the stress amplitude, and is the variation about the mean
+
+----
+## constant amplitude stressing
+
 -   We can express all of these in terms of the maximum and minimum stress
 $$\\begin{aligned}
   \\Delta \\sigma &= \\sigma\_{max} - \\sigma\_{min}\\\\
@@ -94,23 +104,27 @@ $$\\begin{aligned}
 -   We use $\sigma$ for the stress at a point (local stress)
 -   We use *S* as the nominal (global) stress
 -   In simple tension, $\sigma=S$
+
+----
+## notation
+
 -   For many cases (bending, notches), $\sigma \ne S$ in general
 -   We must also be careful to note `$\sigma_y$`, in some cases `$S < \sigma_y$` but at some locations `$\sigma > \sigma_y$`
 
 ----
 ## simple tension
 
-![todo alt text ](../images/p232-a.jpg)
+![todo alt text ](../images/p232-a.jpg) <!-- .element width="50%" -->
 
 ----
 ## bending
 
-![ As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg)
+![ As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg) <!-- .element width="50%" -->
 
 ----
 ## notches
 
-![As long as $\sigma < \sigma_y$, $\sigma$ varies linearly. If $\sigma > \sigma_y$ at any location, however, the relationship is non-linear](../images/p232-c.jpg)
+![As long as $\sigma < \sigma_y$, $\sigma$ varies linearly. If $\sigma > \sigma_y$ at any location, however, the relationship is non-linear](../images/p232-c.jpg) <!-- .element width="50%" -->
 
 ---
 # fatigue tests
@@ -118,12 +132,12 @@ $$\\begin{aligned}
 ----
 ## rotating cantilever beam
 
-![Stress variation through a cantilever beam](../images/rotating_cantilever)
+![Stress variation through a cantilever beam](..\images\rotating_cantilever.png)
 
 ----
 ## rotating four-point bend
 
-![Four-point bend test gives uniform stress along the top and bottom surfaces](../images/Rotating_Bending_Machine)
+![Four-point bend test gives uniform stress along the top and bottom surfaces](..\images\Rotating_Bending_Machine.jpg)
 
 ----
 ## fatigue tests
@@ -134,12 +148,12 @@ $$\\begin{aligned}
 ----
 ## reciprocating bend test
 
-![A reciprocating cantilever test allows for non-zero mean stress](images\reciprocating_cantilever.PNG)
+![A reciprocating cantilever test allows for non-zero mean stress](..\images\reciprocating_cantilever.PNG) <!-- .element width="50%" -->
 
 ----
 ## axial fatigue test
 
-![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](images\servohydraulic.jpg)
+![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](..\images\servohydraulic.jpg) <!-- .element width="30%" -->
 
 ----
 ## fatigue tests
@@ -147,6 +161,10 @@ $$\\begin{aligned}
 -   The length of a fatigue test is determined by two factors
     1.  How many cycles it takes for the specified load to cause failure
     2.  The speed of the motor controlling the test
+
+----
+## fatigue tests
+
 -   Servohydraulic machines generally have a speed of 10 - 100 Hz.
 -   At a speed of 100 Hz, it would take 28 hours for 10<sup>7</sup> cycles, 12 days for 10<sup>8</sup> cycles, and nearly 4 months for 10<sup>9</sup> cycles
 -   While some machines can test at very high speeds, the inertia of the sample can interfere with results
@@ -158,8 +176,8 @@ $$\\begin{aligned}
 ## stress life curves
 
 -   Stress-life curves, or S-N curves, are generated from test data to predict the number of cycles to failure
--   In general, one set (or family) of S-N curves is generated using the same *σ*<sub>*m*</sub>
--   Usually *S*<sub>*a*</sub> (the nominal stress equivalent of *σ*<sub>*a*</sub>) is plotted versus *N* (the number of cycles)
+-   In general, one set (or family) of S-N curves is generated using the same `$\sigma_m$`
+-   Usually *S*<sub>*a*</sub> (the nominal stress equivalent of `$\sigma_a$`) is plotted versus *N* (the number of cycles)
 
 ----
 ## stress life curves
@@ -172,6 +190,7 @@ $$\\begin{aligned}
 
 ----
 ## stress life curves
+
 
 
 ----
