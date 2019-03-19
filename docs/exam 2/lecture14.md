@@ -239,6 +239,7 @@ $$\\begin{aligned}
 ----
 ## fatigue limit
 
+![](..\images\fatigue-limit.PNG)
 
 ----
 ## high and low cycle fatigue
