@@ -1,15 +1,16 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 14 - Stress based fatigue 
+Lecture 13 - Project Discussion
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 21, 2019
+March 19, 2019
 
 ----
 ## schedule
 
+- 19 Mar - Exam return, Project Discussion
 - 21 Mar - Stress-based fatigue
 - 26 Mar - Stress-based fatigue, Project Abstract Due
 - 28 Mar - Strain-based fatigue
@@ -24,10 +25,10 @@ March 21, 2019
 ----
 ## curve
 
--   Precurve: 
+-   Precurve:
 -   Post-curve:
--   High Score: 
--   Curve formula: (old score) x 
+-   High Score:
+-   Curve formula: (old score) x
 
 ---
 # final project
@@ -46,7 +47,7 @@ March 21, 2019
 
 -   Estimate stress intensity factor at some critical location
 -   Estimate residual strength (use a “typical” crack length)
--   Estimate fatigue life 
+-   Estimate fatigue life
 -   Estimate crack propagation
 -   Suggest reasonable inspection cycle for safe use
 -   Suggest an improvement to make part more damage tolerant
@@ -168,7 +169,7 @@ TODO: figure
 -   It is important to distinguish between the nominal (global) stress and the local stress at some point of interest
 -   We use $\sigma$ for the stress at a point (local stress)
 -   We use *S* as the nominal (global) stress
--   In simple tension, $\sigma=S$ 
+-   In simple tension, $\sigma=S$
 -   For many cases (bending, notches), $\sigma \ne S$ in general
 -   We must also be careful to note `$\sigma_y$`, in some cases `$S < \sigma_y$` but at some locations `$\sigma > \sigma_y$`
 
@@ -337,5 +338,3 @@ coordinates ----
 -   High cycle fatigue occurs when the stress is sufficiently low that yielding effects do not dominate behavior
 
 -   When yielding effects do dominate behavior, the strain-based approach is more appropriate
-
-
