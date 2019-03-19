@@ -191,7 +191,7 @@ $$\\begin{aligned}
 ----
 ## stress life curves
 
-
+![](..\images\stress-life.PNG)
 
 ----
 ## stress life curves
@@ -203,62 +203,47 @@ $$\\begin{aligned}
 ----
 ## stress life curves
 
+![](..\images\stress-life-log.PNG)
 
 ----
 ## curve fits
 
 -   If the curve is nearly linear on a log-linear plot, we use the following form to fit the data
--   
-    *σ*<sub>*a*</sub> = *C* + *D*log*N*<sub>*f*</sub>
-
+`$$\sigma_a = C + D \log N_f$$`
 -   When the data are instead linear on a log-log scale, the following form is generally used
-
--   
-    *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
-
--   *σ*<sub>*f*</sub><sup>′</sup> and *b* are often considered material properties and can often be looked up on a table (p. 235)
+`$$\sigma_a = \sigma^\prime_f(2N_f)^b$$`
+-   `$\sigma^\prime_f$` and *b* are often considered material properties and can often be looked up on a table (p. 235)
 
 ----
 ## curve fit
 
-coordinates ----
-##  (50043.42952596336,304.3384885916487) (61810.2778157969,275.4565502529583) (64649.06882505588,262.997448795745) (169586.85224960672,247.7449948831778) (565161.8625105635,233.04313985499925) (761338.8628672551,220.14010003026843) (1579862.092639026,191.8692976260827) (3173264.1073141545,178.55402931722847) (3682937.77739026,205.51896106891124) (9552328.626265539,185.27652459677992) (18242638.367873847,164.96778564118816) (35011737.76351732,165.60774874241474) ; ;
+![](..\images\stress-life-fit.PNG)
 
 ----
 ## stress life curves
 
-coordinates ----
-##  (50043.42952596336,304.3384885916487) (61810.2778157969,275.4565502529583) (64649.06882505588,262.997448795745) (169586.85224960672,247.7449948831778) (565161.8625105635,233.04313985499925) (761338.8628672551,220.14010003026843) (1579862.092639026,191.8692976260827) (3173264.1073141545,178.55402931722847) (3682937.77739026,205.51896106891124) (9552328.626265539,185.27652459677992) (18242638.367873847,164.96778564118816) (35011737.76351732,165.60774874241474) ; ;
+![](..\images\stress-life-fit-log.PNG)
 
-fatigue limit
-=============
+---
+# fatigue limit
 
 ----
 ## fatigue limit
 
 -   The fatigue limit, or endurance limit, is a feature of some materials where below a certain stress, no fatigue failure is observed
-
 -   Below the fatigue limit, this material is considered to have infinite life
-
 -   This most notably occurs in plain-carbon and low-alloy steels
-
--   In these materials, *σ*<sub>*e*</sub> is considered to be a material property
-
+-   In these materials, `$\sigma_e$` is considered to be a material property
 -   This phenomenon is not typical of aluminum or copper alloys, but is sometimes arbitrarily assigned using whatever the failure stress is at some large number of cycles (10<sup>7</sup> or 10<sup>8</sup>)
 
 ----
 ## fatigue limit
 
-coordinates ----
-##  (15335.57305076729,755.3980800096908) (17120.563873524803,756.1781896368977) (17030.666340686137,720.548741709821) (22930.156230029723,720.2495381726781) (35394.72596452449,685.9598437358045) (48178.50680065504,650.9057872263105) (60015.34650935311,651.5756639714122) (85619.60323966984,616.4743647981587) (96991.95509887673,615.4580418521547) (111725.20919888247,616.2066563701887) (310167.4766824342,514.5113715514369) (380171.36929461616,514.3066533418128) (465974.9357903219,514.1019351321886) (207329.98874026354,548.7695708791375) (246290.6168802425,548.5963477786863) (517751.44153305655,480.1429393416311) (615045.2363433094,479.96971624117987) (693804.9505813519,445.1046303867236) (905347.6109897072,444.8369219587535) (2075614.3484015197,444.00230156567034) (2545405.291185992,444.68792586535835) (3106869.8968525752,437.3604675812362) (2677489.704626086,424.14705793283065) (6497638.107517564,413.4556797189666) (82022604.86227266,436.74025620059956) (82752208.82434484,425.1500560249538) (80830258.5708036,411.81066593985645) ;
 
 ----
 ## high and low cycle fatigue
 
 -   Some other important terms are high cycle fatigue and low cycle fatigue
-
--   “High cycle fatigue” generally is considered anything above 10<sup>3</sup> cycles, but varies somewhat by material
-
+-   "High cycle fatigue" generally is considered anything above 10<sup>3</sup> cycles, but varies somewhat by material
 -   High cycle fatigue occurs when the stress is sufficiently low that yielding effects do not dominate behavior
-
 -   When yielding effects do dominate behavior, the strain-based approach is more appropriate
