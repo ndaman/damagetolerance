@@ -19,6 +19,17 @@ March 26, 2019
 ----
 ## outline
 
+<!-- vim-markdown-toc GFM -->
+
+* modeling real loads
+* mean stress effects
+* scatter
+* general stress
+* fatigue review
+* influence of notches
+
+<!-- vim-markdown-toc -->
+
 ---
 # modeling real loads
 
@@ -33,9 +44,12 @@ March 26, 2019
 ----
 ## real loads
 
+![alt ](../images/real-loads1.PNG)
 
 ----
 ## real loads
+
+![alt ](../images/real-loads2.PNG)
 
 ----
 ## simplified load sketch book p 239
