@@ -207,5 +207,8 @@ $$\\begin{aligned}
 
 -   Some other important terms are high cycle fatigue and low cycle fatigue
 -   "High cycle fatigue" generally is considered anything above 10<sup>3</sup> cycles, but varies somewhat by material
+
+----
+## high and low cycle fatigue
 -   High cycle fatigue occurs when the stress is sufficiently low that yielding effects do not dominate behavior
 -   When yielding effects do dominate behavior, the strain-based approach is more appropriate
