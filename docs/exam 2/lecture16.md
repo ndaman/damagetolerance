@@ -71,7 +71,8 @@ March 28, 2019
 ## cyclic stress strain curve
 
 -   While strain-life data will generally just report *ϵ*<sub>*a*</sub> and *ϵ*<sub>*pa*</sub>, some will also tabulate a form for the cyclic stress-strain curve
-    $$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
+
+$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
 
 ----
 ## plastic and elastic strain
@@ -98,7 +99,8 @@ March 28, 2019
 -   If we recall the form used for a straight line in log-log plots for S-N curves:
     *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
 -   We can convert this to find the elastic component of strain
-    $$\\epsilon\_{ea} = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b$$
+
+$$\\epsilon\_{ea} = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b$$
 
 ----
 ## lines
@@ -106,12 +108,13 @@ March 28, 2019
 -   We can use the same form with new constants for the plastic component of strain
     *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
 -   We can combine the elastic and plastic portions to find the total strain-life curve
-    $$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b + \\epsilon\_f^\\prime (2 N\_f)^c$$
+
+$$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b + \\epsilon\_f^\\prime (2 N\_f)^c$$
 
 ----
 ## example
 
-| *ϵ*<sub>*a*</sub> | *σ*<sub>*a*</sub> (MPa) | *ϵ*<sub>*p**a*</sub> |  *N*<sub>*f*</sub>|
+| *ϵ*<sub>*a*</sub> | *σ*<sub>*a*</sub> (MPa) | *ϵ*<sub>*pa*</sub> |  *N*<sub>*f*</sub>|
 |:-----------------:|:-----------------------:|:--------------------:|------------------:|
 |       0.0202      |           631           |        0.01695       |                227|
 |       0.0100      |           574           |        0.00705       |               1030|
@@ -126,13 +129,15 @@ March 28, 2019
 -   Low-cycle fatigue is dominated by plastic effects, while high-cycle fatigue has little plasticity
 -   We can find the intersection of the plastic strain and elastic strain lines
 -   This point is *N*<sub>*t*</sub>, the transition fatigue life
-    $$N\_t = \\frac{1}{2}\\left(\\frac{\\sigma\_f^\\prime}{\\epsilon\_f^\\prime}\\right)^{\\frac{1}{c-b}}$$
+
+$$N\_t = \\frac{1}{2}\\left(\\frac{\\sigma\_f^\\prime}{\\epsilon\_f^\\prime}\\right)^{\\frac{1}{c-b}}$$
 
 ----
 ## inconsistencies in constants
 
 -   If we consider the equation for the cyclic stress train curve
-    $$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
+
+$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
 -   We can consider the plastic portion and solve for *σ*<sub>*a*</sub>
     *σ*<sub>*a*</sub> = *H*<sup>′</sup>*ϵ*<sub>*pa*</sub><sup>*n*<sup>′</sup></sup>
 
@@ -149,6 +154,7 @@ March 28, 2019
 ## inconsistencies in constants
 
 -   We then compare with stress-life equations and find
+
 $$\\begin{aligned}
  H^\\prime &= \\frac{\\sigma\_f^\\prime}{(\\epsilon\_f^\\prime)^{b/c}}\\\\
  n^\\prime &= \\frac{b}{c}
@@ -242,7 +248,8 @@ $$\\begin{aligned}
 -   We previously found expressions for stress-based fatigue analysis when notches are present
 -   Due to yielding, the notch sensitivity is not the same for stress and strain controlled fatigue analysis
 -   One simple approach to find the strain fatigue notch factor is to use
-    $$K\_t = \\sqrt{K\_f^\\sigma K\_f^\\epsilon}$$
+
+$$K\_t = \\sqrt{K\_f^\\sigma K\_f^\\epsilon}$$
 
 ---
 # multiaxial loading
@@ -252,19 +259,29 @@ $$\\begin{aligned}
 
 -   Multi-axial loading in strain-based fatigue analysis is still an active field of research
 -   We are currently only capable of handling proportional loads that are in-phase (i.e. have the same frequency)
+
+----
+## multiaxial loading
 -   If we consider the principal directions where *σ*<sub>2*a*</sub> = *λσ*<sub>1*a*</sub>, we find an expression for the strain-life as
+
 $$\\epsilon\_{1a} = \\frac{\\frac{\\sigma\_f^\\prime}{E}(1-\\nu \\lambda)(2N\_f)^b + \\epsilon\_f^\\prime(1-0.5\\lambda)(2N\_f)^c}{\\sqrt{1-\\lambda+\\lambda^2}}$$
 
 ----
 ## stress triaxiality factor
 
 -   Another approach is to consider the stress triaxiality factor
+
 $$T = \\frac{1+\\lambda}{\\sqrt{1-\\lambda+\\lambda^2}}$$
 -   Three notable cases of this are
     1.  Pure planar shear: *λ* = −1, *T* = 0
     2.  Uniaxial stress: *λ* = 0, *T* = 1
     3.  Equal biaxial stress: *λ* = 1, *T* = 2
+
+----
+## stress triaxiality factor
+
 -   Marloff suggests the following inclusion of stress triaxiality
+
 $$\\bar{\\epsilon\_a} = \\frac{\\sigma\_f^\\prime}{E}(2 N\_f)^b + 2^{1-T}\\epsilon\_f^\\prime(2N\_f)^c$$
 
 ---
@@ -273,7 +290,6 @@ $$\\bar{\\epsilon\_a} = \\frac{\\sigma\_f^\\prime}{E}(2 N\_f)^b + 2^{1-T}\\epsil
 ----
 ## factors affecting fatigue life
 
--   Factors other than the stress/strain can effect fatigue life
 -   At temperatures above one-half the melting temperature (absolute scale), creep-relaxation is significant
 -   This will cause the strain/stress-life curves to become rate dependent
 -   Occurs at room temperature for many materials (lead, tin, many polymers)
@@ -282,8 +298,8 @@ $$\\bar{\\epsilon\_a} = \\frac{\\sigma\_f^\\prime}{E}(2 N\_f)^b + 2^{1-T}\\epsil
 ----
 ## surface finish
 
--   S-N curves (stress-based method) are highly sensitive to surface finish, samples are generally polished
--   Strain life curves are not very sensitive to surface finish or residual strength at short lives
+-   High cycle fatigue is sensitive to surface finish, samples are generally polished
+-   Low cycle fatigue is not sensitive to surface finish or residual stress 
 -   The plastic deformation tends to remove residual stresses
 -   In high-cycle fatigue, crack initiation is important (poor surface finish allows cracks to form earlier)
 -   When plastic deformation is present (low-cycle fatigue), cracks form relatively quickly regardless of surface finish
@@ -293,17 +309,17 @@ $$\\bar{\\epsilon\_a} = \\frac{\\sigma\_f^\\prime}{E}(2 N\_f)^b + 2^{1-T}\\epsil
 
 -   Since low-cycle fatigue has little effect from surface finish, we could modify the strain life curve by altering only the elastic portion
 -   If we define the surface effect factor, *m*<sub>*s*</sub>, we can find a new *b*<sub>*s*</sub> to replace *b* in the strain-life equation
+
 $$b\_s = \\frac{\\log\\left(m\_s (2N\_e)^b\\right)}{\\log(2N\_e)}$$
 
 ----
 ## surface treatments
 
--   Surfaces are often treated for cosmetic or corrosion purposes, these treatments can affect fatigue life
 -   Treatments which decrease fatigue life:
     -   Electro-plating (chrome, +corrosion resistance, -fatigue life)
     -   Grinding improves surface finish, but introduces surface tension, and heat generated can temper quench
     -   Stamping introduces discontinuities and irregularities
-    -   Forging is generally good for refining grain structure and improving physical properties, but can cause decarburization in steels, which is harmful to fatigue life
+    -   Forging can refine grain structure and improve physical properties, but can cause decarburization in steels, which hurts fatigue life
     -   Hot rolling can also cause decarburization
 
 ----
@@ -319,16 +335,26 @@ $$b\_s = \\frac{\\log\\left(m\_s (2N\_e)^b\\right)}{\\log(2N\_e)}$$
 -   Size can also have effects on fatigue life
 -   Larger parts are more susceptible to damage/imperfections at the same stress level
 -   This is why composites are often made from very small fibers (glass fiber, carbon fiber, ceramic-matrix composites)
+
+----
+## size
+
 -   The exact effect of size will depend on material, one study for low carbon steels found
+
 $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
+
 -   Which is then used to re-calculate material constants
-    *σ*<sub>*fd*</sub><sup>′</sup> = *m*<sub>*d*</sub>*σ*<sub>*f*</sub><sup>′</sup>,   *ϵ*<sub>*f*d*</sub><sup>′</sup> = *m*<sub>*d*</sub>*ϵ*<sub>*f*</sub><sup>′</sup>
+    *σ*<sub>*fd*</sub><sup>′</sup> = *m*<sub>*d*</sub>*σ*<sub>*f*</sub><sup>′</sup>,   *ϵ*<sub>*fd*</sub><sup>′</sup> = *m*<sub>*d*</sub>*ϵ*<sub>*f*</sub><sup>′</sup>
 
 ----
 ## thermal fatigue
 
 -   Thermal loading can be introduced when two dissimilar parts are attached together, the coefficient of thermal expansion causes them to expand differently, introducing extra stresses due to the temperature change
 -   If the temperature is significantly different between two sides of a part thermal stresses can also be introduced
+
+----
+## thermal fatigue
+
 -   Low temperatures generally cause a material to behave in a more brittle fashion, which alters the fatigue life
 -   High temperatures cause problems with creep-relaxation and can also affect the crystalline structure
 
@@ -338,7 +364,7 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 ----
 ## fracture surface
 
-![](../images/fracture_surface.jpg)
+![](../images/fracture_surface.jpg) <!-- .element width="50%" -->
 
 ----
 ## fracture surface
@@ -364,7 +390,7 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 ----
 ## da-dN vs K
 
-![](../images/da-dn.png)
+![](../images/da-dn.png) <!-- .element width="50%" -->
 
 ----
 ## region I
@@ -402,6 +428,10 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 -   While the x-axis can be either *ΔK* or *K*<sub>*max*</sub>, the shape of the data is the same
 -   When we look at the effects of load ratio, *R*, the axis causes some differences on the plot
 -   With *ΔK* on the x-axis, increasing *R* will shift the curve up and to the left, shifting the fatigue threshold and fracture toughness on the graph as well
+
+----
+## R effects
+
 -   With *K*<sub>*max*</sub> on the x-axis, increasing *R* shifts the curve down and to the right, but fatigue threshold and fracture toughness keep same values
 -   In general, *R* dependence vanishes for *R* &gt; 0.8 or *R* &lt; −0.3. This effect is known as the band width
 
@@ -413,6 +443,10 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 
 -   There are many crack growth rate equations of varying complexity
 -   The “best” form to use will depend on design needs
+
+----
+## growth equations
+
 -   The important features in curve-fit equations are
     1.  Region II curve fit (linear on log-log scale)
     2.  Region I curve fit (fatigue threshold)
@@ -427,49 +461,44 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 -   Fits the linear portion (Region II)
 -   Does not fit Region I, Region III, or have R-dependence
 $$\\frac{da}{dN} = C (\\Delta K)^n$$
--   Note: this assumes the x-axis is *ΔK*, but *ΔK* = (1 − *R*)K*<sub>*max*</sub>, so we can easily convert
-
-----
-## paris law
-
-TODO: Figure
+-   Note: this assumes the x-axis is *ΔK*, but *ΔK* = (1 − *R*)*K*<sub>*max*</sub>, so we can easily convert
 
 ----
 ## walker
 
 -   Region II is usually all that is needed for engineering, but R-dependence is often an important effect to capture
 -   Walker modified the Paris law to account for R-dependence
+
 $$\\frac{da}{dN} = C\\left\[(1-R)^mK\_{max}\\right\]^n$$
 -   Gives a good fit for Region II with R-dependence and band width
-
-----
-## walker
-
-TODO: figure
 
 ----
 ## forman
 
 -   The Forman equation was developed to capture the effects of Region II and Region III
 -   Also includes the effects of *R*, but does not control the band width of R effects
+
 $$\\frac{da}{dN} = \\frac{C \\left\[(1-R)K\_{max}\\right\]^n}{(1-R)K\_c-(1-R)K\_{max}}$$
 
 ----
 ## modified forman
 
 -   The Forman equation can be modified to include the effect of band width
+
 $$\\frac{da}{dN} = \\frac{C \\left\[(1-R)^m K\_{max}\\right\]^n}{\\left\[(1-R)^mK\_c-(1-R)^m K\_{max}\\right\]^L}$$
 
 ----
 ## collipriest
 
 -   The Collipriest equation fits Regions I, II and III, but has no R-dependence
+
 $$\\frac{da}{dN} = C\_1 + C\_2 \\tanh^{-1} \\left\[\\frac{\\log \\left(\\frac{K\_{max}^2}{K\_oK\_c}\\right)}{\\log (K\_c/K\_o)}\\right\]$$
 
 ----
 ## modified collipriest
 
 -   Following the same methods as before, we can modify the Collipriest equation for R-dependence and band width control
+
 $$\\frac{da}{dN} = C\_1 + C\_2 \\tanh^{-1} \\left\[\\frac{\\log \\left(\\frac{(1-R)^mK\_{max}^2}{K\_oK\_c}\\right)}{\\log (K\_c/K\_o)}\\right\]$$
 -   For a cleaner graph, experimental data at different R-values is sometimes plotted vs. *K*<sub>*eff*</sub>
 *K*<sub>*eff*</sub> = (1 − *R*)<sup>m</sup>*K*<sub>*max*</sub>
@@ -478,6 +507,7 @@ $$\\frac{da}{dN} = C\_1 + C\_2 \\tanh^{-1} \\left\[\\frac{\\log \\left(\\frac{(1
 ## nasgrow growth rate equation
 
 -   A very complicated curve fit is provided in the NASGROW growth rate equation
+
 $$\\frac{da}{dN} = C \\left\[\\frac{1-f}{1-R}\\Delta K\\right\]^n\\frac{\\left\[1-\\frac{\\Delta K\_{th}}{\\Delta K}\\right\]}{\\left\[1-\\frac{K\_{max}}{K\_{crit}}\\right\]}$$
 -   The curve fit parameters can be found in p. 307 of your text (or the NASGROLW/AFGROW documentation)
 
@@ -485,6 +515,7 @@ $$\\frac{da}{dN} = C \\left\[\\frac{1-f}{1-R}\\Delta K\\right\]^n\\frac{\\left\[
 ## boeing-walker growth rate equation
 
 -   The Boeing-Walker growth equation is given as (for *R* ≥ 0 )
+
 $$\\frac{da}{dN} = 10^{-4}\\left(\\frac{1}{mT}\\right)^p\\left\[K\_{max}(1-R)^q\\right\]^p$$
 
 ----
@@ -493,10 +524,13 @@ $$\\frac{da}{dN} = 10^{-4}\\left(\\frac{1}{mT}\\right)^p\\left\[K\_{max}(1-R)^q\
 -   Much of the data available to us is from Boeing, and given in terms of the Boeing-Walker equation
 -   We can re-write some other equations to more easily convert parameters between the various equations
 -   Walker-Boeing:
+
 $$\\frac{da}{dN} = 10^{-4}\\left(\\frac{1}{mT}\\right)^p\\left\[\\Delta K(1-R)^{q-1}\\right\]^p$$
 -   Walker-AFGROW:
+
 $$\\frac{da}{dN} = C\_w\\left\[\\Delta K(1-R)^{m-1}\\right\]^{n\_w}$$
 -   Forman:
+
 $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 
 ----
