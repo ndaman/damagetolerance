@@ -8,6 +8,13 @@ Wichita State University, Department of Aerospace Engineering
 March 28, 2019
 
 ----
+## ae research colloquium
+
+- Friday March 29, 3-4 pm
+- Wallace Hall 210
+- Modeling and printing porous structures
+
+----
 ## schedule
 
 - 28 Mar - Strain-based fatigue
