@@ -1,297 +1,23 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 16 - Stress based fatigue
+Lecture 17 - Crack Propagation
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 28, 2019
-
-----
-## ae research colloquium
-
-- Friday March 29, 3-4 pm
-- Wallace Hall 210
-- Modeling and printing porous structures
+April 2, 2019
 
 ----
 ## schedule
 
-- 28 Mar - Strain-based fatigue
 - 2 Apr - Crack growth, HW6 Due
 - 4 Apr - Crack growth
 - 9 Apr - Crack growth, HW7 Due
+- 11 Apr - 
 
 
 ----
 ## outline
-
-<!-- vim-markdown-toc GFM -->
-
-* strain based fatigue
-* variable amplitude strains
-* general trends
-* notches
-* multiaxial loading
-* other factors affecting fatigue
-* crack growth rate
-* crack growth rate equations
-
-<!-- vim-markdown-toc -->
-
----
-# strain based fatigue
-
-----
-## strain based fatigue
-
--   The strain based fatigue method uses local stresses and strains (instead of global, nominal values)
--   The strain-based method gives greater detail, and validity at lower cycles
--   It is still valid for high cycle fatigue (but gives same result as stress-based fatigue)
--   Does not include crack growth analysis or fracture mechanics
-
-----
-## strain life curve
-
--   Similar to the S-N curves in stress-based fatigue analysis, we can plot the cyclic strain amplitude vs. number of cycles to failure
--   This is most commonly done using axial test machines (instead of rotating bending tests)
--   The test is run in strain control (not load control)
--   Generally plotted on log-log scale
-
-----
-## plastic and elastic strain
-
--   We can separate the total strain into elastic and plastic components
-    *ϵ*<sub>*a*</sub> =ϵ<sub>*ea*</sub> +ϵ<sub>*pa*</sub>
-
-----
-## plastic strain
-
-![](../images/plastic_strain.PNG)
-
-----
-## hysteresis loops
-
-![](../images/hysteresis_loops.PNG)
-
-----
-## cyclic stress strain curve
-
--   While strain-life data will generally just report *ϵ*<sub>*a*</sub> and *ϵ*<sub>*pa*</sub>, some will also tabulate a form for the cyclic stress-strain curve
-
-$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
-
-----
-## plastic and elastic strain
-
--   On strain life curves, the strain is often plotted three times per each experiment
--   Once for total strain, once for plastic strain, and once for elastic strain
--   Since plastic strain and elastic strain vary by the number of cycles, a hysteresis loop from half the fatigue life is generally used
--   This is considered representative of stable behavior
-
-----
-## experimental data
-
-![](../images/strain-life.jpg) <!-- .element width="40%" -->
-
-----
-## trends
-
-![](../images/elastic-plastic.jpg) <!-- .element width="50%" -->
-
-----
-## lines
-
--   We notice that the data for elastic and plastic strains are represented by straight lines, in the log-log scale
--   If we recall the form used for a straight line in log-log plots for S-N curves:
-    *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
--   We can convert this to find the elastic component of strain
-
-$$\\epsilon\_{ea} = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b$$
-
-----
-## lines
-
--   We can use the same form with new constants for the plastic component of strain
-    *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
--   We can combine the elastic and plastic portions to find the total strain-life curve
-
-$$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b + \\epsilon\_f^\\prime (2 N\_f)^c$$
-
-----
-## example
-
-| *ϵ*<sub>*a*</sub> | *σ*<sub>*a*</sub> (MPa) | *ϵ*<sub>*pa*</sub> |  *N*<sub>*f*</sub>|
-|:-----------------:|:-----------------------:|:--------------------:|------------------:|
-|       0.0202      |           631           |        0.01695       |                227|
-|       0.0100      |           574           |        0.00705       |               1030|
-|       0.0045      |           505           |        0.00193       |               6450|
-|       0.0030      |           472           |        0.00064       |              22250|
-|       0.0023      |           455           |       (0.00010)      |             110000|
-
-----
-## transition life
-
--   With the strain-based fatigue method we are better equipped to discuss the difference between high and low-cycle fatigue
--   Low-cycle fatigue is dominated by plastic effects, while high-cycle fatigue has little plasticity
--   We can find the intersection of the plastic strain and elastic strain lines
--   This point is *N*<sub>*t*</sub>, the transition fatigue life
-
-$$N\_t = \\frac{1}{2}\\left(\\frac{\\sigma\_f^\\prime}{\\epsilon\_f^\\prime}\\right)^{\\frac{1}{c-b}}$$
-
-----
-## inconsistencies in constants
-
--   If we consider the equation for the cyclic stress train curve
-
-$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
--   We can consider the plastic portion and solve for *σ*<sub>*a*</sub>
-    *σ*<sub>*a*</sub> = *H*<sup>′</sup>*ϵ*<sub>*pa*</sub><sup>*n*<sup>′</sup></sup>
-
-----
-## inconsistencies in constants
-
--   We can eliminate 2*N*<sub>*f*</sub> from the plastic strain equation
-    *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
--   By solving the stress-life relationship for 2*N*<sub>*f*</sub>
-    *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
-     and substituting that into the plastic strain
-
-----
-## inconsistencies in constants
-
--   We then compare with stress-life equations and find
-
-$$\\begin{aligned}
- H^\\prime &= \\frac{\\sigma\_f^\\prime}{(\\epsilon\_f^\\prime)^{b/c}}\\\\
- n^\\prime &= \\frac{b}{c}
-\\end{aligned}$$
-
-----
-## inconsistencies in constants
-
--   However, in practice these constants are fit from different curves
--   In some cases there can be large inconsistencies in these values
--   One cause for this is data that do not lie on a straight line in the log-log domain
--   For ductile materials at short lives, the true stresses and strains may differ significantly from engineering stress and strain
-
----
-# variable amplitude strains
-
-----
-## variable amplitdue strains
-
--   As with stresses, we can apply variable amplitude strains
--   However, when the change is made will affect whether there is a tensile or compressive mean stress
-
-----
-## compressive mean
-
-![](../images/compressive_mean.jpg) <!-- .element width="50%" -->
-
-----
-## tensile mean
-
-![](../images/tensile_mean.jpg) <!-- .element width="50%" -->
-
-<!-- TODO: add slides on mean stress in strain based fatigue -->
-
-----
-## cycle counting
-
--   In all fatigue methods (stress, strain, and crack propagation) the way we count load cycles can have an effect on our results
--   To avoid being non-conservative, we need to always count the largest amplitudes first
--   We will discuss some specific cycle-counting algorithms during crack propagation
-
-----
-## cycle counting
-
-![](../images/cycle_counting.jpg)
-
----
-# general trends
-
-----
-## true fracture strength
-
--   We can consider a tensile test as a fatigue test with *N*<sub>*f*</sub> = 0.5
--   We would then expect the true fracture strength $\\tilde{\\sigma}\_f \\approx \\sigma\_f^\\prime$
--   And similarly for strain $\\tilde{\\epsilon}\_f \\approx \\epsilon\_f^\\prime$
-
-----
-## ductile materials
-
--   Since ductile materials experience large strains before failure, we expect relatively large *ϵ*<sub>*f*</sub><sup>′</sup> and relatively small *σ*<sub>*f*</sub><sup>′</sup>
--   This will cause a less steep slope in the plastic strain line
--   In turn this intersects with the elastic strain line much later, resulting a longer transition life for ductile materials
-
-----
-## brittle materials
-
--   Brittle materials exhibit the opposite effect, with relatively low *ϵ*<sub>*f*</sub><sup>′</sup> and relatively high *σ*<sub>*f*</sub><sup>′</sup>
--   This results in a steeper plastic strain line
--   And shorter transition life
-
-----
-## tough materials
-
--   Tough materials have intermediate values for both *ϵ*<sub>*f*</sub><sup>′</sup> and *σ*<sub>*f*</sub><sup>′</sup>
--   This gives a transition life somewhere between brittle and ductile materials
--   It is also noteworthy that strain-life for many metals pass through the point *ϵ*<sub>*a*</sub> = 0.01 and *N*<sub>*f*</sub> = 1000 cycles
--   Steels also follow a trend with Brinell Hardness, the higher they are on the HB scale, the lower their transition life
-
-----
-## typical property ranges
-
--   Most common engineering materials have −0.8 &lt; *c* &lt; −0.5, with most values being very close to *c* = −0.6
--   The elastic strain slope generally has *b* = −0.085
--   A “steep” elastic slope is around *b* = −0.12, common in soft metals
--   While “shallow” slopes are around *b* = −0.05, common for hardened metals
-
----
-# notches
-
-----
-## fatigue notch factor
-
--   We previously found expressions for stress-based fatigue analysis when notches are present
--   Due to yielding, the notch sensitivity is not the same for stress and strain controlled fatigue analysis
--   One simple approach to find the strain fatigue notch factor is to use
-
-$$K\_t = \\sqrt{K\_f^\\sigma K\_f^\\epsilon}$$
-
----
-# multiaxial loading
-
-----
-## multiaxial loading
-
--   Multi-axial loading in strain-based fatigue analysis is still an active field of research
--   We are currently only capable of handling proportional loads that are in-phase (i.e. have the same frequency)
-
-----
-## multiaxial loading
--   If we consider the principal directions where *σ*<sub>2*a*</sub> = *λσ*<sub>1*a*</sub>, we find an expression for the strain-life as
-
-$$\\epsilon\_{1a} = \\frac{\\frac{\\sigma\_f^\\prime}{E}(1-\\nu \\lambda)(2N\_f)^b + \\epsilon\_f^\\prime(1-0.5\\lambda)(2N\_f)^c}{\\sqrt{1-\\lambda+\\lambda^2}}$$
-
-----
-## stress triaxiality factor
-
--   Another approach is to consider the stress triaxiality factor
-
-$$T = \\frac{1+\\lambda}{\\sqrt{1-\\lambda+\\lambda^2}}$$
--   Three notable cases of this are
-    1.  Pure planar shear: *λ* = −1, *T* = 0
-    2.  Uniaxial stress: *λ* = 0, *T* = 1
-    3.  Equal biaxial stress: *λ* = 1, *T* = 2
-
-----
-## stress triaxiality factor
-
--   Marloff suggests the following inclusion of stress triaxiality
-
-$$\\bar{\\epsilon\_a} = \\frac{\\sigma\_f^\\prime}{E}(2 N\_f)^b + 2^{1-T}\\epsilon\_f^\\prime(2N\_f)^c$$
 
 ---
 # other factors affecting fatigue
@@ -550,5 +276,170 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 | $10^{-4}\\left(\\frac{1}{mT}\\right)^p$ | $C\_w = 10^{-4}\\left(\\frac{1}{mT}\\right)^p$ | $C\_F = (K\_c-1)10^{-4}\\left(\\frac{1}{mT}\\right)^p$ |
 |                    q                    |                    *m* = *q*                   |                                                        |
 |                    p                    |             *n*<sub>*w*</sub> = *p*            |                 *n*<sub>*f*</sub> = *p*                |
+
+
+----
+## paris example
+
+-   A wide center-cracked panel with *C* = 6.75 × 10<sup>−10</sup> and *n* = 3.89 (with units in ksi and inches)
+-   If the crack is initially 1 inch long, find the crack length after 50,000 cycles of 15 ksi loading
+-   What if the load cycles varied from 5 ksi to 15 ksi? (*m* = 0.6)
+
+---
+# factors affecting crack propagation
+
+----
+## factors affecting crack propagation
+
+<div class="left">
+-   thickness
+-   stress ratio
+-   temperature
+-   environment
+</div>
+<div class="right">
+-   frequency
+-   crack orientation
+-   manufacturer
+-   heat treatment
+</div>
+
+----
+## thickness
+
+-   We already discussed the effects of thickness on fracture toughness
+-   The same effects are important in crack propagation
+-   In thin (plane stress) plates, cracks can be treated as through cracks
+-   In thick plates (plain strain), we generally need to consider the crack shape
+
+----
+## thickness
+
+-   Cyclic life is primarily a function of *K*<sub>*i*</sub>/*K*<sub>*c*</sub> where *K*<sub>*i*</sub> is the stress intensity factor in the first cycle
+-   Other experiments indicate a relationship between $\\frac{d(a/Q)}{dN}$ and *K*<sub>*max*</sub>
+-   *Q* is a shape parameter for elliptical flaws
+
+----
+## temperature
+
+-   In general (for most aluminum alloys) cracks propagate more slowly with a decrease in temperature
+-   This trend is exactly opposite the trend for *K*<sub>*c*</sub>
+-   The effect varies in different materials
+-   Most materials benefit from slightly lower temperatures, but as temperatures are further decreased the crack growth rate increases again
+
+----
+## temperature
+
+![](../images/temperature_growth.PNG)
+
+----
+## temperature
+
+-   In general, temperature effects can not be predicted well
+-   Instead, materials should be tested at a range of temperatures to establish a range of operating temperatures with corresponding crack growth data
+
+----
+## environment
+
+-   There are many conditions in the environment that can affect crack growth
+-   Moisture greatly increases the crack growth rate
+-   Salt water increases crack growth rate even further
+-   These effects have varying strength depending on the material used
+
+----
+## environment
+
+<div class="left">
+![](<..\images/environment_7075.jpg)
+</div>
+
+<div class="right">
+![](<..\images/environment_2024.jpg)
+</div>
+
+----
+## environment
+
+-   Further, the shape of the applied load curve has a significant effect when combined with adverse environments
+-   Crack growth is faster when the load increases slowly and decreases rapidly
+-   Crack growth is slower when the load increases rapidly and decreases slowly
+
+----
+## environment
+
+-   When the environment is corrosive, the test frequency is of particular importance
+-   At low frequencies, a corrosive environment increases the threshold, *K*<sup>*th*</sup>
+-   However in Region II, crack growth is faster
+-   This effect can be explained by the corrosive environment blunting the crack tip
+
+----
+## frequency
+
+-   There is conflicting information about the effect of frequency in the absence of a corrosive environment
+-   Some experiments have found a frequency dependence, while others have not
+-   Many claim that the frequency dependence is due to small amounts of water in air during frequency dependence experiment
+
+----
+## crack orientation
+
+-   For rolled plates, a crack will generally propagate faster parallel to the rolling direction
+-   In many materials, however, the difference between orientations is not significant when compared to scatter, and it is often neglected
+-   Some materials behave very differently with different crack orientations (i.e. the slope of the paris law curve is different), so care should be taken based on the material used
+
+----
+## manufacturer
+
+-   Different manufacturers of the same material can produce different crack growth rates
+-   Some reasons for this may be
+	-   Slight variation in composition
+	-   Site cleanliness (inclusions)
+	-   Heat treatment/cold rolling variations
+
+----
+## heat and surface treatments
+
+-   Different heat and surface treatments are often applied
+-   They provide various benefits (corrosion resistance, residual stress, residual stress relief)
+-   But they will also affect the crack growth rate
+
+---
+# numerical algorithm
+
+----
+## numerical algorith
+
+-   While the Paris Law can be integrated directly (for simple load cases), many of the other formulas cannot
+-   A simple numerical algorithm for determining incremental crack growth is
+
+$$a\_{i+1} = a\_i + \\left(\\frac{da}{dN}\\right)\_i\\left(\\Delta N\\right)\_i$$
+
+-   This method is quite tedious by hand (need many *a*<sub>*i*</sub> values for this to be accurate)
+-   But is simple to do in Excel, MATLAB, Python, or many other codes
+-   For most accurate results, use *ΔN* = 1, but this is often unnecessary
+-   When trying to use large *ΔN*, check convergence by using larger and smaller *Δ**N* values
+
+----
+## boeing-walker example
+
+-   Use the Boeing-Walker equation to find the crack length after 20000 cycles of 15 ksi load on a large, center-cracked sheet of bare 2024-T3 in dry air, with an initial crack of 0.5"
+-   Use the numerical algorithm with *ΔN* = 1000
+
+----
+## convergence example
+
+-   compare the results from the previous example with *ΔN* = 10, 100, 10000 and direct integration
+
+----
+## variable load cases
+
+-   In practice variable loads are often seen
+-   The most basic way to handle these is to simply calculate the crack length after each block of loading
+-   We will discuss an alternate method, which is more convenient for flight “blocks” next class
+-   We will also discuss “retardation” models next class
+
+----
+## variable load example
+
+-   For the same material as above (2024-T3, center-cracked, dry air), consider 20000 cycles with 15 ksi load followed by 10000 cycles of 5 - 20 ksi.
 
 
