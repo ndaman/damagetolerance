@@ -292,7 +292,7 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 ## paris example
 
 -   A wide center-cracked panel with *C* = 6.75 × 10<sup>−10</sup> and *n* = 3.89 (with units in ksi and inches)
--   If the crack is initially 1 inch long, find the crack length after 50,000 cycles of 15 ksi loading
+-   If the crack is initially 1 inch long, find the crack length after 5,000 cycles of 15 ksi loading
 -   What if the load cycles varied from 5 ksi to 15 ksi? (*m* = 0.6)
 
 ---
