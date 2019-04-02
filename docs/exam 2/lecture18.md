@@ -10,25 +10,37 @@ April 4, 2019
 ----
 ## schedule
 
-- 2 Apr - Crack growth, HW6 Due
 - 4 Apr - Crack growth
-- 9 Apr - Crack growth, HW7 Due
-- 11 Apr - 
-
+- 9 Apr - Boeing Method, HW7 Due
+- 11 Apr - Crack Retardation
+- 16 Apr - Exam Review, HW8 Due 
+- 18 Apr - Exam 2
 
 ----
 ## outline
+
+<!-- vim-markdown-toc GFM -->
+
+* numerical algorithm
+* boeing method
+* cycle counting
+* crack growth retardation
+
+<!-- vim-markdown-toc -->
 
 ---
 # numerical algorithm
 
 ----
-## numerical algorith
+## numerical algorithm
 
 -   While the Paris Law can be integrated directly (for simple load cases), many of the other formulas cannot
 -   A simple numerical algorithm for determining incremental crack growth is
 
 $$a\_{i+1} = a\_i + \\left(\\frac{da}{dN}\\right)\_i\\left(\\Delta N\\right)\_i$$
+
+----
+## numerical algorithm
 
 -   This method is quite tedious by hand (need many *a*<sub>*i*</sub> values for this to be accurate)
 -   But is simple to do in Excel, MATLAB, Python, or many other codes
@@ -63,7 +75,7 @@ $$a\_{i+1} = a\_i + \\left(\\frac{da}{dN}\\right)\_i\\left(\\Delta N\\right)\_i$
 # boeing method
 
 ----
-## boeing method for variable amplitude loads
+## boeing method
 
 -   Whether integrating numerically or analytically, it is time-consuming to consider multiple repeated loads
 -   It is particularly difficult to consider flight loads, which can vary by “mission”
@@ -83,6 +95,9 @@ $$\\frac{dL}{dN} = n 10^{-4} \\left\[\\frac{k\_{max}Z}{m\_T}\\right\]^p$$
 
 $$\\frac{dN}{dL} = \\frac{1}{n} 10^{4} \\left\[\\frac{m\_T}{k\_{max}Z}\\right\]^p$$
 
+----
+## boeing method
+
 $$\\int\_{0}^{N}dN = \\frac{10^{4}}{n}  \\int\_{L\_0}^{L\_f} \\left\[\\frac{m\_T}{k\_{max}Z}\\right\]^p dL$$
 
 $$N = 10^{4} \\left(\\frac{m\_t}{z\\sigma\_{max}}\\right)^p  \\int\_{L\_0}^{L\_f} \\frac{dL}{\\left( n\\sqrt{\\pi L/n}\\beta\\right)^p}$$
@@ -94,6 +109,9 @@ $$N = 10^{4} \\left(\\frac{m\_t}{z\\sigma\_{max}}\\right)^p  \\int\_{L\_0}^{L\_f
 -   If we now define *G* to account for crack geometry
 
 $$G = \\left\[ \\int\_{L\_0}^{L\_f} \\frac{dL}{\\left( n\\sqrt{\\pi L/n}\\beta\\right)^p} \\right\] ^{-1/p}$$
+
+----
+## boeing method
 
 -   And define *zσ*<sub>*max*</sub> = *S* as the equivalent load spectrum, then we have
 
@@ -108,6 +126,9 @@ $$N = 10^4 \\left(\\frac{m\_t/G}{S}\\right)^p$$
 -   The previous equation gives cycles per crack growth, inverting gives crack growth per cycle
 
 $$\\text{crack growth per cycle} = 10^{-4} \\left(\\frac{m\_t/G}{S}\\right)^{-p}$$
+
+----
+## boeing method
 
 -   If we consider a general, repeatable “block”, we have
 
@@ -145,7 +166,7 @@ $$10^{-4} \\left( m\_t/G \\right)^{-p} \\sum\_i \\left( \\frac{1}{z\\sigma\_{max
 ----
 ## rain-flow method
 
-![](..\images/rainflow.png)
+![](..\images/rainflow.png) <!-- .element width="40%" -->
 
 ----
 ## range-pair method
@@ -158,7 +179,7 @@ $$10^{-4} \\left( m\_t/G \\right)^{-p} \\sum\_i \\left( \\frac{1}{z\\sigma\_{max
 ----
 ## range-pair
 
-![](..\images/range-pair.png)
+![](..\images/range-pair.png) <!-- .element width="30%" -->
 
 ----
 ## cycle counting example
@@ -174,6 +195,10 @@ $$10^{-4} \\left( m\_t/G \\right)^{-p} \\sum\_i \\left( \\frac{1}{z\\sigma\_{max
 
 -   When an overload is applied, the plastic zone is larger
 -   This zone has residual compressive stresses, which slow crack growth until the crack grows beyond this over-sized plastic zone
+
+----
+## crack growth retardation
+
 -   We will discuss three retardation models, but no model has been shown to be perfect in all cases
 -   The Wheeler method reduces *da*/*dN*, the Willenborg model reduces *ΔK*, and the Closure model increases *R* (increases *σ*<sub>*min*</sub>)
 
@@ -193,6 +218,10 @@ $$\\phi\_i = \\left\[\\frac{r\_{pi}}{a\_{ol}+r\_{pol}-a\_i}\\right\]^m$$
 
 -   (p. 340), A wide edge-cracked panel (*β* = 1.22) has an initial crack length of 0.3 inches. Use *p* = 3.5, *m*<sub>*T*</sub> = 32 and *q* = 0.6 to grow a crack for two load cases. Use the Wheeler retardation model with *m* = 1.43, a plane stress plastic zone, and *σ*<sub>*YS*</sub> = 68 ksi.
 -   Case 1: *σ*<sub>*max*</sub> = 18 ksi and *σ*<sub>*min*</sub> = 3.6 ksi for 12,000 cycles
+
+----
+## wheeler example (cont)
+
 -   Case 2: *σ*<sub>*max*</sub> = 18 ksi and *σ*<sub>*min*</sub> = 3.6 ksi for 6,000 cycles, followed by one cycle of *σ*<sub>*max*</sub> = 27 ksi and *σ*<sub>*min*</sub> = 5.4 ksi, followed by another 6,000 cycles of *σ*<sub>*max*</sub> = 18 ksi and *σ*<sub>*min*</sub> = 3.6 ksi.
 
 ----
@@ -212,6 +241,9 @@ $$K\_{max,eff} = K\_{max,i} - \\left\[K\_{max,OL}\\sqrt{1-\\frac{\\Delta a\_i}{r
 
 $$K\_{max,eff} = K\_{max,i} - \\phi\_i\\left\[K\_{max,OL}\\sqrt{1-\\frac{\\Delta a\_i}{r\_{pol}}} - K\_{max,i} \\right\]$$
 
+----
+## gallagher and hughes correction
+
 -   And the correction factor, *ϕ*<sub>*i*</sub> is given by
 
 $$\\phi\_i \\frac{1-K\_{TH}/K\_{max,i}}{s\_{ol}-1}$$
@@ -227,6 +259,9 @@ $$\\phi\_i \\frac{1-K\_{TH}/K\_{max,i}}{s\_{ol}-1}$$
 -   Once again, we consider that retardation occurs when (*a*<sub>*i*</sub> + *r*<sub>*pi*</sub>)=(*a*<sub>*ol*</sub> + *r*<sub>*pol*</sub>)
 -   Within the overloaded plastic zone, the opening stress required can be expressed as
     *σ*<sub>*OP*</sub> = *σ*<sub>*max*</sub>(1 − (1 − *C*<sub>*f*0</sub>)(1 + 0.6*R*)(1 − *R*))
+
+----
+## closure model
 
 -   Commonly this is expressed using the Closure Factor, *C*<sub>*f*</sub>
 
@@ -246,9 +281,9 @@ $$C\_f = \\frac{\\sigma\_{OP}}{\\sigma\_{max}} = (1-(1-C\_{f0})(1+0.6R)(1-R))$$
 -   Consider the Wheeler/Willenborg example problem with Closure parameters of *C*<sub>*f*0</sub> = 0.3 and *C*<sub>*f*</sub> = 0.3728
 
 ----
-## compressive under-loads
+## under-loads
 
--   Just as a tensile “overload” retards crack growth, we might expect a compressive “underload” to accelerate crack growth
+-   We might expect a compressive “underload” to accelerate crack growth
 -   This effect is not usually modeled for a few reasons
     1.  Compressive underloads are uncommon in airframes
     2.  The acceleration effect is minimal

@@ -12,12 +12,22 @@ April 2, 2019
 
 - 2 Apr - Crack growth, HW6 Due
 - 4 Apr - Crack growth
-- 9 Apr - Crack growth, HW7 Due
-- 11 Apr - 
+- 9 Apr - Boeing Method, HW7 Due
+- 11 Apr - Retardation
 
 
 ----
 ## outline
+
+<!-- vim-markdown-toc GFM -->
+
+* other factors affecting fatigue
+* crack growth rate
+* crack growth rate equations
+* factors affecting crack propagation
+* numerical algorithm
+
+<!-- vim-markdown-toc -->
 
 ---
 # other factors affecting fatigue
@@ -292,16 +302,20 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 ## factors affecting crack propagation
 
 <div class="left">
--   thickness
--   stress ratio
--   temperature
--   environment
+<ul>
+	<li>thickness</li>
+	<li>stress ratio</li>
+	<li>temperature</li>
+	<li>environment</li>
+</ul>
 </div>
 <div class="right">
--   frequency
--   crack orientation
--   manufacturer
--   heat treatment
+<ul>
+	<li>frequency </li>
+	<li>crack orientation </li>
+	<li>manufacturer </li>
+	<li>heat treatment </li>
+</ul>
 </div>
 
 ----
@@ -330,7 +344,7 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 ----
 ## temperature
 
-![](../images/temperature_growth.PNG)
+![](../images/temperature_growth.PNG) <!-- .element width="30%" -->
 
 ----
 ## temperature
@@ -354,7 +368,7 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 </div>
 
 <div class="right">
-![](<..\images/environment_2024.jpg)
+![](<..\images/environment_2024.jpg) <!-- .element width="90%" -->
 </div>
 
 ----
