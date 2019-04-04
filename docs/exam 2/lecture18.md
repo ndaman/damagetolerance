@@ -45,7 +45,7 @@ $$a\_{i+1} = a\_i + \\left(\\frac{da}{dN}\\right)\_i\\left(\\Delta N\\right)\_i$
 -   This method is quite tedious by hand (need many *a*<sub>*i*</sub> values for this to be accurate)
 -   But is simple to do in Excel, MATLAB, Python, or many other codes
 -   For most accurate results, use *ΔN* = 1, but this is often unnecessary
--   When trying to use large *ΔN*, check convergence by using larger and smaller *Δ**N* values
+-   When trying to use large *ΔN*, check convergence by using larger and smaller *ΔN* values
 
 ----
 ## boeing-walker example
@@ -81,6 +81,10 @@ $$a\_{i+1} = a\_i + \\left(\\frac{da}{dN}\\right)\_i\\left(\\Delta N\\right)\_i$
 -   It is particularly difficult to consider flight loads, which can vary by “mission”
 -   For example, an aircraft may fly three different routes, in no particular order, but with a known percentage of time spent in each route
 -   Traditional methods would use a random mix of each load spectra
+
+----
+## boeing method
+
 -   The Boeing Method combines each repeatable load spectrum into one single equivalent cycle
 -   Note: this is ch. 20 in the text
 
