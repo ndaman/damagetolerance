@@ -18,6 +18,13 @@ April 11, 2019
 ----
 ## outline
 
+<!-- vim-markdown-toc GFM -->
+
+* finite element techniques
+* damage tolerance
+* inpsection cycle
+
+<!-- vim-markdown-toc -->
 
 ---
 # finite element techniques
@@ -28,17 +35,25 @@ April 11, 2019
 -   Direct method (use near-tip stress field)
     -   Requires very fine mesh near the tip to be accurate
     -   Can be made feasible with specialty elements
+
+----
+## fem in fracture
+
 -   Crack closure method
     -   An energy based method
     -   Calculate energy to close crack one element away from crack tip
     -   Can have a courser mesh than direct method
 
 ----
-## fea in fracture
+## fem in fracture
 
 -   Cohesive elements
     -   Specialty elements act like an adhesive between two materials
     -   Used to model crack propagation when crack path (and material behavior) are known
+
+----
+## fem in fracture
+
 -   XFEM
     -   eXtended Finite Element Method
     -   Can predict crack growth in any direction
@@ -53,6 +68,10 @@ $$\\sigma\_{yy} = \\frac{K\_I}{\\sqrt{2 \\pi x}}$$
 
 -   We can solve this for *K*<sub>*I*</sub> and we should (in theory) be able to calculate *K*<sub>*I*</sub>
 -   We will get a unique *K*<sub>*I*</sub> value for every point (*x*) along crack plane
+
+----
+## direct method
+
 -   For this method to be accurate, we need to capture the singularity at crack tip
 -   This requires a very fine mesh (computationally expensive)
 -   Alternatively, many FE packages include “singularity” elements which allow coarse(r) mesh
@@ -94,8 +113,6 @@ $$\\begin{aligned}
   \\kappa &= 3 - 4\\nu & \\text{(plane strain)}\\\\
   \\kappa &= \\frac{3-\\nu}{1+\\nu} & \\text{(plane stress)}
 \\end{aligned}$$
-
--   The displacement method is generally more accurate in Finite Elements
 
 ----
 ## stress results 
@@ -232,7 +249,7 @@ $$\\begin{aligned}
 ## single load path - damage tolerant
 
 -   Redundant load paths are not necessary when a part is easily inspectable
--   When the detectable crack size is much less than the critical crack length, we can safely inspect a part so that it is only replaced when damage is detected
+-   When detectable crack is much less than critical crack, we can safely inspect a part so that it is only replaced when damaged
 -   Many times this damage can be repaired to avoid replacing the part entirely
 -   Ideal for large, expensive parts that are easy to access (inspection and repair)
 
@@ -282,11 +299,11 @@ $$\\begin{aligned}
 ## initial crack length
 
 -   What is the smallest crack we can detect?
--   Liquid penetrant (any material)
--   Magnetic particle (ferromagnetic materials)
--   Ultrasonic (any material)
--   Eddy Current (only for conductive materials)
--   Radiographic (X-Ray, nearly any material)
+	-   Liquid penetrant (any material)
+	-   Magnetic particle (ferromagnetic materials)
+	-   Ultrasonic (any material)
+	-   Eddy Current (only for conductive materials)
+	-   Radiographic (X-Ray, nearly any material)
 
 ----
 ## calculate cycles
