@@ -36,9 +36,9 @@ April 16, 2019
 -   5 questions
 -   Bring calculator
 -   Closed note/closed book
--   Make sure you can integrate the Paris Law equation (see Homework 7 problems 1 and 2)
+-   Make sure you can integrate the Paris Law equation 
 -   No table look-ups (stress intensity factors, paris/walker law constants will be given in problem)
--   See last year’s exam and equation sheet on Blackboard
+-   See previous exams and equation sheet on Blackboard/course web site
 
 ---
 # stress-based fatigue
@@ -411,7 +411,7 @@ $$\\sigma\_{max} \\epsilon\_a = \\frac{\\left(\\sigma\_f^\\prime\\right)^2}{E}(2
 ----
 ## da-dN vs K
 
-![](..\images\da-dn.png)
+![](..\images\da-dn.png) <!-- .element width="50%" -->
 
 ----
 ## region I
