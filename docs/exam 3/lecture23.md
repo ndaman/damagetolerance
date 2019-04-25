@@ -138,7 +138,7 @@ April 25, 2019
 ----
 ## group 1
 
-![](..\images\group-23-1.PNG) <!-- .element width="40%" -->
+![](..\images\group-23-1.PNG) <!-- .element width="30%" -->
 
 ----
 ## group 2
@@ -163,7 +163,7 @@ $$\\begin{aligned}
 ----
 ## group 3
 
-![](..\images\group-23-3.PNG) <!-- .element width="40%" -->
+![](..\images\group-23-3.PNG) <!-- .element width="30%" -->
 
 ----
 ## group 4
@@ -177,7 +177,7 @@ $$\\begin{aligned}
 ----
 ## group 4
 
-![](..\images\group-23-4.PNG) <!-- .element width="40%" -->
+![](..\images\group-23-4.PNG) <!-- .element width="30%" -->
 
 ---
 # full scale fatigue testing
