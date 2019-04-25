@@ -136,6 +136,11 @@ April 25, 2019
 -   Recall $\\beta = \\sqrt{\\sec(\\pi a/W)}$
 
 ----
+## group 1
+
+![](..\images\group-23-1.PNG)
+
+----
 ## group 2
 
 -   Due to MSD concerns, we would like to alter a crack path by 15<sup>∘</sup>.
@@ -156,6 +161,11 @@ $$\\begin{aligned}
 -   And $K\_{th} = 7 \\text{ ksi}\\sqrt{\\text{in}}$ for Al 7075
 
 ----
+## group 3
+
+![](..\images\group-23-3.PNG)
+
+----
 ## group 4
 
 -   Due to damage, an airline decides to move an aircraft to a less strenuous flight cycle.
@@ -164,6 +174,10 @@ $$\\begin{aligned}
 -   Assume $K\_c = 60 \\text{ ksi}\\sqrt{\\text{in}}$ and *σ*<sub>*YS*</sub> = 70 ksi
 -   The largest load of 20 ksi occurs during takeoff and will not change with flight cycle.
 
+----
+## group 4
+
+![](..\images\group-23-4.PNG)
 ---
 # full scale fatigue testing
 
