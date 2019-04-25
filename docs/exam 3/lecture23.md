@@ -10,23 +10,24 @@ April 25, 2019
 ----
 ##  schedule
 
-- 25 Apr - Special Topics
-- 30 Apr - Special Topics
-- 2 May - Special Topics
-- 7 May - Special Topics
-- 9 May - Special Topics, Final Projects Due
+- 25 Apr - Repair and full scale fatigue 
+- 30 Apr - Finite Elements
+- 2 May - SPTE, NDT/NDE
+- 7 May - My Research
+- 9 May - Damage Mechanics, Final Projects Due
 
 ----
 ##  outline
 
 
-special topics order of interest
-finite elements
-NDT/NDE
-repair
-full scale fatigue testing
-my research
-damage mechanics
+<!-- vim-markdown-toc GFM -->
+
+* repairing cracked structures
+* group problems
+* full scale fatigue testing
+
+<!-- vim-markdown-toc -->
+
 
 ---
 # repairing cracked structures
