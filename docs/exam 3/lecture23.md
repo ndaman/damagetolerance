@@ -1,4 +1,4 @@
-## AE 737: Mechanics of Damage Tolerance
+##  AE 737: Mechanics of Damage Tolerance
 Lecture 23 - Repair 
 
 Dr. Nicholas Smith
@@ -8,7 +8,7 @@ Wichita State University, Department of Aerospace Engineering
 April 25, 2019
 
 ----
-## schedule
+##  schedule
 
 - 25 Apr - Special Topics
 - 30 Apr - Special Topics
@@ -17,7 +17,7 @@ April 25, 2019
 - 9 May - Special Topics, Final Projects Due
 
 ----
-## outline
+##  outline
 
 
 special topics order of interest
@@ -32,7 +32,7 @@ damage mechanics
 # repairing cracked structures
 
 ----
-##repair
+## repair
 
 -   Depending on the location and severity of damage, there are a few options for repair
 -   Replacement
@@ -44,7 +44,7 @@ damage mechanics
 -   Residual stresses
 
 ----
-##stop drilling
+## stop drilling
 
 -   If a crack is not of dangerous length, full repair/replacement is not necessary
 -   Stop drilling refers to a hole drilled at the crack tip
@@ -53,7 +53,7 @@ damage mechanics
 -   Some new techniques attempt to change direction of crack growth
 
 ----
-##welding
+## welding
 
 -   Crack material is machined away
 -   Empty space is filled with weld
@@ -61,7 +61,7 @@ damage mechanics
 -   Sometimes heat treatment is needed
 
 ----
-##patching
+## patching
 
 -   A patch placed over the crack provides an alternate load path
 -   Patches can be attached mechanically, with fasteners
@@ -71,14 +71,14 @@ damage mechanics
 -   Adhesives add less weight, do not introduce new damage, but it can be difficult to ensure the integrity of the bond in-service
 
 ----
-##oversize fastener
+## oversize fastener
 
 -   When crack forms around a fastener hole, the hole can be drilled larger
 -   The larger hole removes the crack tip
 -   Fastener is replaced with a larger fastener, appropriate to the drilled hole
 
 ----
-##load reduction
+## load reduction
 
 -   When damaged parts are difficult or expensive to repair, load can be reduced instead
 -   (e.g. assign a plane to a less rigorous flight path)
@@ -87,7 +87,7 @@ damage mechanics
 -   Sometimes repair and load reduction are not necessary if initial design is found to be overly conservative
 
 ----
-##residual stress
+## residual stress
 
 -   Some repair methods introduce beneficial residual stresses instead of directly addressing the crack
 -   Surface treatments can introduce compressive residual stresses at the crack tip, which can slow or stop crack growth
@@ -98,22 +98,22 @@ damage mechanics
 -   Hole cold-working
 
 ----
-##shot peening
+## shot peening
 
 ![](..\images\shot-peening.jpg)
 
 ----
-##hole cold working
+## hole cold working
 
 ![](..\images\hole-cold-working.jpg)
 
 ----
-##hole cold working
+## hole cold working
 
 ![](..\images\hole-SN.jpg)
 
 ----
-##which repair method
+## which repair method
 
 -   Which repair method is best?
 -   Factors that affect decision
@@ -126,7 +126,7 @@ damage mechanics
 # group problems
 
 ----
-##group 1
+## group 1
 
 
 -   Compare the effectiveness of stop drilling in 2024 and 7075 for the following panel.
@@ -135,7 +135,7 @@ damage mechanics
 -   Recall $\\beta = \\sqrt{\\sec(\\pi a/W)}$
 
 ----
-##group 2
+## group 2
 
 -   Due to MSD concerns, we would like to alter a crack path by 15<sup>∘</sup>.
 -   What stresses would need to be added to a 15 ksi tensile load to accomplish this?
@@ -148,14 +148,14 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 ----
-##group 3
+## group 3
 
 -   Compare the amount of residual compressive stress needed stop crack growth for Al 2024 and Al 7075 in the following panel.
 -   Assume $K\_{th} = 4 \\text{ ksi}\\sqrt{\\text{in}}$ for Al 2024
 -   And $K\_{th} = 7 \\text{ ksi}\\sqrt{\\text{in}}$ for Al 7075
 
 ----
-##group 4
+## group 4
 
 -   Due to damage, an airline decides to move an aircraft to a less strenuous flight cycle.
 -   Find the effective load for a flight cycle that will last at least 1000 flights for the following cracked panel.
@@ -167,12 +167,12 @@ $$\\begin{aligned}
 # full scale fatigue testing
 
 ----
-## Beoing 787
+##  Beoing 787
 
 [video](https://www.youtube.com/watch?v=TH9k9fWaFrs)
 
 ----
-## challenges
+##  challenges
 
 - Design load cycle
 - Apply loading consistent with real-life application
