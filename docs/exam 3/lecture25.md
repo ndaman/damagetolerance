@@ -17,6 +17,12 @@ May 2, 2019
 ----
 ## outline
 
+<!-- vim-markdown-toc GFM -->
+
+* NDT
+* structural health monitoring
+
+<!-- vim-markdown-toc -->
 
 ---
 # NDT
@@ -39,7 +45,29 @@ May 2, 2019
 -   In practice many cracks can be missed during visual inspection
 
 ----
-## visual detection rate of B-737
+## Japanese study
+
+![](..\images\japan.jpg)
+
+----
+## microscope study
+
+![](..\images\faa-micro.PNG)
+
+----
+## faa study
+
+![](..\images\faa-b737.jpg)
+
+----
+## faa study
+
+![](..\images\faa-b7372.jpg)
+
+----
+## faa study
+
+![](..\images\faa-737.PNG)
 
 ----
 ## liquid penetrants
@@ -58,10 +86,19 @@ May 2, 2019
 -   relatively slow (surface prep, application, inspection)
 
 ----
+## borescopes
+
+![](..\images\borescope.jpeg)
+
+----
 ## radiographic inspection
 
 -   X-rays (most common), Gamma rays can also be used
 -   Easist to detect when major flaw dimension is parallel to X-ray beam
+
+----
+## radiographic 
+
 -   Three main types
     1.  Film radiography - image stored on film for later viewing
     2.  Real time radiography - image viewed and manipulated in real time
@@ -77,6 +114,11 @@ May 2, 2019
 -   Need access to both sides of structure
 
 ----
+## ct scan
+
+![](..\images\ct-scan.PNG)
+
+----
 ## ultrasonic inspection
 
 -   High frequency sound waves
@@ -86,6 +128,11 @@ May 2, 2019
 
 ----
 ## ultrasonic inspection
+
+- Difficult to use with large parts
+- Need access to place probe on one surface
+- Need couplant with rough surfaces
+- Will not detect "tight" cracks
 
 ----
 ## eddy current inspection
@@ -132,4 +179,12 @@ May 2, 2019
 -   Structural health monitoring often uses accelerometers, strain gauges, together with data processing
 -   Detailed record of load history can also be used to infer damage and trigger an inspection
 
+----
+## active research
 
+- Much active research is ongoing in this field
+- Some highlights from the Journal *Structural Health Monitoring* include
+	- crack identification using consumer-grade images and neural networks
+	- wave excitation and damping in composites
+	- wireless fatigue crack sensor (gets energy from vibration)
+	- optimization of sensor placement
