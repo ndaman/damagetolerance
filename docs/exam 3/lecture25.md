@@ -21,6 +21,9 @@ May 2, 2019
 
 * NDT
 * structural health monitoring
+* composites
+* corrosion
+* aging
 
 <!-- vim-markdown-toc -->
 
@@ -188,3 +191,172 @@ May 2, 2019
 	- wave excitation and damping in composites
 	- wireless fatigue crack sensor (gets energy from vibration)
 	- optimization of sensor placement
+
+---
+# composites
+
+----
+## failure modes
+
+-   Because composite materials are heterogeneous there are several failure modes to consider
+	-   Fiber breakage
+	-   Matrix cracking
+	-   Fiber-matrix de-bonding
+	-   Ply delamination
+
+----
+## fatigue in composites
+
+-   In metals, cracks are most likely to form near the surface or a stress concentration (hole, notch, etc.)
+-   In composites, internal variability and voids can give rise to sub-surface cracks
+-   The ideal combination for fatigue performance is a very stiff fiber (reduces strain in the matrix) and a very tough matrix
+
+----
+## cracks in a composite
+
+![]( ..\images\composite-cracks.PNG)
+
+----
+## effect of matrix material
+
+![](..\images\matrix.PNG)
+
+Various matrix materials’ fatigue performance with E-Glass
+
+----
+## fiber orientation
+
+-   It is intuitive that in tensile fatigue, a composite with fibers aligned in the direction of tension will have the best performance
+-   At high-cycle fatigue, however, a slight mis-orientation can improve fatigue performance
+-   Straight roving also has better fatigue performance than woven roving
+
+----
+## orientation
+
+![Effect of fiber orientation and roving on fatigue life](../Figures/fiber-orientation)
+
+----
+## free edge effects
+
+-   In practice, composites are often over-designed for in-plane loading
+-   Problems occur during un-expected out-of-plane loading
+-   This can occur near the free edge of a laminate
+
+----
+## free edge effects
+
+-   Composite laminate theory was developed under an assumption of plane stress
+-   This is fairly accurate sufficiently far away from geometric discontinuities, such as free edges
+-   At a free edge, in-plane shear stresses must be zero
+-   To satisfy equilibrium the out-of-plane shear stress increases to match
+    *σ*<sub>11, 1</sub> + *σ*<sub>12, 2</sub> + *σ*<sub>13, 3</sub> = 0
+
+----
+## free edge effects
+
+![](..\images\free-edge.jpg)
+
+----
+## stacking sequence
+
+-   The free edge effect is proportional to the effective lamina thickness
+-   It can be minimized by not stacking layers of the same orientation directly on top of each other
+-   There is also a normal stress in *σ*<sub>*z*</sub> that develops
+-   This normal stress can be either tensile or compressive depending on the stacking sequence
+
+----
+## interlaminar strengthening
+
+-   There are several techniques to improve the inter-laminar performance of composites near the free edge
+-   Stitching
+-   Braiding
+-   Z-Pinning
+-   Edge Cap
+-   Toughened inter-laminar adhesive sheet
+
+----
+## open hole compression
+
+-   One of the first tests of a composite’s damage tolerance is known as open hole compression
+-   A specimen is drilled with a hole and then put in a fixture which prevents buckling under compression
+-   [open hole test](https://www.youtube.com/watch?v=u1gHxCt-qv0)
+-   Meant to give a measure of a composite after being “damaged” by a hole
+-   While a hole is a very repeatable form of damage, it is not representative of all damage
+
+----
+## compression after impact
+
+-   Another test was developed to measure the strength of a composite after undergoing impact damage
+-   Various levels of impact damage can be applied, but most commonly “barely visible impact damage” is used
+-   After impacting the specimen, it is tested in a compression fixture to prevent buckling
+-   [impact](https://www.youtube.com/watch?v=ygjtNMbmqAM)
+
+----
+## ceramic matrix composites
+
+-   Ceramics are very strong and stiff, with very good performance at elevated temperature
+-   They are very weak in tension, however, and are very susceptible to damage
+-   Adding ceramic fibers helps to
+    -   Reduce stress in the matrix, increase the stress required to propagate crack
+    -   When cracks do form, the cracks bridge without fracture
+
+---
+# corrosion
+
+----
+## corrosion
+
+-   Corrosion can be difficult to accelerate in a lab (like fatigue), and so is not as well-understood
+-   There are several general categories of corrosion
+-   General corrosion - occurs equally and globally
+-   Localized corrosion - occurs at specific locations
+-   Metallurgically influenced corrosion - grain boundaries, dealloying
+-   Mechanically assisted degradation
+-   Environmentally induced cracking
+
+----
+## general corrosion
+
+-   Atmospheric corrosion
+-   Galvanic corrosion (dissimilar metals in contact)
+
+----
+## localized corrosion
+
+-   Similar to general corrosion, but localized
+-   Can accelerate the development of fatigue cracks
+-   Pitting
+
+----
+## metallurgical corrosion
+
+-   Different concentrations of alloy constituents at grain boundaries
+-   Galvanic corrosion at a grain boundary could be possible
+-   Exfoliation is a form of this that can occur in aluminum alloys with elongated grains parallel to the surface
+-   Fasteners with dissimilar materials can also cause metallurgical corrosion
+
+----
+## mechanically assisted degradation
+
+-   Chemical effects combined with mechanical stress
+-   Fretting corrosion (abrasive corrosion particles, like oxides, trapped can lead to more corrosion)
+-   Corrosion fatigue
+
+----
+## environmentally induced cracking
+
+-   stress corrosion cracking
+-   hydrogen damage, embrittlement
+
+---
+# aging
+
+----
+## aging
+
+-   Aging is a term often used to describe the degradation of polymers
+-   Most polymers are not “pure” but contain some fraction of additives to modify the properties
+-   Commonly they will have a “plasticizer” which lowers the glass transition temperature
+-   As these plasticizers degrade, the polymer becomes more brittle
+
+
