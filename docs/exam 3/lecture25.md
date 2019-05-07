@@ -217,9 +217,9 @@ May 2, 2019
 ![]( ..\images\composite-cracks.PNG)
 
 ----
-## effect of matrix material
+## effect of matrix
 
-![](..\images\matrix.PNG)
+![](..\images\matrix.PNG) <!-- .element width="60%" -->
 
 Various matrix materials’ fatigue performance with E-Glass
 
@@ -233,7 +233,7 @@ Various matrix materials’ fatigue performance with E-Glass
 ----
 ## orientation
 
-![Effect of fiber orientation and roving on fatigue life](../Figures/fiber-orientation)
+![Effect of fiber orientation and roving on fatigue life](..\images\fiber-orientation.PNG)
 
 ----
 ## free edge effects
@@ -254,7 +254,7 @@ Various matrix materials’ fatigue performance with E-Glass
 ----
 ## free edge effects
 
-![](..\images\free-edge.jpg)
+![](..\images\free-edge.jpg) <!-- .element width="40%" -->
 
 ----
 ## stacking sequence
