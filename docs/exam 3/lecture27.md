@@ -472,7 +472,7 @@ $$\\epsilon\_{ij}^{(add)} = \\frac{4f(1-\\nu^\*)\\Sigma\_m\\delta\_{ij}}{3\\beta
 ----
 ## edge dislocations
 
-![](../images/dislocation-with_stress.png)
+![](../images/dislocation-with_stress.png) <!-- .element width="50%" -->
 
 ----
 ## screw disolcation
@@ -482,7 +482,12 @@ $$\\epsilon\_{ij}^{(add)} = \\frac{4f(1-\\nu^\*)\\Sigma\_m\\delta\_{ij}}{3\\beta
 ----
 ## dislocation animations
 
--  [link](https://www.doitpoms.ac.uk/tlplib/dislocations/dislocation_motion.php)
+<video src="../images/c-t-stresses.mp4"/>
+
+----
+## dislocation animations
+
+<video src="../images/shear-stresses.mp4"/>
 
 ----
 ## dislocation modeling
