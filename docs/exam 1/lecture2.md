@@ -589,7 +589,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## cracks around a hole
-![A diagram of cracks around a hole, with a cross-section showing that the cracks are corner cracks in the thickness direction](../images/bearing-symmetric-corner.svg)
+![A diagram of cracks around a hole, with a cross-section showing that the cracks are corner cracks in the thickness direction](../images/bearing-symmetric-corner.svg) <!-- .element width="40%" -->
 
 ----
 ## remote stress
