@@ -341,13 +341,13 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 <div class="left">
 	
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) 
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) <!-- .element width="90%" -->
 
 </div>
 
 <div class="right">
 	
-![a planar drawing showing dimensions for the elliptical flaw](../images/internal-flaw-in-plane.svg)
+![a planar drawing showing dimensions for the elliptical flaw](../images/internal-flaw-in-plane.svg) <!-- .element width="90%" -->
 
 </div>
 
@@ -376,8 +376,17 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ----
 ## elliptical flaw, finite solid
 
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the elliptical flaw within a finite body](../images/internal-flaw-finite.svg) <!-- .element class="right" -->
+<div class="left">
+	
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) <!-- .element width="90%" -->
+
+</div>
+
+<div class="right">
+	
+![a planar drawing showing dimensions for the elliptical flaw within a finite body](../images/internal-flaw-finite.svg) <!-- .element width="90%" -->
+
+</div>
 
 ----
 ## finite solid
@@ -421,8 +430,18 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## semi-elliptical surface flaw, finite body
-![a 3D drawing showing a semi-elliptical-shaped flaw on the edge of a body](../images/edge-flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the semi-elliptical flaw within a finite body](../images/edge-flaw-plane.svg) <!-- .element class="right" -->
+
+<div class="left">
+	
+![a 3D drawing showing a semi-elliptical-shaped flaw on the edge of a body](../images/edge-flaw.svg) <!-- .element width="90%" -->
+
+</div>
+
+<div class="right">
+	
+![a planar drawing showing dimensions for the semi-elliptical flaw within a finite body](../images/edge-flaw-plane.svg) <!-- .element width="90%" -->
+
+</div>
 
 ----
 ## semi-elliptical surface flaw, finite body
@@ -476,8 +495,16 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ----
 ## corner flaw, finite body
 
-![a 3D drawing showing an quarter-elliptical-shaped flaw on a corner](../images/corner crack.svg) <!-- .element class="left" height=45% -->
-![a planar drawing showing dimensions for the quarter-elliptical corner crack](../images/corner-crack-plane.svg) <!-- .element class="right" -->
+<div class="left">
+	
+![a 3D drawing showing an quarter-elliptical-shaped flaw on a corner](../images/corner%20crack.svg) <!-- .element width="90%" -->
+
+</div>
+<div class="right">
+	
+![a planar drawing showing dimensions for the quarter-elliptical corner crack](../images/corner-crack-plane.svg) <!-- .element width="90%" -->
+
+</div>
 
 ----
 ## corner flaw, finite body
@@ -637,7 +664,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## surface cracks around a hole
-![A diagram of cracks around a hole, with a cross-section showing that the cracks are surface flaws in the thickness direction](../images/bearing-surface.svg)
+![A diagram of cracks around a hole, with a cross-section showing that the cracks are surface flaws in the thickness direction](../images/bearing-surface.svg) <!-- .element width="35%" -->
 
 ----
 ## remote stress
@@ -695,7 +722,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## edge crack on a lug
-![A through crack on only one side of a hole with only bearing forces, no remote stress](../images/bearing-single.svg)
+![A through crack on only one side of a hole with only bearing forces, no remote stress](../images/bearing-single.svg) <!-- .element width="30%" -->
 
 ----
 ## edge crack on a lug
@@ -734,7 +761,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## corner crack on a lug
-![A single corner crack on one side of a hole under only bearing stress](../images/bearing-single-corner.svg)
+![A single corner crack on one side of a hole under only bearing stress](../images/bearing-single-corner.svg) <!-- .element width="30%" -->
 
 ----
 ## corner crack on a lug
@@ -816,7 +843,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## symmetric corner cracks under bending
-![Symmetric corner cracks around a hole under remote bending stress](../images/bearing-symmetric-corner.svg)
+![Symmetric corner cracks around a hole under remote bending stress](../images/bearing-symmetric-corner.svg) <!-- .element width="30%" -->
 
 ----
 ## corner cracks under bending
@@ -929,7 +956,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ---
 ## example 3
-![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example%202.svg)
+![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example%202.svg) <!-- .element width="40%" -->
 
 ----
 ## example
