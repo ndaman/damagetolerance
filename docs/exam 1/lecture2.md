@@ -5,20 +5,20 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 24, 2019
+January 23, 2020
 
 ---
 ## schedule
 
-- 24 Jan - Common Stress Intensity Factors
-- 29 Jan - Superposition, Compounding
-- 31 Jan - Curved Boundaries, Homework 1 Due
+- 23 Jan - Common Stress Intensity Factors
+- 28 Jan - Superposition, Compounding
+- 30 Jan - Curved Boundaries, Homework 1 Due
 - 5 Feb - Plastic Zone
 
 ----
 ## office hours
 
--   So far 14/21 students have participated in Doodle
+-   TBD
 -   Best option (as of now) is either Monday or Wednesday from 4:00 - 5:00
 -   Next week I plan to finalize, so fill out the Doodle before then
 
@@ -31,7 +31,7 @@ January 24, 2019
 
 ----
 ## fracture mechanics
-![An image of the three fracture modes, with a representative crack in the xy plane. The first mode showns a crack opening vertically in the z-direction, like jaws opening. The second mode is known as the sliding mode, where one face moves into the body (negative x direction) while the other end of the crack moves away from the body (positive x direction). The third mode is known as the tearing mode, and is similar to mode 2 but with the sliding occuring 90 degrees away in the y-direction.](images\Fracture_modes_v2.svg)
+![An image of the three fracture modes, with a representative crack in the xy plane. The first mode showns a crack opening vertically in the z-direction, like jaws opening. The second mode is known as the sliding mode, where one face moves into the body (negative x direction) while the other end of the crack moves away from the body (positive x direction). The third mode is known as the tearing mode, and is similar to mode 2 but with the sliding occuring 90 degrees away in the y-direction.](../images/Fracture_modes_v2.svg)
 
 ---
 ## stress intensity
@@ -86,11 +86,11 @@ January 24, 2019
 ----
 ## center crack, infinite width
 `$$K_I = \sigma \sqrt{\pi a}$$`
-![center crack, infinite width](images\center-infinite.svg)
+![center crack, infinite width](../images/center-infinite.svg)
 
 ----
 ## center crack, finite width
-![center crack, finite width](images\center-finite.svg)
+![center crack, finite width](../images/center-finite.svg)
 
 ----
 ## center crack, finite width
@@ -105,12 +105,12 @@ January 24, 2019
 ## edge crack, semi-infinite width
 
 `$$K_I = 1.122 \sigma \sqrt{\pi a}$$`
-![edge crack, semi-infinite](images\edge-infinite.svg)
+![edge crack, semi-infinite](../images/edge-infinite.svg)
 
 ----
 ## edge crack, finite width
 
-![edge crack, finite width](images\edge-finite.svg)
+![edge crack, finite width](../images/edge-finite.svg)
 
 ----
 ## edge crack, finite width
@@ -125,7 +125,7 @@ January 24, 2019
 
 ----
 ## edge crack, bending moment
-![edge crack under bending](images\bending.svg)
+![edge crack under bending](../images/bending.svg)
 
 ----
 ## edge crack, bending moment
@@ -151,7 +151,7 @@ January 24, 2019
 ----
 ## center crack, finite width, splitting forces
 
-![center crack, finite widte, splitting forces](images\splitting-force.svg)
+![center crack, finite widte, splitting forces](../images/splitting-force.svg)
 
 ----
 ## center crack, finite width, splitting forces
@@ -163,7 +163,7 @@ January 24, 2019
 ----
 ## offset crack
 
-![off-center crack](images\off-center.svg)
+![off-center crack](../images/off-center.svg)
 
 ----
 ## offset crack
@@ -208,7 +208,7 @@ January 24, 2019
 
 ----
 ## non-uniform stress, infinite width
-![arbitrary pressure function loading along crack](images\pressure-function.svg)
+![arbitrary pressure function loading along crack](../images/pressure-function.svg)
 
 ----
 ## non-uniform stress, infinite width
@@ -222,7 +222,7 @@ January 24, 2019
 
 ----
 ## cracks around a hole
-![a crack around a hole under both remote stress and a local bearing load](images\bearing-through.svg)
+![a crack around a hole under both remote stress and a local bearing load](../images/bearing-through.svg)
 
 ----
 ## cracks around a hole
@@ -261,7 +261,7 @@ January 24, 2019
 
 ----
 ## cracks around a hole
-![a crack around a hole under both remote stress and a local bearing load, but there is only a crack on one side](images\bearing-single.svg)
+![a crack around a hole under both remote stress and a local bearing load, but there is only a crack on one side](../images/bearing-single.svg)
 
 ----
 ## cracks around a hole
@@ -313,12 +313,12 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ---
 ## example 1
 
-![center-crack finite element simulation](images\center-crack.png)
+![center-crack finite element simulation](../images/center-crack.png)
 
 ----
 ## example 1
 
-![edge-crack finite element simulation](images\edge-crack.png)
+![edge-crack finite element simulation](../images/edge-crack.png)
 
 ---
 # 2D crack shapes
@@ -332,8 +332,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## elliptical flaw, infinite solid
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](images\internal flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the elliptical flaw](images\internal-flaw-in-plane.svg) <!-- .element class="right" -->
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal flaw.svg) <!-- .element class="left" -->
+![a planar drawing showing dimensions for the elliptical flaw](../images/internal-flaw-in-plane.svg) <!-- .element class="right" -->
 
 ----
 ## elliptical flaw, infinite solid
@@ -359,8 +359,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## elliptical flaw, finite solid
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](images\internal flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the elliptical flaw within a finite body](images\internal-flaw-finite.svg) <!-- .element class="right" -->
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal flaw.svg) <!-- .element class="left" -->
+![a planar drawing showing dimensions for the elliptical flaw within a finite body](../images/internal-flaw-finite.svg) <!-- .element class="right" -->
 
 ----
 ## finite solid
@@ -404,8 +404,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## semi-elliptical surface flaw, finite body
-![a 3D drawing showing a semi-elliptical-shaped flaw on the edge of a body](images\edge-flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the semi-elliptical flaw within a finite body](images\edge-flaw-plane.svg) <!-- .element class="right" -->
+![a 3D drawing showing a semi-elliptical-shaped flaw on the edge of a body](../images/edge-flaw.svg) <!-- .element class="left" -->
+![a planar drawing showing dimensions for the semi-elliptical flaw within a finite body](../images/edge-flaw-plane.svg) <!-- .element class="right" -->
 
 ----
 ## semi-elliptical surface flaw, finite body
@@ -459,8 +459,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ----
 ## corner flaw, finite body
 
-![a 3D drawing showing an quarter-elliptical-shaped flaw on a corner](images\corner crack.svg) <!-- .element class="left" height=45% -->
-![a planar drawing showing dimensions for the quarter-elliptical corner crack](images\corner-crack-plane.svg) <!-- .element class="right" -->
+![a 3D drawing showing an quarter-elliptical-shaped flaw on a corner](../images/corner crack.svg) <!-- .element class="left" height=45% -->
+![a planar drawing showing dimensions for the quarter-elliptical corner crack](../images/corner-crack-plane.svg) <!-- .element class="right" -->
 
 ----
 ## corner flaw, finite body
@@ -519,7 +519,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ---
 ## example 2
 
-![A surface flaw shown with a major diameter of 1.2 inches and a minor radius (the semi-elliptical axis) of 0.4 inches. The specimen is 6 inches long (direction of major elliptical axis) and 1.2 inches wide (in minor axis direction).](images\example-1.svg) <!-- .element class="left" -->
+![A surface flaw shown with a major diameter of 1.2 inches and a minor radius (the semi-elliptical axis) of 0.4 inches. The specimen is 6 inches long (direction of major elliptical axis) and 1.2 inches wide (in minor axis direction).](../images/example-1.svg) <!-- .element class="left" -->
 
 <div class="right">
 <ul>
@@ -545,7 +545,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## cracks around a hole
-![A diagram of cracks around a hole, with a cross-section showing that the cracks are corner cracks in the thickness direction](images\bearing-symmetric-corner.svg)
+![A diagram of cracks around a hole, with a cross-section showing that the cracks are corner cracks in the thickness direction](../images/bearing-symmetric-corner.svg)
 
 ----
 ## remote stress
@@ -620,7 +620,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## surface cracks around a hole
-![A diagram of cracks around a hole, with a cross-section showing that the cracks are surface flaws in the thickness direction](images\bearing-surface.svg)
+![A diagram of cracks around a hole, with a cross-section showing that the cracks are surface flaws in the thickness direction](../images/bearing-surface.svg)
 
 ----
 ## remote stress
@@ -678,7 +678,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## edge crack on a lug
-![A through crack on only one side of a hole with only bearing forces, no remote stress](images\bearing-single.svg)
+![A through crack on only one side of a hole with only bearing forces, no remote stress](../images/bearing-single.svg)
 
 ----
 ## edge crack on a lug
@@ -717,7 +717,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## corner crack on a lug
-![A single corner crack on one side of a hole under only bearing stress](images\bearing-single-corner.svg)
+![A single corner crack on one side of a hole under only bearing stress](../images/bearing-single-corner.svg)
 
 ----
 ## corner crack on a lug
@@ -799,7 +799,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ----
 ## symmetric corner cracks under bending
-![Symmetric corner cracks around a hole under remote bending stress](images\bearing-symmetric-corner.svg)
+![Symmetric corner cracks around a hole under remote bending stress](../images/bearing-symmetric-corner.svg)
 
 ----
 ## corner cracks under bending
@@ -912,7 +912,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ---
 ## example 3
-![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](images\example 2.svg)
+![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example 2.svg)
 
 ----
 ## example

@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 9, 2019
+January 21, 2020
 
 ---
 ## schedule
 
-- 22 Jan - Introduction, Stress Intensity
-- 24 Jan - Common Stress Intensity Factors
-- 29 Jan - Superposition, Compounding
-- 31 Jan - Curved Boundaries
+- 21 Jan - Introduction, Stress Intensity
+- 23 Jan - Common Stress Intensity Factors
+- 28 Jan - Superposition, Compounding
+- 30 Jan - Curved Boundaries, HW 1 Due
 
 ----
 
@@ -29,7 +29,7 @@ January 9, 2019
 ---
 
 ## about me
-![family picture](images\IMG_5266_edit.jpg)
+![family picture](../images/IMG_0004.JPG)
 
 ----
 
@@ -48,12 +48,12 @@ January 9, 2019
 ----
 
 ## research
-![picture of chopped carbon fiber prepreg](images\Formosa_Chopped_Carbon_Fiber_CSc_bw.jpg)
+![picture of chopped carbon fiber prepreg](../images/Formosa_Chopped_Carbon_Fiber_CSc_bw.jpg)
 
 ----
 
 ## research
-![picture of lamborghini symbol made from compression molded chopped carbon fiber](images\lamborghini-chopped-fiber-badges-rough.jpg)
+![picture of lamborghini symbol made from compression molded chopped carbon fiber](../images/lamborghini-chopped-fiber-badges-rough.jpg)
 
 ----
 
@@ -198,11 +198,11 @@ Grade breakdown
 
 ----
 ## damage tolerance
-![B17 with failed tail section](images\B17.jpg)
+![B17 with failed tail section](../images/B17.jpg)
 
 ----
 ## damage tolerance
-![close-up of failed tail section on B17](images\B17a.jpg)
+![close-up of failed tail section on B17](../images/B17a.jpg)
 
 ----
 ## damage tolerance
@@ -211,7 +211,7 @@ Grade breakdown
 
 ----
 ## damage tolerance
-![Image of Boeing 737 with top of fuselage missing (and passengers inside)](images\737.jpg)
+![Image of Boeing 737 with top of fuselage missing (and passengers inside)](../images/737.jpg)
 
 ----
 ## damage tolerance
@@ -237,7 +237,7 @@ Grade breakdown
 
 ----
 ## fracture mechanics
-![An image of the three fracture modes, with a representative crack in the xy plane. The first mode showns a crack opening vertically in the z-direction, like jaws opening. The second mode is known as the sliding mode, where one face moves into the body (negative x direction) while the other end of the crack moves away from the body (positive x direction). The third mode is known as the tearing mode, and is similar to mode 2 but with the sliding occuring 90 degrees away in the y-direction.](images\Fracture_modes_v2.svg)
+![An image of the three fracture modes, with a representative crack in the xy plane. The first mode showns a crack opening vertically in the z-direction, like jaws opening. The second mode is known as the sliding mode, where one face moves into the body (negative x direction) while the other end of the crack moves away from the body (positive x direction). The third mode is known as the tearing mode, and is similar to mode 2 but with the sliding occuring 90 degrees away in the y-direction.](../images/Fracture_modes_v2.svg)
 
 ---
 ## stress intensity
@@ -337,7 +337,7 @@ Grade breakdown
 
 ----
 ## plotting
-![stress in the x direction plotted vs normalized distance from crack tip, r/a](images\sigmax_vs_ra.png)
+![stress in the x direction plotted vs normalized distance from crack tip, r/a](../images/sigmax_vs_ra.png)
 
 ----
 ## plotting
@@ -365,4 +365,4 @@ Grade breakdown
 
 ----
 ## plotting
-![Polar plot for constant stress contours near the crack tip for Mode I](images\polar_plot.png) <!-- .element width="50%" -->
+![Polar plot for constant stress contours near the crack tip for Mode I](../images/polar_plot.png) <!-- .element width="50%" -->
