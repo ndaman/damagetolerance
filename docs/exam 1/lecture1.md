@@ -29,7 +29,7 @@ January 21, 2020
 ---
 
 ## about me
-![family picture](../images/IMG_0004.JPG)
+![family picture](../images/IMG_0004.JPG) <!-- .element width="40%" -->
 
 ----
 
@@ -91,7 +91,7 @@ January 21, 2020
 
 ## course textbook
   - Printed notes from Dr. Bert L. Smith and Dr. Walter J. Horn
-  - Bring $20 cash or check to AE offices to pick up your copy
+  - Bring $30 cash or check to AE offices to pick up your copy
   - Make checks out to Wichita State University
   - Homework will be given in handouts (via Blackboard/course website)
   - Supplemental textbooks are listed in the syllabus and in the text for further study
@@ -110,30 +110,30 @@ Note: probably available by Thursday
 ## tentative course outline
 
   -  Section 1 - fracture mechanics
-	  -  Stress intensity (22 - 31 Jan)
-	  -  Plastic zone (5 - 12 Feb)
-	  -  Fracture toughness (12 - 19 Feb)
-	  -  Residual strength (19 - 26 Feb)
-	  -  Exam 1 (7 March)
+	  -  Stress intensity (21 - 30 Jan)
+	  -  Plastic zone (4 - 11 Feb)
+	  -  Fracture toughness (11 - 18 Feb)
+	  -  Residual strength (18 - 25 Feb)
+	  -  Exam 1 (5 March)
 
 ----
 
 ## tentative course outline
   -  Section 2 - fatigue and propagation
-	  -  Fatigue analysis (19 - 28 Mar)
-	  -  Crack propagation (28 Mar - 4 Apr)
-	  -  Exam 2 (11 April)
+	  -  Fatigue analysis (17 - 26 Mar)
+	  -  Crack propagation (26 Mar - 2 Apr)
+	  -  Exam 2 (9 April)
 
 ----
 
 ## tentative course outline
   - Section 3 - damage tolerance
-    - Damage tolerance (16-18 Apr)
+    - Damage tolerance (14-16 Apr)
     - Test methods
     - Finite elements
     - Non Destructive Testing
     - Special topics
-    - Final project (due 16 May)
+    - Final project (due 7 May)
 
 ----
 
@@ -244,7 +244,7 @@ Grade breakdown
   -  A key finding from Linear Elastic Fracture Mechanics (LEFM) is known as the *Stress Intensity Factor*
   -  The stress intensity factor is often written in this form
 		`$$ K = \sigma \sqrt{ \pi a} \beta $$`
-    -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
+  -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
 ----
 ## stress Intensity

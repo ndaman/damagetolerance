@@ -226,7 +226,9 @@ January 23, 2020
 
 ----
 ## cracks around a hole
+
 - For symmetric through cracks under uniform applied stress, we have
+
 `$$\begin{aligned}
     \beta &= \beta_1 + \beta_2\\
     \beta_1 &= F_{c/R}F_wF_{ww}\\
@@ -251,6 +253,7 @@ January 23, 2020
 ## cracks around a hole
 
 -  Note that
+
 `$$\begin{aligned}
   \sigma_{br} &= \frac{P}{Dt}\\
   N &= \frac{W}{D} + 2.5 \qquad \text{when} \qquad \frac{W}{D} < 2\\
@@ -261,6 +264,7 @@ January 23, 2020
 
 ----
 ## cracks around a hole
+
 ![a crack around a hole under both remote stress and a local bearing load, but there is only a crack on one side](../images/bearing-single.svg)
 
 ----
@@ -302,23 +306,25 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 3.  Find `$K_I$` for an edge-cracked panel with `$W/a = 3$` and a remote
     bending moment, `$M = tW^2\sigma/6$`.
 
-4.  Find `$K_I$` for a center-cracked panel with `$W/2a = 3$` and a
-    concentrated splitting force, `$P = \sigma a t$`.
 
 ----
 ## group problems
+
+4.  Find `$K_I$` for a center-cracked panel with `$W/2a = 3$` and a
+    concentrated splitting force, `$P = \sigma a t$`.
+
 5.  What do you think causes the difference (if any) in stress intensity
     between these panels?
 
 ---
 ## example 1
 
-![center-crack finite element simulation](../images/center-crack.png)
+![center-crack finite element simulation](../images/center-crack.png) <!-- .element width="70%" -->
 
 ----
 ## example 1
 
-![edge-crack finite element simulation](../images/edge-crack.png)
+![edge-crack finite element simulation](../images/edge-crack.png) <!-- .element width="70%" -->
 
 ---
 # 2D crack shapes
@@ -332,8 +338,18 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## elliptical flaw, infinite solid
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal flaw.svg) <!-- .element class="left" -->
-![a planar drawing showing dimensions for the elliptical flaw](../images/internal-flaw-in-plane.svg) <!-- .element class="right" -->
+
+<div class="left">
+	
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) 
+
+</div>
+
+<div class="right">
+	
+![a planar drawing showing dimensions for the elliptical flaw](../images/internal-flaw-in-plane.svg)
+
+</div>
 
 ----
 ## elliptical flaw, infinite solid
@@ -359,7 +375,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 ----
 ## elliptical flaw, finite solid
-![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal flaw.svg) <!-- .element class="left" -->
+
+![a 3D drawing showing an elliptical-shaped internal flaw inside a body](../images/internal%20flaw.svg) <!-- .element class="left" -->
 ![a planar drawing showing dimensions for the elliptical flaw within a finite body](../images/internal-flaw-finite.svg) <!-- .element class="right" -->
 
 ----
@@ -523,8 +540,8 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 <div class="right">
 <ul>
-  <li> Find maximum value of `$K_I$` for semi-elliptical surface flaw </li>
-  <li> `$\sigma = 20 \text{ kpsi}$` (in opening direction) </li>
+  <li> Find maximum value of $K_I$ for semi-elliptical surface flaw </li>
+  <li> $\sigma = 20 \text{ kpsi}$ (in opening direction) </li>
 </div>
 
 ----
@@ -912,7 +929,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 ---
 ## example 3
-![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example 2.svg)
+![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example%202.svg)
 
 ----
 ## example
