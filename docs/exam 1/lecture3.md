@@ -5,21 +5,21 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 29, 2019
+January 28, 2020
 
 ----
 ## schedule
 
-- 29 Jan - Superposition, Compounding
-- 31 Jan - Curved Boundaries, Homework 1 Due
-- 5 Feb - Plastic Zone
-- 7 Feb - Plastic Zone
+- 28 Jan - Superposition, Compounding
+- 30 Jan - Curved Boundaries, Homework 1 Due
+- 4 Feb - Plastic Zone
+- 6 Feb - Plastic Zone
 
 ----
 ## office hours
 
--   Office hours will be Mondays from 4:00 - 5:00
--   As a back-up, AE 333 Office Hours are Fridays from 11:00 - 12:00
+-   Office hours will be TBD
+-   As a back-up, AE 333 Office Hours are TBD
 -   Take advantage of office hours, this is time that I have already set aside for you
 -   If the regular office hours do not work for your schedule, send me an e-mail and we can work out a time to meet
 
@@ -43,7 +43,8 @@ January 29, 2019
 
 ----
 ## example
-![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](images\example 2.svg)
+
+![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example%202.svg)
 
 ----
 ## example
@@ -69,10 +70,11 @@ January 29, 2019
 ----
 ## superposition
 
-![To illustrate superposition a crack with both a local splitting force and a remote stress is shown, which is equivalent to the separate loads being treated individually and then added.](images\superpsition.svg)<!-- .element width="80%" -->
+![To illustrate superposition a crack with both a local splitting force and a remote stress is shown, which is equivalent to the separate loads being treated individually and then added.](../images/superpsition.svg)<!-- .element width="80%" -->
 
 ----
 ## superposition
+
 $$\\begin{aligned}
   K\_I &= K\_{I(\\sigma)} + K\_{I(P)}\\\\
   K\_I &= \\sigma\\sqrt{\\pi a} + \\frac{P}{t\\sqrt{\\pi a}}\\frac{1 - 0.5\\left(\\frac{a}{W}\\right)+0.975\\left(\\frac{a}{W}\\right)^2 - 0.16\\left(\\frac{a}{W}\\right)^3}{\\sqrt{1-\\left(\\frac{a}{W}\\right)}}
@@ -89,12 +91,12 @@ $$\\begin{aligned}
 ----
 ## superposition
 
-![A crack around a hole is loaded both under remote tension and with a local bearing force. This is equivalent to a crack around a hole with only remote stress added to the same crack with a bearing force acting upwards and remote stress acting downward.](images\superposition-bearing.svg)<!-- .element width="70%" -->
+![A crack around a hole is loaded both under remote tension and with a local bearing force. This is equivalent to a crack around a hole with only remote stress added to the same crack with a bearing force acting upwards and remote stress acting downward.](../images/superposition-bearing.svg)<!-- .element width="70%" -->
 
 ----
 ## example - pressurized crack
 
-![A center crack is subjected to a stress applied locally along the crack face, also known as a pressurized crack.](images\superposition-pressure.svg)<!-- .element width="80%" -->
+![A center crack is subjected to a stress applied locally along the crack face, also known as a pressurized crack.](../images/superposition-pressure.svg)<!-- .element width="80%" -->
 
 ----
 ## example - pressurized crack
@@ -105,7 +107,7 @@ $$\\begin{aligned}
 ----
 ## example - pressurized crack
 
-![We can address the problem of a pressurized crack by considering the case where a remote stress (with no crack) is equivalent to a cracked body, under remote stress, with a compressive stress acting at the hole to cancel the effect of the crack.](images\superposition-pressure2.svg)<!-- .element width="80%" -->
+![We can address the problem of a pressurized crack by considering the case where a remote stress (with no crack) is equivalent to a cracked body, under remote stress, with a compressive stress acting at the hole to cancel the effect of the crack.](../images/superposition-pressure2.svg)<!-- .element width="80%" -->
 
 ----
 ## group problems
@@ -117,22 +119,22 @@ $$\\begin{aligned}
 ----
 ## group 1
 
-![Semi-elliptical surface flaw in a pressurized cylinder](images\group1.PNG)
+![Semi-elliptical surface flaw in a pressurized cylinder](../images/group1.PNG)
 
 ----
 ## group 2
 
-![An edge crack is subjected to an arbitrary remote force (not centered).](images\superposition-group2.svg)<!-- .element width="60%" -->
+![An edge crack is subjected to an arbitrary remote force (not centered).](../images/superposition-group2.svg)<!-- .element width="60%" -->
 
 ----
 ## group 3
 
-![A crack is subjected to an upward acting local force which is balanced by a remote stress acting downward.](images\superposition-group3.svg)<!-- .element width="20%" -->
+![A crack is subjected to an upward acting local force which is balanced by a remote stress acting downward.](../images/superposition-group3.svg)<!-- .element width="20%" -->
 
 ----
 ## group 4
 
-![A crack around a hole is loaded both under remote tension and with a local bearing force.](images\superposition-group4.svg)<!-- .element width="60%" -->
+![A crack around a hole is loaded both under remote tension and with a local bearing force.](../images/superposition-group4.svg)<!-- .element width="60%" -->
 
 ---
 # compounding
@@ -191,51 +193,71 @@ $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 ## p. 69 - example 3
 
 <div class="left">
-![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](images\example-69-3.svg)<!-- .element width="100%" -->
+
+![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](../images/example-69-3.svg)<!-- .element width="100%" -->
+
 </div>
 <div class="right">
+
 $b=1$ inch
+
 </div>
 
 ----
 ## group 1
 <div class="left">
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](images\compounding-group1.svg)<!-- .element width="100%" -->
+
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](../images/compounding-group1.svg)<!-- .element width="100%" -->
+
 </div>
 <div class="right">
+
 $b=0.4$ inches
+
 </div>
 
 ----
 ## group 2
 
 <div class="left">
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](images\compounding-group2.svg)<!-- .element width="100%" -->
+
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](../images/compounding-group2.svg)<!-- .element width="100%" -->
+
 </div>
 <div class="right">
+
 $b=0.4$ inches <br />
 
 Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
+
 </div>
 
 ----
 ## group 3
 
 <div class="left">
-![A center crack 0.25 inches long is on a panel 1 inch tall with the right crack tip 0.5 inches away from a 0.5 inch diameter hole.](images\compounding-group3.svg)<!-- .element width="100%" -->
+
+![A center crack 0.25 inches long is on a panel 1 inch tall with the right crack tip 0.5 inches away from a 0.5 inch diameter hole.](../images/compounding-group3.svg)<!-- .element width="100%" -->
+
 </div>
 <div class="right">
+
 Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
+
 </div>
 
 ----
 ## group 4
 
 <div class="left">
-![A center crack 0.25 inches long is between two holes with the right crack tip 0.5 inches away from a 0.5 inch diameter hole and the left crack tip is 0.25 inches away from a 1 inch diameter hole.](images\compounding-group4.svg)<!-- .element width="100%" -->
+
+![A center crack 0.25 inches long is between two holes with the right crack tip 0.5 inches away from a 0.5 inch diameter hole and the left crack tip is 0.25 inches away from a 1 inch diameter hole.](../images/compounding-group4.svg)<!-- .element width="100%" -->
+
 </div>
 <div class="right">
+
 The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the left crack tip is 0.25 inches away from a 1 inch diameter hole.
+
 </div>
 
 ---
@@ -252,19 +274,19 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 ----
 ## finite height - p. 50
 
-![beta for finite height effects, see text p. 50 or interactive chart linked in previous slide](images\finite-height.png)
+![beta for finite height effects, see text p. 50 or interactive chart linked in previous slide](../images/finite-height.png)
 
 ----
 ## offset crack - p. 71
 
-![beta for offset internal crack, see text p. 71 or interactive chart linked previously](images\internal-crack.png)
+![beta for offset internal crack, see text p. 71 or interactive chart linked previously](../images/internal-crack.png)
 
 ----
 ## crack near hole - p. 72
 
-![beta for the crack tip farther away from a hole, see text p. 72 or interactive chart linked previously](images\crack-hole-A.png)
+![beta for the crack tip farther away from a hole, see text p. 72 or interactive chart linked previously](../images/crack-hole-A.png)
 
 ----
 ## crack near hole - p. 73
 
-![beta for the crack tip closer to a hole, see text p. 73 or interactive chart linked previously](images\crack-hole-B.png)
+![beta for the crack tip closer to a hole, see text p. 73 or interactive chart linked previously](../images/crack-hole-B.png)
