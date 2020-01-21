@@ -194,7 +194,7 @@ $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 
 <div class="left">
 
-![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](../images/example-69-3.svg)<!-- .element width="100%" -->
+![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](../images/example-69-3.svg) <!-- .element width="60%" -->
 
 </div>
 <div class="right">
@@ -205,9 +205,10 @@ $b=1$ inch
 
 ----
 ## group 1
+
 <div class="left">
 
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](../images/compounding-group1.svg)<!-- .element width="100%" -->
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](../images/compounding-group1.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
@@ -221,7 +222,7 @@ $b=0.4$ inches
 
 <div class="left">
 
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](../images/compounding-group2.svg)<!-- .element width="100%" -->
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](../images/compounding-group2.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">

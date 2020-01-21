@@ -26,6 +26,7 @@ January 30, 2020
 ## supplemental material
 
 -   I was unable to find the source for all of Dr. Horn's formulas, but I have made an alternate set of equations (taken from the AFGROW user's manual) available on Blackboard under supplemental material.
+-   Can also be found [here](http://ndaman.github.io/damagetolerance/classdocs/Sec11_31.pdf)
 
 ---
 
@@ -92,7 +93,7 @@ $$\\beta\_r = 1+\\sum\_{i=1}^{N} (\\beta\_i - 1)$$
 
 <div class="left">
 
-![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](../images/example-69-3.svg)<!-- .element width="100%" -->
+![An off-center crack 1 inch long is loaded under remote tension in a 2.25 inch wide panel. The center of the crack is 1 inch away from the left side.](../images/example-69-3.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
@@ -105,7 +106,7 @@ $b=1$ inch
 ## group 1
 <div class="left">
 
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](../images/compounding-group1.svg)<!-- .element width="100%" -->
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel that is 1 inch tall. The center of the crack is 0.4 inches away from the left side.](../images/compounding-group1.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
@@ -119,7 +120,7 @@ $b=0.4$ inches
 
 <div class="left">
 
-![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](../images/compounding-group2.svg)<!-- .element width="100%" -->
+![An off-center crack 0.25 inches long is loaded under remote tension in a 2 inch wide panel. The center of the crack is 0.4 inches away from the left side. There is also a 0.5 inch diameter hole spaced 0.5 inches away from the crack tip.](../images/compounding-group2.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
@@ -135,7 +136,7 @@ Hole diameter is 0.5 inches and spaced 0.5 inches away from the crack tip
 
 <div class="left">
 
-![A center crack 0.25 inches long is on a panel 1 inch tall with the right crack tip 0.5 inches away from a 0.5 inch diameter hole.](../images/compounding-group3.svg)<!-- .element width="100%" -->
+![A center crack 0.25 inches long is on a panel 1 inch tall with the right crack tip 0.5 inches away from a 0.5 inch diameter hole.](../images/compounding-group3.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
@@ -267,16 +268,14 @@ $$\\begin{aligned}
 
 <div class="left">
 
-![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is 0.1 inches long (on the right side of the hole).](../images/curved-group1.svg)<!-- .element width="100%" -->
+![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is 0.1 inches long (on the right side of the hole).](../images/curved-group1.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
 
-<ul>
-  <li>*c* = 0.75, *e* = 2.25, *r* = 0.5</li>
-  <li> assume *a* is short and calculate $\beta$ for this case</li>
-  <li> calculate in terms of $\beta$ for known state</li>
-</ul>
+-  _c_ = 0.75, *e* = 2.25, *r* = 0.5
+-  assume *a* is short and calculate $\beta$ for this case
+-  calculate in terms of $\beta$ for known state
 
 </div>
 
@@ -285,16 +284,14 @@ $$\\begin{aligned}
 
 <div class="left">
 
-![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is considered to be long (on the right side of the hole).](../images/curved-group2.svg)<!-- .element width="100%" -->
+![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is considered to be long (on the right side of the hole).](../images/curved-group2.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
 
-<ul>
-  <li>*c* = 0.75, *e* = 2.25, *r* = 0.5</li>
-  <li> assume *a* is long and calculate $\beta$ for this case</li>
-  <li> calculate in terms of $\beta$ for known state</li>
-</ul>
+-  _c_ = 0.75, *e* = 2.25, *r* = 0.5
+-   assume *a* is long and calculate $\beta$ for this case
+-   calculate in terms of $\beta$ for known state
 
 </div>
 
@@ -303,16 +300,14 @@ $$\\begin{aligned}
 
 <div class="left">
 
-![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is 0.1 inches long (on the right side of the hole), but continues all the way to the edge on the left side of the hole.](../images/curved-group3.svg)<!-- .element width="100%" -->
+![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is 0.1 inches long (on the right side of the hole), but continues all the way to the edge on the left side of the hole.](../images/curved-group3.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
 
-<ul>
-  <li>*c* = 0.75, *e* = 2.25, *r* = 0.5</li>
-  <li> assume *a* is short and calculate $\beta$ for this case</li>
-  <li> calculate in terms of $\beta$ for known state</li>
-</ul>
+-  *c* = 0.75, *e* = 2.25, *r* = 0.5
+-   assume *a* is short and calculate $\beta$ for this case
+-   calculate in terms of $\beta$ for known state
 
 </div>
 
@@ -321,16 +316,14 @@ $$\\begin{aligned}
 
 <div class="left">
 
-![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is considered long (on the right side of the hole), and continues all the way to the edge on the left side of the hole.](../images/curved-group4.svg)<!-- .element width="100%" -->
+![A 3 inch panel is shown with a hole whose center is offset c from the left edge of the panel. The crack is considered long (on the right side of the hole), and continues all the way to the edge on the left side of the hole.](../images/curved-group4.svg) <!-- .element width="70%" -->
 
 </div>
 <div class="right">
 
-<ul>
-  <li>*c* = 0.75, *e* = 2.25, *r* = 0.5</li>
-  <li> assume *a* is long and calculate $\beta$ for this case</li>
-  <li> calculate in terms of $\beta$ for known state</li>
-</ul>
+-  _c_ = 0.75, *e* = 2.25, *r* = 0.5
+-   assume *a* is long and calculate $\beta$ for this case
+-   calculate in terms of $\beta$ for known state
 
 </div>
 
