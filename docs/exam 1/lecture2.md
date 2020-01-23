@@ -18,8 +18,8 @@ January 23, 2020
 ----
 ## office hours
 
--   TBD
--   Best option (as of now) is either Monday or Wednesday from 4:00 - 5:00
+-   20/27 reporting
+-   Tuesdays from 3:00 - 4:00 is looking like the best option
 -   Next week I plan to finalize, so fill out the Doodle before then
 
 ----
