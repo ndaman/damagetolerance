@@ -18,8 +18,8 @@ January 28, 2020
 ----
 ## office hours
 
--   Office hours will be TBD
--   As a back-up, AE 333 Office Hours are TBD
+-   Office hours will be Tuesdays 3:00 - 4:00
+-   As a back-up, AE 333 Office Hours are Fridays 2:00 - 3:00
 -   Take advantage of office hours, this is time that I have already set aside for you
 -   If the regular office hours do not work for your schedule, send me an e-mail and we can work out a time to meet
 
