@@ -96,9 +96,8 @@ $$\\sigma\_y = \\frac{K\_I}{\\sqrt{2\\pi r}}$$
 
 <div class="left">
 
-<ul>
-<li> We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions</li>
-<li> The plastic zone size can now be approximated</li>
+- We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions
+- The plastic zone size can now be approximated
 
 </div>
 <div class="right">
@@ -292,10 +291,8 @@ Note: We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\
 
 <div class="left">
 
-<ul>
-<li> You are to design aninspection cycle for a panel </li>
-<li> Consider the plastic stress intensity ratio, and the effect of varying crack lengths on it</li>
-</ul>
+- You are asked to design an inspection cycle for a panel 
+- Consider the plastic stress intensity ratio, and the effect of varying crack lengths on it
 
 </div>
 <div class="right">
