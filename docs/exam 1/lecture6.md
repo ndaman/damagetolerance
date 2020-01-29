@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 12, 2019
+February 11, 2020
 
 ----
 ## schedule
 
-- 12 Feb - Plastic Zone, Homework 2 Due
-- 14 Feb - Fracture Toughness
-- 19 Feb - Fracture Toughness, Homework 3 Due
-- 21 Feb - Residual Strength
+- 11 Feb - Plastic Zone, Homework 2 Due
+- 13 Feb - Fracture Toughness
+- 18 Feb - Fracture Toughness, Homework 3 Due
+- 20 Feb - Residual Strength
 
 ----
 ## outline
@@ -89,22 +89,26 @@ $$\\sigma\_y = \\frac{K\_I}{\\sqrt{2\\pi r}}$$
 ----
 ## Irwin's first approximation
 
-![A figure showing the opening stress near the crack tip. At some distance, rp away from the tip the stress is equal to the yield stress of the material times some constant C.](images\plastic-zone.svg)<!-- .element width="50%" -->
+![A figure showing the opening stress near the crack tip. At some distance, rp away from the tip the stress is equal to the yield stress of the material times some constant C.](../images/plastic-zone.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's first approximation
 
 <div class="left">
+
 <ul>
 <li> We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions</li>
 <li> The plastic zone size can now be approximated</li>
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   \\sigma\_{yy}(r=r\_p) &= C\\sigma\_{YS}\\\\
   \\frac{K\_I}{\\sqrt{2\\pi r\_p}} &= C\\sigma\_{YS}\\\\
   r\_p &= \\frac{1}{2\\pi} \\left(\\frac{K\_I}{C\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
+
 </div>
 
 ----
@@ -119,9 +123,11 @@ $$r\_p = \\frac{1}{6\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ## Intermediate panels
 
 -   For panels which lie between plane strain and plane stress states, we use the following expression to estimate the plastic zone size
+
 $$r\_p = \\frac{1}{I\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 
 -   Where *I* is defined as
+
 $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 
 -   And `$2 \le I \le 6$`
@@ -135,7 +141,7 @@ $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ----
 ## Irwin's second approximation
 
-![The previous drawing of stress near the crack it is repeated, but the area above the yield stress is highlighted, as this strain energy would be missing if we ignored it, creating an imbalance.](images\plastic-missing.svg)<!-- .element width="50%" -->
+![The previous drawing of stress near the crack it is repeated, but the area above the yield stress is highlighted, as this strain energy would be missing if we ignored it, creating an imbalance.](../images/plastic-missing.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's second approximation
@@ -146,27 +152,32 @@ $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ----
 ## Irwin's second approximation
 
-![In this plot of the stress near the crack tip, the stress is shifted by some amount, delta, such that the extra area under the curve by the shifted amount is equal to the area missing from the portion above the yield stress.](images\plastic-equivalent.svg)<!-- .element width="50%" -->
+![In this plot of the stress near the crack tip, the stress is shifted by some amount, delta, such that the extra area under the curve by the shifted amount is equal to the area missing from the portion above the yield stress.](../images/plastic-equivalent.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's second approximation
 
 <div class="left">
+
 We need *A*=*B*, so we set them equivalent and solve for $\delta$.
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   A &= \\int\_{0}^{r\_p} \\sigma\_{yy} dr - r\_p \\sigma\_{YS}\\\\
   &= \\int\_{0}^{r\_p} \\frac{K\_I}{\\sqrt{2\\pi r}} dr - r\_p \\sigma\_{YS}\\\\
   &= \\frac{K\_I}{\\sqrt{2\\pi}}\\int\_{0}^{r\_p} r^{-1/2} dr - r\_p \\sigma\_{YS}\\\\
   &= \\frac{2K\_I \\sqrt{r\_p}}{\\sqrt{2\\pi}}- r\_p \\sigma\_{YS}
 \\end{aligned}$$
+
 </div>
 
 ----
 ## Irwin's second approximation
 
 -   We have already found *r*<sub>*p*</sub> as
+
 $$r\_p = \\frac{1}{2\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 
 -   If we solve this for *K*<sub>*I*</sub> we find
@@ -205,7 +216,7 @@ $$\\begin{aligned}
 ----
 ## Example
 
-![An edge crack of length a in a panel of width W is subjected to a remote load](images\plastic-example.svg)
+![An edge crack of length a in a panel of width W is subjected to a remote load](../images/plastic-example.svg)
 
 ----
 ## equations
@@ -230,15 +241,19 @@ $$\\begin{aligned}
 ## plastic stress intensity ratio
 
 <div class="left">
+
 For an infinitely wide center-cracked panel, we can solve for *K*<sub>*Ie*</sub>/*K*<sub>*I*</sub> symbolically, in plane stress
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   K\_I &= \\sigma \\sqrt{\\pi a}\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi(a+r\_p)}\\\\
   r\_p &= \\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi \\left(a+\\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\right)}
 \\end{aligned}$$
+
 </div>
 
 ----
@@ -276,17 +291,21 @@ Note: We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\
 ## example
 
 <div class="left">
+
 <ul>
 <li> You are to design aninspection cycle for a panel </li>
 <li> Consider the plastic stress intensity ratio, and the effect of varying crack lengths on it</li>
 </ul>
+
 </div>
 <div class="right">
-![an edge crack of length a in a 5 inch wide panel subjected to a remote stress of 8 ksi.](images\intensity-ratio-example.svg)<!-- .element width="70%"-->
+
+![an edge crack of length a in a 5 inch wide panel subjected to a remote stress of 8 ksi.](../images/intensity-ratio-example.svg) <!-- .element width="70%"-->
 </div>
 
 ----
 ## example
+
 online example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Plastic%20stress%20intensity%20ratio.ipynb)
 
 ---
@@ -305,6 +324,7 @@ online example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/
 
 -   Principal stresses are often used in yield theories
 -   We can determine the principal stresses near the crack tip as
+
 $$\\begin{aligned}
   \\label{eq:principal}
   \\sigma\_1 &= \\frac{K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right)&\\\\
@@ -326,10 +346,13 @@ $$\\begin{aligned}
 ## Von Mises yield theory
 
 -   The distortional strain energy is given by
-$$\\label{eq:distortion}
-  W\_d = \\frac{1}{12}G\\left\[\\left(\\sigma\_1 - \\sigma\_2\\right)^2 + \\left(\\sigma\_2 - \\sigma\_3\\right)^2 +\\left(\\sigma\_3 - \\sigma\_1\\right)^2\\right\]$$
+
+$$ W\_d = \\frac{1}{12}G\\left\[\\left(\\sigma\_1 - \\sigma\_2\\right)^2 + \\left(\\sigma\_2 - \\sigma\_3\\right)^2 +\\left(\\sigma\_3 - \\sigma\_1\\right)^2\\right\]$$
+
 -   Which for a uniaxially loaded point becomes
+
 $$W\_d = \\frac{1}{6}G\\sigma\_{YS}^2$$
+
 -   We can equate the two cases and solve
 
 $$\\begin{aligned}
@@ -342,12 +365,14 @@ $$\\begin{aligned}
 
 -   We can find the plastic zone size, *r*<sub>*p*</sub> by substituting the principal stress relations into the distortional strain energy equation
 -   In plane stress we find
+
 $$\\begin{aligned}
   2 \\sigma\_{YS}^2 &= \\left( \\sigma\_1 - \\sigma\_2 \\right)^2 + \\left( \\sigma\_2 - 0 \\right)^2 + \\left(0 - \\sigma\_1\\right)^2
 \\end{aligned}$$
 
 ----
 ## Von Mises yield theory
+
 $$\\small{\\begin{aligned}
   2 \\sigma\_{YS}^2 &= \\left(\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right) -\\right .\\\\
   &\\left .\\frac{K\_I}{\\sqrt{2\\pi r\_p}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right)\\right)^2 + \\\\
@@ -359,15 +384,19 @@ $$\\small{\\begin{aligned}
 ## Von Mises yield theory
 
 -   After solving we find
-    $$r\_p = \\frac{K\_I^2}{2\\pi \\sigma^2\_{YS}} \\cos^2 \\frac{\\theta}{2} \\left(1 + 3\\sin^2 \\frac{\\theta}{2}\\right)$$
+
+$$r\_p = \\frac{K\_I^2}{2\\pi \\sigma^2\_{YS}} \\cos^2 \\frac{\\theta}{2} \\left(1 + 3\\sin^2 \\frac{\\theta}{2}\\right)$$
+
 -   We can similarly solve for *r*<sub>*p*</sub> in plane strain to find
-    $$r\_p = \\frac{K\_I^2}{2\\pi \\sigma^2\_{YS}} \\cos^2 \\frac{\\theta}{2} \\left(1 -4\\nu + 4\\nu^2 + 3\\sin^2 \\frac{\\theta}{2}\\right)$$
+
+$$r\_p = \\frac{K\_I^2}{2\\pi \\sigma^2\_{YS}} \\cos^2 \\frac{\\theta}{2} \\left(1 -4\\nu + 4\\nu^2 + 3\\sin^2 \\frac{\\theta}{2}\\right)$$
 
 ----
 ## Tresca yield theory
 
 -   Tresca yield theory assumes that yielding begins when the maximum shear stress reaches a critical value
 -   In uniaxial tension this gives
+
 $$\\tau\_0 = \\tau\_{max} = \\frac{1}{2}\\left(\\sigma\_{max} - \\sigma\_{min}\\right) = \\frac{1}{2} \\left(\\sigma\_{YS} - 0\\right) = \\frac{\\sigma\_{YS}}{2}$$
 
 ----
@@ -381,6 +410,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 -   We can substitute and solve as before to find
+
 $$r\_p = \\frac{K\_I^2}{2 \\pi \\sigma\_{YS}^2}\\cos^2 \\frac{\\theta}{2}\\left(1+\\sin \\frac{\\theta}{2}\\right)^2$$
 
 ----
@@ -388,6 +418,7 @@ $$r\_p = \\frac{K\_I^2}{2 \\pi \\sigma\_{YS}^2}\\cos^2 \\frac{\\theta}{2}\\left(
 
 -   In plane strain, it is not clear whether `$\sigma_2$` or `$\sigma_3$` will be `$\sigma_{min}$`
 -   We can solve for when `$\sigma_2$` will be `$\sigma_{min}$`
+
 $$\\begin{aligned}
   \\sigma\_2 &&lt; \\sigma\_3\\\\
   \\frac{K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\left(1-\\sin \\frac{\\theta}{2}\\right) &&lt; \\frac{2\\nu K\_I}{\\sqrt{2\\pi r}}\\cos \\frac{\\theta}{2}\\\\
@@ -413,10 +444,11 @@ $$\\begin{aligned}
 ----
 ## 3D plastic zone shape
 
-![An image showing the 3D plastic zone shape, which looks a little bit like a dumbell. The plastic zone is much larger near the surface, where the material behaves as if in plane stress. In the center, where the material behaves more like plane strain, the plastic zone is much smaller.](images\dumbell.png)
+![An image showing the 3D plastic zone shape, which looks a little bit like a dumbell. The plastic zone is much larger near the surface, where the material behaves as if in plane stress. In the center, where the material behaves more like plane strain, the plastic zone is much smaller.](../images/dumbell.png)
 
 ----
 ## example
+
 online example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Plastic%20Zone%20Shape.ipynb)
 
 ---
