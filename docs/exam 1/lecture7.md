@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 14, 2019
+February 11, 2020
 
 ----
 ## schedule
 
-- 14 Feb - Fracture Toughness
-- 19 Feb - Fracture Toughness, Homework 3 Due
-- 21 Feb - Residual Strength
-- 26 Feb - Residual Strength, Homework 4 Due
+- 11 Feb - Fracture Toughness
+- 13 Feb - Fracture Toughness, Homework 3 Due
+- 18 Feb - Residual Strength
+- 20 Feb - Residual Strength, Homework 4 Due
 
 ----
 ## outline
@@ -29,46 +29,59 @@ February 14, 2019
 ## Irwin's first approximation
 
 -   If we recall the equation for opening stress (`$\sigma_y$`) near the crack tip
+
 $$\\sigma\_y = \\frac{K\_I}{\\sqrt{2\\pi r}} \\cos \\frac{\\theta}{2} \\left(1+\\sin \\frac{\\theta}{2}\\sin \\frac{3\\theta}{2}\\right) \\tag{1.2}$$
+
 -   In the plane of the crack, when `$\theta=0$` we find
+
 $$\\sigma\_y = \\frac{K\_I}{\\sqrt{2\\pi r}}$$
 
 ----
 ## Irwin's first approximation
 
-![A figure showing the opening stress near the crack tip. At some distance, rp away from the tip the stress is equal to the yield stress of the material times some constant C.](images\plastic-zone.svg)<!-- .element width="50%" -->
+![A figure showing the opening stress near the crack tip. At some distance, rp away from the tip the stress is equal to the yield stress of the material times some constant C.](../images/plastic-zone.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's first approximation
 
 <div class="left">
-<ul>
-<li> We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions</li>
-<li> The plastic zone size can now be approximated</li>
+
+- We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions
+- The plastic zone size can now be approximated
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   \\sigma\_{yy}(r=r\_p) &= C\\sigma\_{YS}\\\\
   \\frac{K\_I}{\\sqrt{2\\pi r\_p}} &= C\\sigma\_{YS}\\\\
   r\_p &= \\frac{1}{2\\pi} \\left(\\frac{K\_I}{C\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
+
 </div>
 
 ----
 ## Irwin's first approximation
 
 -   For plane stress (thin panels) we let $C=1$ and find *r*<sub>*p*</sub> as
+
 $$r\_p = \\frac{1}{2\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
+
 -   And for plane strain (thick panels) we let $C=\\sqrt{3}$ and find
+
 $$r\_p = \\frac{1}{6\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 
 ----
 ## Intermediate panels
 
 -   For panels which lie between plane strain and plane stress states, we use the following expression to estimate the plastic zone size
+
 $$r\_p = \\frac{1}{I\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
+
 -   Where *I* is defined as
+
 $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
+
 -   And `$2 \le I \le 6$`
 
 ----
@@ -80,7 +93,7 @@ $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ----
 ## Irwin's second approximation
 
-![The previous drawing of stress near the crack it is repeated, but the area above the yield stress is highlighted, as this strain energy would be missing if we ignored it, creating an imbalance.](images\plastic-missing.svg)<!-- .element width="50%" -->
+![The previous drawing of stress near the crack it is repeated, but the area above the yield stress is highlighted, as this strain energy would be missing if we ignored it, creating an imbalance.](../images/plastic-missing.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's second approximation
@@ -91,7 +104,7 @@ $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ----
 ## Irwin's second approximation
 
-![In this plot of the stress near the crack tip, the stress is shifted by some amount, delta, such that the extra area under the curve by the shifted amount is equal to the area missing from the portion above the yield stress.](images\plastic-equivalent.svg)<!-- .element width="50%" -->
+![In this plot of the stress near the crack tip, the stress is shifted by some amount, delta, such that the extra area under the curve by the shifted amount is equal to the area missing from the portion above the yield stress.](../images/plastic-equivalent.svg) <!-- .element width="50%" -->
 
 ----
 ## Irwin's second approximation
@@ -104,15 +117,19 @@ $$I = 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2$$
 ## plastic stress intensity ratio
 
 <div class="left">
+
 For an infinitely wide center-cracked panel, we can solve for *K*<sub>*Ie*</sub>/*K*<sub>*I*</sub> symbolically, in plane stress
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   K\_I &= \\sigma \\sqrt{\\pi a}\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi(a+r\_p)}\\\\
   r\_p &= \\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\\\
   K\_{Ie} &= \\sigma \\sqrt{\\pi \\left(a+\\frac{1}{2\\pi} \\left( \\frac{K\_{Ie}}{\\sigma\_{YS}}\\right)^2\\right)}
 \\end{aligned}$$
+
 </div>
 
 ----
@@ -141,7 +158,7 @@ Note: We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\
 ----
 ## 3D plastic zone shape
 
-![An image showing the 3D plastic zone shape, which looks a little bit like a dumbell. The plastic zone is much larger near the surface, where the material behaves as if in plane stress. In the center, where the material behaves more like plane strain, the plastic zone is much smaller.](images\dumbell.png)
+![An image showing the 3D plastic zone shape, which looks a little bit like a dumbell. The plastic zone is much larger near the surface, where the material behaves as if in plane stress. In the center, where the material behaves more like plane strain, the plastic zone is much smaller.](../images/dumbell.png)
 
 ---
 # group problems
@@ -197,7 +214,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## fracture toughness
 
-![Thin panels have a generally higher fracture toughness, as they are in plane stress. As the panel gets thicker it converges to the plane strain fracture toughness.](images\KIC_thickness.jpg) <!-- .element width="50%" -->
+![Thin panels have a generally higher fracture toughness, as they are in plane stress. As the panel gets thicker it converges to the plane strain fracture toughness.](../images/KIC_thickness.jpg) <!-- .element width="50%" -->
 
 ----
 ## unstable cracks
@@ -221,7 +238,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## K-curve
 
-![A graph showing the fracture toughness of a perfectly brittle material vs. a ductile material. A perfectly brittle material will not have any crack growth until the stress intensity is K_IC, at which point the crack grows indefinitely. A ductile material will have mostly stable crack growth, until reaching a critical value, K_C.](images\k-curve.PNG) <!-- .element width="60%" -->
+![A graph showing the fracture toughness of a perfectly brittle material vs. a ductile material. A perfectly brittle material will not have any crack growth until the stress intensity is K_IC, at which point the crack grows indefinitely. A ductile material will have mostly stable crack growth, until reaching a critical value, K_C.](../images/k-curve.PNG) <!-- .element width="60%" -->
 
 ----
 ## K-curve
@@ -236,28 +253,34 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ## example
 
 <div class="left">
-<ul>
-  <li>In composites, and adhesives, some work is needed to ensure stable crack growth</li>
-  <li>The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this</li>
-</ul>
+
+-  In composites, and adhesives, some work is needed to ensure stable crack growth
+-  The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this
+
 </div>
 
 <div class="right">
+
 $$\\begin{aligned}
   C &= \\frac{\\delta}{P}\\\\
   C &= \\frac{2a^3}{3EI}\\\\
   G &= \\frac{P^2}{2b}\\frac{dC}{da}\\\\
   G &= \\frac{P^2a^2}{bEI}
 \\end{aligned}$$
+
 </div>
 
 ----
 ## example
 
 -   For crack growth to be stable we need
+
 $$\\frac{dG}{da} \\le 0$$
+
 -   Under fixed-load conditions, we find
+
 $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
+
 -   This is always positive, and thus results in unstable crack growth
 
 ----
@@ -265,7 +288,9 @@ $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
 
 -   Under fixed-displacement conditions, we substitute for *P*
 -   We find
+
 $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
+
 -   Which is always stable, so for DCB tests, displacement control is generally used
 
 ---
@@ -275,18 +300,20 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 ## plane strain, brittle
 
 <div class="left">
-  <ul>
-    <li>For relatively brittle materials, we don’t need to worry about the R-curve</li>
-    <li>Specimens are made according to these specifications</li>
-  </ul>
+
+- For relatively brittle materials, we don’t need to worry about the R-curve
+- Specimens are made according to these specifications
+
 </div>
 
 <div class="right">
+
 $$\\begin{aligned}
   a \\ge 2.5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2\\\\
   b \\ge 2.5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2\\\\
   W \\ge 5 \\left(\\frac{K\_{IC}}{\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
+
 </div>
 
 ----
@@ -298,17 +325,17 @@ $$\\begin{aligned}
 ----
 ## ASTM E399
 
-![A figure from the ASTM standard showing a compact tension specimen](images\CT.PNG) <!-- .element width="50%" -->
+![A figure from the ASTM standard showing a compact tension specimen](../images/CT.PNG) <!-- .element width="50%" -->
 
 ----
 ## ASTM E399
 
-![A figure from the ASTM standard showing a single edge notched bending specimen](images\SENB.PNG) <!-- .element width="70%" -->
+![A figure from the ASTM standard showing a single edge notched bending specimen](../images/SENB.PNG) <!-- .element width="70%" -->
 
 ----
 ## ASTM E399
 
-![A figure from the ASTM standard showing how the notches should be machined to promote proper crack shapes](images\chevron.PNG) <!-- .element width="60%" -->
+![A figure from the ASTM standard showing how the notches should be machined to promote proper crack shapes](../images/chevron.PNG) <!-- .element width="60%" -->
 
 ----
 ## ASTM E399
@@ -334,7 +361,7 @@ $$\\begin{aligned}
 ----
 ## ASTM E399
 
-![Various different conditions for how the provisional K_IC value is to be found.](images\astm-e399.PNG) <!-- .element width="70%" -->
+![Various different conditions for how the provisional K_IC value is to be found.](../images/astm-e399.PNG) <!-- .element width="70%" -->
 
 ----
 ## ASTM E399
@@ -344,7 +371,9 @@ $$\\begin{aligned}
 
 ----
 ## ASTM E399
+
 - For a perfectly linear material, *P*<sub>*Q*</sub> = *P*<sub>*max*</sub>.
+
 $$\\begin{aligned}
   K\_Q &= \\frac{P\_Q}{BW^{1/2}}f\\left(\\frac{a}{W}\\right) & \\text{Compact Tension}\\\\
   K\_Q &= \\frac{P\_Q}{BW^{3/2}}g\\left(\\frac{a}{W}\\right) & \\text{SENB}
@@ -366,9 +395,13 @@ $$\\begin{aligned}
 ## ASTM E399
 
 -   For stable crack extension, check the *P*<sub>*max*</sub>
+
 $$\\frac{P\_{max}}{P\_Q} \\le 1.10$$
+
 -   Check for symmetric crack front, *a*<sub>1</sub>, *a*<sub>2</sub>, and *a*<sub>3</sub> must be within 5% of *a*. *a*<sub>*s*</sub> must be within 10% of *a*.
+
 $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
+
 -   Load-displacement should have an initial slope between 0.7 and 1.5
 
 ---
@@ -399,19 +432,19 @@ $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
 ----
 ## ASTM E561
 
-![An image showing how long cracks are allowed to be relative to the center hole in middle-cracked tension specimens](images\MT-envelope.PNG)
+![An image showing how long cracks are allowed to be relative to the center hole in middle-cracked tension specimens](../images/MT-envelope.PNG)
 
-![An alternative method with a longer pre-crack in middle-cracked tension specimens](images\MT-notch.PNG)
-
-----
-## minimum sample dimensions
-
-![A table of minimum recommended specimen dimensions for middle-cracked tension specimens.](images\MT-minimum.PNG)
+![An alternative method with a longer pre-crack in middle-cracked tension specimens](../images/MT-notch.PNG)
 
 ----
 ## minimum sample dimensions
 
-![A table of minimum recommended specimen dimensions for compact tension specimens.](images\CT-minimum.PNG)
+![A table of minimum recommended specimen dimensions for middle-cracked tension specimens.](../images/MT-minimum.PNG)
+
+----
+## minimum sample dimensions
+
+![A table of minimum recommended specimen dimensions for compact tension specimens.](../images/CT-minimum.PNG)
 
 ----
 ## effective crack length
@@ -424,12 +457,13 @@ $$\\frac{a\_1 + a\_2 + a\_3}{3} = a$$
 ----
 ## secant compliance
 
-![A force-displacement curve with secant lines (i.e. average slope) superposed at various locations.](images\secant.PNG) <!-- .element width="40%" -->
+![A force-displacement curve with secant lines (i.e. average slope) superposed at various locations.](../images/secant.PNG) <!-- .element width="40%" -->
 
 ----
 ## secant compliance M(T)
 
 -   Using the slope data from our load-displacement curve, we can calculate the effective crack length using
+
 $$\\begin{gathered}
   EB\\left(\\frac{\\Delta v}{\\Delta P}\\right) = \\frac{2 Y}{W} \\sqrt{\\frac{\\pi a / W}{\\sin (\\pi a / W)}} \\\\
   \\qquad \\left\[\\frac{2W}{\\pi Y} \\cosh^{-1} \\left(\\frac{\\cosh(\\pi Y/W)}{\\cos (\\pi a / W)}\\right) - \\frac{1+\\nu}{\\sqrt{1 + \\left(\\frac{\\sin(\\pi a/W)}{\\sinh (\\pi Y/W)}\\right)^2}}+\\nu\\right\]
@@ -444,6 +478,7 @@ $$\\begin{gathered}
 
 ----
 ## secant compliance M(T)
+
 $$\\begin{aligned}
   X &= 1 - \\exp \\left\[\\frac{-\\sqrt{\[EB(\\Delta v/ \\Delta P)\]^2 - (2Y/W)^2}}{2.141}\\right\]\\\\
   &\\begin{aligned}
@@ -456,9 +491,12 @@ $$\\begin{aligned}
 ## secant compliance M(T)
 
 <div class="left">
+
   In the above equations, the following are the definitions of parameters used
+
 </div>
 <div class="right">
+
 $$\\begin{aligned}
   E &= \\qquad \\text{Young's Modulus}\\\\
   \\Delta v / \\Delta P &= \\qquad \\text{specimen compliance}\\\\
@@ -468,19 +506,22 @@ $$\\begin{aligned}
   a &= \\qquad \\text{effective crack length}\\\\
   \\nu &= \\qquad \\text{Poisson's ratio}
 \\end{aligned}$$
+
 </div>
 
 ----
 ## secant compliance C(T)
 
 -   For C(T) specimens, we use the following equations
+
 $$EB\\frac{\\Delta v}{\\Delta P} = A\_0 + A\_1\\left(\\frac{a}{W}\\right) + A\_2\\left(\\frac{a}{W}\\right)^2 + A\_3\\left(\\frac{a}{W}\\right)^3 + A\_4\\left(\\frac{a}{W}\\right)^4$$
+
 -   The coefficients will differ based on where the displacement is measured from
 
 ----
 ## secant compliance C(T)
 
-![Some dimensions labeled for compact tension specimens](images\CT-KR.PNG) <!-- .element width="50%" -->
+![Some dimensions labeled for compact tension specimens](../images/CT-KR.PNG) <!-- .element width="50%" -->
 
 ----
 ## secant compliance C(T)
@@ -502,8 +543,11 @@ $$EB\\frac{\\Delta v}{\\Delta P} = A\_0 + A\_1\\left(\\frac{a}{W}\\right) + A\_2
 ## secant compliance C(T)
 
 -   Where the initial guess for *a* is provided by
+
 $$\\frac{a}{W} = C\_0 + C\_1 U + C\_2 U^2 + C\_3 U^3 + C\_4 U^4 + C\_5 U^5$$
+
 -   and *U* is given by
+
 $$U = \\frac{1}{1 + \\sqrt{EB\\frac{\\Delta v}{\\Delta P}}}$$
 
 ----
@@ -514,7 +558,7 @@ $$U = \\frac{1}{1 + \\sqrt{EB\\frac{\\Delta v}{\\Delta P}}}$$
 ----
 ## buckling
 
-![Load-displacement curve after unloading and reloading, showing how this can interfere with results](images\buckling.PNG) <!-- .element width="40%" -->
+![Load-displacement curve after unloading and reloading, showing how this can interfere with results](../images/buckling.PNG) <!-- .element width="40%" -->
 
 ----
 ## buckling
@@ -546,9 +590,9 @@ $$U = \\frac{1}{1 + \\sqrt{EB\\frac{\\Delta v}{\\Delta P}}}$$
 ----
 ## example
 
-![K-R curves plotted vs. delta a that align very well](images\KR_C188T3_aluminum.PNG) <!-- .element width="60%" -->
+![K-R curves plotted vs. delta a that align very well](../images/KR_C188T3_aluminum.PNG) <!-- .element width="60%" -->
 
 ----
 ## example
 
-![K_R curves plotted vs. a, which do not align as well.](images\KR_C188T3_physical.PNG) <!-- .element width="60%" -->
+![K_R curves plotted vs. a, which do not align as well.](../images/KR_C188T3_physical.PNG) <!-- .element width="60%" -->

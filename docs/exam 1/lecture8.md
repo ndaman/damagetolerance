@@ -5,19 +5,18 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 19, 2019
+February 13, 2019
 
 ----
 ## schedule
 
-- 19 Feb - Fracture Toughness, Homework 3 Due
-- 21 Feb - Residual Strength
-- 26 Feb - Residual Strength, Homework 4 Due
-- 28 Feb - Multiple Site Damage
+- 13 Feb - Fracture Toughness, Homework 3 Due
+- 18 Feb - Residual Strength
+- 20 Feb - Residual Strength, Homework 4 Due
+- 25 Feb - Multiple Site Damage
 
 ----
 ## outline
-<!-- TOC depthFrom:1 depthTo:1 withLinks:0 updateOnSave:1 orderedList:0 -->
 
 - fracture toughness
 - R-curve
@@ -25,7 +24,6 @@ February 19, 2019
 - fracture toughness review
 - residual strength
 
-<!-- /TOC -->
 ---
 # fracture toughness
 
@@ -36,7 +34,9 @@ February 19, 2019
 -   The "critical stress intensity factor" is known as *K*<sub>*c*</sub>
 -   For Mode I, this is called *K*<sub>*Ic*</sub>
 -   The critical stress intensity factor is also known as fracture toughness
+
 $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
+
 -   Note: "Fracture Toughness" can also refer to *G*<sub>*Ic*</sub>, which is analogous to *K*<sub>*Ic*</sub>, but not the same
 
 ----
@@ -50,7 +50,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## fracture toughness
 
-![Thin panels have a generally higher fracture toughness, as they are in plane stress. As the panel gets thicker it converges to the plane strain fracture toughness.](images\KIC_thickness.jpg) <!-- .element width="50%" -->
+![Thin panels have a generally higher fracture toughness, as they are in plane stress. As the panel gets thicker it converges to the plane strain fracture toughness.](../images/KIC_thickness.jpg) <!-- .element width="50%" -->
 
 ----
 ## unstable cracks
@@ -61,6 +61,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 
 ----
 ## stable cracks
+
 -   For an elastic-plastic material, once the load is large enough to extend the crack, it will extend slightly
 -   The load must be continually increased until a critical value causes unstable crack growth
 
@@ -74,7 +75,7 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ----
 ## K-curve
 
-![A graph showing the fracture toughness of a perfectly brittle material vs. a ductile material. A perfectly brittle material will not have any crack growth until the stress intensity is K_IC, at which point the crack grows indefinitely. A ductile material will have mostly stable crack growth, until reaching a critical value, K_C.](images\k-curve.PNG) <!-- .element width="60%" -->
+![A graph showing the fracture toughness of a perfectly brittle material vs. a ductile material. A perfectly brittle material will not have any crack growth until the stress intensity is K_IC, at which point the crack grows indefinitely. A ductile material will have mostly stable crack growth, until reaching a critical value, K_C.](../images/k-curve.PNG) <!-- .element width="60%" -->
 
 ----
 ## K-curve
@@ -89,28 +90,34 @@ $$K\_{IC} = \\sigma\_c \\sqrt{\\pi a}\\beta$$
 ## example
 
 <div class="left">
-<ul>
-  <li>In composites, and adhesives, some work is needed to ensure stable crack growth</li>
-  <li>The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this</li>
-</ul>
+
+-  In composites, and adhesives, some work is needed to ensure stable crack growth
+-  The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this
+
 </div>
 
 <div class="right">
+
 $$\\begin{aligned}
   C &= \\frac{\\delta}{P}\\\\
   C &= \\frac{2a^3}{3EI}\\\\
   G &= \\frac{P^2}{2b}\\frac{dC}{da}\\\\
   G &= \\frac{P^2a^2}{bEI}
 \\end{aligned}$$
+
 </div>
 
 ----
 ## example
 
 -   For crack growth to be stable we need
+
 $$\\frac{dG}{da} \\le 0$$
+
 -   Under fixed-load conditions, we find
+
 $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
+
 -   This is always positive, and thus results in unstable crack growth
 
 ----
@@ -118,7 +125,9 @@ $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
 
 -   Under fixed-displacement conditions, we substitute for *P*
 -   We find
+
 $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
+
 -   Which is always stable, so for DCB tests, displacement control is generally used
 
 ---
@@ -203,12 +212,12 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 ----
 ## slant fracture
 
-![A slant fracture, where the failure plane rotates 45 degrees from the crack plane, considered a shear mode](images\slant.PNG)
+![A slant fracture, where the failure plane rotates 45 degrees from the crack plane, considered a shear mode](../images/slant.PNG)
 
 ----
 ## shear lip
 
-![In this shear lip, there is a long crack that near the end rotates away by 45 degrees creating a shear lip near the surface](images\shear_lip.jpg)
+![In this shear lip, there is a long crack that near the end rotates away by 45 degrees creating a shear lip near the surface](../images/shear_lip.jpg)
 
 ---
 # fracture toughness review
@@ -235,18 +244,19 @@ $$\\sigma\_R = \\sigma\_{YS} \\frac{A\_{net}}{A\_{gross}}$$
 ----
 ## residual strength
 
-![Effective yield strength plotted vs. crack length. As the crack gets longer, the actual cross-sectional area decreases so that the effective yield strength also goes down.](images\residual-strength.PNG) <!-- .element width="60%" -->
+![Effective yield strength plotted vs. crack length. As the crack gets longer, the actual cross-sectional area decreases so that the effective yield strength also goes down.](../images/residual-strength.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
 
 -   For brittle fracture to occur, we need to satisfy the condition
+
 $$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
 
 ----
 ## residual strength
 
-![Here the effective K_i is plotted vs. crack length and compared to the net section yield. The lower of the two values will cause failure.](images\residual-tough.PNG) <!-- .element width="60%" -->
+![Here the effective K_i is plotted vs. crack length and compared to the net section yield. The lower of the two values will cause failure.](../images/residual-tough.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
@@ -263,11 +273,17 @@ $$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
 
 -   As an example let us consider an edge-cracked panel with $W=6"$ and $t=0.1"$
 -   The net section yield condition will be given by
+
 $$\\sigma\_C = \\sigma\_{YS} \\frac{W-a}{W} = \\sigma\_{YS}\\frac{6-a}{6}$$
+
 -   And the fracture condition by
+
 $$\\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
-     With
+
+With
+
 $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\frac{a}{W}\\right)^2 - 21.72 \\left(\\frac{a}{W}\\right)^3 + 30.39 \\left(\\frac{a}{W}\\right)^4\}$$
+
 
 ----
 ## 7178-T6
