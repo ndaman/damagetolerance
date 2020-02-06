@@ -342,10 +342,10 @@ $$\\begin{aligned}
 
 <ol start="3">
   <li>Machine specimen</li>
-  <li>Fatigue crack specimen *K*<sub>*f*</sub> &lt; 0.6*K*<sub>*IC*</sub></li>
+  <li>Fatigue crack specimen K<sub>f</sub> &lt; 0.6K<sub>IC</sub></li>
   <ul>
     <li>This is to ensure that the plastic zone size during fatigue is smaller than the plastic zone size during testing</li>
-    <li>If *K*<sub>*IC*</sub> has not yet been determined, you may have to guess the first time</li>
+    <li>If K<sub>IC</sub> has not yet been determined, you may have to guess the first time</li>
   </ul>
 </ol>
 
@@ -354,8 +354,8 @@ $$\\begin{aligned}
 
 <ol start="5">
   <li>Mount specimen, attach gage</li>
-  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi$\\sqrt{\\text{in.}}$/min.)</li>
-  <li>Determine the "provisional" value of *K*<sub>*IC*</sub> (known as *K*<sub>*Q*</sub>)</li>
+  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi $\\sqrt{\\text{in.}}$ /min.)</li>
+  <li>Determine the "provisional" value of K<sub>IC</sub> (known as K<sub>Q</sub>)</li>
 </ol>
 
 ----
@@ -384,11 +384,14 @@ $$\\begin{aligned}
 
 <ol start="8">
   <li>Ensure that your specimen is still valid
+
   $$\\begin{aligned}
     a & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
     b & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
     W & \\ge 5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2
-  \\end{aligned}$$</li>
+  \\end{aligned}$$
+
+	</li>
 </ol>
 
 ----
