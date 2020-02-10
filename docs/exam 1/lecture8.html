@@ -49,13 +49,21 @@
 								smartypants: true,
 								gfm: true
 							},
-              dependencies: [
+							anything: [
+								{
+									className: "anything",
+									initialize: (function(container, options){ if (options && options.initialize) { options.initialize(container) } })
+								},
+							],
+							dependencies: [
                 { src: '../reveal.js/plugin/markdown/marked.js' },
                 { src: '../reveal.js/plugin/markdown/markdown.js' },
                 { src: '../reveal.js/plugin/notes/notes.js', async: true },
                 { src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: '../reveal.js/plugin/math/math.js', async: true }
-              ]
+                { src: '../reveal.js/plugin/math/math.js', async: true },
+								{ src: '../reveal.js/plugin/anything/anything.js' },
+								{ src: 'https://cdn.plot.ly/plotly-latest.min.js' }
+             ]
             });
 						Reveal.configure({
 							keyboard: {
