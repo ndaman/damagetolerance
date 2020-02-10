@@ -354,7 +354,7 @@ $$\\begin{aligned}
 
 <ol start="5">
   <li>Mount specimen, attach gage</li>
-  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi $\\sqrt{\\text{in.}}$ /min.)</li>
+  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi $\sqrt{\text{in.}}$ /min.)</li>
   <li>Determine the "provisional" value of K<sub>IC</sub> (known as K<sub>Q</sub>)</li>
 </ol>
 
@@ -383,7 +383,7 @@ $$\\begin{aligned}
 ## ASTM E399
 
 <ol start="8">
-  <li>Ensure that your specimen is still valid
+<li>Ensure that your specimen is still valid
 
   $$\\begin{aligned}
     a & \\ge 2.5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2\\\\
@@ -391,7 +391,7 @@ $$\\begin{aligned}
     W & \\ge 5 \\left(\\frac{K\_Q}{\\sigma\_{YS}}\\right)^2
   \\end{aligned}$$
 
-	</li>
+</li>
 </ol>
 
 ----
