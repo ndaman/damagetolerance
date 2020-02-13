@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 21, 2019
+February 18, 2020
 
 ----
 ## schedule
 
-- 21 Feb - Residual Strength
-- 26 Feb - Residual Strength, Homework 4 Due
-- 28 Feb - Multiple Site Damage
-- 5 Mar - Mixed-Mode Fracture, Homework 5 Due
+- 18 Feb - Residual Strength
+- 20 Feb - Residual Strength, Homework 4 Due
+- 25 Feb - Multiple Site Damage
+- 27 Mar - Mixed-Mode Fracture, Homework 5 Due
 
 ----
 ## outline
@@ -35,23 +35,25 @@ February 21, 2019
 -   As the crack grows, the area of the sample decreases, increasing the net section stress
 -   The residual strength, `$\sigma_R$` is given in terms of the gross area, so as the crack grows the residual strength due to yield decreases
 -   We can relate the net-section stress to `$\sigma_R$` by
+
 $$\\sigma\_R = \\sigma\_{YS} \\frac{A\_{net}}{A\_{gross}}$$
 
 ----
 ## residual strength
 
-![Effective yield strength plotted vs. crack length. As the crack gets longer, the actual cross-sectional area decreases so that the effective yield strength also goes down.](images\residual-strength.PNG) <!-- .element width="60%" -->
+![Effective yield strength plotted vs. crack length. As the crack gets longer, the actual cross-sectional area decreases so that the effective yield strength also goes down.](../images/residual-strength.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
 
 -   For brittle fracture to occur, we need to satisfy the condition
+		
 $$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
 
 ----
 ## residual strength
 
-![Here the effective K_i is plotted vs. crack length and compared to the net section yield. The lower of the two values will cause failure.](images\residual-tough.PNG) <!-- .element width="60%" -->
+![Here the effective K_i is plotted vs. crack length and compared to the net section yield. The lower of the two values will cause failure.](../images/residual-tough.PNG) <!-- .element width="60%" -->
 
 ----
 ## residual strength
@@ -68,10 +70,15 @@ $$\\sigma\_R = \\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a}\\beta}$$
 
 -   As an example let us consider an edge-cracked panel with $W=6"$ and $t=0.1"$
 -   The net section yield condition will be given by
+
 $$\\sigma\_C = \\sigma\_{YS} \\frac{W-a}{W} = \\sigma\_{YS}\\frac{6-a}{6}$$
+
 -   And the fracture condition by
+
 $$\\sigma\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
-     With
+
+With
+
 $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\frac{a}{W}\\right)^2 - 21.72 \\left(\\frac{a}{W}\\right)^3 + 30.39 \\left(\\frac{a}{W}\\right)^4\}$$
 
 ----
@@ -392,6 +399,7 @@ $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\fra
 
 ----
 ## Fedderson example
+
 worked example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Fedderson%20Approach.ipynb)
 
 ---
@@ -420,11 +428,13 @@ worked example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/
 ----
 ## example
 -   We can find the proof load
+
 $$\\begin{aligned}
   \\sigma\_c &= \\frac{K\_c}{\\sqrt{\\pi a\_0} \\beta}\\\\
   &= \\frac{140}{\\sqrt{\\pi 0.4} (1.161)}\\\\
   &= 107.6
 \\end{aligned}$$
+
 -   So the proof load would need to induce a gross section stress of 107.6 ksi.
 
 ---
@@ -455,20 +465,26 @@ $$\\begin{aligned}
 
 ----
 ## centered between stiffeners
-![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](images\crack-under.svg) <!-- .element width="80%" -->
+
+![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-under.svg) <!-- .element width="80%" -->
 
 ----
 ## centered under stiffener
-![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](images\crack-between.svg)<!-- .element width="80%" -->
+![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-between.svg) <!-- .element width="80%" -->
 
 ----
 ## remote stress
 
 -   For displacement continuity, we know that
+
 $$\\left(\\frac{PL}{AE}\\right)\_{Skin} = \\left(\\frac{PL}{AE}\\right)\_{Stiffener}$$
+
 -   Since *L* is the same, we find
+
 $$\\frac{S}{E} = \\frac{S\_S}{E\_S}$$
+
 -   Where the subscript <sub>*S*</sub> indicates stiffener values, we can express the remote stress in the stiffener as
+
 $$S\_S = S \\frac{E\_S}{E}$$
 
 ----
@@ -476,6 +492,7 @@ $$S\_S = S \\frac{E\_S}{E}$$
 
 -   The critical stress in the skin is determined the same way as it was in the residual strength chapter
 -   The only exception is that the stiffener contributes to $\beta$
+
 $$S\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
 
 ----

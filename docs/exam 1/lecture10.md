@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 26, 2019
+February 20, 2020
 
 ----
 ## schedule
 
-- 26 Feb - Residual Strength, Homework 4 Due
-- 28 Feb - Multiple Site Damage, Mixed-Mode Fracture
-- 5 Mar - Exam Review, Homework 5 Due
-- 7 Mar - Exam 1
+- 20 Feb - Residual Strength, Homework 4 Due
+- 25 Feb - Multiple Site Damage, Mixed-Mode Fracture
+- 27 Feb - Exam Review, Homework 5 Due
+- 3 Mar - Exam 1
 
 ----
 ## outline
@@ -38,20 +38,26 @@ February 26, 2019
 
 ----
 ## centered between stiffeners
-![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](images\crack-under.svg) <!-- .element width="80%" -->
+
+![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-under.svg) <!-- .element width="80%" -->
 
 ----
 ## centered under stiffener
-![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](images\crack-between.svg)<!-- .element width="80%" -->
+![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-between.svg) <!-- .element width="80%" -->
 
 ----
 ## remote stress
 
 -   For displacement continuity, we know that
+
 $$\\left(\\frac{PL}{AE}\\right)\_{Skin} = \\left(\\frac{PL}{AE}\\right)\_{Stiffener}$$
+
 -   Since *L* is the same, we find
+
 $$\\frac{S}{E} = \\frac{S\_S}{E\_S}$$
+
 -   Where the subscript <sub>*S*</sub> indicates stiffener values, we can express the remote stress in the stiffener as
+
 $$S\_S = S \\frac{E\_S}{E}$$
 
 ----
@@ -59,6 +65,7 @@ $$S\_S = S \\frac{E\_S}{E}$$
 
 -   The critical stress in the skin is determined the same way as it was in the residual strength chapter
 -   The only exception is that the stiffener contributes to $\beta$
+
 $$S\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
 
 ----
@@ -94,7 +101,9 @@ $$\\begin{aligned}
 ## finite element analysis
 
 -   CC Poe found that panels could be related by a parameter he defines as $\mu$
+
 $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
+
 -   Where *A*<sub>*S*</sub> is the cross-sectional area of a stiffener, *E*<sub>*S*</sub> is stiffener modulus
 -   *A* is the skin cross-sectional area (per stiffener) *A*=*bt* and *E* is the modulus of the skin
 
@@ -128,40 +137,46 @@ $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
 -   Swift considers the difference in stress at different points in the stiffener
 -   Instead of one general load factor (*L*), he uses *SCFO* and *SCFI*
 -   We can find the critical value of remote stress at the outer flange as
+
 $$\\sigma\_C = \\frac{\\sigma\_U}{SCFO}$$
+
 -   And similarly at the inner flange
+
 $$\\sigma\_C = \\frac{\\sigma\_U}{SCFI}$$
+
 -   Swift's parametric study did not consider rivet failure
 
 ----
 ## stiffener area
 
-![Residual strength plotted vs crack length for large and small stiffener cross-sectional areas.](images\stiffener_area.jpg) <!-- .element width="60%" -->
+![Residual strength plotted vs crack length for large and small stiffener cross-sectional areas.](../images/stiffener_area.jpg) <!-- .element width="60%" -->
 
 ----
 ## stiffener spacing
 
-![Residual strength plotted vs crack length for large and small stiffener spacing.](images\stiffener_spacing.jpg) <!-- .element width="60%" -->
+![Residual strength plotted vs crack length for large and small stiffener spacing.](../images/stiffener_spacing.jpg) <!-- .element width="60%" -->
 
 ----
 ## rivet spacing
 
-![Residual strength plotted vs crack length for large and small rivet spacing.](images\rivet_spacing.jpg) <!-- .element width="60%" -->
+![Residual strength plotted vs crack length for large and small rivet spacing.](../images/rivet_spacing.jpg) <!-- .element width="60%" -->
 
 ----
 ## strength and toughness increase
 
-![Residual strength plotted vs crack length for increased yield strength and increased fracture toughness.](images\strength_increase.jpg)<!-- .element width="60%" -->
+![Residual strength plotted vs crack length for increased yield strength and increased fracture toughness.](../images/strength_increase.jpg) <!-- .element width="60%" -->
 
 ----
 ## example
 
 -   If we consider the case from Swift's data most similar to our previous example:
+
 $$\\begin{aligned}
   P &= 1.0 \\text{ in}\\\\
   A\_{st} &= 0.2538 \\text{ in}^2\\\\
   b &= 10.0 \\text{ in}\\\\
 \\end{aligned}$$
+
 -   So we use the tables for Case 10
 
 ---
@@ -170,7 +185,7 @@ $$\\begin{aligned}
 ----
 ## crack stopper
 
-![A crack stopper is a piece of metal placed between the spars and the skin.](images\crack_stoppers.jpg) <!-- .element width="50%" -->
+![A crack stopper is a piece of metal placed between the spars and the skin.](../images/crack_stoppers.jpg) <!-- .element width="50%" -->
 
 ----
 ## optimal crack stopper
