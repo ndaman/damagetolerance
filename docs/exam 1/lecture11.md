@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 28, 2019
+February 25, 2020
 
 ----
 ## schedule
 
-- 28 Feb - Multiple Site Damage, Mixed-Mode Fracture
-- 5 Mar - Exam Review, Homework 5 Due
-- 7 Mar - Exam 1
-- 11-14 Mar - Spring Break
+- 25 Feb - Multiple Site Damage, Mixed-Mode Fracture
+- 27 Mar - Exam Review, Homework 5 Due
+- 3 Mar - Exam 1
+- 5 Mar - Fatigue
 
 ----
 ## outline
@@ -36,15 +36,18 @@ February 28, 2019
 ----
 ## linkup
 
-![When a large crack passes through multiple holes it begins to develop a large plastic zone. If this plastic zone intersects with a smaller plastic zone from a smaller crack link-up may occur.](images\msd.jpg) <!-- .element width="50%" -->
+![When a large crack passes through multiple holes it begins to develop a large plastic zone. If this plastic zone intersects with a smaller plastic zone from a smaller crack link-up may occur.](../images/msd.jpg) <!-- .element width="50%" -->
 
 ----
 ## linkup equation
 
 -   We know that
+
 $$R\_p = \\frac{1}{2\\pi}\\left(\\frac{K\_{Ia}}{\\sigma\_{YS}}\\right)^2$$
 $$r\_p = \\frac{1}{2\\pi}\\left(\\frac{K\_{Il}}{\\sigma\_{YS}}\\right)^2$$
+
 -   Where we define the stress intensity factors at a and L as
+
 $$K\_{Ia} = \\sigma \\sqrt{\\pi a} \\beta\_a$$
 $$K\_{Il} = \\sigma \\sqrt{\\pi l} \\beta\_l$$
 
@@ -73,7 +76,7 @@ $$\\begin{aligned}
 worked link-up example [here](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/Link-Up.ipynb)
 
 ----
-## modfied linkup equations
+## modified linkup equations
 
 -   We see that for a brittle material (with a small plastic zone) we predict no effect of "link-up"
 -   This does not agree with test data
@@ -85,7 +88,9 @@ worked link-up example [here](http://nbviewer.jupyter.org/github/ndaman/damageto
 
 -   For 2024-T3 we use the following procedure
 -   First find `$\sigma_c$` from the unmodified equation
+
 $$\\sigma\_{c,mod} = \\frac{\\sigma\_c}{A\_1 \\ln (L) + A\_2}$$
+
 -   Where *A*<sub>1</sub> = 0.3065 and *A*<sub>2</sub> = 1.3123 for A-basis yield strength and *A*<sub>1</sub> = 0.3054 and *A*<sub>2</sub> = 1.3502 for B-basis yield strength
 -   The same equation can also be used for 2524 with *A*<sub>1</sub> = 0.1905, *A*<sub>2</sub> = 0.9683 for A-basis yield and *A*<sub>1</sub> = 0.2024, *A*<sub>2</sub> = 1.0719 for B-basis yield
 
@@ -93,13 +98,16 @@ $$\\sigma\_{c,mod} = \\frac{\\sigma\_c}{A\_1 \\ln (L) + A\_2}$$
 ## modified 7075
 
 -   A similar modification was made for 7075
+
 $$\\sigma\_{c,mod} = \\frac{\\sigma\_c}{B\_1 + B\_2 L}$$
+
 -   Where *B*<sub>1</sub> = 1.377, *B*<sub>2</sub> = 1.042 for A-basis yield strength and *B*<sub>1</sub> = 1.417, *B*<sub>2</sub> = 1.073 for B-basis yield strength
 
 ----
 ## modified 7075
 
 -   However, since general fracture had a closer prediction to real failure than the linkup equation, it may make more sense to modify the brittle fracture equation
+
 $$\\sigma\_{c,mod} = \\frac{K\_c}{\\sqrt{\\pi a} (0.856 - 0.496 \\ln(L))}$$
 
 ---
@@ -125,6 +133,7 @@ $$\\begin{aligned}
 ## mixed-mode fracture
 
 -   For Mode II we have
+
 $$\\begin{aligned}
   \\sigma\_x &= \\frac{-K\_{II}}{\\sqrt{2\\pi r}} \\sin \\frac{\\theta}{2} \\left(2+\\cos \\frac{\\theta}{2}\\cos \\frac{3\\theta}{2}\\right)\\\\
   \\sigma\_y &= \\frac{K\_{II}}{\\sqrt{2\\pi r}} \\sin \\frac{\\theta}{2} \\cos \\frac{\\theta}{2}\\cos \\frac{3\\theta}{2}\\\\
@@ -151,6 +160,7 @@ $$\\begin{aligned}
 ## combined stress field
 
 -   When we convert the stress fields from Mode I and Mode II into polar coordinates and combine them, we find
+
 $$\\small\{\\begin{aligned}
   \\sigma\_r &= \\frac{K\_I}{\\sqrt{2\\pi r}} \\left(\\frac{5}{4}\\cos \\frac{\\theta}{2} - \\frac{1}{4}\\cos \\frac{3\\theta}{2}\\right) + \\frac{K\_{II}}{\\sqrt{2\\pi r}}\\left(-\\frac{5}{4}\\sin \\frac{\\theta}{2} + \\frac{3}{4}\\sin \\frac{3\\theta}{2}\\right)\\\\
   \\sigma\_\\theta &= \\frac{K\_I}{\\sqrt{2\\pi r}} \\left(\\frac{3}{4}\\cos \\frac{\\theta}{2} + \\frac{1}{4}\\cos \\frac{3\\theta}{2}\\right) + \\frac{K\_{II}}{\\sqrt{2\\pi r}}\\left(-\\frac{3}{4}\\sin \\frac{\\theta}{2} - \\frac{3}{4}\\sin \\frac{3\\theta}{2}\\right)\\\\
@@ -169,6 +179,7 @@ $$\\small\{\\begin{aligned}
 
 -   **Note:** In this discussion, we will use *K*<sub>*IC*</sub> to differentiate Mode I fracture toughness from Mode II fracture toughness. This does NOT necessarily mean we are referring to plane strain fracture toughness
 -   Thus fracture begins when
+
 $$\\sigma\_{\\theta}(\\theta\_P) = \\sigma\_\\theta(\\theta=0, K\_{II}=0, K\_I = K\_{Ic}) = \\frac{K\_{IC}}{\\sqrt{2\\pi r}}$$
 
 ----
@@ -181,14 +192,18 @@ $$\\sigma\_{\\theta}(\\theta\_P) = \\sigma\_\\theta(\\theta=0, K\_{II}=0, K\_I =
 ## max circumferential stress
 
 -   In this case it simplifies to
+
 `$$K_I \sin \theta_p + K_{II} (3\cos \theta_p -1) = 0$$`
+
 -   and
+
 $$4K\_{IC} = K\_I\\left(3\\cos \\frac{\\theta}{2} + \\cos \\frac{3\\theta}{2}\\right) - 3K\_{II}\\left(\\sin \\frac{\\theta}{2} + \\sin \\frac{3\\theta}{2}\\right)$$
 
 ----
 ## maximum circumferential stress criterion
 
 -   The general form for a Mode II stress intensity factor is
+
 $$K\_{II} = \\tau \\sqrt{\\pi a} \\beta^\\prime$$
 
 ----
@@ -209,6 +224,7 @@ Assuming $\sigma = 4\tau$, $K\_{IC} = 60 \\text{ ksi} \\sqrt{\\text{in}}$, and 2
 ## principal stress
 
 -   If we make a free body cut along some angle $\theta$ we find, from equilibrium
+
 $$\\small\{\\begin{aligned}
       \\begin{split}
   0 &= \\sigma\_\\theta dA - \\sigma\_x dA \\sin^2 \\theta - \\sigma\_y dA \\cos^2 \\theta + 2\\tau\_{xy} dA \\cos \\theta \\sin \\theta\\\\
@@ -223,7 +239,9 @@ $$\\small\{\\begin{aligned}
 
 -   As before, we consider crack propagation purely due to Mode I
 -   In the principal stress criterion, we find the maximum Mode I stress as a function of the remote applied stress
+
 $$\sigma_{P1} = C\sigma$$
+
 -   We then find the remote failure stress by
 $$\\sigma\_c = \\frac{K\_{IC}}{C\\sqrt{\\pi a}\\beta}$$
 
