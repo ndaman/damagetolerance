@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 21, 2019
+March 10, 2020
 
 ----
 ## schedule
 
-- 21 Mar - Stress-based fatigue
-- 26 Mar - Stress-based fatigue, Project Abstract Due
-- 28 Mar - Strain-based fatigue
-- 2 Apr - Crack growth, HW6 Due
+- 10 Mar - Stress-based fatigue
+- 12 Mar - Stress-based fatigue
+- 17 Mar - Strain-based fatigue
+- 19 Mar - Crack growth, HW6 Due
 
 
 ----
@@ -55,7 +55,7 @@ March 21, 2019
 ----
 ## constant amplitude stressing
 
-![](..\images\fatigue-constant-amplitude.PNG) <!-- .element width="50%" -->
+![](../images/fatigue-constant-amplitude.PNG) <!-- .element width="50%" -->
 
 ----
 ## constant amplitude stressing
@@ -68,6 +68,7 @@ March 21, 2019
 ## constant amplitude stressing
 
 -   We can express all of these in terms of the maximum and minimum stress
+
 $$\\begin{aligned}
   \\Delta \\sigma &= \\sigma\_{max} - \\sigma\_{min}\\\\
   \\sigma\_m &= \\frac{\\sigma\_{max} + \\sigma\_{min}}{2}\\\\
@@ -79,14 +80,18 @@ $$\\begin{aligned}
 
 -   It is also common to describe some ratios
 -   The stress ratio, *R* is defined as
-    $$R = \\frac{\\sigma\_{min}}{\\sigma\_{max}}$$
+
+$$R = \\frac{\\sigma\_{min}}{\\sigma\_{max}}$$
+
 -   And the amplitude ratio, *A* is defined as
-    $$A = \\frac{\\sigma\_a}{\\sigma\_m}$$
+
+$$A = \\frac{\\sigma\_a}{\\sigma\_m}$$
 
 ----
 ## useful relations
 
 -   There are some useful relationships between the above equations
+
 $$\\begin{aligned}
   \\Delta \\sigma &= 2 \\sigma\_a = \\sigma\_{max}(1-R)\\\\
   \\sigma\_m &= \\frac{\\sigma\_{max}}{2}(1+R)\\\\
@@ -147,7 +152,7 @@ $$\\begin{aligned}
 ----
 ## stress life curves
 
-![](..\images\stress-life.PNG) <!-- .element width="50%" -->
+![](../images/stress-life.PNG) <!-- .element width="50%" -->
 
 ----
 ## stress life curves
@@ -159,26 +164,30 @@ $$\\begin{aligned}
 ----
 ## stress life curves
 
-![](..\images\stress-life-log.PNG)<!-- .element width="50%" -->
+![](../images/stress-life-log.PNG)<!-- .element width="50%" -->
 
 ----
 ## curve fits
 
 -   If the curve is nearly linear on a log-linear plot, we use the following form to fit the data
+
 `$$\sigma_a = C + D \log N_f$$`
+
 -   When the data are instead linear on a log-log scale, the following form is generally used
+
 `$$\sigma_a = \sigma^\prime_f(2N_f)^b$$`
+
 -   `$\sigma^\prime_f$` and *b* are often considered material properties and can often be looked up on a table (p. 235)
 
 ----
 ## curve fit
 
-![](..\images\stress-life-fit.PNG)<!-- .element width="50%" -->
+![](../images/stress-life-fit.PNG) <!-- .element width="50%" -->
 
 ----
 ## stress life curves
 
-![](..\images\stress-life-fit-log.PNG)<!-- .element width="50%" -->
+![](../images/stress-life-fit-log.PNG) <!-- .element width="50%" -->
 
 ---
 # fatigue limit
@@ -200,7 +209,7 @@ $$\\begin{aligned}
 ----
 ## fatigue limit
 
-![](..\images\fatigue-limit.PNG)<!-- .element width="50%" -->
+![](../images/fatigue-limit.PNG) <!-- .element width="50%" -->
 
 ----
 ## high and low cycle fatigue

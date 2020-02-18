@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 26, 2019
+March 12, 2020
 
 ----
 ## schedule
 
-- 26 Mar - Stress-based fatigue, Project Abstract Due
-- 28 Mar - Strain-based fatigue
-- 2 Apr - Crack growth, HW6 Due
-- 4 Apr - Crack growth
+- 12 Mar - Stress-based fatigue, Project Abstract Due
+- 17 Mar - Strain-based fatigue
+- 19 Mar - Crack growth, HW6 Due
+- 23-27 Mar - Spring Break
 
 
 ----
@@ -84,20 +84,23 @@ March 26, 2019
 ## notch effects
 
 $$k\_f = \\frac{\\sigma\_{ar}}{S\_{ar}}$$
+
 -   Notches will have different effects, largely depending on their radius.
 -   The maximum possible fatigue notch factor is *k*<sub>*f*</sub> = *k*<sub>*t*</sub>
 
 ----
 ## notch effects
 
-![](..\images\notch_effect.jpg) <!-- .element width="50%" -->
+![](../images/notch_effect.jpg) <!-- .element width="50%" -->
 
 ----
 ## notch sensitivity factor
 
 -   To avoid generating fatigue data for every possible notch configuration, some empirical relationships have been developed
 -   A useful concept in these methods is the notch sensitivity factor
-    $$q = \\frac{k\_f - 1}{k\_t -1}$$
+
+$$q = \\frac{k\_f - 1}{k\_t -1}$$
+
 -   When *k*<sub>*f*</sub> = 1, *q* = 0, in which case the notch has no effect
 -   When *k*<sub>*f*</sub> = *k*<sub>*t*</sub>, *q* = 1, in which case the notch has its maximum effect
 
@@ -105,7 +108,9 @@ $$k\_f = \\frac{\\sigma\_{ar}}{S\_{ar}}$$
 ## peterson notch sensitivity
 
 -   Peterson developed the following relationship
-    $$q = \\frac{1}{1+\\frac{\\alpha}{\\rho}}$$
+
+$$q = \\frac{1}{1+\\frac{\\alpha}{\\rho}}$$
+
 -   Where *&rho;* is the radius of the notch
 -   *&alpha;* is a material property
 
@@ -122,6 +127,7 @@ $$k\_f = \\frac{\\sigma\_{ar}}{S\_{ar}}$$
 ## peterson notch sensitivity
 
 -   For high-strength steels, a more specific *&alpha;* estimate can be found
+
 $$\\begin{aligned}
   \\alpha &= 0.025 \\left(\\frac{2070 }{\\sigma\_u}\\right)^{1.8} & \\text{mm} & \\qquad \\sigma\_u \\ge 550 \\text{ MPa}\\\\
   \\alpha &= 0.001 \\left(\\frac{300 }{\\sigma\_u}\\right)^{1.8} & \\text{in} & \\qquad \\sigma\_u \\ge 80 \\text{ ksi}
@@ -132,14 +138,17 @@ $$\\begin{aligned}
 
 -   *&alpha;* predictions are valid for bending and axial fatigue
 -   For torsion fatigue, a good estimate can be found
-    *&alpha;*<sub>torsion</sub> = 0.6*&alpha;*
+-   *&alpha;*<sub>torsion</sub> = 0.6*&alpha;*
 
 ----
 ## alternative 
 
 -   An alternative formulation for *q* was developed by Neuber
+
 $$q = \\frac{1}{1+\\sqrt{\\frac{\\beta}{\\rho}}}$$
+
 -   Where the material property *&beta;* for steels is given by
+
 $$\\begin{aligned}
   \\log \\beta &= -\\frac{\\sigma\_u - 134}{586} & \\text{mm} & \\qquad \\sigma\_u \\le 1520 \\text{ MPa}\\\\
   \\log \\beta &= -\\frac{\\sigma\_u + 100}{85}& \\text{in} & \\qquad \\sigma\_u \\le 220 \\text{ ksi}
@@ -167,6 +176,7 @@ $$\\begin{aligned}
 ## example
 
 -   Find the notch sensitivity factor for the following scenario
+
 $$\\begin{aligned}
   \\rho &= 0.25 \\text{ in.}\\\\
   \\sigma\_m &= 0 \\text{ ksi}\\\\
@@ -197,7 +207,7 @@ $$\\begin{aligned}
 ## plastic and elastic strain
 
 -   We can separate the total strain into elastic and plastic components
-    *ϵ*<sub>*a*</sub> =ϵ<sub>*ea*</sub> +ϵ<sub>*pa*</sub>
+-   *ϵ*<sub>*a*</sub> =ϵ<sub>*ea*</sub> +ϵ<sub>*pa*</sub>
 
 ----
 ## plastic strain
@@ -213,7 +223,8 @@ $$\\begin{aligned}
 ## cyclic stress strain curve
 
 -   While strain-life data will generally just report *ϵ*<sub>*a*</sub> and *ϵ*<sub>*pa*</sub>, some will also tabulate a form for the cyclic stress-strain curve
-    $$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
+
+$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
 
 ----
 ## plastic and elastic strain
@@ -238,16 +249,19 @@ $$\\begin{aligned}
 
 -   We notice that the data for elastic and plastic strains are represented by straight lines, in the log-log scale
 -   If we recall the form used for a straight line in log-log plots for S-N curves:
-    *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
+-   *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
 -   We can convert this to find the elastic component of strain
+
     $$\\epsilon\_{ea} = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b$$
+
 
 ----
 ## lines
 
 -   We can use the same form with new constants for the plastic component of strain
-    *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
+-   *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
 -   We can combine the elastic and plastic portions to find the total strain-life curve
+
     $$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} (2N\_f)^b + \\epsilon\_f^\\prime (2 N\_f)^c$$
 
 ----
@@ -268,29 +282,33 @@ $$\\begin{aligned}
 -   Low-cycle fatigue is dominated by plastic effects, while high-cycle fatigue has little plasticity
 -   We can find the intersection of the plastic strain and elastic strain lines
 -   This point is *N*<sub>*t*</sub>, the transition fatigue life
-    $$N\_t = \\frac{1}{2}\\left(\\frac{\\sigma\_f^\\prime}{\\epsilon\_f^\\prime}\\right)^{\\frac{1}{c-b}}$$
+
+$$N\_t = \\frac{1}{2}\\left(\\frac{\\sigma\_f^\\prime}{\\epsilon\_f^\\prime}\\right)^{\\frac{1}{c-b}}$$
 
 ----
 ## inconsistencies in constants
 
 -   If we consider the equation for the cyclic stress train curve
-    $$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
+
+$$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\right)^{\\frac{1}{n^\\prime}}$$
+
 -   We can consider the plastic portion and solve for *σ*<sub>*a*</sub>
-    *σ*<sub>*a*</sub> = *H*<sup>′</sup>*ϵ*<sub>*pa*</sub><sup>*n*<sup>′</sup></sup>
+-   *σ*<sub>*a*</sub> = *H*<sup>′</sup>*ϵ*<sub>*pa*</sub><sup>*n*<sup>′</sup></sup>
 
 ----
 ## inconsistencies in constants
 
 -   We can eliminate 2*N*<sub>*f*</sub> from the plastic strain equation
-    *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
+-   *ϵ*<sub>*pa*</sub> = *ϵ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*c*</sup>
 -   By solving the stress-life relationship for 2*N*<sub>*f*</sub>
-    *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
-     and substituting that into the plastic strain
+-   *σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>
+-    and substituting that into the plastic strain
 
 ----
 ## inconsistencies in constants
 
 -   We then compare with stress-life equations and find
+
 $$\\begin{aligned}
  H^\\prime &= \\frac{\\sigma\_f^\\prime}{(\\epsilon\_f^\\prime)^{b/c}}\\\\
  n^\\prime &= \\frac{b}{c}
@@ -308,7 +326,7 @@ $$\\begin{aligned}
 # variable amplitude strains
 
 ----
-## variable amplitdue strains
+## variable amplitude strains
 
 -   As with stresses, we can apply variable amplitude strains
 -   However, when the change is made will affect whether there is a tensile or compressive mean stress

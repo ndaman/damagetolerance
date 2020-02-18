@@ -5,16 +5,16 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 19, 2019
+March 5, 2020
 
 ----
 ## schedule
 
-- 19 Mar - Exam return, Project Discussion
-- 21 Mar - Stress-based fatigue
-- 26 Mar - Stress-based fatigue, Project Abstract Due
-- 28 Mar - Strain-based fatigue
-- 2 Apr - Crack growth, HW6 Due
+- 5 Mar - Exam return, Project Discussion
+- 10 Mar - Stress-based fatigue
+- 12 Mar - Stress-based fatigue
+- 17 Mar - Strain-based fatigue
+- 19 Mar - Crack growth, HW6 Due
 
 ----
 ## outline
@@ -31,11 +31,6 @@ March 19, 2019
 
 ----
 ## curve
-
--   Precurve: 79 % avg, 9 % std dev
--   Post-curve: 84.8 % avg, 8.5 % std dev
--   High Score: 96
--   Curve formula: (old score) x 0.91 + 12.7
 
 ---
 # final project
@@ -73,6 +68,7 @@ March 19, 2019
 
 ----
 ## grade breakdown
+
 -   10% for damage tolerant improvement
 -   10% general presentation, organization, and grammar
 
@@ -135,7 +131,7 @@ March 19, 2019
 ----
 ## constant amplitude stressing
 
-![](..\images\fatigue-constant-amplitude.PNG) <!-- .element width="50%" -->
+![](../images/fatigue-constant-amplitude.PNG) <!-- .element width="50%" -->
 
 ----
 ## constant amplitude stressing
@@ -148,6 +144,7 @@ March 19, 2019
 ## constant amplitude stressing
 
 -   We can express all of these in terms of the maximum and minimum stress
+
 $$\\begin{aligned}
   \\Delta \\sigma &= \\sigma\_{max} - \\sigma\_{min}\\\\
   \\sigma\_m &= \\frac{\\sigma\_{max} + \\sigma\_{min}}{2}\\\\
@@ -159,14 +156,18 @@ $$\\begin{aligned}
 
 -   It is also common to describe some ratios
 -   The stress ratio, *R* is defined as
-    $$R = \\frac{\\sigma\_{min}}{\\sigma\_{max}}$$
+
+$$R = \\frac{\\sigma\_{min}}{\\sigma\_{max}}$$
+
 -   And the amplitude ratio, *A* is defined as
-    $$A = \\frac{\\sigma\_a}{\\sigma\_m}$$
+
+$$A = \\frac{\\sigma\_a}{\\sigma\_m}$$
 
 ----
 ## useful relations
 
 -   There are some useful relationships between the above equations
+
 $$\\begin{aligned}
   \\Delta \\sigma &= 2 \\sigma\_a = \\sigma\_{max}(1-R)\\\\
   \\sigma\_m &= \\frac{\\sigma\_{max}}{2}(1+R)\\\\
@@ -199,7 +200,7 @@ $$\\begin{aligned}
 ----
 ## bending
 
-![ As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg) <!-- .element width="50%" -->
+![As long as `$\sigma < \sigma_y$`, `$\sigma$` varies linearly. If `$\sigma > \sigma_y$` at any location, however, the relationship is non-linear](../images/p232-b.jpg) <!-- .element width="50%" -->
 
 ----
 ## notches
@@ -212,12 +213,12 @@ $$\\begin{aligned}
 ----
 ## rotating cantilever beam
 
-![Stress variation through a cantilever beam](..\images\rotating_cantilever.png)
+![Stress variation through a cantilever beam](../images/rotating_cantilever.png)
 
 ----
 ## rotating four-point bend
 
-![Four-point bend test gives uniform stress along the top and bottom surfaces](..\images\Rotating_Bending_Machine.jpg)
+![Four-point bend test gives uniform stress along the top and bottom surfaces](../images/Rotating_Bending_Machine.jpg)
 
 ----
 ## fatigue tests
@@ -228,12 +229,12 @@ $$\\begin{aligned}
 ----
 ## reciprocating bend test
 
-![A reciprocating cantilever test allows for non-zero mean stress](..\images\reciprocating_cantilever.PNG) <!-- .element width="50%" -->
+![A reciprocating cantilever test allows for non-zero mean stress](../images/reciprocating_cantilever.PNG) <!-- .element width="50%" -->
 
 ----
 ## axial fatigue test
 
-![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](..\images\servohydraulic.jpg) <!-- .element width="30%" --> 
+![Servohydraulic test fixtures are expensive, but computer controlled and allow for irregular load histories](../images/servohydraulic.jpg) <!-- .element width="30%" --> 
 
 ----
 ## fatigue tests
