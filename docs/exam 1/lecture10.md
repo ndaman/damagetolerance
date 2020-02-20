@@ -118,7 +118,7 @@ $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
 
 -   quantitative example (p. 179-180)
 -   qualitative notes on behavior (p. 181-182)
--   [worked](http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/examples/stiffener%20example.ipynb)
+-   [worked](../examples/stiffener%20example.html)
 
 ---
 # severed stiffeners
