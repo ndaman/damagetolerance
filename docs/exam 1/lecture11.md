@@ -73,7 +73,7 @@ $$\\begin{aligned}
 ----
 ## example
 
-worked link-up example [here](../examples/Link-Up.ipynb)
+worked link-up example [here](../examples/Link-Up.html)
 
 ----
 ## modified linkup equations
@@ -255,4 +255,4 @@ Assuming $\sigma = 4\tau$, $K\_{IC} = 60 \\text{ ksi} \\sqrt{\\text{in}}$, and 2
 ----
 ## example
 
-worked mixed-mode fracture example [here](../examples/Mixed%20Mode%20Fracture.ipynb)
+worked mixed-mode fracture example [here](../examples/Mixed%20Mode%20Fracture.html)

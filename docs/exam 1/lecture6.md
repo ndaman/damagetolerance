@@ -225,7 +225,7 @@ $$\\begin{aligned}
   I &= 6.7 - \\frac{1.5}{t}\\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2 \\\\
   r\_p &= \\frac{1}{I\\pi} \\left(\\frac{K\_I}{\\sigma\_{YS}}\\right)^2
 \\end{aligned}$$
-[work](../examples/Plastic%20Zone%20Example.ipynb)
+[work](../examples/Plastic%20Zone%20Example.html)
 
 ---
 # plastic stress intensity ratio
@@ -303,7 +303,7 @@ Note: We divide both sides by $\\left(1 - \\frac{\\sigma^2}{2 \\sigma\_{YS}^2}\\
 ----
 ## example
 
-online example [here](../examples/Plastic%20stress%20intensity%20ratio.ipynb)
+online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 
 ---
 # plastic zone shape
@@ -446,7 +446,7 @@ $$\\begin{aligned}
 ----
 ## example
 
-online example [here](../examples/Plastic%20Zone%20Shape.ipynb)
+online example [here](../examples/Plastic%20Zone%20Shape.html)
 
 ---
 # group problems

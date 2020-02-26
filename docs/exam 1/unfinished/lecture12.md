@@ -142,7 +142,7 @@ Assuming |*σ*|=4|*τ*|, $K\_{IC} = 60 \\text{ ksi} \\sqrt{\\text{in}}$, and 2*a
 
 (0,-2) – (0,2) – (4,2) – (4,-2) – (0,-2); (1.5,0) – (2.5,0); (2,2.5) – (2,3) node\[above\] <span>*σ*</span>; (2,-2.5) – (2,-3) node\[below\] <span>*σ*</span>; (1,2.2) – (3,2.2); (3,-2.2) – (1,-2.2); (4.2,-1) – (4.2,1); (-0.2,1) – (-0.2,-1); node at (4.2,2.2) <span>*τ*</span>; node at (-0.2,-2.2) <span>*τ*</span>; node at (2,0.2) <span>2*a*</span>;
 
-<span>example</span> <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Mixed%20Mode%20Fracture.ipynb>
+<span>example</span> <http://nbviewer.jupyter.org/github/ndaman/damagetolerance/blob/master/Mixed%20Mode%20Fracture.html>
 
 <span>mixed-mode summary</span>
 

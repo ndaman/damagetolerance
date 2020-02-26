@@ -186,7 +186,7 @@ $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^3}$$
 ----
 ## R-Curve examples
 
--   [example](../examples/Tangent_R-curve.ipynb)
+-   [example](../examples/Tangent_R-curve.html)
 -   Excel Solver
 
 ---
@@ -587,4 +587,4 @@ $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\fra
 
 -   Fracture data is on pp. 111-121
 -   Tensile data is on pp. 138-143
--   *K*<sub>*c*</sub> charts are also available in interactive versions [here](../examples/Fracture%20Toughness%20Figures.ipynb)
+-   *K*<sub>*c*</sub> charts are also available in interactive versions [here](../examples/Fracture%20Toughness%20Figures.html)

@@ -302,7 +302,7 @@ Grade breakdown
 ----
 ## plotting
   -  You are welcome to use whatever software you desire, I will use Python for a quick demonstration
-  -  This demo is accessible [here](../examples/Plotting_Demo.ipynb)
+  -  This demo is accessible [here](../examples/Plotting_Demo.html)
 
 ----
 ## plotting
