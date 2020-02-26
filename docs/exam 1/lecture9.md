@@ -383,7 +383,7 @@ $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\fra
 
 -   Fracture data is on pp. 111-121
 -   Tensile data is on pp. 138-143
--   *K*<sub>*c*</sub> charts are also available in interactive versions [here](./examples/Fracture%20Toughness%20Figures.ipynb)
+-   *K*<sub>*c*</sub> charts are also available in interactive versions [here](../examples/Fracture%20Toughness%20Figures.ipynb)
 
 
 ---
@@ -400,7 +400,7 @@ $$\\small\{\\beta = 1.12 - 0.231\\left(\\frac{a}{W}\\right) + 10.55 \\left(\\fra
 ----
 ## Fedderson example
 
-worked example [here](./examples/Fedderson%20Approach.ipynb)
+worked example [here](../examples/Fedderson%20Approach.ipynb)
 
 ---
 # proof testing
@@ -543,4 +543,4 @@ $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
 
 -   quantitative example (p. 179-180)
 -   qualitative notes on behavior (p. 181-182)
--   [worked](./examples/stiffener%20example.ipynb)
+-   [worked](../examples/stiffener%20example.ipynb)

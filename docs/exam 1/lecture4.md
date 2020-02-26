@@ -168,7 +168,7 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 -   on p. 64 there is a + missing between two terms, see Lecture 2 for the fix
 -   Also on p. 64, in equation 29 it is not clear, but use the `$f_w$` from a previous equation, on p. 56
 -   Some of the black and white figures can be difficult to use, we have scanned and re-created the plots online
--   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](./examples/Compounding%20Figures.ipynb)
+-   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](../examples/Compounding%20Figures.ipynb)
 
 ----
 ## finite height - p. 50
@@ -261,7 +261,7 @@ $$\\begin{aligned}
 ---
 ## example
 
--   Example [here](./examples/Long%20Cracks%20on%20Curved%20Boundaries.ipynb)
+-   Example [here](../examples/Long%20Cracks%20on%20Curved%20Boundaries.ipynb)
 
 ----
 ## group one
@@ -366,4 +366,4 @@ Nominal stress used for `$K_t$` is given by `$\sigma_{nom} = 6M/hd^2$` where *M*
 ----
 ## interactive page
 
--   An interactive page with these plots can be accessed [here](./examples/Stress%20Concentration%20Factors.ipynb)
+-   An interactive page with these plots can be accessed [here](../examples/Stress%20Concentration%20Factors.ipynb)

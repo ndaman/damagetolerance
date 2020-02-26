@@ -95,7 +95,7 @@ $$\\begin{aligned}
 ---
 ## example
 
--   Example [here](./examples/Long%20Cracks%20on%20Curved%20Boundaries.ipynb)
+-   Example [here](../examples/Long%20Cracks%20on%20Curved%20Boundaries.ipynb)
 
 ----
 ## group one
@@ -200,7 +200,7 @@ Nominal stress used for `$K_t$` is given by `$\sigma_{nom} = 6M/hd^2$` where *M*
 ----
 ## interactive page
 
--   An interactive page with these plots can be accessed [here](./examples/Stress%20Concentration%20Factors.ipynb)
+-   An interactive page with these plots can be accessed [here](../examples/Stress%20Concentration%20Factors.ipynb)
 
 ---
 # plastic zone

@@ -576,7 +576,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 - Here we will use the formula for a semi-elliptical surface flaw
 - In the first step we find `$a/c = 0.4/0.6 < 1$`, so we use that set of formulae
-- A worked python notebook of this example can be found [here](./examples/Finite%20Width.ipynb)
+- A worked python notebook of this example can be found [here](../examples/Finite%20Width.ipynb)
 
 ---
 # 2D cracks at a hole
@@ -967,4 +967,4 @@ Where `$n = $` number of cracks (1 or 2)
 -   Case 4 - single corner crack
 -   Case 5 - symmetric surface cracks
 -   Case 6 - single surface crack
--   Viewable [here](./examples/Cracks%20Around%20a%20Hole.ipynb)
+-   Viewable [here](../examples/Cracks%20Around%20a%20Hole.ipynb)
