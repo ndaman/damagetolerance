@@ -366,13 +366,13 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 
 <div class="left">
 
-![](..\images/environment_7075.jpg)
+![](../images/environment_7075.jpg)
 
 </div>
 
 <div class="right">
 
-![](..\images/environment_2024.jpg) <!-- .element width="90%" -->
+![](../images/environment_2024.jpg) <!-- .element width="90%" -->
 
 </div>
 
