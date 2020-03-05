@@ -12,6 +12,7 @@ March 17, 2020
 
 - 17 Mar - Strain-based fatigue
 - 19 Mar - Crack growth, HW6 Due
+- 23-27 Mar - Spring Break
 - 31 Mar - Crack growth
 - 2 Apr - Crack growth, HW7 Due
 
