@@ -1,27 +1,19 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 16 - Stress based fatigue
+Lecture 16 - Strain based fatigue
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 28, 2019
-
-----
-## ae research colloquium
-
-- Friday March 29, 3-4 pm
-- Wallace Hall 210
-- Modeling and printing porous structures
+March 17, 2020
 
 ----
 ## schedule
 
-- 28 Mar - Strain-based fatigue
-- 2 Apr - Crack growth, HW6 Due
-- 4 Apr - Crack growth
-- 9 Apr - Crack growth, HW7 Due
-
+- 17 Mar - Strain-based fatigue
+- 19 Mar - Crack growth, HW6 Due
+- 31 Mar - Crack growth
+- 2 Apr - Crack growth, HW7 Due
 
 ----
 ## outline
@@ -30,6 +22,7 @@ March 28, 2019
 
 * strain based fatigue
 * variable amplitude strains
+* mean stress effects
 * general trends
 * notches
 * multiaxial loading
@@ -179,7 +172,7 @@ $$\\begin{aligned}
 # variable amplitude strains
 
 ----
-## variable amplitdue strains
+## variable amplitude strains
 
 -   As with stresses, we can apply variable amplitude strains
 -   However, when the change is made will affect whether there is a tensile or compressive mean stress
@@ -194,9 +187,81 @@ $$\\begin{aligned}
 
 ![](../images/tensile_mean.jpg) <!-- .element width="50%" -->
 
-<!-- TODO: add slides on mean stress in strain based fatigue -->
+
+---
+# mean stress effects
 
 ----
+## mean stress effects
+
+----
+## mean stress in strain-based fatigue
+
+-   In regions where plastic strain is significant, some applied mean stress is likely to be relaxed through cyclic plastic strain
+-   When the plastic strain is not significant, mean stress will exist
+-   Mean strain does not generally affect fatigue life
+
+----
+## morrow approach
+
+-   Recall the Morrow approach for mean stress effects from the stress-based method
+
+$$\\frac{\\sigma\_a}{\\sigma\_{ar}} + \\frac{\\sigma\_m}{\\sigma\_f^\\prime} = 1$$
+
+-   We can rearrange the equation such that
+
+$$\\sigma\_a = \\sigma\_f^\\prime\\left\[\\left(1-\\frac{\\sigma\_m}{\\sigma\_f^\\prime}\\right)^\\frac{1}{b}(2N\_f)\\right\]^b$$
+
+----
+## morrow approach
+
+-   If we compare to the stress-life equation (*σ*<sub>*a*</sub> = *σ*<sub>*f*</sub><sup>′</sup>(2*N*<sub>*f*</sub>)<sup>*b*</sup>), we see that we can replace *N*<sub>*f*</sub> with
+
+$$N^\* = N\_f \\left(1-\\frac{\\sigma\_m}{\\sigma\_f^\\prime}\\right)^\\frac{1}{b}$$
+
+-   We can now substitute *N*<sup>\*</sup> for *N*<sub>*f*</sub> in the strain-life equation to find
+
+$$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} \\left(1-\\frac{\\sigma\_m}{\\sigma\_f^\\prime}\\right)(2N\_f)^b + \\epsilon\_f^\\prime\\left(1-\\frac{\\sigma\_m}{\\sigma\_f^\\prime}\\right)^\\frac{c}{b} (2 N\_f)^c$$
+
+----
+## morrow approach
+
+-   Graphically, we can use the Morrow approach very easily using only the zero-mean stress graph
+-   From the zero-mean stress graph, find the point corresponding to your applied strain
+-   For a non zero mean stress, this point represents (*ϵ*<sub>*a*</sub>, *N*<sup>\*</sup>), we can now solve for *N*<sub>*f*</sub> using \[eq:nstar\]
+
+----
+## modified morrow
+
+-   While the Morrow equation agrees very well with many data, some are better fit with a modification
+-   In the modified version, it is assumed that the mean stress has no effect on the plastic term
+
+$$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E}\\left(1-\\frac{\\sigma\_f}{\\sigma\_f^\\prime}\\right)(2N\_f)^b + \\epsilon\_f^\\prime (2N\_f)^c$$
+
+-   There is no convenient solution method for this form, and it generally must be solved numerically, or plotted with many families of *σ*<sub>*m*</sub>
+
+----
+## smith watson topper
+
+-   The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub>
+-   After some manipulation, this gives
+
+$$\\sigma\_{max} \\epsilon\_a = \\frac{\\left(\\sigma\_f^\\prime\\right)^2}{E}(2N\_f)^{2b} + \\sigma\_f^\\prime \\epsilon\_f^\\prime (2N\_f)^{b+c}$$
+
+-   This method can also be solved graphically if a plot of *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub> is made using zero-mean data. All we need to do is find the new *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub> point to find a new *N*<sub>*f*</sub>
+
+----
+## comparison
+
+-   All three methods discussed are in general use
+-   The Morrow method is very good for steel
+-   The modified Morrow method gives improved results in many materials
+-   The SWT approach is very good for general use, but is non-conservative with a compressive mean stress
+
+----
+## example p. 285
+
+---
 ## cycle counting
 
 -   In all fatigue methods (stress, strain, and crack propagation) the way we count load cycles can have an effect on our results

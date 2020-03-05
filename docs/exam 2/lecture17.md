@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 2, 2019
+March 19, 2020
 
 ----
 ## schedule
 
-- 2 Apr - Crack growth, HW6 Due
-- 4 Apr - Crack growth
-- 9 Apr - Boeing Method, HW7 Due
-- 11 Apr - Retardation
+- 19 Mar - Crack growth, HW6 Due
+- 31 Mar - Crack growth
+- 2 Apr - Crack growth, HW7 Due
+- 7 Apr - Retardation
 
 
 ----
