@@ -11,7 +11,7 @@ March 10, 2020
 ## schedule
 
 - 10 Mar - Stress-based fatigue
-- 12 Mar - Stress-based fatigue
+- 12 Mar - Stress-based fatigue, Project Abstract Due
 - 17 Mar - Strain-based fatigue
 - 19 Mar - Crack growth, HW6 Due
 
