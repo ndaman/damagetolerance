@@ -193,9 +193,6 @@ $$\\begin{aligned}
 # mean stress effects
 
 ----
-## mean stress effects
-
-----
 ## mean stress in strain-based fatigue
 
 -   In regions where plastic strain is significant, some applied mean stress is likely to be relaxed through cyclic plastic strain
@@ -229,7 +226,7 @@ $$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E} \\left(1-\\frac{\\sigma\_m}{\\sig
 
 -   Graphically, we can use the Morrow approach very easily using only the zero-mean stress graph
 -   From the zero-mean stress graph, find the point corresponding to your applied strain
--   For a non zero mean stress, this point represents (*ϵ*<sub>*a*</sub>, *N*<sup>\*</sup>), we can now solve for *N*<sub>*f*</sub> using \[eq:nstar\]
+-   For a non zero mean stress, this point represents (*ϵ*<sub>*a*</sub>, *N*<sup>\*</sup>), we can now solve for *N*<sub>*f*</sub> using the equation for $N^\*$
 
 ----
 ## modified morrow
@@ -244,12 +241,12 @@ $$\\epsilon\_a = \\frac{\\sigma\_f^\\prime}{E}\\left(1-\\frac{\\sigma\_f}{\\sigm
 ----
 ## smith watson topper
 
--   The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub>
+-   The Smith, Watson, and Topper approach assumes that the life for any given state is dependent on the product *σ*<sub>*max*</sub>*ϵ*<sub>*a*</sub>
 -   After some manipulation, this gives
 
 $$\\sigma\_{max} \\epsilon\_a = \\frac{\\left(\\sigma\_f^\\prime\\right)^2}{E}(2N\_f)^{2b} + \\sigma\_f^\\prime \\epsilon\_f^\\prime (2N\_f)^{b+c}$$
 
--   This method can also be solved graphically if a plot of *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub> is made using zero-mean data. All we need to do is find the new *σ*<sub>*m**a**x*</sub>*ϵ*<sub>*a*</sub> point to find a new *N*<sub>*f*</sub>
+-   This method can also be solved graphically if a plot of *σ*<sub>*max*</sub>*ϵ*<sub>*a*</sub> is made using zero-mean data. All we need to do is find the new *σ*<sub>*max*</sub>*ϵ*<sub>*a*</sub> point to find a new *N*<sub>*f*</sub>
 
 ----
 ## comparison

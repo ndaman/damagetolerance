@@ -365,11 +365,15 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 ## environment
 
 <div class="left">
+
 ![](<..\images/environment_7075.jpg)
+
 </div>
 
 <div class="right">
+
 ![](<..\images/environment_2024.jpg) <!-- .element width="90%" -->
+
 </div>
 
 ----
@@ -421,7 +425,7 @@ $$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
 # numerical algorithm
 
 ----
-## numerical algorith
+## numerical algorithm
 
 -   While the Paris Law can be integrated directly (for simple load cases), many of the other formulas cannot
 -   A simple numerical algorithm for determining incremental crack growth is
