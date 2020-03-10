@@ -235,9 +235,12 @@ $$\\begin{aligned}
 ----
 ## real loads
 
+![](../images/real-loads-separated.png)
 
 ----
 ## real loads
+
+![](../images/real-loads-together.png)
 
 ----
 ## simplified load sketch book p 239
@@ -282,12 +285,12 @@ $$B \\left\[\\sum \\frac{N\_i}{N\_{if}}\\right\]\_{rep} = 1$$
 ----
 ## S-N curves at variable *σ*<sub>*m*</sub>
 
-![](../images/meanstress.jpg)
+![](../images/meanstress.jpg) <!-- .element width="60%" -->
 
 ----
 ## constant life diagram
 
-![](../images/constant-life.jpg)
+![](../images/constant-life.jpg) <!-- .element width="45%" -->
 
 ----
 ## normalizing
@@ -299,7 +302,7 @@ $$B \\left\[\\sum \\frac{N\_i}{N\_{if}}\\right\]\_{rep} = 1$$
 ----
 ## normalized amplitude-mean diagram
 
-![](../images/normalized.jpg)
+![](../images/normalized.jpg) <!-- .element width="45%" -->
 
 ----
 ## Goodman line
