@@ -1,5 +1,5 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 20 - Inspection 
+Lecture 20 - Crack Retardation
 
 Dr. Nicholas Smith
 
