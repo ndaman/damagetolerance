@@ -1,20 +1,21 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 18 - Crack Propagation
+Lecture 18 - The Boeing Method 
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 4, 2019
+April 9, 2019
 
 ----
 ## schedule
 
-- 4 Apr - Crack growth
 - 9 Apr - Boeing Method, HW7 Due
-- 11 Apr - Crack Retardation
-- 16 Apr - Exam Review, HW8 Due 
-- 18 Apr - Exam 2
+- 14 Apr - Cycle Counting 
+- 16 Apr - Crack retardation
+- 21 Apr - Exam Review, HW8 Due
+- 23 Apr - Exam 2
+
 
 ----
 ## outline

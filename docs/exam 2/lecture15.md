@@ -5,24 +5,26 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 12, 2020
+March 31, 2020
 
 ----
 ## schedule
 
-- 12 Mar - Stress-based fatigue, Project Abstract Due
-- 17 Mar - Strain-based fatigue
-- 19 Mar - Crack growth, HW6 Due
-- 23-27 Mar - Spring Break
-
+- 31 Mar - Stress-based fatigue
+- 2 Apr - Strain-based fatigue, Project Abstract Due, HW6 Due
+- 7 Apr - Crack growth
+- 9 Apr - Crack growth, HW7 Due
 
 ----
 ## outline
 
 <!-- vim-markdown-toc GFM -->
 
-* fatigue review
+* mean stress effects
+* scatter
+* general stress
 * influence of notches
+* fatigue review
 * strain based fatigue
 * variable amplitude strains
 * general trends
@@ -30,36 +32,117 @@ March 12, 2020
 <!-- vim-markdown-toc -->
 
 ---
-# fatigue review
+# mean stress effects
 
 ----
-## group 1
+## mean stress
 
--   A part from AISI 4340 in a typical "block" undergoes 100,000 cycles with *&sigma;*<sub>min</sub> = 0 ksi and *&sigma;*<sub>max</sub> = 100 ksi and an additional 10 cycles with *&sigma;*<sub>min</sub> = 50 ksi and *&sigma;*<sub>max</sub> = 200 ksi
--   How many "blocks" can this part support before failure?
-
-----
-## group 2
-
--   Use the S-N-P chart on p. 245 for 7075-T6 Aluminum
--   What is the probability of failure for 30 ksi at 10<sup>6</sup> cycles?
--   To ensure that 99% of parts do not fail, after how many cycles should a fully reversed load of 35 ksi be inspected?
--   How many cycles could the same part sustain if only 50% of parts are needed?
+-   Since mean stress has an effect on fatigue life, sometimes a family of S-N curves at varying mean stress values is created
+-   S-N curves for these are reported in different ways, but commonly *σ*<sub>*max*</sub> replaces *σ*<sub>*a*</sub> on the y-axis
+-   One useful way of representing these data, instead of many S-N curves, is a constant-life diagram
+-   It is created by taking points from the S-N curves and plotting a line through constant *N*<sub>*f*</sub> values
 
 ----
-## group 3
+## S-N curves at variable *σ*<sub>*m*</sub>
 
--   The fatigue limit for AISI 4142 steel is 58 ksi for completely reversed fatigue loads.
--   What is the fatigue limit for fatigue loads with *&sigma;*<sub>*m*</sub> = 10, 20, 30 ksi?
+![](../images/meanstress.jpg) <!-- .element width="60%" -->
 
 ----
-## group 4
+## constant life diagram
 
--   A material made of 2024-T4 Aluminum undergoes the following load cycle
-    -   *&sigma;*<sub>*x*, min</sub> = 10, *&sigma;*<sub>*x*, max</sub> = 50
-    -   *&sigma;*<sub>*y*, min</sub> = −20, *&sigma;*<sub>*y*, max</sub> = 20
-    -   *&tau;*<sub>*x**y*, min</sub> = 0, *τ*<sub>*xy*, max</sub> = 30
--   How many cycles can it support before failure?
+![](../images/constant-life.jpg) <!-- .element width="45%" -->
+
+----
+## normalizing
+
+-   One very useful way to plot this data is to normalize the amplitude by the zero-mean amplitude
+-   We call the zero-mean amplitude as *σ*<sub>*ar*</sub>
+-   Plotting *σ*<sub>*a*</sub>/*σ*<sub>*ar*</sub> vs. *σ*<sub>*m*</sub> provides a good way to group all the data together on one plot with the potential to fit a curve
+
+----
+## normalized amplitude-mean diagram
+
+![](../images/normalized.jpg) <!-- .element width="45%" -->
+
+----
+## Goodman line
+
+-   The first work on this problem was done by Goodman, who proposed the line
+
+$$\\frac{\\sigma\_a}{\\sigma\_{ar}} + \\frac{\\sigma\_m}{\\sigma\_u} = 1$$
+
+-   This equation can also be used for fatigue limits, since they are just a point on the S-N curves
+
+$$\\frac{\\sigma\_e}{\\sigma\_{er}} + \\frac{\\sigma\_m}{\\sigma\_u} = 1$$
+
+----
+## modifications
+
+-   While the Goodman line gives a good approximation to convert non-zero mean stress S-N curves, it is somewhat overly conservative at high mean stresses
+-   It is also non-conservative for negative mean stresses
+-   An alternative fit is known as the Gerber Parabola
+
+$$\\frac{\\sigma\_a}{\\sigma\_{ar}} + \\left(\\frac{\\sigma\_m}{\\sigma\_u}\\right)^2 = 1$$
+
+-   In general, the Goodman line is a good fit for brittle materials (steels) while the Gerber parabola is a better fit for more ductile materials
+
+----
+## modifications
+
+-   The Goodman line can also be improved by replacing *σ*<sub>*u*</sub> with the corrected true fracture strength $\\tilde{\\sigma}\_{fB}$ or the constant *σ*<sub>*f*</sub><sup>′</sup> from the S-N curve fit
+
+$$\\frac{\\sigma\_a}{\\sigma\_{ar}} + \\frac{\\sigma\_m}{\\sigma\_f^\\prime} = 1$$
+
+-   This is known as the Morrow Equation
+-   For steels, $\\sigma\_f^\\prime \\approx \\tilde{\\sigma}\_{fB}$, but for aluminums these values can be significantly different, and better agreement is found using $\\tilde{\\sigma}\_{fB}$.
+
+----
+## modifications
+
+-   One more relationship that has shown particularly good results with aluminum alloys is the Smith, Watson, and Topper equations (SWT)
+
+$$\\sigma\_{ar} = \\sqrt{\\sigma\_{max}\\sigma\_a}$$
+
+-   In general, it is best to use a form that matches your data
+-   If data is lacking, the SWT and Morrow equations generally provide the best fit
+
+---
+# scatter
+
+----
+## fatigue scatter
+
+-   One of the challenges with fatigue is that there is generally considerable scatter in the data
+-   Quantifying this scatter requires many repetitions, which makes for time consuming tests
+-   In general, the scatter follows a lognormal distribution (or a normal distribution in log(*N*<sub>*f*</sub>))
+
+----
+## S-N-P Curve
+
+![](../images/S-N-P.jpg)
+
+---
+# general stress
+
+----
+## general stress
+
+-   Often combined loads from different sources introduce stresses which are not uni-axial
+-   For ductile materials, good agreement has been found using an effective stress amplitude, similar to the octahedral shear yield criterion
+
+$$\\bar{\\sigma}\_a = \\frac{1}{\\sqrt{2}}\\sqrt{(\\sigma\_{xa}-\\sigma\_{ya})^2 + (\\sigma\_{ya}-\\sigma\_{za})^2 + (\\sigma\_{za}-\\sigma\_{xa})^2 + 6(\\tau\_{xy}^2 + \\tau\_{yz}^2 + \\tau\_{zx}^2)}$$
+
+-   The effective mean stress is given by
+
+$$\\bar{\\sigma}\_m = \\bar{\\sigma}\_{xm} + \\bar{\\sigma}\_{ym} + \\bar{\\sigma}\_{zm}$$
+
+----
+## effective stress
+
+-   This effective stress can be used in all other relationships, including mean stress relationships
+-   Note that mean shear stress has no effect on the effective mean stress
+-   This is surprising, but agrees well with experiments
+-   When yielding effects do dominate behavior, the strain-based approach is more appropriate
 
 ---
 # influence of notches
@@ -183,6 +266,39 @@ $$\\begin{aligned}
   K\_t &= 3.0\\\\
   \\sigma\_u &= 84 \\text{ ksi}
 \\end{aligned}$$
+
+---
+# fatigue review
+
+----
+## group 1
+
+-   A part from AISI 4340 in a typical "block" undergoes 100,000 cycles with *&sigma;*<sub>min</sub> = 0 ksi and *&sigma;*<sub>max</sub> = 100 ksi and an additional 10 cycles with *&sigma;*<sub>min</sub> = 50 ksi and *&sigma;*<sub>max</sub> = 200 ksi
+-   How many "blocks" can this part support before failure?
+
+----
+## group 2
+
+-   Use the S-N-P chart on p. 245 for 7075-T6 Aluminum
+-   What is the probability of failure for 30 ksi at 10<sup>6</sup> cycles?
+-   To ensure that 99% of parts do not fail, after how many cycles should a fully reversed load of 35 ksi be inspected?
+-   How many cycles could the same part sustain if only 50% of parts are needed?
+
+----
+## group 3
+
+-   The fatigue limit for AISI 4142 steel is 58 ksi for completely reversed fatigue loads.
+-   What is the fatigue limit for fatigue loads with *&sigma;*<sub>*m*</sub> = 10, 20, 30 ksi?
+
+----
+## group 4
+
+-   A material made of 2024-T4 Aluminum undergoes the following load cycle
+    -   *&sigma;*<sub>*x*, min</sub> = 10, *&sigma;*<sub>*x*, max</sub> = 50
+    -   *&sigma;*<sub>*y*, min</sub> = −20, *&sigma;*<sub>*y*, max</sub> = 20
+    -   *&tau;*<sub>*x**y*, min</sub> = 0, *τ*<sub>*xy*, max</sub> = 30
+-   How many cycles can it support before failure?
+
 
 ---
 # strain based fatigue

@@ -1,20 +1,21 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 17 - Crack Propagation
+Lecture 17 - Crack Growth 
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 19, 2020
+7 Apr, 2020
 
 ----
 ## schedule
 
-- 19 Mar - Crack growth, HW6 Due
-- 23-27 Mar - Spring Break
-- 31 Mar - Crack growth
-- 2 Apr - Crack growth, HW7 Due
-- 7 Apr - Retardation
+- 7 Apr - Crack growth
+- 9 Apr - Boeing Method, HW7 Due
+- 14 Apr - Cycle Counting 
+- 16 Apr - Crack retardation
+- 21 Apr - Exam Review, HW8 Due
+- 23 Apr - Exam 2
 
 
 ----
@@ -22,87 +23,12 @@ March 19, 2020
 
 <!-- vim-markdown-toc GFM -->
 
-* other factors affecting fatigue
 * crack growth rate
 * crack growth rate equations
 * factors affecting crack propagation
 * numerical algorithm
 
 <!-- vim-markdown-toc -->
-
----
-# other factors affecting fatigue
-
-----
-## factors affecting fatigue life
-
--   At temperatures above one-half the melting temperature (absolute scale), creep-relaxation is significant
--   This will cause the strain/stress-life curves to become rate dependent
--   Occurs at room temperature for many materials (lead, tin, many polymers)
--   At a sufficiently elevated temperature for any material
-
-----
-## surface finish
-
--   High cycle fatigue is sensitive to surface finish, samples are generally polished
--   Low cycle fatigue is not sensitive to surface finish or residual stress 
--   The plastic deformation tends to remove residual stresses
--   In high-cycle fatigue, crack initiation is important (poor surface finish allows cracks to form earlier)
--   When plastic deformation is present (low-cycle fatigue), cracks form relatively quickly regardless of surface finish
-
-----
-## surface finish
-
--   Since low-cycle fatigue has little effect from surface finish, we could modify the strain life curve by altering only the elastic portion
--   If we define the surface effect factor, *m*<sub>*s*</sub>, we can find a new *b*<sub>*s*</sub> to replace *b* in the strain-life equation
-
-$$b\_s = \\frac{\\log\\left(m\_s (2N\_e)^b\\right)}{\\log(2N\_e)}$$
-
-----
-## surface treatments
-
--   Treatments which decrease fatigue life:
-    -   Electro-plating (chrome, +corrosion resistance, -fatigue life)
-    -   Grinding improves surface finish, but introduces surface tension, and heat generated can temper quench
-    -   Stamping introduces discontinuities and irregularities
-    -   Forging can refine grain structure and improve physical properties, but can cause decarburization in steels, which hurts fatigue life
-    -   Hot rolling can also cause decarburization
-
-----
-## surface treatments
-
--   Some treatments improve fatigue life:
-    -   Cold rolling improves surface finish, introduces residual compressive stress on surface (slows crack initiation on surface)
-    -   Shot peeing introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
-
-----
-## size
-
--   Size can also have effects on fatigue life
--   Larger parts are more susceptible to damage/imperfections at the same stress level
--   This is why composites are often made from very small fibers (glass fiber, carbon fiber, ceramic-matrix composites)
-
-----
-## size
-
--   The exact effect of size will depend on material, one study for low carbon steels found
-
-$$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
-
--   Which is then used to re-calculate material constants
-    *σ*<sub>*fd*</sub><sup>′</sup> = *m*<sub>*d*</sub>*σ*<sub>*f*</sub><sup>′</sup>,   *ϵ*<sub>*fd*</sub><sup>′</sup> = *m*<sub>*d*</sub>*ϵ*<sub>*f*</sub><sup>′</sup>
-
-----
-## thermal fatigue
-
--   Thermal loading can be introduced when two dissimilar parts are attached together, the coefficient of thermal expansion causes them to expand differently, introducing extra stresses due to the temperature change
--   If the temperature is significantly different between two sides of a part thermal stresses can also be introduced
-
-----
-## thermal fatigue
-
--   Low temperatures generally cause a material to behave in a more brittle fashion, which alters the fatigue life
--   High temperatures cause problems with creep-relaxation and can also affect the crystalline structure
 
 ---
 # crack growth rate

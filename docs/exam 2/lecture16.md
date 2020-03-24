@@ -5,16 +5,16 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 17, 2020
+2 April, 2020
 
 ----
 ## schedule
 
-- 17 Mar - Strain-based fatigue
-- 19 Mar - Crack growth, HW6 Due
-- 23-27 Mar - Spring Break
-- 31 Mar - Crack growth
-- 2 Apr - Crack growth, HW7 Due
+- 2 Apr - Strain-based fatigue, Project Abstract Due, HW6 Due
+- 7 Apr - Crack growth
+- 9 Apr - Boeing Method, HW7 Due
+- 14 Apr - Cycle counting
+
 
 ----
 ## outline
@@ -28,8 +28,6 @@ March 17, 2020
 * notches
 * multiaxial loading
 * other factors affecting fatigue
-* crack growth rate
-* crack growth rate equations
 
 <!-- vim-markdown-toc -->
 
@@ -429,189 +427,5 @@ $$m\_d = \\left(\\frac{d}{25.4 \\text{mm}}\\right)^{-0.093}$$
 
 -   Low temperatures generally cause a material to behave in a more brittle fashion, which alters the fatigue life
 -   High temperatures cause problems with creep-relaxation and can also affect the crystalline structure
-
----
-# crack growth rate
-
-----
-## fracture surface
-
-![](../images/fracture_surface.jpg) <!-- .element width="50%" -->
-
-----
-## fracture surface
-
-![](../images/Fatigue-Fracture-with-Beachmarks.jpg)
-
-----
-## crack growth rate
-
--   We can observe that fatigue damage occurs through crack propagation
--   “cracks” and fracture mechanics have been omitted from all our fatigue discussion thus far
--   It would be beneficial to predict at what rate a crack will extend
-
-----
-## crack growth rate
-
--   Crack growth rate can be measured experimentally
--   Using a center-crack specimen, a fatigue load is applied
--   The crack length is measured and plotted vs. the number of cycles
--   The slope of this curve ($\\frac{da}{dN}$) is then plotted vs. either *K*<sub>*Imax*</sub> or *ΔK*<sub>*I*</sub> on a log-log scale
--   This chart is then commonly divided into three regions
-
-----
-## da-dN vs K
-
-![](../images/da-dn.png) <!-- .element width="50%" -->
-
-----
-## region I
-
--   In Region I crack growth is very slow and/or difficult to measure
--   In many cases, da/dN corresponds to the spacing between atoms!
--   The point at which the da/dN curve intersects the x-axis (usually with a relatively vertical slope) is called the fatigue threshold
--   Typically 3-15 $\\text{ ksi} \\sqrt{\\text{in}}$ for steel
--   3-6 $\\text{ ksi} \\sqrt{\\text{in}}$ for aluminum
-
-----
-## region II
-
--   Most important region for general engineering analysis
--   Once a crack is present, most of the growth and life occurs in Region II
--   Generally linear in the log-log scale
-
-----
-## region III
-
--   Unstable crack growth
--   Usually neglected (we expect failure before Region III fully develops in actual parts)
--   Can be significant for parts where we expect high stress and relatively short life
-
-----
-## crack growth rate curve
-
--   The crack growth rate curve is considered a material property
--   The same considerations for thickness apply as with fracture toughness (*K*<sub>*c*</sub> vs. *K*<sub>*Ic*</sub>)
--   Is also a function of the load ratio, *R* = *σ*<sub>*min*</sub>/*σ*<sub>*max*</sub>
-
-----
-## R effects
-
--   While the x-axis can be either *ΔK* or *K*<sub>*max*</sub>, the shape of the data is the same
--   When we look at the effects of load ratio, *R*, the axis causes some differences on the plot
--   With *ΔK* on the x-axis, increasing *R* will shift the curve up and to the left, shifting the fatigue threshold and fracture toughness on the graph as well
-
-----
-## R effects
-
--   With *K*<sub>*max*</sub> on the x-axis, increasing *R* shifts the curve down and to the right, but fatigue threshold and fracture toughness keep same values
--   In general, *R* dependence vanishes for *R* &gt; 0.8 or *R* &lt; −0.3. This effect is known as the band width
-
----
-# crack growth rate equations
-
-----
-## crack growth rate equations
-
--   There are many crack growth rate equations of varying complexity
--   The “best” form to use will depend on design needs
-
-----
-## growth equations
-
--   The important features in curve-fit equations are
-    1.  Region II curve fit (linear on log-log scale)
-    2.  Region I curve fit (fatigue threshold)
-    3.  Region III curve fit (critical stress intensity)
-    4.  Stress ratio effects
-    5.  Band width of R-curves
-
-----
-## paris law
-
--   The original
--   Fits the linear portion (Region II)
--   Does not fit Region I, Region III, or have R-dependence
-$$\\frac{da}{dN} = C (\\Delta K)^n$$
--   Note: this assumes the x-axis is *ΔK*, but *ΔK* = (1 − *R*)*K*<sub>*max*</sub>, so we can easily convert
-
-----
-## walker
-
--   Region II is usually all that is needed for engineering, but R-dependence is often an important effect to capture
--   Walker modified the Paris law to account for R-dependence
-
-$$\\frac{da}{dN} = C\\left\[(1-R)^mK\_{max}\\right\]^n$$
--   Gives a good fit for Region II with R-dependence and band width
-
-----
-## forman
-
--   The Forman equation was developed to capture the effects of Region II and Region III
--   Also includes the effects of *R*, but does not control the band width of R effects
-
-$$\\frac{da}{dN} = \\frac{C \\left\[(1-R)K\_{max}\\right\]^n}{(1-R)K\_c-(1-R)K\_{max}}$$
-
-----
-## modified forman
-
--   The Forman equation can be modified to include the effect of band width
-
-$$\\frac{da}{dN} = \\frac{C \\left\[(1-R)^m K\_{max}\\right\]^n}{\\left\[(1-R)^mK\_c-(1-R)^m K\_{max}\\right\]^L}$$
-
-----
-## collipriest
-
--   The Collipriest equation fits Regions I, II and III, but has no R-dependence
-
-$$\\frac{da}{dN} = C\_1 + C\_2 \\tanh^{-1} \\left\[\\frac{\\log \\left(\\frac{K\_{max}^2}{K\_oK\_c}\\right)}{\\log (K\_c/K\_o)}\\right\]$$
-
-----
-## modified collipriest
-
--   Following the same methods as before, we can modify the Collipriest equation for R-dependence and band width control
-
-$$\\frac{da}{dN} = C\_1 + C\_2 \\tanh^{-1} \\left\[\\frac{\\log \\left(\\frac{(1-R)^mK\_{max}^2}{K\_oK\_c}\\right)}{\\log (K\_c/K\_o)}\\right\]$$
--   For a cleaner graph, experimental data at different R-values is sometimes plotted vs. *K*<sub>*eff*</sub>
-*K*<sub>*eff*</sub> = (1 − *R*)<sup>m</sup>*K*<sub>*max*</sub>
-
-----
-## nasgrow growth rate equation
-
--   A very complicated curve fit is provided in the NASGROW growth rate equation
-
-$$\\frac{da}{dN} = C \\left\[\\frac{1-f}{1-R}\\Delta K\\right\]^n\\frac{\\left\[1-\\frac{\\Delta K\_{th}}{\\Delta K}\\right\]}{\\left\[1-\\frac{K\_{max}}{K\_{crit}}\\right\]}$$
--   The curve fit parameters can be found in p. 307 of your text (or the NASGROLW/AFGROW documentation)
-
-----
-## boeing-walker growth rate equation
-
--   The Boeing-Walker growth equation is given as (for *R* ≥ 0 )
-
-$$\\frac{da}{dN} = 10^{-4}\\left(\\frac{1}{mT}\\right)^p\\left\[K\_{max}(1-R)^q\\right\]^p$$
-
-----
-## conversion of constants
-
--   Much of the data available to us is from Boeing, and given in terms of the Boeing-Walker equation
--   We can re-write some other equations to more easily convert parameters between the various equations
--   Walker-Boeing:
-
-$$\\frac{da}{dN} = 10^{-4}\\left(\\frac{1}{mT}\\right)^p\\left\[\\Delta K(1-R)^{q-1}\\right\]^p$$
--   Walker-AFGROW:
-
-$$\\frac{da}{dN} = C\_w\\left\[\\Delta K(1-R)^{m-1}\\right\]^{n\_w}$$
--   Forman:
-
-$$\\frac{da}{dN} = \\frac{C\_F}{(1-R)K\_c - \\Delta K} (\\Delta K)^{n\_f}$$
-
-----
-## conversion of constants
-
-|              Walker-Boeing              |                  Walker-AFGROW                 |                         Forman                         |
-|:---------------------------------------:|:----------------------------------------------:|:------------------------------------------------------:|
-| $10^{-4}\\left(\\frac{1}{mT}\\right)^p$ | $C\_w = 10^{-4}\\left(\\frac{1}{mT}\\right)^p$ | $C\_F = (K\_c-1)10^{-4}\\left(\\frac{1}{mT}\\right)^p$ |
-|                    q                    |                    *m* = *q*                   |                                                        |
-|                    p                    |             *n*<sub>*w*</sub> = *p*            |                 *n*<sub>*f*</sub> = *p*                |
 
 

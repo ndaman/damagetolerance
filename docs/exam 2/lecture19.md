@@ -10,7 +10,7 @@ April 9, 2019
 ----
 ## schedule
 
-- 9 Apr - Boeing Method, HW7 Due
+- 9 Apr - Cycle Counting, HW7 Due
 - 11 Apr - Crack Retardation
 - 16 Apr - Exam Review, HW8 Due 
 - 18 Apr - Exam 2
