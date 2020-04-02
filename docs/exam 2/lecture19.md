@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 9, 2020
+April 14, 2020
 
 ----
 ## schedule
 
-- 9 Apr - Cycle Counting, HW7 Due
-- 11 Apr - Crack Retardation
-- 16 Apr - Exam Review, HW8 Due 
-- 18 Apr - Exam 2
+- 14 Apr - Cycle Counting
+- 16 Apr - Crack Retardation
+- 21 Apr - Exam Review, HW8 Due 
+- 23 Apr - Exam 2
 
 ----
 ## outline

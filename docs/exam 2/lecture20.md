@@ -5,19 +5,18 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 11, 2020
+April 16, 2020
 
 ----
 ## schedule
 
-- 11 Apr - Crack Retardation
-- 16 Apr - Exam Review, HW8 Due 
-- 18 Apr - Exam 2
-- 23 Apr - Damage Tolerance
+- 16 Apr - Crack Retardation
+- 21 Apr - Exam Review, HW8 Due 
+- 23 Apr - Exam 2
+- 28 Apr - Damage Tolerance
 
 ----
 ## outline
-
 
 <!-- vim-markdown-toc GFM -->
 
