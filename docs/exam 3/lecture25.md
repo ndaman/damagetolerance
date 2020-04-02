@@ -5,7 +5,7 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-May 2, 2019
+May 2, 2020
 
 ----
 ##  schedule

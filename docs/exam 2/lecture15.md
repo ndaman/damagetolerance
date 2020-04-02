@@ -296,7 +296,7 @@ $$\\begin{aligned}
 -   A material made of 2024-T4 Aluminum undergoes the following load cycle
     -   *&sigma;*<sub>*x*, min</sub> = 10, *&sigma;*<sub>*x*, max</sub> = 50
     -   *&sigma;*<sub>*y*, min</sub> = −20, *&sigma;*<sub>*y*, max</sub> = 20
-    -   *&tau;*<sub>*x**y*, min</sub> = 0, *τ*<sub>*xy*, max</sub> = 30
+    -   *&tau;*<sub>*xy*, min</sub> = 0, *τ*<sub>*xy*, max</sub> = 30
 -   How many cycles can it support before failure?
 
 
@@ -383,7 +383,7 @@ $$\\epsilon\_a = \\frac{\\sigma\_a}{E} + \\left(\\frac{\\sigma\_a}{H^\\prime}\\r
 ----
 ## example
 
-| *ϵ*<sub>*a*</sub> | *σ*<sub>*a*</sub> (MPa) | *ϵ*<sub>*p**a*</sub> |  *N*<sub>*f*</sub>|
+| *ϵ*<sub>*a*</sub> | *σ*<sub>*a*</sub> (MPa) | *ϵ*<sub>*pa*</sub> |  *N*<sub>*f*</sub>|
 |:-----------------:|:-----------------------:|:--------------------:|------------------:|
 |       0.0202      |           631           |        0.01695       |                227|
 |       0.0100      |           574           |        0.00705       |               1030|
