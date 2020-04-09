@@ -68,3 +68,8 @@ April 14, 2020
 
 </div>
 
+----
+## further resources
+
+-   The [Wikipedia](https://en.wikipedia.org/wiki/Rainflow-counting_algorithm) page on the Rainflow method is quite helpful and includes links to Excel, MATLAB, and Python libraries/addons for cycle counting.
+-   You can also read the full ASTM standard [here](../classdocs/E1049.4269.pdf)
