@@ -45,7 +45,7 @@ April 14, 2020
 ----
 ## rain-flow method
 
-![](..\images/rainflow.png) <!-- .element width="40%" -->
+![](../images/rainflow.png) <!-- .element width="40%" -->
 
 ----
 ## range-pair method
@@ -58,7 +58,7 @@ April 14, 2020
 ----
 ## range-pair
 
-![](..\images/range-pair.png) <!-- .element width="30%" -->
+![](../images/range-pair.png) <!-- .element width="30%" -->
 
 ----
 ## cycle counting example
