@@ -12,8 +12,8 @@ April 16, 2020
 
 - 16 Apr - Crack Retardation
 - 16 Apr - Exam 2 Assigned
-- 21 Apr - No Lecture, HW8 Due 
-- 23 Apr - Recitation, Exam 2 Due
+- 21 Apr - Recitation, HW8 Due 
+- 23 Apr - No Lecture, Exam 2 Due
 - 28 Apr - Damage Tolerance
 
 ----
