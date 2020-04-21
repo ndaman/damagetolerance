@@ -1,5 +1,5 @@
 ##  AE 737: Mechanics of Damage Tolerance
-Lecture 23 - Repair 
+Lecture 24 - Repair 
 
 Dr. Nicholas Smith
 
@@ -10,11 +10,9 @@ April 25, 2020
 ----
 ##  schedule
 
-- 25 Apr - Repair and full scale fatigue 
-- 30 Apr - Finite Elements
-- 2 May - SPTE, NDT/NDE
-- 7 May - My Research
-- 9 May - Damage Mechanics, Final Projects Due
+- 5 May - Repair
+- 7 May - Special Topics
+- 14 May - Final Projects Due
 
 ----
 ##  outline
@@ -101,17 +99,17 @@ April 25, 2020
 ----
 ## shot peening
 
-![](..\images\shot-peening.jpg)
+![](../images/shot-peening.jpg)
 
 ----
 ## hole cold working
 
-![](..\images\hole-cold-working.jpg)
+![](../images/hole-cold-working.jpg)
 
 ----
 ## hole cold working
 
-![](..\images\hole-SN.jpg)
+![](../images/hole-SN.jpg)
 
 ----
 ## which repair method
@@ -121,7 +119,7 @@ April 25, 2020
 -   Cost
 -   Is multiple site damage a concern?
 -   Fracture vs. net section yield
--   Can we reduce *K*<sub>*max*</sub> below *K*<sub>*th*</sub> with residual stresses?
+-   Can we reduce $K_{max}$ below $K_{th}$ with residual stresses?
 
 ---
 # group problems
@@ -129,23 +127,22 @@ April 25, 2020
 ----
 ## group 1
 
-
 -   Compare the effectiveness of stop drilling in 2024 and 7075 for the following panel.
--   For 2024 use $K\_c = 125 \\text{ ksi}\\sqrt{\\text{in}}$ and *σ*<sub>*YS*</sub> = 50 ksi
--   For 7075 use $K\_c = 60 \\text{ ksi}\\sqrt{\\text{in}}$ and *σ*<sub>*YS*</sub> = 70 ksi
+-   For 2024 use $K\_c = 125 \\text{ ksi}\\sqrt{\\text{in}}$ and $\sigma_{YS}$ = 50 ksi
+-   For 7075 use $K\_c = 60 \\text{ ksi}\\sqrt{\\text{in}}$ and $\sigma_{YS}$ = 70 ksi
 -   Recall $\\beta = \\sqrt{\\sec(\\pi a/W)}$
 
 ----
 ## group 1
 
-![](..\images\group-23-1.PNG) <!-- .element width="30%" -->
+![](../images/group-23-1.PNG) <!-- .element width="30%" -->
 
 ----
 ## group 2
 
--   Due to MSD concerns, we would like to alter a crack path by 15<sup>∘</sup>.
+-   Due to MSD concerns, we would like to alter a crack path by $15^\circ$
 -   What stresses would need to be added to a 15 ksi tensile load to accomplish this?
--   Note: Assume for this problem that *β*<sup>′</sup> = *β*
+-   Note: Assume for this problem that $\beta^\prime = \beta$
 -   Recall
 
 $$\\begin{aligned}
@@ -163,21 +160,21 @@ $$\\begin{aligned}
 ----
 ## group 3
 
-![](..\images\group-23-3.PNG) <!-- .element width="30%" -->
+![](../images/group-23-3.PNG) <!-- .element width="30%" -->
 
 ----
 ## group 4
 
 -   Due to damage, an airline decides to move an aircraft to a less strenuous flight cycle.
 -   Find the effective load for a flight cycle that will last at least 1000 flights for the following cracked panel.
--   Note: use *p* = 4 and *M*<sub>*t*</sub> = 25.8
--   Assume $K\_c = 60 \\text{ ksi}\\sqrt{\\text{in}}$ and *σ*<sub>*YS*</sub> = 70 ksi
+-   Note: use *p* = 4 and $M_t = 25.8$
+-   Assume $K\_c = 60 \\text{ ksi}\\sqrt{\\text{in}}$ and $\sigma_{YS}$ = 70 ksi
 -   The largest load of 20 ksi occurs during takeoff and will not change with flight cycle.
 
 ----
 ## group 4
 
-![](..\images\group-23-4.PNG) <!-- .element width="30%" -->
+![](../images/group-23-4.PNG) <!-- .element width="30%" -->
 
 ---
 # full scale fatigue testing
