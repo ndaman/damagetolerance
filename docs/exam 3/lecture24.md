@@ -103,7 +103,7 @@ $$\\sigma\_{yy} = \\frac{K\_I}{\\sqrt{2 \\pi x}}$$
 
 $$u\_y = \\frac{K\_I(\\kappa + 1)}{4 G \\pi}\\sqrt{-2 \\pi x}$$
 
--   Where *κ* is to easily differentiate between plane stress and plane strain
+-   Where $\kappa$ is to easily differentiate between plane stress and plane strain
     
 $$\\begin{aligned}
   \\kappa &= 3 - 4\\nu & \\text{(plane strain)}\\\\
