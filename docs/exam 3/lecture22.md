@@ -5,31 +5,30 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 23, 2020
+April 28, 2020
 
 ----
 ## schedule
 
-- 23 Apr - Damage Tolerance
-- 25 Apr - Special Topics
-- 30 Apr - Special Topics
-- 2 May - Special Topics
+- 28 Apr - Damage Tolerance
+- 30 Apr - Finite Elements
+- 5 May - Special Topics
 - 7 May - Special Topics
-- 9 May - Special Topics, Final Projects Due
+- 14 May - Final Projects Due
 
 ----
 ## outline
 
+<!-- vim-markdown-toc GFM -->
+
+* special topics
+* damage tolerance
+* inspection cycle
+
+<!-- vim-markdown-toc -->
+
 ---
-# exam 2
-
-----
-## exam 2 notes
-
-- Class average 85%
-- Problem 1 hardest
-- Problem 2 easiest
-- No curve
+# special topics
 
 ----
 ## special topics
@@ -57,7 +56,7 @@ April 23, 2020
 
 -   **Damage tolerant**
     -   Assume cracks are present
-    -   When cracks grow to a sufficient size, they are inpsectable
+    -   When cracks grow to a sufficient size, they are inspectable
     -   Inspection cycles are set such that we can be sure crack will not become critical during regular operation
 
 ----
@@ -82,7 +81,7 @@ April 23, 2020
 -   In many structures, multiple load paths are not practical
 -   It is also possible for the critical crack length to be much smaller than is easily detectable
 -   In these cases, safe life design is used to identify a certain number of cycles a part can sustain before it needs to be replaced
--   This often requires replacing parts pre-maturely
+-   This often requires replacing parts prematurely
 
 ----
 ## single load path - damage tolerant
@@ -108,12 +107,12 @@ April 23, 2020
 -   Otherwise same as externally inspectable structure
 
 ---
-# inpsection cycle
+# inspection cycle
 
 ----
 ## inspection cycle
 
--   In many industries, an inspection cycle is pre-determined by some governing agency
+-   In many industries, an inspection cycle is predetermined by some governing agency
 -   We have developed all the equations necessary to determine our own
     1.  Determine loading cycle (or equivalent load cycle using Boeing method)
     2.  Determine maximum crack length
@@ -125,7 +124,10 @@ April 23, 2020
 
 -   Be sure to use a consistent cycle-counting method (rainflow or range-pair)
 -   Recall the Boeing method for variable amplitude loads
-    ∑<sub>*i*</sub>(*zσ*<sub>*max*</sub>)<sub>*i*</sub><sup>*p*</sup>*N*<sub>*i*</sub> = (*S*)<sup>*p*</sup>
+
+$$
+\sum_i (z\sigma_{max})_i^p N_i = S^p
+$$
 
 ----
 ## crack length
