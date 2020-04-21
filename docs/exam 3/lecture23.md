@@ -119,7 +119,7 @@ April 25, 2020
 -   Cost
 -   Is multiple site damage a concern?
 -   Fracture vs. net section yield
--   Can we reduce $K_{max}$ below $K_{th}$ with residual stresses?
+-   Can we reduce $K\_{max}$ below $K\_{th}$ with residual stresses?
 
 ---
 # group problems
