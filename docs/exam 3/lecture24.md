@@ -1,19 +1,19 @@
 ##  AE 737: Mechanics of Damage Tolerance
-Lecture 24 - Finite Elements
+Lecture 23 - Finite Elements
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 25, 2020
+April 30, 2020
 
 ----
 ##  schedule
 
 - 30 Apr - Finite Elements
-- 2 May - SPTE, NDT/NDE
-- 7 May - My Research
-- 9 May - Damage Mechanics, Final Projects Due
+- 5 May - Special Topics
+- 7 May - Special Topics
+- 14 May - Final Projects Due
 
 ---
 # finite element techniques
@@ -62,8 +62,8 @@ April 25, 2020
     
 $$\\sigma\_{yy} = \\frac{K\_I}{\\sqrt{2 \\pi x}}$$
 
--   We can solve this for *K*<sub>*I*</sub> and we should (in theory) be able to calculate *K*<sub>*I*</sub>
--   We will get a unique *K*<sub>*I*</sub> value for every point (*x*) along crack plane
+-   We can solve this for $K_I$ and we should (in theory) be able to calculate $K_I$
+-   We will get a unique $K_I$ value for every point (*x*) along crack plane
 
 ----
 ## direct method
@@ -82,19 +82,19 @@ $$\\sigma\_{yy} = \\frac{K\_I}{\\sqrt{2 \\pi x}}$$
 ----
 ## symmetry
 
-![](..\images\singularity_quarter.png) <!-- .element width="60%" -->
+![](../images/singularity_quarter.png) <!-- .element width="60%" -->
 
 ----
 ## symmetry
 
-![](..\images\singularity_mirrored.png) <!-- .element width="60%" -->
+![](../images/singularity_mirrored.png) <!-- .element width="60%" -->
 
 ----
 ## analyzing results
 
--   If our results are accurate, we should be able to calculate the same *K*<sub>*I*</sub> at any point
--   To ensure convergence, we plot the calculated *K*<sub>*I*</sub> vs. *x* (distance from crack tip)
--   In the region where this plot is a horizontal line, we consider a converged *K*<sub>*I*</sub>
+-   If our results are accurate, we should be able to calculate the same $K_I$ at any point
+-   To ensure convergence, we plot the calculated $K_I$ vs. *x* (distance from crack tip)
+-   In the region where this plot is a horizontal line, we consider a converged $K_I$
 
 ----
 ## analyzing results
