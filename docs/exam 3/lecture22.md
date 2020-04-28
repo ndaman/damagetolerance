@@ -33,10 +33,11 @@ April 28, 2020
 ----
 ## special topics
 
-- NDE/NDT
 - FEM
-- Damage Mechanics
 - Repair of damaged structures
+- Fatigue of composites
+- NDE/NDT
+- Damage Mechanics
 - My Research
 - Other?
 
@@ -151,7 +152,7 @@ $$
 
 -   We can integrate (analytically or numerically) to find the number of cycles it will take for a crack to grow to critical length
 -   Note that numerical integration is non-conservative, in general
--   *ΔN* should be small enough to give converged solution
+-   $\Delta N$ should be small enough to give converged solution
 
 ----
 ## example
