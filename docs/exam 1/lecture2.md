@@ -729,6 +729,7 @@ Where `$n = $` number of cracks (1 or 2)
 
 `$$\begin{aligned}
   K_I &= \sigma_{br} \sqrt{\pi c} \beta\\
+  \sigma_{br} &= P/Dt\\
   \beta &= \left(\frac{G_0 D}{2W} + G_1\right)G_w G_L G_2\\
   z &= \left(1+\frac{2C}{D}\right)^{-1}\\
   G_0 &= 0.7071 + 0.7548z + 0.3415z^2 + 0.642z^3 + 0.9196z^4\\
