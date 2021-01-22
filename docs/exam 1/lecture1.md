@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 21, 2020
+February 1, 2021
 
 ---
 ## schedule
 
-- 21 Jan - Introduction, Stress Intensity
-- 23 Jan - Common Stress Intensity Factors
-- 28 Jan - Superposition, Compounding
-- 30 Jan - Curved Boundaries, HW 1 Due
+- 1 Feb - Introduction, Stress Intensity
+- 3 Feb - Common Stress Intensity Factors
+- 8 Feb - Superposition, Compounding
+- 10 Feb - Curved Boundaries, HW 1 Due
 
 ----
 
@@ -95,42 +95,52 @@ January 21, 2020
   - Printed notes from Dr. Bert L. Smith and Dr. Walter J. Horn
   - Bring $30 cash or check to AE offices to pick up your copy
   - Make checks out to Wichita State University
-  - Homework will be given in handouts (via Blackboard/course website)
+  - Homework will be administered via Blackboard
   - Supplemental textbooks are listed in the syllabus and in the text for further study
-Note: probably available by Thursday
+
+----
+
+## homework
+
+- Homework will be posted and submitted via Blackboard assignments
+- Homework will be self-graded: I will give you a score based only on completion
+- One week (generally) after the Homework is due, a second Blackboard assignment will be due for the self-grade
+- You need to go through the posted solutions and compare your work to the solutions
+- This will also be graded only for completion
 
 ----
 
 ## office hours
-  - I will e-mail everyone in the course a Doodle link we can use to find the optimal office hours
-  - Let me know if you do not receive the e-mail, you may need to update your information in Blackboard
-  - Take advantage of office hours, this is time that I have already set aside for you
-  - If the regular office hours do not work for your schedule, send me an e-mail and we can work out a time to meet
+
+- No traditional office hours this year
+- Office appointments can be scheduled via e-mail, although remote meetings are preferred
 
 ---
 
 ## tentative course outline
 
   -  Section 1 - fracture mechanics
-	  -  Stress intensity (21 - 30 Jan)
-	  -  Plastic zone (4 - 11 Feb)
-	  -  Fracture toughness (11 - 18 Feb)
-	  -  Residual strength (18 - 25 Feb)
-	  -  Exam 1 (5 March)
+	  -  Stress intensity (1 Feb)
+	  -  Plastic zone (8 Feb)
+	  -  Fracture toughness (15 Feb)
+	  -  Residual strength (22 Feb)
+    -  Multiple Site Damage (1 Mar)
+    -  Mixed-Mode Fracture (3 Mar)
+	  -  Exam 1 (10 March)
 
 ----
 
 ## tentative course outline
   -  Section 2 - fatigue and propagation
-	  -  Fatigue analysis (17 - 26 Mar)
-	  -  Crack propagation (26 Mar - 2 Apr)
-	  -  Exam 2 (9 April)
+	  -  Fatigue analysis (15 Mar)
+	  -  Crack growth (29 Mar)
+	  -  Exam 2 (19 April)
 
 ----
 
 ## tentative course outline
   - Section 3 - damage tolerance
-    - Damage tolerance (14-16 Apr)
+    - Damage tolerance (26 Apr)
     - Test methods
     - Finite elements
     - Non Destructive Testing
@@ -143,10 +153,10 @@ Note: probably available by Thursday
 
 Grade breakdown
 
-- Homework 15%
+- Homework 10%
 - Exam 1 30%
 - Exam 2 30%
-- Final Project 25%
+- Final Project 30%
 
 <table style="width:100%">
 <tr>
@@ -191,6 +201,7 @@ Grade breakdown
 
 ----
 ## damage tolerance
+
 -  There are many ways to address the problem of damage in a material
 	1.  Infinite-life design
 	2.  Safe-life design
@@ -249,7 +260,7 @@ Grade breakdown
   -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
 ----
-## stress Intensity
+## stress intensity
   -  Be careful that although the notation is similar, the *Stress Intensity Factor* is different from the *Stress Concentration Factor* from strength of materials
   -  We are usually most concerned with Mode I, but there will be a unique stress intensity factor for each mode, we label these `$ K_I $`, `$ K_{II} $`, and `$ K_{III} $`
   -  If no subscript is given, assume Mode I

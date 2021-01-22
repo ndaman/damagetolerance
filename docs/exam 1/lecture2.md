@@ -5,22 +5,18 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-January 23, 2020
-
----
-## schedule
-
-- 23 Jan - Common Stress Intensity Factors
-- 28 Jan - Superposition, Compounding
-- 30 Jan - Curved Boundaries, Homework 1 Due
-- 5 Feb - Plastic Zone
+3 February, 2021
 
 ----
-## office hours
+## schedule
 
--   20/27 reporting
--   Tuesdays from 3:00 - 4:00 is looking like the best option
--   Next week I plan to finalize, so fill out the Doodle before then
+- 3 Feb - Common Stress Intensity Factors
+- 8 Feb - Superposition, Compounding
+- 10 Feb - Curved Boundaries, HW 1 Due
+- 15 Feb - Plastic Zone
+
+---
+# review
 
 ----
 ## fracture mechanics
