@@ -8,10 +8,10 @@ all : $(PANDOC) $(HANDOUTS)
 
 
 %.pdf : %.pandoc
-	pandoc -f markdown+tex_math_double_backslash+simple_tables style.yaml $^ -t beamer -o $@
+	pandoc -f markdown+tex_math_double_backslash+pipe_tables style.yaml $^ -t beamer -o $@
 
 %.tex : %.pandoc
-	pandoc -f markdown+tex_math_double_backslash+simple_tables style.yaml $^ -t beamer -s -o $@ 
+	pandoc -f markdown+tex_math_double_backslash+pipe_tables style.yaml $^ -t beamer -s -o $@ 
 		
 
 clobber : 
