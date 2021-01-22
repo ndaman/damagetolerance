@@ -4,14 +4,14 @@ HANDOUTS := $(patsubst %.md,%.md.handout.pdf,$(wildcard *.md))
 all : $(PANDOC) $(HANDOUTS)
 
 %.pandoc : %.md
-	sed 's/-\{3,4\}//g; s/\\\[/\[/g; s/\\\]/\]/g; s/\\\\/\\/g; s/## AE737//g; s/\\_/_/g; s/<br\/>/\n\n/g; s/`\(\$$\+\)/\1/g; s/\(\$$\+\)`/\1/g; /^# /d' $^ > $@
+	perl -pe 's/^-{3,4}$$//g; s/\\\[/\[/g; s/\\\]/\]/g; s/\\\\/\\/g; s/## AE737//g; s/\\_/_/g; s/<br\/>/\n\n/g; s/`\$$\$$/\\\\\[/g; s/\$$\$$`/\\\\\]/g; s/`\$$(.*?)\$$`/\\\\\(\1\\\\\)/g; s/\$$/\\\$$/g; s/(?<!\\)\\$$/\\\\/g; /^# /d' $^ > $@
 
 
 %.pdf : %.pandoc
-	pandoc style.yaml -f markdown $^ -t beamer -o $@
+	pandoc -f markdown+tex_math_double_backslash+simple_tables style.yaml $^ -t beamer -o $@
 
 %.tex : %.pandoc
-	pandoc style.yaml -f markdown $^ -t beamer -o $@ 
+	pandoc -f markdown+tex_math_double_backslash+simple_tables style.yaml $^ -t beamer -s -o $@ 
 		
 
 clobber : 

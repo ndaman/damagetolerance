@@ -8,6 +8,7 @@ papersize: letter
 output:
 	pdf_document:
 		latex_engine: xelatex
+    md_extensions: +tex_math_double_backslash+simple_tables
 header-includes: |
   \usepackage{pgfpages}
   \pgfpagesuselayout{2 on 1}
