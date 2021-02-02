@@ -36,6 +36,7 @@ Wichita State University, Department of Aerospace Engineering
 
 -  A key finding from Linear Elastic Fracture Mechanics (LEFM) is known as the *Stress Intensity Factor*
 -  The stress intensity factor is often written in this form
+
 `$$ K = \sigma \sqrt{ \pi a} \beta $$`
 -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
@@ -50,6 +51,7 @@ Wichita State University, Department of Aerospace Engineering
 ## stress intensity
 
 -  For brittle materials (where "linear" fracture mechanics assumptions hold true) we can find the full stress field near the crack in terms of the stress intensity factor
+
 `$$	\begin{aligned}
 	\sigma_x &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1-\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
 	\sigma_y &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1+\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
@@ -60,6 +62,7 @@ Wichita State University, Department of Aerospace Engineering
 ## mode II
 
 -  Similarly for Mode II we find
+
 `$$	\begin{aligned}
 	\sigma_x &= \frac{-K_{II}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \left(2+\cos \frac{\theta}{2}\cos \frac{3\theta}{2}\right)\\
 	\sigma_y &= \frac{K_{II}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \cos \frac{\theta}{2}\cos \frac{3\theta}{2}\\
@@ -70,6 +73,7 @@ Wichita State University, Department of Aerospace Engineering
 ## mode III
 
 -  And for Mode III
+
 `$$	\begin{aligned}
 	\tau_{xz} &= \frac{-K_{III}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \\
 	\tau_{yz} &= \frac{K_{III}}{\sqrt{2\pi r}} \cos \frac{\theta}{2}
@@ -83,6 +87,7 @@ Wichita State University, Department of Aerospace Engineering
 ## center crack, infinite width
 
 `$$K_I = \sigma \sqrt{\pi a}$$`
+
 ![center crack, infinite width](../images/center-infinite.svg)
 
 ----
@@ -96,6 +101,7 @@ Wichita State University, Department of Aerospace Engineering
 `$$K_I = \sigma \sqrt{\pi a} \sqrt{\sec (\pi a/W)}$$`
 - Accurate within 0.3% for `$2a/W \le 0.7$`
 - within 1.0% for `$2a/W = -.8$`
+
 `$$K_I = \sigma \sqrt{\pi a} \left[1.0 - 0.025\left(\frac{2a}{W}\right)^2 + 0.06\left(\frac{2a}{W}\right)^4\right]\sqrt{\sec (\pi a/W)}$$`
 - Accurate within 0.1% for all crack lengths.
 
@@ -103,6 +109,7 @@ Wichita State University, Department of Aerospace Engineering
 ## edge crack, semi-infinite width
 
 `$$K_I = 1.122 \sigma \sqrt{\pi a}$$`
+
 ![edge crack, semi-infinite](../images/edge-infinite.svg)
 
 ----
@@ -130,8 +137,10 @@ Wichita State University, Department of Aerospace Engineering
 ## edge crack, bending moment
 
 - The usual form for stress intensity still applies
+
 `$$K_I = \sigma \sqrt{\pi a} \beta$$`
 - Where `$\sigma = \frac{6M}{tW^2}$`
+
 `$$\beta = 1.122 - 1.40 \left(\frac{a}{W}\right) + 7.33 \left(\frac{a}{W}\right)^2 - 13.08\left(\frac{a}{W}\right)^3 + 14.0 \left(\frac{a}{W}\right)^4$$`
 - valid within 0.2% accuracy for `$\frac{a}{W} \le 0.6$`
 
@@ -158,6 +167,7 @@ Wichita State University, Department of Aerospace Engineering
 
 - With an applied load we use a slightly modified form for the stress intensity factor `$K_I = \frac{P}{t \sqrt{\pi a}}\beta$`
 - With `$\beta$` in this case given as
+
 `$$\beta = \frac{1 - 0.5\left(\frac{a}{W}\right)+0.975\left(\frac{a}{W}\right)^2 - 0.16\left(\frac{a}{W}\right)^3}{\sqrt{1-\left(\frac{a}{W}\right)}}$$`
 
 ----
@@ -418,6 +428,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 ## elliptical flaw, finite solid
 
 - If `$a/c \le 1$`
+
 `$$\begin{aligned}
   M_1 &= 1\\
   Q &= 1+1.464\left(\frac{a}{c}\right)^{1.65}\\
@@ -662,6 +673,7 @@ Where `$n = $` number of cracks (1 or 2)
 ## remote stress
 
 - The same formulas apply for both symmetric cracks (`$n=2$`) and a single crack (`$n=1$`) with one additional correction factor applied to the single crack case
+
 `$$K_{I,single} = \sqrt{\frac{4/\pi + ac/2tr}{4/\pi + ac/tr}}K_{I,symmetric}$$`
 
 ----
@@ -720,6 +732,7 @@ Where `$n = $` number of cracks (1 or 2)
 ## single-crack correction
 
 - When the surface crack is only on one side of the hole, we use the same correction as for corner cracks
+
 `$$K_{I,single} = \sqrt{\frac{4/\pi + ac/2tr}{4/\pi + ac/tr}}K_{I,symmetric}$$`
 
 ----
