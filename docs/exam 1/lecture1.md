@@ -249,6 +249,7 @@ February 1, 2021
 
 -  A key finding from Linear Elastic Fracture Mechanics (LEFM) is known as the *Stress Intensity Factor*
 -  The stress intensity factor is often written in this form
+
 `$$ K = \sigma \sqrt{ \pi a} \beta $$`
 -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
@@ -263,6 +264,7 @@ February 1, 2021
 ## stress intensity
 
 -  For brittle materials (where "linear" fracture mechanics assumptions hold true) we can find the full stress field near the crack in terms of the stress intensity factor
+
 `$$	\begin{aligned}
 		\sigma_x &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1-\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
 		\sigma_y &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1+\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
@@ -273,6 +275,7 @@ February 1, 2021
 ## mode II
 
 -  Similarly for Mode II we find
+
 `$$	\begin{aligned}
 		\sigma_x &= \frac{-K_{II}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \left(2+\cos \frac{\theta}{2}\cos \frac{3\theta}{2}\right)\\
 		\sigma_y &= \frac{K_{II}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \cos \frac{\theta}{2}\cos \frac{3\theta}{2}\\
@@ -284,6 +287,7 @@ February 1, 2021
 ## mode III
 
 -  And for Mode III
+
 `$$	\begin{aligned}
 		\tau_{xz} &= \frac{-K_{III}}{\sqrt{2\pi r}} \sin \frac{\theta}{2} \\
 		\tau_{yz} &= \frac{K_{III}}{\sqrt{2\pi r}} \cos \frac{\theta}{2}
@@ -313,6 +317,7 @@ February 1, 2021
 
 -  To make a good scientific plot, we must first decide what to plot, and which plot style will best illustrate our data
 -  Let us consider the Mode I stress near a crack tip
+
 `$$ \begin{aligned}
 		\sigma_x &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1-\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
 		\sigma_y &= \frac{K_I}{\sqrt{2\pi r}} \cos \frac{\theta}{2} \left(1+\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)\\
@@ -331,6 +336,7 @@ February 1, 2021
 
 -  Since we are looking at stresses near the crack tip, it is convenient to normalize the distance by the crack length
 -  If substitute for `$\theta$` and `$K_I$` we have
+
 `$$\begin{aligned}
 		\sigma_x &= \frac{\sigma\sqrt{\pi a} \beta}{\sqrt{2\pi r}} \\
 		\sigma_y &= \frac{\sigma\sqrt{\pi a} \beta}{\sqrt{2\pi r}} \\
@@ -341,6 +347,7 @@ February 1, 2021
 ## plotting
 
 -  Since `$\sigma_x$` and `$\sigma_y$` are identical for this case, we consider only one, and normalize by the applied stress. After simplification
+
 `$$
 		\frac{\sigma_x}{\sigma\beta} = \frac{1}{\sqrt{2}} \frac{1}{\sqrt{(r/a)}}
 $$`
@@ -371,6 +378,7 @@ $$`
 ## plotting
 
 -  After solving for `$r$` we find
+
 `$$ \begin{aligned}
 		r &= \frac{K_I^2}{2 C^2 \pi} \cos^2 \frac{\theta}{2} \left(1-\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)^2\\
 		r &= \frac{K_I^2}{2 C^2 \pi} \cos^2 \frac{\theta}{2} \left(1+\sin \frac{\theta}{2}\sin \frac{3\theta}{2}\right)^2\\
