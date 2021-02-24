@@ -304,7 +304,7 @@ February 22, 2021
 
 `$$\begin{gathered}
   EB\left(\frac{\Delta v}{\Delta P}\right) = \frac{2 Y}{W} \sqrt{\frac{\pi a / W}{\sin (\pi a / W)}} \\
-  \qquad \left\[\frac{2W}{\pi Y} \cosh^{-1} \left(\frac{\cosh(\pi Y/W)}{\cos (\pi a / W)}\right) - \frac{1+\nu}{\sqrt{1 + \left(\frac{\sin(\pi a/W)}{\sinh (\pi Y/W)}\right)^2}}+\nu\right\]
+  \qquad \left[\frac{2W}{\pi Y} \cosh^{-1} \left(\frac{\cosh(\pi Y/W)}{\cos (\pi a / W)}\right) - \frac{1+\nu}{\sqrt{1 + \left(\frac{\sin(\pi a/W)}{\sinh (\pi Y/W)}\right)^2}}+\nu\right]
 \end{gathered}$$`
 
 ----
@@ -318,7 +318,7 @@ February 22, 2021
 ## secant compliance M(T)
 
 `$$\begin{aligned}
-  X &= 1 - \exp \left\[\frac{-\sqrt{\[EB(\Delta v/ \Delta P)\]^2 - (2Y/W)^2}}{2.141}\right\]\\
+  X &= 1 - \exp \left[\frac{-\sqrt{\[EB(\Delta v/ \Delta P)\]^2 - (2Y/W)^2}}{2.141}\right]\\
   &\begin{aligned}
   \frac{2a}{W} &= 1.2235X - 0.699032X^2 + 3.25584X^3 - 6.65042X^4 + \\
   &\qquad 5.54X^5 - 1.66989X^6
