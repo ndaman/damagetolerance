@@ -11,9 +11,11 @@ February 22, 2021
 ## schedule
 
 - 22 Feb - Fracture Toughness
-- 24 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 24 Feb - Fracture Toughness 
+- 26 Feb - HW3 Due, HW 2 Self-grade due
 - 1 Mar - Residual Strength
-- 3 Mar - Residual Strength, HW4 Due, HW 3 Self-grade due
+- 3 Mar - Residual Strength 
+- 5 Mar - HW4 Due, HW 3 Self-grade due
 
 ----
 ## outline
@@ -318,7 +320,7 @@ February 22, 2021
 ## secant compliance M(T)
 
 `$$\begin{aligned}
-  X &= 1 - \exp \left[\frac{-\sqrt{\[EB(\Delta v/ \Delta P)\]^2 - (2Y/W)^2}}{2.141}\right]\\
+  X &= 1 - \exp \left[\frac{-\sqrt{[EB(\Delta v/ \Delta P)]^2 - (2Y/W)^2}}{2.141}\right]\\
   &\begin{aligned}
   \frac{2a}{W} &= 1.2235X - 0.699032X^2 + 3.25584X^3 - 6.65042X^4 + \\
   &\qquad 5.54X^5 - 1.66989X^6

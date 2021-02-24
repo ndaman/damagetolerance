@@ -10,9 +10,11 @@ February 24, 2021
 ----
 ## schedule
 
-- 24 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 24 Feb - Fracture Toughness 
+- 26 Feb - HW3 Due, HW 2 Self-grade due
 - 1 Mar - Residual Strength
-- 3 Mar - Residual Strength, HW4 Due, HW 3 Self-grade due
+- 3 Mar - Residual Strength 
+- 5 Mar - HW4 Due, HW 3 Self-grade due
 - 8 Mar - Multiple Site Damage
 
 ----
