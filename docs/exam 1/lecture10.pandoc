@@ -1,0 +1,201 @@
+## AE 737: Mechanics of Damage Tolerance
+Lecture 10 - Residual Strength
+
+Dr. Nicholas Smith
+
+Wichita State University, Department of Aerospace Engineering
+
+3 March, 2021
+
+
+## schedule
+
+- 3 Mar - Residual Strength 
+- 5 Mar - HW4 Due, HW 3 Self-grade due
+- 8 Mar - Multiple Site Damage
+- 10 Mar - Mixed-Mode Fracture
+- 12 Mar - HW5 Due, HW4 Self-grade due
+
+
+## outline
+<!-- TOC START min:1 max:1 link:false update:true -->
+- stiffeners
+- severed stiffeners
+- crack stoppers
+
+<!-- TOC END -->
+
+
+# stiffeners
+
+
+## stiffened panels
+
+-   In aircraft the skin/stringer system provides many benefits (resistance to buckling)
+-   Stringers also act as stiffeners to resist crack propagation in the skin
+-   Panels in these configurations are generally very wide relative to expected crack dimensions
+-   Cracks are generally modeled either as centered between stiffeners or centered under a stiffener
+-   We need to consider the residual strength of the panel, the stiffener, and the rivets
+
+
+## centered between stiffeners
+
+![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-under.svg) <!-- .element width="80%" -->
+
+
+## centered under stiffener
+![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-between.svg) <!-- .element width="80%" -->
+
+
+## remote stress
+
+-   For displacement continuity, we know that
+
+\\[\left(\frac{PL}{AE}\right)_{Skin} = \left(\frac{PL}{AE}\right)_{Stiffener}\\]
+
+-   Since *L* is the same, we find
+
+\\[\frac{S}{E} = \frac{S_S}{E_S}\\]
+
+-   Where the subscript <sub>*S*</sub> indicates stiffener values, we can express the remote stress in the stiffener as
+
+\\[S_S = S \frac{E_S}{E}\\]
+
+
+## skin
+
+-   The critical stress in the skin is determined the same way as it was in the residual strength chapter
+-   The only exception is that the stiffener contributes to \\(\beta\\)
+
+\\[S_C = \frac{K_C}{\sqrt{\pi a} \beta}\\]
+
+
+## stiffener
+
+-   The maximum stress in a stiffener will be increased near a crack
+-   We represent the ratio of maximum force in stiffener to remote force with the Stiffener Load Factor, *L*
+
+
+## stiffener
+
+\\[\small{\begin{aligned}
+  L &= \frac{\text{max force in stiffener}}{\text{remote force applied to stiffener}}\\
+  &= \frac{S_{S,max}A_S}{S_S A_S}\\
+  &= \frac{S_{S,max}}{S \frac{E_S}{E}}\\
+  L S \frac{E_S}{E} &= S_{S,max}\\
+  L S \frac{E_S}{E} &= \sigma_{YS}\\
+  S_C &= \frac{\sigma_{YS} E}{L E_S}
+\end{aligned}}\\]
+
+
+## rivet
+
+-   We can define a similar rivet load factor to relate maximum stress in the rivet to remote stress in the skin
+
+\\[\begin{aligned}
+  L_R &= \frac{\tau_{max} A_R}{S b t}\\
+  L_R &= \frac{\tau_{YS} A_R}{S b t}\\
+  S_c &= \frac{\tau_{YS} A_R}{L_R b t}
+\end{aligned}\\]
+
+
+## finite element analysis
+
+-   CC Poe found that panels could be related by a parameter he defines as \\(\mu\\)
+
+\\[\mu = \frac{A_S E_S}{A_S E_S + A E}\\]
+
+-   Where *A*<sub>*S*</sub> is the cross-sectional area of a stiffener, *E*<sub>*S*</sub> is stiffener modulus
+-   *A* is the skin cross-sectional area (per stiffener) *A*=*bt* and *E* is the modulus of the skin
+
+
+## finite element analysis
+
+-   pp 167 - 178 give \\(\beta\\) *L* and *L*<sub>*R*</sub> for various skin/stiffener configurations
+-   These values were determined using a finite element model
+
+
+## examples
+
+-   quantitative example (p. 179-180)
+-   qualitative notes on behavior (p. 181-182)
+-   [worked](../examples/stiffener%20example.html)
+
+
+# severed stiffeners
+
+
+## failure in stiffener
+
+-   Sometimes the stiffeners fail before the panel
+-   T. Swift conducted some parametric studies on panels with a severed stiffener
+-   When the crack is short (and near the severed stiffener) the residual strength is lower due to the broken stiffener
+-   As the crack nears the next stiffener, residual strength is very similar to a panel with all stiffeners intact
+
+
+## failure in stiffener
+
+-   Swift considers the difference in stress at different points in the stiffener
+-   Instead of one general load factor (*L*), he uses *SCFO* and *SCFI*
+-   We can find the critical value of remote stress at the outer flange as
+
+\\[\sigma_C = \frac{\sigma_U}{SCFO}\\]
+
+-   And similarly at the inner flange
+
+\\[\sigma_C = \frac{\sigma_U}{SCFI}\\]
+
+-   Swift's parametric study did not consider rivet failure
+
+
+## stiffener area
+
+![Residual strength plotted vs crack length for large and small stiffener cross-sectional areas.](../images/stiffener_area.jpg) <!-- .element width="60%" -->
+
+
+## stiffener spacing
+
+![Residual strength plotted vs crack length for large and small stiffener spacing.](../images/stiffener_spacing.jpg) <!-- .element width="60%" -->
+
+
+## rivet spacing
+
+![Residual strength plotted vs crack length for large and small rivet spacing.](../images/rivet_spacing.jpg) <!-- .element width="60%" -->
+
+
+## strength and toughness increase
+
+![Residual strength plotted vs crack length for increased yield strength and increased fracture toughness.](../images/strength_increase.jpg) <!-- .element width="60%" -->
+
+
+## example
+
+-   If we consider the case from Swift's data most similar to our previous example:
+
+\\[\begin{aligned}
+  P &= 1.0 \text{ in}\\
+  A_{st} &= 0.2538 \text{ in}^2\\
+  b &= 10.0 \text{ in}\\
+\end{aligned}\\]
+
+-   So we use the tables for Case 10
+
+
+# crack stoppers
+
+
+## crack stopper
+
+![A crack stopper is a piece of metal placed between the spars and the skin.](../images/crack_stoppers.jpg) <!-- .element width="50%" -->
+
+
+## optimal crack stopper
+
+-   Swift found that the ideal crack stopper has a cross-sectional area approximately equal to 1/4 the stiffener area
+-   The ideal material was titanium (as opposed to steel or aluminum).
+-   Aluminum did not transfer enough load to the stiffeners, steel transferred too much
+
+
+## example
+
+-   Compare cases 1, 3, and 5

@@ -5,15 +5,16 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 20, 2020
+3 March, 2021
 
 ----
 ## schedule
 
-- 20 Feb - Residual Strength, Homework 4 Due
-- 25 Feb - Multiple Site Damage, Mixed-Mode Fracture
-- 27 Feb - Exam Review, Homework 5 Due
-- 3 Mar - Exam 1
+- 3 Mar - Residual Strength 
+- 5 Mar - HW4 Due, HW 3 Self-grade due
+- 8 Mar - Multiple Site Damage
+- 10 Mar - Mixed-Mode Fracture
+- 12 Mar - HW5 Due, HW4 Self-grade due
 
 ----
 ## outline
@@ -50,23 +51,23 @@ February 20, 2020
 
 -   For displacement continuity, we know that
 
-$$\\left(\\frac{PL}{AE}\\right)\_{Skin} = \\left(\\frac{PL}{AE}\\right)\_{Stiffener}$$
+`$$\left(\frac{PL}{AE}\right)_{Skin} = \left(\frac{PL}{AE}\right)_{Stiffener}$$`
 
 -   Since *L* is the same, we find
 
-$$\\frac{S}{E} = \\frac{S\_S}{E\_S}$$
+`$$\frac{S}{E} = \frac{S_S}{E_S}$$`
 
 -   Where the subscript <sub>*S*</sub> indicates stiffener values, we can express the remote stress in the stiffener as
 
-$$S\_S = S \\frac{E\_S}{E}$$
+`$$S_S = S \frac{E_S}{E}$$`
 
 ----
 ## skin
 
 -   The critical stress in the skin is determined the same way as it was in the residual strength chapter
--   The only exception is that the stiffener contributes to $\beta$
+-   The only exception is that the stiffener contributes to `$\beta$`
 
-$$S\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
+`$$S_C = \frac{K_C}{\sqrt{\pi a} \beta}$$`
 
 ----
 ## stiffener
@@ -77,32 +78,32 @@ $$S\_C = \\frac{K\_C}{\\sqrt{\\pi a} \\beta}$$
 ----
 ## stiffener
 
-$$\\small{\\begin{aligned}
-  L &= \\frac{\\text{max force in stiffener}}{\\text{remote force applied to stiffener}}\\\\
-  &= \\frac{S\_{S,max}A\_S}{S\_S A\_S}\\\\
-  &= \\frac{S\_{S,max}}{S \\frac{E\_S}{E}}\\\\
-  L S \\frac{E\_S}{E} &= S\_{S,max}\\\\
-  L S \\frac{E\_S}{E} &= \\sigma\_{YS}\\\\
-  S\_C &= \\frac{\\sigma\_{YS} E}{L E\_S}
-\\end{aligned}}$$
+`$$\small{\begin{aligned}
+  L &= \frac{\text{max force in stiffener}}{\text{remote force applied to stiffener}}\\
+  &= \frac{S_{S,max}A_S}{S_S A_S}\\
+  &= \frac{S_{S,max}}{S \frac{E_S}{E}}\\
+  L S \frac{E_S}{E} &= S_{S,max}\\
+  L S \frac{E_S}{E} &= \sigma_{YS}\\
+  S_C &= \frac{\sigma_{YS} E}{L E_S}
+\end{aligned}}$$`
 
 ----
 ## rivet
 
 -   We can define a similar rivet load factor to relate maximum stress in the rivet to remote stress in the skin
 
-$$\\begin{aligned}
-  L\_R &= \\frac{\\tau\_{max} A\_R}{S b t}\\\\
-  L\_R &= \\frac{\\tau\_{YS} A\_R}{S b t}\\\\
-  S\_c &= \\frac{\\tau\_{YS} A\_R}{L\_R b t}
-\\end{aligned}$$
+`$$\begin{aligned}
+  L_R &= \frac{\tau_{max} A_R}{S b t}\\
+  L_R &= \frac{\tau_{YS} A_R}{S b t}\\
+  S_c &= \frac{\tau_{YS} A_R}{L_R b t}
+\end{aligned}$$`
 
 ----
 ## finite element analysis
 
--   CC Poe found that panels could be related by a parameter he defines as $\mu$
+-   CC Poe found that panels could be related by a parameter he defines as `$\mu$`
 
-$$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
+`$$\mu = \frac{A_S E_S}{A_S E_S + A E}$$`
 
 -   Where *A*<sub>*S*</sub> is the cross-sectional area of a stiffener, *E*<sub>*S*</sub> is stiffener modulus
 -   *A* is the skin cross-sectional area (per stiffener) *A*=*bt* and *E* is the modulus of the skin
@@ -110,7 +111,7 @@ $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
 ----
 ## finite element analysis
 
--   pp 167 - 178 give $\beta$, *L* and *L*<sub>*R*</sub> for various skin/stiffener configurations
+-   pp 167 - 178 give `$\beta$` *L* and *L*<sub>*R*</sub> for various skin/stiffener configurations
 -   These values were determined using a finite element model
 
 ----
@@ -138,11 +139,11 @@ $$\\mu = \\frac{A\_S E\_S}{A\_S E\_S + A E}$$
 -   Instead of one general load factor (*L*), he uses *SCFO* and *SCFI*
 -   We can find the critical value of remote stress at the outer flange as
 
-$$\\sigma\_C = \\frac{\\sigma\_U}{SCFO}$$
+`$$\sigma_C = \frac{\sigma_U}{SCFO}$$`
 
 -   And similarly at the inner flange
 
-$$\\sigma\_C = \\frac{\\sigma\_U}{SCFI}$$
+`$$\sigma_C = \frac{\sigma_U}{SCFI}$$`
 
 -   Swift's parametric study did not consider rivet failure
 
@@ -171,11 +172,11 @@ $$\\sigma\_C = \\frac{\\sigma\_U}{SCFI}$$
 
 -   If we consider the case from Swift's data most similar to our previous example:
 
-$$\\begin{aligned}
-  P &= 1.0 \\text{ in}\\\\
-  A\_{st} &= 0.2538 \\text{ in}^2\\\\
-  b &= 10.0 \\text{ in}\\\\
-\\end{aligned}$$
+`$$\begin{aligned}
+  P &= 1.0 \text{ in}\\
+  A_{st} &= 0.2538 \text{ in}^2\\
+  b &= 10.0 \text{ in}\\
+\end{aligned}$$`
 
 -   So we use the tables for Case 10
 
