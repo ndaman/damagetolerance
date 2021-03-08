@@ -61,19 +61,19 @@ Wichita State University, Department of Aerospace Engineering
 -   Since fast cracking occurs when `$R_p + r_p = L$` we solve for the condition where `$R_p + r_p < L$`
 - 
 
-`$$\begin{aligned}
+`$$\begin{align}
   \frac{1}{2\pi}\left(\frac{K_{Ia}}{\sigma_{YS}}\right)^2 + \frac{1}{2\pi}\left(\frac{K_{Il}}{\sigma_{YS}}\right)^2 &&lt; L\\\\
   \frac{1}{2\pi\sigma_{YS}^2} \left\[K_{Ia}^2 + K_{Il}^2\right\] &&lt; L
-\end{aligned}$$`
+\end{align}$$`
 
 ----
 ## linkup equation
 
-`$$\begin{aligned}
+`$$\begin{align}
   \frac{1}{2\pi\sigma_{YS}^2} \left\[\sigma^2 \pi a \beta_a^2 + \sigma^2 \pi l \beta_l^2\right\] &&lt; L \\\\
   \frac{\sigma^2}{2\sigma_{YS}^2} \left\[a \beta_a^2 + l \beta_l^2\right\] &&lt; L \\\\
           \sigma_c &= \sigma_{YS}\sqrt{\frac{2L}{a \beta_a^2 + l \beta_l^2}}
-\end{aligned}$$`
+\end{align}$$`
 
 ----
 ## example
