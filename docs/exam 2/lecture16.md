@@ -217,7 +217,7 @@ and substituting that into the plastic strain
 
 -   We can rearrange the equation such that
 
-`$$\sigma_a = \sigma_f^\prime\left\[\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{1}{b}(2N_f)\right\]^b$$`
+`$$\sigma_a = \sigma_f^\prime\left[\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)^\frac{1}{b}(2N_f)\right]^b$$`
 
 ----
 ## morrow approach
