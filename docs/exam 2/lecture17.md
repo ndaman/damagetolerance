@@ -142,7 +142,7 @@ Wichita State University, Department of Aerospace Engineering
 -   Region II is usually all that is needed for engineering, but R-dependence is often an important effect to capture
 -   Walker modified the Paris law to account for R-dependence
 
-`$$\frac{da}{dN} = C\left\[(1-R)^mK_{max}\right\]^n$$`
+`$$\frac{da}{dN} = C\left[(1-R)^mK_{max}\right]^n$$`
 
 -   Gives a good fit for Region II with R-dependence and band width
 
@@ -152,28 +152,28 @@ Wichita State University, Department of Aerospace Engineering
 -   The Forman equation was developed to capture the effects of Region II and Region III
 -   Also includes the effects of *R*, but does not control the band width of R effects
 
-`$$\frac{da}{dN} = \frac{C \left\[(1-R)K_{max}\right\]^n}{(1-R)K_c-(1-R)K_{max}}$$`
+`$$\frac{da}{dN} = \frac{C \left[(1-R)K_{max}\right]^n}{(1-R)K_c-(1-R)K_{max}}$$`
 
 ----
 ## modified forman
 
 -   The Forman equation can be modified to include the effect of band width
 
-`$$\frac{da}{dN} = \frac{C \left\[(1-R)^m K_{max}\right\]^n}{\left\[(1-R)^mK_c-(1-R)^m K_{max}\right\]^L}$$`
+`$$\frac{da}{dN} = \frac{C \left[(1-R)^m K_{max}\right]^n}{\left[(1-R)^mK_c-(1-R)^m K_{max}\right]^L}$$`
 
 ----
 ## collipriest
 
 -   The Collipriest equation fits Regions I, II and III, but has no R-dependence
 
-`$$\frac{da}{dN} = C_1 + C_2 \tanh^{-1} \left\[\frac{\log \left(\frac{K_{max}^2}{K_oK_c}\right)}{\log (K_c/K_o)}\right\]$$`
+`$$\frac{da}{dN} = C_1 + C_2 \tanh^{-1} \left[\frac{\log \left(\frac{K_{max}^2}{K_oK_c}\right)}{\log (K_c/K_o)}\right]$$`
 
 ----
 ## modified collipriest
 
 -   Following the same methods as before, we can modify the Collipriest equation for R-dependence and band width control
 
-`$$\frac{da}{dN} = C_1 + C_2 \tanh^{-1} \left\[\frac{\log \left(\frac{(1-R)^mK_{max}^2}{K_oK_c}\right)}{\log (K_c/K_o)}\right\]$$`
+`$$\frac{da}{dN} = C_1 + C_2 \tanh^{-1} \left[\frac{\log \left(\frac{(1-R)^mK_{max}^2}{K_oK_c}\right)}{\log (K_c/K_o)}\right]$$`
 
 -   For a cleaner graph, experimental data at different R-values is sometimes plotted vs. `$K_{eff}$`
 
@@ -184,7 +184,7 @@ Wichita State University, Department of Aerospace Engineering
 
 -   A very complicated curve fit is provided in the NASGROW growth rate equation
 
-`$$\frac{da}{dN} = C \left\[\frac{1-f}{1-R}\Delta K\right\]^n\frac{\left\[1-\frac{\Delta K_{th}}{\Delta K}\right\]}{\left\[1-\frac{K_{max}}{K_{crit}}\right\]}$$`
+`$$\frac{da}{dN} = C \left[\frac{1-f}{1-R}\Delta K\right]^n\frac{\left[1-\frac{\Delta K_{th}}{\Delta K}\right]}{\left[1-\frac{K_{max}}{K_{crit}}\right]}$$`
 
 -   The curve fit parameters can be found in p. 307 of your text (or the NASGROLW/AFGROW documentation)
 
@@ -193,7 +193,7 @@ Wichita State University, Department of Aerospace Engineering
 
 -   The Boeing-Walker growth equation is given as (for `$R \ge 0$`)
 
-`$$\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left\[K_{max}(1-R)^q\right\]^p$$`
+`$$\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left[K_{max}(1-R)^q\right]^p$$`
 
 ----
 ## conversion of constants
@@ -202,14 +202,14 @@ Wichita State University, Department of Aerospace Engineering
 -   We can re-write some other equations to more easily convert parameters between the various equations
 -   Walker-Boeing:
 
-`$$\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left\[\Delta K(1-R)^{q-1}\right\]^p$$`
+`$$\frac{da}{dN} = 10^{-4}\left(\frac{1}{mT}\right)^p\left[\Delta K(1-R)^{q-1}\right]^p$$`
 
 ----
 ## conversion of constants
 
 -   Walker-AFGROW:
 
-`$$\frac{da}{dN} = C_w\left\[\Delta K(1-R)^{m-1}\right\]^{n_w}$$`
+`$$\frac{da}{dN} = C_w\left[\Delta K(1-R)^{m-1}\right]^{n_w}$$`
 
 -   Forman:
 
