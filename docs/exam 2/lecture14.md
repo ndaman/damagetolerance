@@ -265,7 +265,7 @@ March 22, 2021
 -   A flight will have working loads, vibrations, as well as storms/turbulence, but each flight should have similar loading
 -   If we call the number of “block” *B* then we have
 
-`$$B \left\[\sum \frac{N_i}{N_{if}}\right\]_{rep} = 1$$`
+`$$B \left[\sum \frac{N_i}{N_{if}}\right]_{rep} = 1$$`
 
 ----
 ## mean stress effects
