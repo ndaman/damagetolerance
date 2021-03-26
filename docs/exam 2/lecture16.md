@@ -55,6 +55,7 @@ Wichita State University, Department of Aerospace Engineering
 ## plastic and elastic strain
 
 -   We can separate the total strain into elastic and plastic components
+
 `$$ \epsilon_a = \epsilon_{ea} + \epsilon_{pa}$$`
 
 ----
@@ -267,6 +268,10 @@ and substituting that into the plastic strain
 
 ----
 ## example p. 285
+
+RQC-100 Steel (material data from p. 272) is subjected to a strain amplitude of `$\epsilon_a = 0.004$`
+with a tensile mean stress of `$\sigma_m = 100$` MPa.
+Compare failure predictions among the three mean stress models we have learned.
 
 ---
 ## cycle counting

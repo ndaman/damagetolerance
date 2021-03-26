@@ -1,0 +1,307 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=43,
+  handout,
+  12pt]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{metropolis}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+% Make links footnotes instead of hotlinks:
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\makeatletter
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{#2}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{frame}{AE 737: Mechanics of Damage Tolerance}
+\protect\hypertarget{ae-737-mechanics-of-damage-tolerance}{}
+Lecture 18 - The Boeing Method
+
+Dr.~Nicholas Smith
+
+Wichita State University, Department of Aerospace Engineering
+
+April 5, 2021
+\end{frame}
+
+\begin{frame}{schedule}
+\protect\hypertarget{schedule}{}
+\begin{itemize}
+\tightlist
+\item
+  5 Apr - Boeing Method
+\item
+  7 Apr - Cycle counting
+\item
+  9 Apr - Homework 6 Self-grade, Homework 7 Due
+\item
+  12 Apr - Crack retardation
+\item
+  14 Apr - Finite Elements in Fracture
+\item
+  16 Apr - Homework 7 Self-grade, Homework 8 Due
+\item
+  19 Apr - Exam Review
+\item
+  21 Apr - Exam 2
+\end{itemize}
+\end{frame}
+
+\begin{frame}{outline}
+\protect\hypertarget{outline}{}
+\begin{itemize}
+\tightlist
+\item
+  boeing method
+\end{itemize}
+\end{frame}
+
+\hypertarget{boeing-method}{%
+\section{boeing method}\label{boeing-method}}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-1}{}
+\begin{itemize}
+\tightlist
+\item
+  Whether integrating numerically or analytically, it is time-consuming
+  to consider multiple repeated loads
+\item
+  It is particularly difficult to consider flight loads, which can vary
+  by ``mission''
+\item
+  For example, an aircraft may fly three different routes, in no
+  particular order, but with a known percentage of time spent in each
+  route
+\item
+  Traditional methods would use a random mix of each load spectra
+\end{itemize}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-2}{}
+\begin{itemize}
+\tightlist
+\item
+  The Boeing Method combines each repeatable load spectrum into one
+  single equivalent cycle
+\item
+  Note: this is ch.~20 in the text
+\end{itemize}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-3}{}
+\begin{itemize}
+\tightlist
+\item
+  The Boeing method is derived by separating the geometry effects from
+  load and material effects in the Boeing-Walker equation.
+\end{itemize}
+
+\textbackslash{[}\frac{da}{dN} = \left[\frac{1}{n}\right]\frac{dL}{dN} =
+10\^{}\{-4\} \left[\frac{k_{max}Z}{m_T}\right]\^{}p\textbackslash{]}
+
+\textbackslash{[}\frac{dL}{dN} = n 10\^{}\{-4\}
+\left[\frac{k_{max}Z}{m_T}\right]\^{}p\textbackslash{]}
+
+\textbackslash{[}\frac{dN}{dL} = \frac{1}{n} 10\^{}\{4\}
+\left[\frac{m_T}{k_{max}Z}\right]\^{}p\textbackslash{]}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-4}{}
+\textbackslash{[}\int\emph{\{0\}\^{}\{N\}dN = \frac{10^{4}}{n}
+\int}\{L\_0\}\^{}\{L\_f\} \left[\frac{m_T}{k_{max}Z}\right]\^{}p
+dL\textbackslash{]}
+
+\textbackslash{[}N = 10\^{}\{4\}
+\left(\frac{m_t}{z\sigma_{max}}\right)\^{}p \int\_\{L\_0\}\^{}\{L\_f\}
+\frac{dL}{\left( n\sqrt{\pi L/n}\beta\right)^p}\textbackslash{]}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-5}{}
+\begin{itemize}
+\tightlist
+\item
+  In this form, the term \textbackslash(10\^{}\{4\}
+  \left(\frac{m_t}{z\sigma_{max}}\right)\^{}p\textbackslash) is strictly
+  from the applied load and material, while
+  \textbackslash(\int\_\{L\_0\}\^{}\{L\_f\}
+  \frac{dL}{\left( n\sqrt{\pi L/n}\beta\right)^p}\textbackslash) is from
+  geometry
+\item
+  If we now define \emph{G} to account for crack geometry
+\end{itemize}
+
+\textbackslash{[}G =
+\left[ \int_{L_0}^{L_f} \frac{dL}{\left( n\sqrt{\pi L/n}\beta\right)^p} \right] \^{}\{-1/p\}\textbackslash{]}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-6}{}
+\begin{itemize}
+\tightlist
+\item
+  And define \textbackslash(z\sigma\_\{max\} = S\textbackslash) as the
+  equivalent load spectrum, then we have
+\end{itemize}
+
+\textbackslash{[}N = 10\^{}4
+\left(\frac{m_t/G}{S}\right)\^{}p\textbackslash{]}
+
+\begin{itemize}
+\tightlist
+\item
+  Using this method, \emph{G} is typically looked up from a chart (such
+  as on p.~369)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-7}{}
+\begin{itemize}
+\tightlist
+\item
+  To replace a repeated load spectrum with an equivalent load, we need
+  to invert the relationship
+\item
+  The previous equation~gives cycles per crack growth, inverting gives
+  crack growth per cycle
+\end{itemize}
+
+\textbackslash{[}\text{crack growth per cycle} = 10\^{}\{-4\}
+\left(\frac{m_t/G}{S}\right)\^{}\{-p\}\textbackslash{]}
+\end{frame}
+
+\begin{frame}{boeing method}
+\protect\hypertarget{boeing-method-8}{}
+\begin{itemize}
+\tightlist
+\item
+  If we consider a general, repeatable ``block'', we have
+\end{itemize}
+
+\textbackslash{[}10\^{}\{-4\} \left( m\_t/G \right)\^{}\{-p\} \sum\_i
+\left( \frac{1}{z\sigma_{max}} \right)\_i\^{}\{-p\} N\_i = 10\^{}\{-4\}
+\left( \frac{m_t/G}{S} \right)\^{}\{-p\}\textbackslash{]}
+
+\begin{itemize}
+\tightlist
+\item
+  Which simplifies to
+\end{itemize}
+
+\textbackslash{[} \sum\emph{i (z \sigma}\{max\}) = S\^{}p
+\textbackslash{]}
+\end{frame}
+
+\begin{frame}{boeing method example}
+\protect\hypertarget{boeing-method-example}{}
+\begin{itemize}
+\tightlist
+\item
+  (from p.~366), \emph{q} = 0.6, \emph{p} = 3.9
+\end{itemize}
+\end{frame}
+
+\begin{frame}{boeing method example - cont.}
+\protect\hypertarget{boeing-method-example---cont.}{}
+Count cycles from the right (instead of the left)
+\end{frame}
+
+\end{document}
