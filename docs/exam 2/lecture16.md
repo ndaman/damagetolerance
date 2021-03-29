@@ -415,7 +415,7 @@ Compare failure predictions among the three mean stress models we have learned.
 
 -   Some treatments improve fatigue life:
     -   Cold rolling improves surface finish, introduces residual compressive stress on surface (slows crack initiation on surface)
-    -   Shot peeing introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
+    -   Shot peening introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
 
 ----
 ## size
