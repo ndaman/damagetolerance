@@ -244,7 +244,7 @@ and substituting that into the plastic strain
 -   While the Morrow equation agrees very well with many data, some are better fit with a modification
 -   In the modified version, it is assumed that the mean stress has no effect on the plastic term
 
-`$$\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_f}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c$$`
+`$$\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c$$`
 
 -   There is no convenient solution method for this form, and it generally must be solved numerically, or plotted with many families of `$\sigma_m$`
 
