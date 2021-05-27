@@ -7,7 +7,7 @@ Wichita State University, Department of Aerospace Engineering
 
 April 28, 2021
 
-----
+
 ##  schedule
 
 - 28 Apr - Repair
@@ -15,7 +15,7 @@ April 28, 2021
 - 5 May - Class Canceled
 - 9 May - Final Projects Due
 
-----
+
 ##  outline
 
 
@@ -28,10 +28,10 @@ April 28, 2021
 <!-- vim-markdown-toc -->
 
 
----
+
 # repairing cracked structures
 
-----
+
 ## repair
 
 -   Depending on the location and severity of damage, there are a few options for repair
@@ -43,7 +43,7 @@ April 28, 2021
 -   Load Reduction/improved analysis
 -   Residual stresses
 
-----
+
 ## stop drilling
 
 -   If a crack is not of dangerous length, full repair/replacement is not necessary
@@ -52,7 +52,7 @@ April 28, 2021
 -   Still susceptible to MSD in future
 -   Some new techniques attempt to change direction of crack growth
 
-----
+
 ## welding
 
 -   Crack material is machined away
@@ -60,7 +60,7 @@ April 28, 2021
 -   Can cause distortion
 -   Sometimes heat treatment is needed
 
-----
+
 ## patching
 
 -   A patch placed over the crack provides an alternate load path
@@ -70,14 +70,14 @@ April 28, 2021
 -   Additional fasteners add weight
 -   Adhesives add less weight, do not introduce new damage, but it can be difficult to ensure the integrity of the bond in-service
 
-----
+
 ## oversize fastener
 
 -   When crack forms around a fastener hole, the hole can be drilled larger
 -   The larger hole removes the crack tip
 -   Fastener is replaced with a larger fastener, appropriate to the drilled hole
 
-----
+
 ## load reduction
 
 -   When damaged parts are difficult or expensive to repair, load can be reduced instead
@@ -86,7 +86,7 @@ April 28, 2021
 -   After years of life, more advanced analysis is usually available
 -   Sometimes repair and load reduction are not necessary if initial design is found to be overly conservative
 
-----
+
 ## residual stress
 
 -   Some repair methods introduce beneficial residual stresses instead of directly addressing the crack
@@ -97,22 +97,22 @@ April 28, 2021
 -   Laser shock peening
 -   Hole cold-working
 
-----
+
 ## shot peening
 
 ![](../images/shot-peening.jpg)
 
-----
+
 ## hole cold working
 
 ![](../images/hole-cold-working.jpg)
 
-----
+
 ## hole cold working
 
 ![](../images/hole-SN.jpg)
 
-----
+
 ## which repair method
 
 -   Which repair method is best?
@@ -120,72 +120,72 @@ April 28, 2021
 -   Cost
 -   Is multiple site damage a concern?
 -   Fracture vs. net section yield
--   Can we reduce `$K_{max}$` below `$K_{th}$` with residual stresses?
+-   Can we reduce \\(K_{max}\\) below \\(K_{th}\\) with residual stresses?
 
----
+
 # group problems
 
-----
+
 ## group 1
 
 -   Compare the effectiveness of stop drilling in 2024 and 7075 for the following panel.
--   For 2024 use `$K_c = 125 \text{ ksi}\sqrt{\text{in}}$` and `$\sigma_{YS}$` = 50 ksi
--   For 7075 use `$K_c = 60 \text{ ksi}\sqrt{\text{in}}$` and `$\sigma_{YS}$` = 70 ksi
--   Recall `$\beta = \sqrt{\sec(\pi a/W)}$`
+-   For 2024 use \\(K_c = 125 \text{ ksi}\sqrt{\text{in}}\\) and \\(\sigma_{YS}\\) = 50 ksi
+-   For 7075 use \\(K_c = 60 \text{ ksi}\sqrt{\text{in}}\\) and \\(\sigma_{YS}\\) = 70 ksi
+-   Recall \\(\beta = \sqrt{\sec(\pi a/W)}\\)
 
-----
+
 ## group 1
 
 ![](../images/group-23-1.PNG) <!-- .element width="30%" -->
 
-----
+
 ## group 2
 
--   Due to MSD concerns, we would like to alter a crack path by `$15^\circ$`
+-   Due to MSD concerns, we would like to alter a crack path by \\(15^\circ\\)
 -   What stresses would need to be added to a 15 ksi tensile load to accomplish this?
--   Note: Assume for this problem that `$\beta^\prime = \beta$`
+-   Note: Assume for this problem that \\(\beta^\prime = \beta\\)
 -   Recall
 
-`$$\begin{aligned}
+\\[\begin{aligned}
   K_{II} &= \tau \sqrt{\pi a}\beta^\prime\\
   K_I \sin \theta_p + K_{II}\left(3\cos \theta_p -1 \right) &= 0
-\end{aligned}$$`
+\end{aligned}\\]
 
-----
+
 ## group 3
 
 -   Compare the amount of residual compressive stress needed stop crack growth for Al 2024 and Al 7075 in the following panel.
--   Assume `$K_{th} = 4 \text{ ksi}\sqrt{\text{in}}$` for Al 2024
--   And `$K_{th} = 7 \text{ ksi}\sqrt{\text{in}}$` for Al 7075
+-   Assume \\(K_{th} = 4 \text{ ksi}\sqrt{\text{in}}\\) for Al 2024
+-   And \\(K_{th} = 7 \text{ ksi}\sqrt{\text{in}}\\) for Al 7075
 
-----
+
 ## group 3
 
 ![](../images/group-23-3.PNG) <!-- .element width="30%" -->
 
-----
+
 ## group 4
 
 -   Due to damage, an airline decides to move an aircraft to a less strenuous flight cycle.
 -   Find the effective load for a flight cycle that will last at least 1000 flights for the following cracked panel.
--   Note: use *p* = 4 and `$M_t = 25.8$`
--   Assume `$K_c = 60 \text{ ksi}\sqrt{\text{in}}$` and `$\sigma_{YS}$` = 70 ksi
+-   Note: use *p* = 4 and \\(M_t = 25.8\\)
+-   Assume \\(K_c = 60 \text{ ksi}\sqrt{\text{in}}\\) and \\(\sigma_{YS}\\) = 70 ksi
 -   The largest load of 20 ksi occurs during takeoff and will not change with flight cycle.
 
-----
+
 ## group 4
 
 ![](../images/group-23-4.PNG) <!-- .element width="30%" -->
 
----
+
 # full scale fatigue testing
 
-----
+
 ##  Beoing 787
 
 [video](https://www.youtube.com/watch?v=TH9k9fWaFrs)
 
-----
+
 ##  challenges
 
 - Design load cycle

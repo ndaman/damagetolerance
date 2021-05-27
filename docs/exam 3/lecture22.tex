@@ -1,0 +1,413 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=43,
+  handout,
+  12pt]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{metropolis}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+% Make links footnotes instead of hotlinks:
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{pgfpages}
+\pgfpagesuselayout{2 on 1}
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\makeatletter
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{#2}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{frame}{AE 737: Mechanics of Damage Tolerance}
+\protect\hypertarget{ae-737-mechanics-of-damage-tolerance}{}
+Lecture 22 - Inspection
+
+Dr.~Nicholas Smith
+
+Wichita State University, Department of Aerospace Engineering
+
+April 26, 2021
+\end{frame}
+
+\begin{frame}{schedule}
+\protect\hypertarget{schedule}{}
+\begin{itemize}
+\tightlist
+\item
+  26 Apr - Inspection
+\item
+  28 Apr - Repair
+\item
+  3 May - Fracture in Composites
+\item
+  5 May - Class Canceled
+\item
+  9 May - Final Projects Due
+\end{itemize}
+\end{frame}
+
+\begin{frame}{outline}
+\protect\hypertarget{outline}{}
+\begin{itemize}
+\tightlist
+\item
+  special topics
+\item
+  damage tolerance
+\item
+  inspection cycle
+\end{itemize}
+\end{frame}
+
+\hypertarget{special-topics}{%
+\section{special topics}\label{special-topics}}
+
+\begin{frame}{special topics}
+\protect\hypertarget{special-topics-1}{}
+\begin{itemize}
+\tightlist
+\item
+  FEM
+\item
+  Repair of damaged structures
+\item
+  Fatigue of composites
+\item
+  NDE/NDT
+\item
+  Damage Mechanics
+\item
+  My Research
+\item
+  Other?
+\end{itemize}
+\end{frame}
+
+\hypertarget{damage-tolerance}{%
+\section{damage tolerance}\label{damage-tolerance}}
+
+\begin{frame}{definitions}
+\protect\hypertarget{definitions}{}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Safe Life}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assume cracks are present
+  \item
+    Cracks are not inspectable
+  \item
+    Use crack growth or fatigue analysis to establish safe life, in
+    which part will not fail
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{definitions}
+\protect\hypertarget{definitions-1}{}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Damage tolerant}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assume cracks are present
+  \item
+    When cracks grow to a sufficient size, they are inspectable
+  \item
+    Inspection cycles are set such that we can be sure crack will not
+    become critical during regular operation
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{definitions}
+\protect\hypertarget{definitions-2}{}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fail safe} multiple load paths, redundancy
+\item
+  \textbf{Limit load} maximum anticipated load
+\item
+  \textbf{Design load} limit load multiplied by some factor of safety
+  (static design)
+\item
+  \textbf{Operating load} stress spectrum (used for crack
+  propagation/fatigue)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{structural categories}
+\protect\hypertarget{structural-categories}{}
+\begin{itemize}
+\tightlist
+\item
+  Single load path - safe life
+\item
+  Single load path - damage tolerant
+\item
+  Multiple load path - externally inspectable
+\item
+  Multiple load path - inspectable prior to failure
+\end{itemize}
+\end{frame}
+
+\begin{frame}{single load path - safe life}
+\protect\hypertarget{single-load-path---safe-life}{}
+\begin{itemize}
+\tightlist
+\item
+  In many structures, multiple load paths are not practical
+\item
+  It is also possible for the critical crack length to be much smaller
+  than is easily detectable
+\item
+  In these cases, safe life design is used to identify a certain number
+  of cycles a part can sustain before it needs to be replaced
+\item
+  This often requires replacing parts prematurely
+\end{itemize}
+\end{frame}
+
+\begin{frame}{single load path - damage tolerant}
+\protect\hypertarget{single-load-path---damage-tolerant}{}
+\begin{itemize}
+\tightlist
+\item
+  Redundant load paths are not necessary when a part is easily
+  inspectable
+\item
+  When detectable crack is much less than critical crack, we can safely
+  inspect a part so that it is only replaced when damaged
+\item
+  Many times this damage can be repaired to avoid replacing the part
+  entirely
+\item
+  Ideal for large, expensive parts that are easy to access (inspection
+  and repair)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{multiple load path - externally inspectable}
+\protect\hypertarget{multiple-load-path---externally-inspectable}{}
+\begin{itemize}
+\tightlist
+\item
+  This is a very common scenario in aircraft (skin/stringer)
+\item
+  In this case, the primary structure is not inspectable
+\item
+  A secondary structure is inspectable
+\item
+  The secondary structure can support a certain number of cycles after
+  failure of the primary structure
+\item
+  Secondary structure can be inspected to observe damage in primary
+  structure
+\end{itemize}
+\end{frame}
+
+\begin{frame}{multiple load path - inspectable prior to failure}
+\protect\hypertarget{multiple-load-path---inspectable-prior-to-failure}{}
+\begin{itemize}
+\tightlist
+\item
+  In this case the primary structure is inspectable
+\item
+  Otherwise same as externally inspectable structure
+\end{itemize}
+\end{frame}
+
+\hypertarget{inspection-cycle}{%
+\section{inspection cycle}\label{inspection-cycle}}
+
+\begin{frame}{inspection cycle}
+\protect\hypertarget{inspection-cycle-1}{}
+\begin{itemize}
+\tightlist
+\item
+  In many industries, an inspection cycle is predetermined by some
+  governing agency
+\item
+  We have developed all the equations necessary to determine our own
+
+  \begin{enumerate}
+  \tightlist
+  \item
+    Determine loading cycle (or equivalent load cycle using Boeing
+    method)
+  \item
+    Determine maximum crack length
+  \item
+    Determine initial assumed crack length (minimum detectable crack)
+  \item
+    Calculate number of cycles/flights until crack grows to maximum
+    allowable size
+  \end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{load cycle}
+\protect\hypertarget{load-cycle}{}
+\begin{itemize}
+\tightlist
+\item
+  Be sure to use a consistent cycle-counting method (rainflow or
+  range-pair)
+\item
+  Recall the Boeing method for variable amplitude loads
+\end{itemize}
+
+\$\$ \sum\emph{i (z\sigma}\{max\})\_i\^{}p N\_i = S\^{}p \$\$
+\end{frame}
+
+\begin{frame}{crack length}
+\protect\hypertarget{crack-length}{}
+\begin{itemize}
+\tightlist
+\item
+  We can use the residual strength curve to set a maximum crack length
+\item
+  We also want to ensure that the crack propagation is still in Region
+  II at this point
+\item
+  Crack growth becomes unstable in Region III
+\end{itemize}
+\end{frame}
+
+\begin{frame}{initial crack length}
+\protect\hypertarget{initial-crack-length}{}
+\begin{itemize}
+\tightlist
+\item
+  What is the smallest crack we can detect?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Liquid penetrant (any material)
+  \item
+    Magnetic particle (ferromagnetic materials)
+  \item
+    Ultrasonic (any material)
+  \item
+    Eddy Current (only for conductive materials)
+  \item
+    Radiographic (X-Ray, nearly any material)
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{calculate cycles}
+\protect\hypertarget{calculate-cycles}{}
+\begin{itemize}
+\tightlist
+\item
+  We can integrate (analytically or numerically) to find the number of
+  cycles it will take for a crack to grow to critical length
+\item
+  Note that numerical integration is non-conservative, in general
+\item
+  \(\Delta N\) should be small enough to give converged solution
+\end{itemize}
+\end{frame}
+
+\begin{frame}{example}
+\protect\hypertarget{example}{}
+\end{frame}
+
+\end{document}
