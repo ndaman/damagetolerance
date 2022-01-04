@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 1, 2021
+January 18, 2022
 
 ---
 ## schedule
 
-- 1 Feb - Introduction, Stress Intensity
-- 3 Feb - Common Stress Intensity Factors
-- 8 Feb - Superposition, Compounding
-- 10 Feb - Curved Boundaries, HW 1 Due
+- 18 Jan - Introduction, Stress Intensity
+- 20 Jan - Common Stress Intensity Factors
+- 25 Jan - Superposition, Compounding
+- 27 Jan - Curved Boundaries, HW 1 Due
 
 ----
 ## outline
@@ -28,7 +28,7 @@ February 1, 2021
 ---
 ## about me
 
-![family picture](../images/IMG_0004.JPG) <!-- .element width="40%" -->
+![family picture](../images/family-photo-2020.jpg) <!-- .element width="40%" -->
 
 ----
 ## education
@@ -106,39 +106,39 @@ February 1, 2021
 ----
 ## office hours
 
-- No traditional office hours this year
-- Office appointments can be scheduled via e-mail, although remote meetings are preferred
+- Fill out the Doodle link I have sent to indicate your office hours preference
+- You can also schedule an in-person or remote office visit via e-mail
 
 ---
 ## tentative course outline
 
 -  Section 1 - fracture mechanics
-  -  Stress intensity (1 Feb)
-  -  Plastic zone (8 Feb)
-  -  Fracture toughness (15 Feb)
-  -  Residual strength (22 Feb)
-  -  Multiple Site Damage (1 Mar)
-  -  Mixed-Mode Fracture (3 Mar)
-  -  Exam 1 (10 March)
+  -  Stress intensity (18 Jan)
+  -  Plastic zone (25 Jan)
+  -  Fracture toughness (1 Feb)
+  -  Residual strength (8 Feb)
+  -  Multiple Site Damage (15 Feb)
+  -  Mixed-Mode Fracture (17 Feb)
+  -  Exam 1 (1 Mar)
 
 ----
 ## tentative course outline
 
 -  Section 2 - fatigue and propagation
-  -  Fatigue analysis (15 Mar)
-  -  Crack growth (29 Mar)
-  -  Exam 2 (19 April)
+  -  Fatigue analysis (22 Feb)
+  -  Crack growth (22 Mar)
+  -  Exam 2 (12 Apr)
 
 ----
 ## tentative course outline
 
 - Section 3 - damage tolerance
-  - Damage tolerance (26 Apr)
+  - Damage tolerance (12 Apr)
   - Test methods
   - Finite elements
   - Non Destructive Testing
   - Special topics
-  - Final project (due 7 May)
+  - Final project (due 6 May)
 
 ----
 ## grades
@@ -251,6 +251,7 @@ February 1, 2021
 -  The stress intensity factor is often written in this form
 
 `$$ K = \sigma \sqrt{ \pi a} \beta $$`
+
 -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
 ----
@@ -310,7 +311,7 @@ February 1, 2021
 ## plotting
 
 -  You are welcome to use whatever software you desire, I will use Python for a quick demonstration
--  This demo is accessible [here](../examples/Plotting_Demo.html)
+-  This demo is accessible [here](https://colab.research.google.com/drive/1GaAMFmEkYn7M8dNxCbT9jGGOdM8qSapK?usp=sharing)
 
 ----
 ## plotting
