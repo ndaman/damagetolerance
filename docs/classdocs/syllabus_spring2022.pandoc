@@ -1,0 +1,171 @@
+---
+geometry: margin=1in 
+output: pdf_document
+---
+
+# AE 737 - Mechanics of Damage Tolerance 
+
+## Spring 2022
+
+|             |                                         |                 |                   |
+| ---         | ---                                     | ---             | ---               |
+| Instructor: | Dr. Nicholas A Smith                    | Time:           | TR 4:10 - 5:25 pm | 
+| Department: | Aerospace Engineering                   | Classroom:      | 210 Wallace Hall  |
+| Email:      | Nicholas.A.Smith@wichita.edu            | Office:         | 200D Wallace Hall |
+| Phone:      | (316) 978-5919                          | Office Hours:   | TBD               |
+| Web-page:   | http://ndaman.github.io/damagetolerance |                 |                   |
+
+## How to use this syllabus:
+
+This syllabus provides you with information specific to this course, and it also provides information about important university policies.
+This document should be viewed as a course overview; it is not a contract and is subject to change as the semester evolves.
+Any changes to the syllabus will be uploaded to Blackboard and e-mailed to all students (at their e-mail address listed on Blackboard, make sure this is up-to-date).
+Many University policies are summarized in this document, but a more up-to-date and complete list of University policies can be found at https://www.wichita.edu/faculty/development/syllabuspolicies.php
+
+## Academic Integrity:
+
+Students at Wichita State University are expected to uphold high academic standards. 
+WSU will not tolerate a lack of academic integrity. 
+Students are responsible for knowing and following the Student Code of Conduct http://webs.wichita.edu/inaudit/ch8_05.htm and the Student Academic Honesty policy http://webs.wichita.edu/inaudit/ch2_17.htm 
+When the faculty member determines sanctions are warranted for violations of academic integrity, regardless of severity, the faculty member must report the infraction to the Office of Student Conduct and Community Standards. 
+If you need more information about the process or wish to appeal a decision, please visit [](https://www.wichita.edu/about/student_conduct/ai.php)
+My general policy is to void all credit for any assignment or exam with any academic integrity issues.
+Repeat offenders are subject to dismissal from the course.
+
+## Course Description:
+
+An introduction to fatigue analysis and mechanics of damage tolerance emphasizing stress analysis oriented fracture mechanics.
+Includes stress intensity, fracture toughness, residual strength, fatigue crack growth rate, fatigue crack propagation and damage tolerance concepts.
+
+## Definition of a Credit Hour:
+
+Success in this 3 credit hour course is based on the expectation that students will spend, for each unit of credit, a minimum of 45 hours over the length of the course (normally 3 hours per unit per week with 1 of the hours used for lecture) for instruction and preparation/studying or course related activities for a total of 135 hours.
+
+## Measurable Student Learning Outcomes:
+
+Upon successful completion of this course, students will be able to
+
+ * Calculate stress intensity factors for a wide variety of geometry and loading conditions
+ * Analyze the residual strength of a damaged structure
+ * Calculate fatigue life and crack propagation
+ * Design structures for damage tolerance
+
+## Course Textbook:
+
+The text used for this class is made up of notes originally assembled by Dr. Bert L. Smith and Dr. Walter J. Horn, which will be prepared by the department. 
+You can pick up your copy of the text in the AE offices (WH 200), the printing cost for this material is \$30 (cash or check, made out to Wichita State University only).
+
+## Other References:
+
+The notes used in this course provide a very good base, but sometimes supplemental material is beneficial. The following texts are recommended as additional references:
+
+ * H. Broek, _The Practical Use of Fracture Mechanics_
+ * H.L. Ewalds and R.J.H. Wanhill, _Fracture Mechanics_
+ * A.F. Grandt, _Fundamentals of Structural Integrity_
+
+## Prerequisites:
+
+AE 525 or AE 733.
+
+## Grading Policy:
+
+Homework (10%),  Midterm 1 (30%), Midterm 2 (30%), Final Project (30%).
+Final grades follow a traditional scale of:
+
+| A       | A-    | B+    | B     | B-    | C+    | C     | C-    | D+    | D     | D-    | F    |
+| ---     |  ---  | ---   | ---   | ---   | ---   |---    | ---   | ---   | ---   | ---   | ---  |
+| 93-100  | 90-93 | 87-90 | 83-87 | 80-83 | 77-80 | 73-77 | 70-73 | 67-70 | 63-67 | 60-63 | 0-60 |
+
+Per department policy, final course grades will not be disclosed before the official notifications by the University.
+
+## Homework:
+
+Homework will be submitted online via Blackboard, half the homework credit will be granted for completion.
+Homework solutions will be posted to Blackboard, and the remaining half of the homework credit will be assigned after you complete (and submit) your self-grade.
+You do not lose credit for incorrect answers, but your self-grade should explain the differences between your answer and the correct solution.
+It is anticipated that there will be a total of 9 Homework assignments, each worth 100 points.
+Tentative homework due dates are given in the course schedule.
+Late homework will not be accepted.
+
+## Exams:
+
+There will be two major midterm exams during the semester.
+Exams will be closed-book and closed-notes, but there will be an equation sheet provided.
+Anticipated exam dates are given in the course schedule.
+
+## Final Project:
+
+More details on the final project will be given after the first mid-term exam.
+The final project is intended to serve as a cumulative application of all material used in this course, so be sure that you demonstrate the principles you have learned.
+In this final project you will be required to perform residual strength, fatigue, and damage tolerance analysis on a real-life part of your choosing.
+You will use the principles developed in this class to estimate the maximum load your part can
+carry, a reasonable inspection cycle, etc.
+The part you choose should undergo cyclic loading of some form for a fatigue analysis.
+The final project will be due on May 6 by 5:00 pm.
+
+## Tentative Course Schedule:
+
+| Week    | Date    | Topics                                    | Assignment/Exam |
+| ------- | ------- | -----------------                         | --------------- |
+|	Week 1  | Jan 18  | Stress Intensity                          |                 |
+|	Week 2  | Jan 25  | Plastic Zone                              | Homework 1 Due  |
+|	Week 3  | Feb 1   | Fracture Toughness                        | Homework 2 Due  |
+|	Week 4  | Feb 8   | Residual Strength                         | Homework 3 Due  |
+|	Week 5  | Feb 15  | Multiple Site Damage, Mixed-Mode Fracture | Homework 4 Due  |
+|	Week 6  | Feb 22  | Stress Based Fatigue                      | Homework 5 Due  |
+|	Week 7  | Mar 1   | Exam 1 Review                             | Exam 1, Homework 6 Due|
+|	Week 8  | Mar 8   | Strain Based Fatigue                      | Project Abstract Due|
+|         | Mar 15  | Spring Break                              |                 | 
+|	Week 9  | Mar 22  | Crack Growth                              | Homework 7 Due  |
+|	Week 10 | Mar 29  | Crack Growth                              | Homework 8 Due  |
+| Week 11 | Apr 5   | Crack Retardation                         | Homework 9 Due  |
+|	Week 12 | Apr 12  | Exam Review                               | Exam 2          |
+|	Week 13 | Apr 19  | Damage Tolerance                          |                 |
+|	Week 14 | Apr 26  | Special Topics                            |                 |
+|	Week 15 | May 3   | Special Topics                            | Final Project Due|
+
+## Important Academic Dates:
+
+Classes begin January 18, there are no classes during Spring Break, which is March 14 - 20.
+
+## Disabilities:
+
+If you have a physical, psychiatric/emotional, or learning disability that may impact on your ability to carry out assigned course work, I encourage you to contact the Office of Disability Services (DS).
+The office is located in Grace Wilkie Annex, room 150, (316) 978-3309 (voice/tty) (316-854-3032 videophone). 
+DS will review your concerns and determine, with you, what academic accommodations are necessary and appropriate for you. 
+All information and documentation of your disability is confidential and will not be released by DS without your written permission.
+
+## Counseling & Testing:
+
+The WSU Counseling & Testing Center provides professional counseling services to students, faculty and staff; administers tests and offers test preparation workshops; and presents programs on topics promoting personal and professional growth. 
+Services are low cost and confidential. They are located in room 320 of Grace Wilkie Hall, and their phone number is (316) 978-3440. 
+The Counseling & Testing Center is open on all days that the University is officially open. 
+If you have a mental health emergency during the times that the Counseling & Testing Center is not open, please call COMCARE Crisis Services at (316) 660-7500.
+
+## Diversity and Inclusive:
+
+Wichita State University is committed to being an inclusive campus that reflects the evolving diversity of society. 
+To further this goal, WSU does not discriminate in its programs and activities on the basis of race, religion, color, national origin, gender, age, sexual orientation, gender identity, gender expression, marital status, political affiliation, status as a veteran, genetic information or disability. 
+The following person has been designated to handle inquiries regarding nondiscrimination policies: Executive Director, Office of Equal Opportunity, Wichita State University, 1845 Fairmount, Wichita KS 67260-0138; telephone (316) 978-3186.
+
+## Intellectual Property:
+
+Wichita State University students are subject to Board of Regents and University policies (see http://webs.wichita.edu/inaudit/ch9_10.htm) regarding intellectual property rights. 
+Any questions regarding these rights and any disputes that arise under these policies will be resolved by the President of the University, or the President’s designee, and such decision will constitute the final decision.
+
+## Shocker Alert System:
+
+Get the emergency information you need instantly and effortlessly! 
+With the Shocker Alert System, we will contact you by email the moment there is an emergency or weather alert that affects the campus.  
+Sign up at www.wichita.edu/alert
+
+## Title IX:
+
+Title IX of the Educational Amendments of 1972 prohibits discrimination based on sex in any educational institution that receives federal funding. 
+Wichita State University does not tolerate sex discrimination of any kind including: sexual misconduct; sexual harassment; relationship/sexual violence and stalking.  
+These incidents may interfere with or limit an individual’s ability to benefit from or participate in the University’s educational programs or activities. 
+Students are asked to immediately report incidents to the University Police Department, (316) 978- 3450 or the Title IX Coordinator (316) 978-5177. 
+Students may also report incidents to an instructor, faculty or staff member, who are required by law to notify the Title IX Coordinator. 
+If a student wishes to keep the information confidential, the student may speak with staff members of the Counseling and Testing Center (316) 978-3440 or Student Health Services (316)978-3620. 
+For more information about Title IX, go to: http://www.wichita.edu/thisis/home/?u=titleixf
+
