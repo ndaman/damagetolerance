@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-3 February, 2021
+20 January, 2022
 
 ----
 ## schedule
 
-- 3 Feb - Common Stress Intensity Factors
-- 8 Feb - Superposition, Compounding
-- 10 Feb - Curved Boundaries, HW 1 Due
-- 15 Feb - Plastic Zone
+- 20 Jan - Common Stress Intensity Factors
+- 25 Jan - Superposition, Compounding
+- 27 Jan - Curved Boundaries, HW 1 Due
+- 1 Feb - Plastic Zone
 
 ---
 # review
@@ -38,6 +38,7 @@ Wichita State University, Department of Aerospace Engineering
 -  The stress intensity factor is often written in this form
 
 `$$ K = \sigma \sqrt{ \pi a} \beta $$`
+
 -  Where *K* is the stress intensity factor, `$ \sigma $` is the applied stress, *a* is the crack length, and `$ \beta $` is a dimensionless parameter depending on geometry
 
 ----
@@ -99,10 +100,12 @@ Wichita State University, Department of Aerospace Engineering
 ## center crack, finite width
 
 `$$K_I = \sigma \sqrt{\pi a} \sqrt{\sec (\pi a/W)}$$`
+
 - Accurate within 0.3% for `$2a/W \le 0.7$`
 - within 1.0% for `$2a/W = -.8$`
 
 `$$K_I = \sigma \sqrt{\pi a} \left[1.0 - 0.025\left(\frac{2a}{W}\right)^2 + 0.06\left(\frac{2a}{W}\right)^4\right]\sqrt{\sec (\pi a/W)}$$`
+
 - Accurate within 0.1% for all crack lengths.
 
 ----
@@ -139,15 +142,18 @@ Wichita State University, Department of Aerospace Engineering
 - The usual form for stress intensity still applies
 
 `$$K_I = \sigma \sqrt{\pi a} \beta$$`
+
 - Where `$\sigma = \frac{6M}{tW^2}$`
 
 `$$\beta = 1.122 - 1.40 \left(\frac{a}{W}\right) + 7.33 \left(\frac{a}{W}\right)^2 - 13.08\left(\frac{a}{W}\right)^3 + 14.0 \left(\frac{a}{W}\right)^4$$`
+
 - valid within 0.2% accuracy for `$\frac{a}{W} \le 0.6$`
 
 ----
 ## edge crack, bending moment
 
 `$$\beta = \frac{0.923 + 0.199 \left(1-\sin \frac{\pi a}{2W}\right)^4}{\cos \frac{\pi a}{2W}}\sqrt{\frac{2W}{\pi a} \tan \frac{\pi a}{2W}}$$`
+
 - valid within 0.5% for any `$\frac{a}{W}$`
 
 ----
@@ -967,4 +973,4 @@ Where `$n = $` number of cracks (1 or 2)
 -   Case 4 - single corner crack
 -   Case 5 - symmetric surface cracks
 -   Case 6 - single surface crack
--   Viewable [here](../examples/Cracks%20Around%20a%20Hole.html)
+-   Viewable [here](https://colab.research.google.com/drive/1fmI1vs1Rpwn9BkXPz-8FV6-IqHnVvQu0?usp=sharing)
