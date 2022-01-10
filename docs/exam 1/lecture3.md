@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 8, 2021
+25 January 2022
 
 ----
 ## schedule
 
-- 8 Feb - Superposition, Compounding
-- 10 Feb - Curved Boundaries, HW 1 Due
-- 15 Feb - Plastic Zone
-- 17 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
+- 25 Jan - Superposition, Compounding
+- 27 Jan - Curved Boundaries, HW 1 Due
+- 1 Feb - Plastic Zone
+- 3 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
 
 ----
 ## homework notes
@@ -47,7 +47,7 @@ February 8, 2021
 -   Case 4 - single corner crack
 -   Case 5 - symmetric surface cracks
 -   Case 6 - single surface crack
--   Viewable [here](../examples/Cracks%20Around%20a%20Hole.html)
+-   Viewable on Google [CoLab](https://colab.research.google.com/drive/1fmI1vs1Rpwn9BkXPz-8FV6-IqHnVvQu0?usp=sharing)
 
 
 ---
@@ -177,8 +177,8 @@ February 8, 2021
 ## p. 68 - example 1
 
 -   A crack in a finite-width panel is centered between two stiffeners
--   Assume the $\beta$ correction factor for this stiffener configuration is `$\beta_s$` = 0.9
--   Assume the $\beta$ correction factor for this finite-width panel is `$\beta_w$` = 1.075
+-   Assume the `$\beta$` correction factor for this stiffener configuration is `$\beta_s = 0.9 $`
+-   Assume the `$\beta$` correction factor for this finite-width panel is `$\beta_w = 1.075$`
 -   Use both compounding methods to estimate the stress intensity
 -   How accurate do you expect this to be?
 

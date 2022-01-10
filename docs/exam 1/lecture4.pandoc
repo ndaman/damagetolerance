@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 10, 2021
+27 January 2022
 
 
 ## schedule
 
-- 10 Feb - Curved Boundaries, HW 1 Due
-- 15 Feb - Plastic Zone
-- 17 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
-- 22 Feb - Fracture Toughness
+- 27 Jan - Curved Boundaries, HW 1 Due
+- 1 Feb - Plastic Zone
+- 3 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
+- 8 Feb - Fracture Toughness
 
 
 ## outline
@@ -58,7 +58,7 @@ February 10, 2021
 
 ## method 1
 
--   Where *N* is the number of boundaries, $\bar{K}$ is the stress intensity factor with no boundaries present and \\(K_i\\) is the stress intensity factor associated with the \\(i^\text{th}\\) boundary.
+-   Where *N* is the number of boundaries, \\(\bar{K}\\) is the stress intensity factor with no boundaries present and \\(K_i\\) is the stress intensity factor associated with the \\(i^\text{th}\\) boundary.
 
 
 ## method 1
@@ -66,6 +66,7 @@ February 10, 2021
 -   We can rewrite this equation as
 
 \\[K_r = \sigma \sqrt{\pi a} \beta_r = \sigma \sqrt{\pi a} + \sum_{i=1}^{N}(\sigma \sqrt{\pi a}\beta_i - \sigma \sqrt{\pi a})\\]
+
 -   Which leads to an expression for \\(\beta_r\\) as
 
 \\[\beta_r = 1+\sum_{i=1}^{N} (\beta_i - 1)\\]
@@ -83,8 +84,8 @@ February 10, 2021
 ## p. 68 - example 1
 
 -   A crack in a finite-width panel is centered between two stiffeners
--   Assume the $\beta$ correction factor for this stiffener configuration is \\(\beta_s\\) = 0.9
--   Assume the $\beta$ correction factor for this finite-width panel is \\(\beta_w\\) = 1.075
+-   Assume the \\(\beta\\) correction factor for this stiffener configuration is \\(\beta_s = 0.9\\)
+-   Assume the \\(\beta\\) correction factor for this finite-width panel is \\(\beta_w = 1.075\\)
 -   Use both compounding methods to estimate the stress intensity
 -   How accurate do you expect this to be?
 
@@ -201,9 +202,9 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 
 -   Suppose we want to determine the stress intensity on a panel, panel B
 -   We find a similar panel with a known stress intensity factor, panel A
--   We adjust the applied load on panel A such that *K*<sub>*I*,*A*</sub>=*K*<sub>*I*,*B*</sub>
+-   We adjust the applied load on panel A such that \\(K_{I,A} = K_{I,B}\\)
 -   The magnitude of this load adjustment is determined using the *stress concentration factors* in panels B and A
-Note: the notation: K_t for stress concentration factor, K_I for stress intensity factor
+Note: the notation: \\(K_t\\) for stress concentration factor, \\(K_I\\) for stress intensity factor
 
 
 ## short cracks on curved boundaries
@@ -268,8 +269,8 @@ Note: the notation: K_t for stress concentration factor, K_I for stress intensit
 :::
 ::: {.column width="50%"}
 -  _c_ = 0.75, *e* = 2.25, *r* = 0.5
--  assume *a* is short and calculate $\beta$ for this case
--  calculate in terms of $\beta$ for known state
+-  assume *a* is short and calculate \\(\beta\\) for this case
+-  calculate in terms of \\(\beta\\) for known state
 
 :::
 ::::::::::::::
@@ -283,8 +284,8 @@ Note: the notation: K_t for stress concentration factor, K_I for stress intensit
 :::
 ::: {.column width="50%"}
 -  _c_ = 0.75, *e* = 2.25, *r* = 0.5
--   assume *a* is long and calculate $\beta$ for this case
--   calculate in terms of $\beta$ for known state
+-   assume *a* is long and calculate \\(\beta\\) for this case
+-   calculate in terms of \\(\beta\\) for known state
 
 :::
 ::::::::::::::
@@ -298,8 +299,8 @@ Note: the notation: K_t for stress concentration factor, K_I for stress intensit
 :::
 ::: {.column width="50%"}
 -  *c* = 0.75, *e* = 2.25, *r* = 0.5
--   assume *a* is short and calculate $\beta$ for this case
--   calculate in terms of $\beta$ for known state
+-   assume *a* is short and calculate \\(\beta\\) for this case
+-   calculate in terms of \\(\beta\\) for known state
 
 :::
 ::::::::::::::
@@ -313,8 +314,8 @@ Note: the notation: K_t for stress concentration factor, K_I for stress intensit
 :::
 ::: {.column width="50%"}
 -  _c_ = 0.75, *e* = 2.25, *r* = 0.5
--   assume *a* is long and calculate $\beta$ for this case
--   calculate in terms of $\beta$ for known state
+-   assume *a* is long and calculate \\(\beta\\) for this case
+-   calculate in terms of \\(\beta\\) for known state
 
 :::
 ::::::::::::::
