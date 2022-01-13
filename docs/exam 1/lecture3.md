@@ -268,7 +268,7 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 -   on p. 64 there is a + missing between two terms, see Lecture 2 for the fix
 -   Also on p. 64, in equation 29 it is not clear, but use the `$f_w$` from a previous equation, on p. 56
 -   Some of the black and white figures can be difficult to use, we have scanned and re-created the plots online
--   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](../examples/Compounding%20Figures.html)
+-   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](http://ndaman.github.io/damagetolerance/examples/Compounding%20Figures.html)
 
 ----
 ## finite height - p. 50

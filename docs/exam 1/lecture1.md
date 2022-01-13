@@ -207,7 +207,7 @@ Wichita State University, Department of Aerospace Engineering
 ----
 ## damage tolerance
 
--  A B-17 collided with a Germain plane during WWII
+-  A B-17 collided with a German plane during WWII
 -  In spite of the damage, the B-17 was able to fly 90 minutes and land safely
 
 ----

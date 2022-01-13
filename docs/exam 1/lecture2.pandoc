@@ -233,7 +233,7 @@ Wichita State University, Department of Aerospace Engineering
 
 ## non-uniform stress, infinite width
 
-- Stress intensity will be different at points $A$ and $B\$
+- Stress intensity will be different at points \\(A\\) and \\(B\\)
 
 \\[\begin{aligned}
     K_{IA} &= \int_{-a}^{a} \frac{p(x)}{\sqrt{\pi a}}\frac{\sqrt{a-x}}{\sqrt{a+x}}dx\\

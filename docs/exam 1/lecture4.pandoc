@@ -164,7 +164,7 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 -   on p. 64 there is a + missing between two terms, see Lecture 2 for the fix
 -   Also on p. 64, in equation 29 it is not clear, but use the \\(f_w\\) from a previous equation, on p. 56
 -   Some of the black and white figures can be difficult to use, we have scanned and re-created the plots online
--   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](../examples/Compounding%20Figures.html)
+-   Interactive versions of compounding figures from p. 50, 71-73 can be found at [here](http://ndaman.github.io/damagetolerance/examples/Compounding%20Figures.html)
 
 
 ## finite height - p. 50
@@ -195,7 +195,7 @@ The right crack tip is 0.5 inches away from a 0.5 inch diameter hole and the lef
 -   For short cracks, we can use the *stress concentration factor* on a curved boundary to determine the stress intensity factor
 -   The stress concentration factor only gives the maximum stress at the curved boundary, thus the longer the crack is, the farther away from the curved boundary (and maximum stress) it is.
 -   Stress concentration factors can be found: pp. 82-85 in the text
--   Also see supplemental text on Blackboard or [here](classdocs/stress_concentrations.pdf)
+-   Also see supplemental text on Blackboard or [here](http://ndaman.github.io/damagetolerance/classdocs/stress_concentrations.pdf)
 
 
 ## short cracks on curved boundaries
@@ -257,7 +257,7 @@ Note: the notation: \\(K_t\\) for stress concentration factor, \\(K_I\\) for str
 
 ## example
 
--   Example [here](../examples/Long%20Cracks%20on%20Curved%20Boundaries.html)
+-   Example [here](https://colab.research.google.com/drive/1bq0pXDgYL-xTPwUAQ0tffKBcMoS8sgry?usp=sharing)
 
 
 ## group one
@@ -358,4 +358,4 @@ Nominal stress used for \\(K_t\\) is given by \\(\sigma_{nom} = 6M/hd^2\\) where
 
 ## interactive page
 
--   An interactive page with these plots can be accessed [here](../examples/Stress%20Concentration%20Factors.html)
+-   An interactive page with these plots can be accessed [here](http://ndaman.github.io/damagetolerance/examples/Stress%20Concentration%20Factors.html)
