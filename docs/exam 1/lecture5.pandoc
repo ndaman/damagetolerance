@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 15, 2021
+1 February 2022
 
 
 ## schedule
 
-- 15 Feb - Plastic Zone
-- 17 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
-- 22 Feb - Fracture Toughness
-- 24 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 1 Feb - Plastic Zone
+- 3 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
+- 8 Feb - Fracture Toughness
+- 10 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
 
 
 ## outline
@@ -95,7 +95,7 @@ Note: the notation: \\(K_t\\) for stress concentration factor, \\(K_I\\) for str
 
 ## example
 
--   Example [here](../examples/Long%20Cracks%20on%20Curved%20Boundaries.html)
+-   Example [here](https://colab.research.google.com/drive/1VGUaHYrSq3cqE_RYCDeJ2rhq7Nz8YALr?usp=sharing)
 
 
 ## group one
@@ -196,7 +196,7 @@ Nominal stress used for \\(K_t\\) is given by \\(\sigma_{nom} = 6M/hd^2\\) where
 
 ## interactive page
 
--   An interactive page with these plots can be accessed [here](../examples/Stress%20Concentration%20Factors.html)
+-   An interactive page with these plots can be accessed [here](http://ndaman.github.io/damagetolerance/examples/Stress%20Concentration%20Factors.html)
 
 
 # plastic zone
@@ -291,11 +291,11 @@ Nominal stress used for \\(K_t\\) is given by \\(\sigma_{nom} = 6M/hd^2\\) where
 
 ## Irwin's first approximation
 
--   For plane stress (thin panels) we let $C=1$ and find *r*<sub>*p*</sub> as
+-   For plane stress (thin panels) we let \\(C=1\\) and find *r*<sub>*p*</sub> as
 
 \\[r_p = \frac{1}{2\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2\\]
 
--   And for plane strain (thick panels) we let $C=\sqrt{3}$ and find
+-   And for plane strain (thick panels) we let \\(C=\sqrt{3}\\) and find
  
 \\[r_p = \frac{1}{6\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2\\]
 
@@ -315,7 +315,7 @@ Nominal stress used for \\(K_t\\) is given by \\(\sigma_{nom} = 6M/hd^2\\) where
 
 ## Irwin's second approximation
 
--   If our material is perfectly elastic-plastic, no stresses above $C\sigma_{ys}$ will exist in the material
+-   If our material is perfectly elastic-plastic, no stresses above \\(C\sigma_{ys}\\) will exist in the material
 -   This ignores the strain energy (represented by the area under the curve) in the plastic zone
 
 
