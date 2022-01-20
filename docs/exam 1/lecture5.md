@@ -31,7 +31,7 @@ Wichita State University, Department of Aerospace Engineering
 -   For short cracks, we can use the *stress concentration factor* on a curved boundary to determine the stress intensity factor
 -   The stress concentration factor only gives the maximum stress at the curved boundary, thus the longer the crack is, the farther away from the curved boundary (and maximum stress) it is.
 -   Stress concentration factors can be found: pp. 82-85 in the text
--   Also see supplemental text on Blackboard or [here](../classdocs/stress_concentrations.pdf)
+-   Also see supplemental text on Blackboard or [here](http://ndaman.github.io/damagetolerance/classdocs/stress_concentrations.pdf)
 
 ----
 ## short cracks on curved boundaries
@@ -301,7 +301,7 @@ Nominal stress used for `$K_t$` is given by `$\sigma_{nom} = 6M/hd^2$` where *M*
 ----
 ## Irwin's first approximation
 
--   For plane stress (thin panels) we let `$C=1$` and find *r*<sub>*p*</sub> as
+-   For plane stress (thin panels) we let `$C=1$` and find `$r_p$` as
 
 `$$r_p = \frac{1}{2\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2$$`
 
@@ -367,11 +367,11 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 ----
 ## Irwin's second approximation
 
--   We have already found *r*<sub>*p*</sub> as
+-   We have already found `$r_p$` as
 
 `$$r_p = \frac{1}{2\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2$$`
 
--   If we solve this for *K*<sub>*I*</sub> we find
+-   If we solve this for `$K_I$` we find
 
 `$$K_I = \sqrt{2\pi r_p} \sigma_{YS}$$`
 
@@ -400,9 +400,9 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 ----
 ## Irwin's second approximation
 
--   This means the plastic zone size is simply 2*r*<sub>*p*</sub>
--   However, it also means that the effective crack length is *a*+*r*<sub>*p*</sub>
--   Since *r*<sub>*p*</sub> depends on *K*<sub>*I*</sub>, we must iterate a bit to find the "real" *r*<sub>*p*</sub> and *K*<sub>*I*</sub>
+-   This means the plastic zone size is simply `$2r_p$`
+-   However, it also means that the effective crack length is `$a+r_p$`
+-   Since `$r_p$` depends on `$K_I$`, we must iterate a bit to find the "real" `$r_p$` and `$K_I$`
 
 ----
 ## Example

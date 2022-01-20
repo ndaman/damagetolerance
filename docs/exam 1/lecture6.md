@@ -5,15 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 17, 2021
+3 February 2022
 
 ----
 ## schedule
 
-- 17 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
-- 22 Feb - Fracture Toughness
-- 24 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
-- 1 Mar - Residual Strength
+- 3 Feb - Plastic Zone, HW 2 Due, HW 1 Self-grade due
+- 8 Feb - Fracture Toughness
+- 10 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 15 Feb - Residual Strength
 
 ----
 ## outline
@@ -31,7 +31,7 @@ February 17, 2021
 
 -   Previous developments assumed perfectly elastic materials
 -   Most common materials have some plasticity
--   Any stress above the yield stress will undergo plastic deformation (no stress higher than $\sigma_y$ will be present in the material)
+-   Any stress above the yield stress will undergo plastic deformation (no stress higher than `$\sigma_y$` will be present in the material)
 
 ----
 ## plastic zone
@@ -122,7 +122,7 @@ February 17, 2021
 
 `$$r_p = \frac{1}{2\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2$$`
 
--   And for plane strain (thick panels) we let $C=\sqrt{3}$ and find
+-   And for plane strain (thick panels) we let `$C=\sqrt{3}$` and find
 
 `$$r_p = \frac{1}{6\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2$$`
 
@@ -142,7 +142,7 @@ February 17, 2021
 ----
 ## Irwin's second approximation
 
--   If our material is perfectly elastic-plastic, no stresses above $C\sigma_{ys}$ will exist in the material
+-   If our material is perfectly elastic-plastic, no stresses above `$C\sigma_{ys}$` will exist in the material
 -   This ignores the strain energy (represented by the area under the curve) in the plastic zone
 
 ----

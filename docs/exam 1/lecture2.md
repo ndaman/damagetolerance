@@ -32,6 +32,9 @@ Wichita State University, Department of Aerospace Engineering
 ![An image of the three fracture modes, with a representative crack in the xy plane. The first mode showns a crack opening vertically in the z-direction, like jaws opening. The second mode is known as the sliding mode, where one face moves into the body (negative x direction) while the other end of the crack moves away from the body (positive x direction). The third mode is known as the tearing mode, and is similar to mode 2 but with the sliding occuring 90 degrees away in the y-direction.](../images/Fracture_modes_v2.svg)
 
 ---
+# stress intensity 
+
+----
 ## stress intensity
 
 -  A key finding from Linear Elastic Fracture Mechanics (LEFM) is known as the *Stress Intensity Factor*
