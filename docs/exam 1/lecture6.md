@@ -36,7 +36,7 @@ Wichita State University, Department of Aerospace Engineering
 
 <div class="left">
 
-For an infinitely wide center-cracked panel, we can solve for *K*<sub>*Ie*</sub>/*K*<sub>*I*</sub> symbolically, in plane stress
+For an infinitely wide center-cracked panel, we can solve for `$K_{Ie}/K_I$` symbolically, in plane stress
 
 </div>
 
@@ -102,7 +102,7 @@ Note: We divide both sides by `$\left(1 - \frac{\sigma^2}{2 \sigma_{YS}^2}\right
 ----
 ## example
 
-online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
+online example [here](https://colab.research.google.com/drive/1Bb-eznneklW_BILR8po3_fQROB_t56_w?usp=sharing)
 
 ---
 # plastic zone shape
@@ -159,7 +159,7 @@ online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 ----
 ## Von Mises yield theory
 
--   We can find the plastic zone size, *r*<sub>*p*</sub> by substituting the principal stress relations into the distortional strain energy equation
+-   We can find the plastic zone size, `$r_p$` by substituting the principal stress relations into the distortional strain energy equation
 -   In plane stress we find
 
 `$$\begin{aligned}
@@ -183,7 +183,7 @@ online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 
 `$$r_p = \frac{K_I^2}{2\pi \sigma^2_{YS}} \cos^2 \frac{\theta}{2} \left(1 + 3\sin^2 \frac{\theta}{2}\right)$$`
 
--   We can similarly solve for *r*<sub>*p*</sub> in plane strain to find
+-   We can similarly solve for `$r_p$` in plane strain to find
 
 `$$r_p = \frac{K_I^2}{2\pi \sigma^2_{YS}} \cos^2 \frac{\theta}{2} \left(1 -4\nu + 4\nu^2 + 3\sin^2 \frac{\theta}{2}\right)$$`
 
@@ -216,10 +216,10 @@ online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 -   We can solve for when `$\sigma_2$` will be `$\sigma_{min}$`
 
 `$$\begin{aligned}
-  \sigma_2 &&lt; \sigma_3\\
-  \frac{K_I}{\sqrt{2\pi r}}\cos \frac{\theta}{2}\left(1-\sin \frac{\theta}{2}\right) &&lt; \frac{2\nu K_I}{\sqrt{2\pi r}}\cos \frac{\theta}{2}\\
-  1-\sin \frac{\theta}{2} &&lt; 2\nu\\
-  \theta_t &gt; 2 \sin^{-1} (1-2\nu)
+  \sigma_2 &< \sigma_3\\
+  \frac{K_I}{\sqrt{2\pi r}}\cos \frac{\theta}{2}\left(1-\sin \frac{\theta}{2}\right) &< \frac{2\nu K_I}{\sqrt{2\pi r}}\cos \frac{\theta}{2}\\
+  1-\sin \frac{\theta}{2} &< 2\nu\\
+  \theta_t &> 2 \sin^{-1} (1-2\nu)
 \end{aligned}$$`
 
 ----
@@ -227,7 +227,7 @@ online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 
 -   When `$2\pi - \theta_t < \theta < \theta_t$`, `$\sigma_2$` is the minimum, otherwise `$\sigma_3$` is the minimum
 -   Note: Error(s) in text p. 101
--   Once we have chosen the appropriate minimum stress (`$\sigma_2$` or `$\sigma_3$`), we can solve for *r*<sub>*p*</sub> as before
+-   Once we have chosen the appropriate minimum stress (`$\sigma_2$` or `$\sigma_3$`), we can solve for `$r_p$` as before
 
 ----
 ## Tresca yield theory
@@ -245,7 +245,7 @@ online example [here](../examples/Plastic%20stress%20intensity%20ratio.html)
 ----
 ## example
 
-online example [here](../examples/Plastic%20Zone%20Shape.html)
+online example [here](https://colab.research.google.com/drive/1ALdCMw3BzNDn-5clui2nrvfHfWMcN7-5?usp=sharing)
 
 ---
 # group problems
