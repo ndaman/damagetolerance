@@ -31,26 +31,6 @@ Wichita State University, Department of Aerospace Engineering
 - Compounding
 
 ---
-# review
-
-----
-## example
-
-![A problem with cracks around a hole. Dimensions given are .375 inch hole diameter, 5 inch wide specimen, 5,000 lb. remote load, 0.125 inch thickness, major crack radius .08 inches, minor crack radius .02 inches](../images/example%202.svg)
-
-----
-## example
-
--   Case 1 - symmetric through cracks
--   Case 2 - single through crack
--   Case 3 - symmetric corner cracks
--   Case 4 - single corner crack
--   Case 5 - symmetric surface cracks
--   Case 6 - single surface crack
--   Viewable on Google [CoLab](https://colab.research.google.com/drive/1fmI1vs1Rpwn9BkXPz-8FV6-IqHnVvQu0?usp=sharing)
-
-
----
 # superposition
 
 ----
@@ -100,6 +80,9 @@ Wichita State University, Department of Aerospace Engineering
 ## example - pressurized crack
 
 ![We can address the problem of a pressurized crack by considering the case where a remote stress (with no crack) is equivalent to a cracked body, under remote stress, with a compressive stress acting at the hole to cancel the effect of the crack.](../images/superposition-pressure2.svg)<!-- .element width="80%" -->
+
+---
+# group problems
 
 ----
 ## group problems
