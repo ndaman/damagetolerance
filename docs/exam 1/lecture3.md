@@ -24,6 +24,14 @@ Wichita State University, Department of Aerospace Engineering
 -   Individual work
 
 ----
+## office hours
+
+- I have decided to combine (and expand) my office hours this semester
+- Mondays 4:00 - 5:00
+- Tuesdays 2:00 - 3:00
+- Fridays 3:00 - 4:00
+
+----
 ## outline
 
 - Review
