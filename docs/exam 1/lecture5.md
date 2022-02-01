@@ -77,7 +77,7 @@ Wichita State University, Department of Aerospace Engineering
 \end{aligned}$$`
 
 ----
-## Irwin's first approximation
+## Irwin
 
 -   If we recall the equation for opening stress (`$\sigma_y$`) near the crack tip
 
@@ -88,12 +88,12 @@ Wichita State University, Department of Aerospace Engineering
 `$$\sigma_y = \frac{K_I}{\sqrt{2\pi r}}$$`
 
 ----
-## Irwin's first approximation
+## Irwin
 
 ![A figure showing the opening stress near the crack tip. At some distance, rp away from the tip the stress is equal to the yield stress of the material times some constant C.](../images/plastic-zone.svg) <!-- .element width="50%" -->
 
 ----
-## Irwin's first approximation
+## Irwin
 
 <div class="left">
 
@@ -113,7 +113,7 @@ Wichita State University, Department of Aerospace Engineering
 </div>
 
 ----
-## Irwin's first approximation
+## Irwin
 
 -   For plane stress (thin panels) we let `$C=1$` and find `$r_p$` as
 
@@ -136,30 +136,33 @@ Wichita State University, Department of Aerospace Engineering
 
 -   And `$2 \le I \le 6$`
 
+---
+# Irwin's second approximation
+
 ----
-## Irwin's second approximation
+## Irwin 
 
 -   If our material is perfectly elastic-plastic, no stresses above `$C\sigma_{ys}$` will exist in the material
 -   This ignores the strain energy (represented by the area under the curve) in the plastic zone
 
 ----
-## Irwin's second approximation
+## Irwin
 
 ![The previous drawing of stress near the crack it is repeated, but the area above the yield stress is highlighted, as this strain energy would be missing if we ignored it, creating an imbalance.](../images/plastic-missing.svg) <!-- .element width="50%" -->
 
 ----
-## Irwin's second approximation
+## Irwin
 
 -   To account for the additional strain energy, Irwin considered a plastic zone size increased by some `$\delta$`
 -   He also needed to adjust the stress function, and considered an equivalent crack tip in these calculations
 
 ----
-## Irwin's second approximation
+## Irwin
 
 ![In this plot of the stress near the crack tip, the stress is shifted by some amount, delta, such that the extra area under the curve by the shifted amount is equal to the area missing from the portion above the yield stress.](../images/plastic-equivalent.svg) <!-- .element width="50%" -->
 
 ----
-## Irwin's second approximation
+## Irwin
 
 <div class="left">
 
@@ -179,7 +182,7 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 </div>
 
 ----
-## Irwin's second approximation
+## Irwin
 
 -   We have already found `$r_p$` as
 
@@ -190,7 +193,7 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 `$$K_I = \sqrt{2\pi r_p} \sigma_{YS}$$`
 
 ----
-## Irwin's second approximation
+## Irwin
 
 -   We can now substitute back into the strain energy of A
 
@@ -201,7 +204,7 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 \end{aligned}$$`
 
 ----
-## Irwin's second approximation
+## Irwin
 
 -   B is given simply as `$B=\delta \sigma_{ys}$` so we equate A and B to find `$\delta$`
 
@@ -212,13 +215,13 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
 \end{aligned}$$`
 
 ----
-## Irwin's second approximation
+## Irwin
 
 -   This means the plastic zone size is simply `$2r_p$`
 -   However, it also means that the effective crack length is `$a+r_p$`
 -   Since `$r_p$` depends on `$K_I$`, we must iterate a bit to find the "real" `$r_p$` and `$K_I$`
 
-----
+---
 ## Example
 
 ![An edge crack of length a in a panel of width W is subjected to a remote load](../images/plastic-example.svg)
@@ -231,4 +234,5 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
   I &= 6.7 - \frac{1.5}{t}\left(\frac{K_I}{\sigma_{YS}}\right)^2 \\
   r_p &= \frac{1}{I\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2
 \end{aligned}$$`
+
 
