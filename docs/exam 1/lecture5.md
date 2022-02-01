@@ -231,3 +231,4 @@ We need *A*=*B*, so we set them equivalent and solve for `$\delta$`.
   I &= 6.7 - \frac{1.5}{t}\left(\frac{K_I}{\sigma_{YS}}\right)^2 \\
   r_p &= \frac{1}{I\pi} \left(\frac{K_I}{\sigma_{YS}}\right)^2
 \end{aligned}$$`
+

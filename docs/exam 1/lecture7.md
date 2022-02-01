@@ -5,17 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 22, 2021
+8 February 2022
 
 ----
 ## schedule
 
-- 22 Feb - Fracture Toughness
-- 24 Feb - Fracture Toughness 
-- 26 Feb - HW3 Due, HW 2 Self-grade due
-- 1 Mar - Residual Strength
-- 3 Mar - Residual Strength 
-- 5 Mar - HW4 Due, HW 3 Self-grade due
+- 8 Feb - Fracture Toughness
+- 10 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 15 Feb - Residual Strength
+- 17 Feb - Residual Strength, HW4 Due, HW 3 Self-grade due
 
 ----
 ## outline
@@ -31,13 +29,13 @@ February 22, 2021
 ## fracture toughness
 
 -   The critical load at which a cracked specimen fails produces a critical stress intensity factor
--   The "critical stress intensity factor" is known as *K*<sub>*c*</sub>
--   For Mode I, this is called *K*<sub>*Ic*</sub>
+-   The "critical stress intensity factor" is known as `$K_c$`
+-   For Mode I, this is called `$K_{Ic}$`
 -   The critical stress intensity factor is also known as fracture toughness
  
 `$$K_{IC} = \sigma_c \sqrt{\pi a}\beta$$`
 
--   Note: "Fracture Toughness" can also refer to *G*<sub>*Ic*</sub>, which is analogous to *K*<sub>*Ic*</sub>, but not the same
+-   Note: "Fracture Toughness" can also refer to `$G_{Ic}$`, which is analogous to `$K_{Ic}$`, but not the same
 
 ----
 ## fracture toughness
@@ -68,9 +66,9 @@ February 22, 2021
 ----
 ## fracture toughness
 
--   During an experiment, we will record the crack length and applied load (*P*<sub>*i*</sub>, *a*<sub>*i*</sub>) each time we increase the load
--   We can calculate a unique stress intensity factor *K*<sub>*Ii*</sub> at each of these points
--   These are then used to create a "K-curve", plotting *K*<sub>*I*</sub> vs. *a*
+-   During an experiment, we will record the crack length and applied load (`$P_i$`, `$a_i$`) each time we increase the load
+-   We can calculate a unique stress intensity factor `$K_{Ii}$` at each of these points
+-   These are then used to create a "K-curve", plotting `$K_I$` vs. *a*
 
 ----
 ## K-curve
@@ -82,9 +80,9 @@ February 22, 2021
 
 -   Materials will generally not be as flat as the perfectly brittle example
 -   Plane strain conditions and brittle materials will tend towards a "flat" K-curve
--   *K*<sub>*IC*</sub> for brittle/plane strain is very well defined
--   *K*<sub>*C*</sub> for plane stress can refer to two things
--   Either the maximum *K*<sub>*C*</sub> during a test, or tangent point on *K*<sub>*R*</sub>-curve (R-curve)
+-   `$K_{Ic}$` for brittle/plane strain is very well defined
+-   `$K_c$` for plane stress can refer to two things
+-   Either the maximum `$K_c$` during a test, or tangent point on `$K_R$`-curve (R-curve)
 
 ----
 ## example
@@ -92,7 +90,7 @@ February 22, 2021
 <div class="left">
 
 -  In composites, and adhesives, some work is needed to ensure stable crack growth
--  The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this
+-  The Double-Cantilever Beam (DCB) experiment to find `$G_{Ic}$` illustrates this
 
 </div>
 
@@ -182,7 +180,7 @@ February 22, 2021
   <li>Fatigue crack specimen K<sub>f</sub> &lt; 0.6K<sub>IC</sub></li>
   <ul>
     <li>This is to ensure that the plastic zone size during fatigue is smaller than the plastic zone size during testing</li>
-    <li>If K<sub>IC</sub> has not yet been determined, you may have to guess the first time</li>
+    <li>If `$K_{Ic}$` has not yet been determined, you may have to guess the first time</li>
   </ul>
 </ol>
 
@@ -191,8 +189,8 @@ February 22, 2021
 
 <ol start="5">
   <li>Mount specimen, attach gage</li>
-  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi $\sqrt{\text{in.}}$ /min.)</li>
-  <li>Determine the "provisional" value of K<sub>IC</sub> (known as K<sub>Q</sub>)</li>
+  <li>Load rate should ensure "static" load conditions. (30 - 150 ksi `$\sqrt{\text{in.}}$` /min.)</li>
+  <li>Determine the "provisional" value of `$K_{Ic}$` (known as `$K_Q$`)</li>
 </ol>
 
 ----
@@ -203,13 +201,13 @@ February 22, 2021
 ----
 ## ASTM E399
 
-- If the load-displacement curve is like the first figure, with some non-linearity, we let *P*<sub>*Q*</sub> be the point of intersection between the load-displacement curve and a line whose slope is 5% lower than the slope in the elastic region
-- "Pop-in" occurs when there is stable crack extension before the plasticity begins. We let *P*<sub>*Q*</sub> bet the point where stable crack extension begins.
+- If the load-displacement curve is like the first figure, with some non-linearity, we let `$P_Q$` be the point of intersection between the load-displacement curve and a line whose slope is 5% lower than the slope in the elastic region
+- "Pop-in" occurs when there is stable crack extension before the plasticity begins. We let `$P_Q$` be the point where stable crack extension begins.
 
 ----
 ## ASTM E399
 
-- For a perfectly linear material, *P*<sub>*Q*</sub> = *P*<sub>*max*</sub>.
+- For a perfectly linear material, `$P_Q = P_{max}$`
 
 `$$\begin{aligned}
   K_Q &= \frac{P_Q}{BW^{1/2}}f\left(\frac{a}{W}\right) & \text{Compact Tension}\\
@@ -234,11 +232,11 @@ February 22, 2021
 ----
 ## ASTM E399
 
--   For stable crack extension, check the *P*<sub>*max*</sub>
+-   For stable crack extension, check the `$P_{max}$`
 
 `$$\frac{P_{max}}{P_Q} \le 1.10$$`
 
--   Check for symmetric crack front, *a*<sub>1</sub>, *a*<sub>2</sub>, and *a*<sub>3</sub> must be within 5% of *a*. *a*<sub>*s*</sub> must be within 10% of *a*.
+-   Check for symmetric crack front, `$a_1$`, `$a_2$`, and `$a_3$` must be within 5% of *a*. `$a_s$` must be within 10% of *a*.
 
 `$$\frac{a_1 + a_2 + a_3}{3} = a$$`
 
@@ -250,7 +248,7 @@ February 22, 2021
 ----
 ## R-curve
 
--   For materials with some plasticity, the *K*<sub>*R*</sub> Curve, or R Curve, is very important
+-   For materials with some plasticity, the `$K_R$` Curve, or R Curve, is very important
 -   Sometimes called a "resistance curve" it is generally dependent on
     -   Thickness
     -   Temperature
@@ -259,13 +257,13 @@ February 22, 2021
 ----
 ## R-curve
 
--   When done correctly, *K*<sub>*R*</sub> curves are not dependent on initial crack size or the specimen type used
+-   When done correctly, `$K_R$` curves are not dependent on initial crack size or the specimen type used
 -   ASTM E561 describes a general procedure
 
 ----
 ## ASTM E561
 
--   Compact Tension (CT or C(T)) specimens may be used for plane stress *K*<sub>*R*</sub> curves
+-   Compact Tension (CT or C(T)) specimens may be used for plane stress `$K_R$` curves
 -   The other specimen which is permitted is a middle-cracked tension specimen (M(T))
 -   M(T) specimens are preferred in many cases due to a more uniform stress distribution (particularly important for anisotropic materials)
 
@@ -290,7 +288,7 @@ February 22, 2021
 ## effective crack length
 
 -   ASTM E561 describes three ways to obtain the effective crack length during testing
-    1.  Measure the crack length visually and calculate *r*<sub>*p*</sub>
+    1.  Measure the crack length visually and calculate `$r_p$`
     2.  Measure crack length using "unloading compliance" and adding plastic zone size
     3.  Measure the effective crack size directly using "secant compliance"
 
@@ -367,18 +365,18 @@ February 22, 2021
 ----
 ## secant compliance C(T)
 
-|         loc     |  *A*<sub>0</sub>|  *A*<sub>1</sub>|  *A*<sub>2</sub>|  *A*<sub>3</sub>|  *A*<sub>4</sub>|
-|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|
-|  *V*<sub>0</sub>|            120.7|          -1065.3|           4098.0|          -6688.0|           4450.5|
-|  *V*<sub>1</sub>|            103.8|           -930.4|           3610.0|          -5930.5|           3979.0|
+| loc | `$A_0$` | `$A_1$` | `$A_2$` | `$A_3$` | `$A_4$` |
+|----:|--------:|--------:|--------:|--------:|--------:|
+|  `$V_0$` | 120.7| -1065.3|4098.0| -6688.0|  4450.5|
+|  `$V_1$` | 103.8| -930.4| 3610.0| -5930.5|  3979.0|
 
 ----
 ## secant compliance C(T)
 
-|         loc     |  *C*<sub>0</sub>|  *C*<sub>1</sub>|  *C*<sub>2</sub>|  *C*<sub>3</sub>|  *C*<sub>4</sub>|  *C*<sub>5</sub>|
-|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|
-|  *V*<sub>0</sub>|           1.0010|          -4.6695|           18.460|          -236.82|          1214.90|          -2143.6|
-|  *V*<sub>1</sub>|           1.0008|          -4.4473|           15.400|          -180.55|           870.92|          -1411.3|
+| loc | `$C_0$` | `$C_1$` | `$C_2$` | `$C_3$` | `$C_4$` | `$C_5$` |
+|----:|--------:|--------:|--------:|--------:|--------:|--------:|
+|`$V_0$`| 1.0010|  -4.6695|   18.460|  -236.82|  1214.90|  -2143.6|
+|`$V_1$`| 1.0008|  -4.4473|   15.400|  -180.55|   870.92|  -1411.3|
 
 ----
 ## secant compliance C(T)
