@@ -143,7 +143,7 @@ online example [here](https://colab.research.google.com/drive/1Bb-eznneklW_BILR8
 
 -   The distortional strain energy is given by
 
-`$$ W_d = \frac{1}{12}G\left\[\left(\sigma_1 - \sigma_2\right)^2 + \left(\sigma_2 - \sigma_3\right)^2 +\left(\sigma_3 - \sigma_1\right)^2\right\]$$`
+`$$ W_d = \frac{1}{12}G\left[\left(\sigma_1 - \sigma_2\right)^2 + \left(\sigma_2 - \sigma_3\right)^2 +\left(\sigma_3 - \sigma_1\right)^2\right]$$`
 
 -   Which for a uniaxially loaded point becomes
 
@@ -152,7 +152,7 @@ online example [here](https://colab.research.google.com/drive/1Bb-eznneklW_BILR8
 -   We can equate the two cases and solve
 
 `$$\begin{aligned}
-  \frac{1}{6}G\sigma_{YS}^2 &= \frac{1}{12}G\left\[\left(\sigma_1 - \sigma_2\right)^2 + \left(\sigma_2 - \sigma_3\right)^2 + \left(\sigma_3 - \sigma_1\right)^2\right\]\\
+  \frac{1}{6}G\sigma_{YS}^2 &= \frac{1}{12}G\left[\left(\sigma_1 - \sigma_2\right)^2 + \left(\sigma_2 - \sigma_3\right)^2 + \left(\sigma_3 - \sigma_1\right)^2\right]\\
   2 \sigma_{YS}^2 &= \left(\sigma_1 - \sigma_2\right)^2 + \left(\sigma_2 - \sigma_3\right)^2 + \left(\sigma_3 - \sigma_1\right)^2
 \end{aligned}$$`
 
