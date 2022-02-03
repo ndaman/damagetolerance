@@ -5,17 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-February 24, 2021
+10 February 2022
 
 ----
 ## schedule
 
-- 24 Feb - Fracture Toughness 
-- 26 Feb - HW3 Due, HW 2 Self-grade due
-- 1 Mar - Residual Strength
-- 3 Mar - Residual Strength 
-- 5 Mar - HW4 Due, HW 3 Self-grade due
-- 8 Mar - Multiple Site Damage
+- 10 Feb - Fracture Toughness, HW3 Due, HW 2 Self-grade due
+- 15 Feb - Residual Strength
+- 17 Feb - Residual Strength, HW4 Due, HW 3 Self-grade due
+- 22 Feb - Multiple Site Damage
 
 ----
 ## outline
@@ -33,13 +31,13 @@ February 24, 2021
 ## fracture toughness
 
 -   The critical load at which a cracked specimen fails produces a critical stress intensity factor
--   The "critical stress intensity factor" is known as *K*<sub>*c*</sub>
--   For Mode I, this is called *K*<sub>*Ic*</sub>
+-   The "critical stress intensity factor" is known as `$K_C$`
+-   For Mode I, this is called `$K_{Ic}$`
 -   The critical stress intensity factor is also known as fracture toughness
 
 `$$K_{IC} = \sigma_c \sqrt{\pi a}\beta$$`
 
--   Note: "Fracture Toughness" can also refer to *G*<sub>*Ic*</sub>, which is analogous to *K*<sub>*Ic*</sub>, but not the same
+-   Note: "Fracture Toughness" can also refer to `$G_{Ic}$` which is analogous to `$K_{Ic}$` but not the same
 
 ----
 ## fracture toughness
@@ -70,9 +68,9 @@ February 24, 2021
 ----
 ## fracture toughness
 
--   During an experiment, we will record the crack length and applied load (*P*<sub>*i*</sub>, *a*<sub>*i*</sub>) each time we increase the load
--   We can calculate a unique stress intensity factor *K*<sub>*Ii*</sub> at each of these points
--   These are then used to create a "K-curve", plotting *K*<sub>*I*</sub> vs. *a*
+-   During an experiment, we will record the crack length and applied load (`$P_i$`, `$a_i$`) each time we increase the load
+-   We can calculate a unique stress intensity factor `$K_{Ii}$` at each of these points
+-   These are then used to create a "K-curve", plotting `$K_I$` vs. *a*
 
 ----
 ## K-curve
@@ -84,9 +82,9 @@ February 24, 2021
 
 -   Materials will generally not be as flat as the perfectly brittle example
 -   Plane strain conditions and brittle materials will tend towards a "flat" K-curve
--   *K*<sub>*IC*</sub> for brittle/plane strain is very well defined
--   *K*<sub>*C*</sub> for plane stress can refer to two things
--   Either the maximum *K*<sub>*C*</sub> during a test, or tangent point on *K*<sub>*R*</sub>-curve (R-curve)
+-   `$K_{IC}$` for brittle/plane strain is very well defined
+-   `$K_C$` for plane stress can refer to two things
+-   Either the maximum `$K_C$` during a test, or tangent point on `$K_R$`-curve (R-curve)
 
 ----
 ## example
@@ -94,7 +92,7 @@ February 24, 2021
 <div class="left">
 
 -  In composites, and adhesives, some work is needed to ensure stable crack growth
--  The Double-Cantilever Beam (DCB) experiment to find *G*<sub>*IC*</sub> illustrates this
+-  The Double-Cantilever Beam (DCB) experiment to find `$G_{Ic}$` illustrates this
 
 </div>
 
@@ -138,7 +136,7 @@ February 24, 2021
 ----
 ## R-curve
 
--   For materials with some plasticity, the *K*<sub>*R*</sub> Curve, or R Curve, is very important
+-   For materials with some plasticity, the `$K_R$` Curve, or R Curve, is very important
 -   Sometimes called a "resistance curve" it is generally dependent on
     -   Thickness
     -   Temperature
@@ -147,15 +145,15 @@ February 24, 2021
 ----
 ## R-curve
 
--   When done correctly, *K*<sub>*R*</sub> curves are not dependent on initial crack size or the specimen type used
+-   When done correctly, `$K_R$` curves are not dependent on initial crack size or the specimen type used
 -   ASTM E561 describes a general procedure
 
 ----
-## *K*<sub>*c*</sub>
+## `$K_{c}$`
 
--   While we can look up plane stress *K*<sub>*c*</sub> for various materials, it is best if we have a *K*<sub>*R*</sub> curve
--   We may not know if the table uses *K*<sub>*c*</sub> using the tangent intersection method, or maximum stress intensity
--   Even if tangent intersection method is used, *K*<sub>*c*</sub> will different somewhat based on initial crack length
+-   While we can look up plane stress `$K_c$` for various materials, it is best if we have a `$K_R$` curve
+-   We may not know if the table uses `$K_c$` using the tangent intersection method, or maximum stress intensity
+-   Even if tangent intersection method is used, `$K_c$` will different somewhat based on initial crack length
 
 ----
 ## R-curve
@@ -173,22 +171,22 @@ February 24, 2021
 ----
 ## plane stress fracture toughness
 
--   For a plane stress (or any thickness that is not plane strain) we can find *K*<sub>*c*</sub> two ways
--   One way is simply the maximum value of the *K*<sub>*R*</sub> curve, but this does not account for unstable crack growth
+-   For a plane stress (or any thickness that is not plane strain) we can find `$K_c$` two ways
+-   One way is simply the maximum value of the `$K_{R}$` curve, but this does not account for unstable crack growth
 -   The more reliable way is to use the tangent intersection method
 
 ----
 ## tangent intersection method
 
--   Construct curves for *K*<sub>*I*</sub> based on our specimen geometry with constant applied load and varying crack length
--   Plot these curves on the same graph as *K*<sub>*R*</sub>
--   NOTE: *K*<sub>*R*</sub> curve should be plotted vs. *a*<sub>*eff*</sub>, not `$\Delta a$` or `$\Delta a_{eff}$`
--   *K*<sub>*c*</sub> is the point at which one of the *K*<sub>*I*</sub> curves is the tangent intersection with the *K*<sub>*R*</sub> curve
+-   Construct curves for `$K_{I}$` based on our specimen geometry with constant applied load and varying crack length
+-   Plot these curves on the same graph as `$K_{R}$`
+-   NOTE: `$K_{R}$` curve should be plotted vs. `$a_{eff}$`, not `$\Delta a$` or `$\Delta a_{eff}$`
+-   `$K_{c}$` is the point at which one of the `$K_{I}$` curves is the tangent intersection with the `$K_{R}$` curve
 
 ----
 ## R-Curve examples
 
--   [example](../examples/Tangent_R-curve.html)
+-   [example](https://colab.research.google.com/drive/1TlGuadrMRM5xSGic8soVFglPDyWuDaeP?usp=sharing)
 -   Excel Solver
 
 ---
@@ -227,10 +225,10 @@ February 24, 2021
 ----
 ## group review
 
--   Group 1 - Sketch *K*<sub>*R*</sub>-curve (for ductile material), explain what it means, how to find *K*<sub>*c*</sub>
--   Group 2 - Sketch *K*<sub>*c*</sub> vs. crack length, explain what’s happening
+-   Group 1 - Sketch `$K_{R}$`-curve (for ductile material), explain what it means, how to find `$K_{c}$`
+-   Group 2 - Sketch `$K_{c}$` vs. crack length, explain what’s happening
 -   Group 3 - How can we determine whether a panel is in plane strain or plane stress?
--   Group 4 - Sketch *K*<sub>*R*</sub>-curves for ductile and brittle materials, what is the difference?
+-   Group 4 - Sketch `$K_{R}$`-curves for ductile and brittle materials, what is the difference?
 
 ---
 # residual strength
@@ -563,7 +561,7 @@ With
 
 -   Uses a different grain nomenclature
 
-| *K*<sub>*C*</sub> | `$\sigma_{YS}$` |
+| `$K_{C}$` | `$\sigma_{YS}$` |
 |:-----------------:|:---------------:|
 |        L-T        |           L     |
 |        T-L        |          L-T    |
@@ -574,14 +572,14 @@ With
 ----
 ## using MIL-handbook
 
--   *F*<sub>*tu*</sub> - ultimate tensile strength
--   *F*<sub>*ty*</sub> - tensile yield strength
--   *F*<sub>*cy*</sub> - compressive yield strength
--   *F*<sub>*su*</sub> - ultimate shear strength
--   *F*<sub>*bru*</sub> - ultimate bearing strength
--   *F*<sub>*bry*</sub> - bearing yield strength
+-   `$F_{tu}$` - ultimate tensile strength
+-   `$F_{ty}$` - tensile yield strength
+-   `$F_{cy}$` - compressive yield strength
+-   `$F_{su}$` - ultimate shear strength
+-   `$F_{bru}$` - ultimate bearing strength
+-   `$F_{bry}$` - bearing yield strength
 -   *E* - tensile Young's Modulus
--   *E*<sub>*c*</sub> - compressive Young's Modulus
+-   `$E_{c}$` - compressive Young's Modulus
 -   *G* - shear modulus
 -   `$\mu$`- Poisson's ratio
 
@@ -590,4 +588,4 @@ With
 
 -   Fracture data is on pp. 111-121
 -   Tensile data is on pp. 138-143
--   *K*<sub>*c*</sub> charts are also available in interactive versions [here](../examples/Fracture%20Toughness%20Figures.html)
+-   `$K_{c}$` charts are also available in interactive versions [here](http://ndaman.github.io/damagetolerance/examples/Fracture%20Toughness%20Figures.html)

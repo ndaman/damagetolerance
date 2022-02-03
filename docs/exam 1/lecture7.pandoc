@@ -413,9 +413,10 @@ Wichita State University, Department of Aerospace Engineering
 
 ## example
 
-![K-R curves plotted vs. delta a that align very well](../images/KR_C188T3_aluminum.PNG) <!-- .element width="60%" -->
+![K_R curves plotted vs. a, which do not align as well.](../images/KR_C188T3_physical.PNG) <!-- .element width="60%" -->
 
 
 ## example
 
-![K_R curves plotted vs. a, which do not align as well.](../images/KR_C188T3_physical.PNG) <!-- .element width="60%" -->
+![K-R curves plotted vs. delta a that align very well](../images/KR_C188T3_aluminum.PNG) <!-- .element width="60%" -->
+
