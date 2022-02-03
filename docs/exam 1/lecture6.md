@@ -233,8 +233,8 @@ online example [here](https://colab.research.google.com/drive/1Bb-eznneklW_BILR8
 ## Tresca yield theory
 
 `$$\begin{aligned}
-  r_p &= \frac{2 K_I^2}{\pi \sigma_{YS}^2} \cos^2 \frac{\theta}{2} \sin^2 \frac{\theta}{2} & \theta_t &lt; \theta &lt; 2\pi - \theta_t\\
-  r_p &= \frac{K_I^2}{2\pi \sigma_{YS}^2}\cos^2 \frac{\theta}{2}\left(1 - 2\nu + \sin \frac{\theta}{2}\right)^2 & \theta &lt; \theta_t, \theta &gt; 2\pi - \theta_t
+  r_p &= \frac{2 K_I^2}{\pi \sigma_{YS}^2} \cos^2 \frac{\theta}{2} \sin^2 \frac{\theta}{2} & \theta_t < \theta < 2\pi - \theta_t\\
+  r_p &= \frac{K_I^2}{2\pi \sigma_{YS}^2}\cos^2 \frac{\theta}{2}\left(1 - 2\nu + \sin \frac{\theta}{2}\right)^2 & \theta < \theta_t, \theta &gt; 2\pi - \theta_t
 \end{aligned}$$`
 
 ----
