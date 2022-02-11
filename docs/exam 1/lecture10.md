@@ -5,16 +5,16 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-3 March, 2021
+17 February 2022
 
 ----
 ## schedule
 
-- 3 Mar - Residual Strength 
-- 5 Mar - HW4 Due, HW 3 Self-grade due
-- 8 Mar - Multiple Site Damage
-- 10 Mar - Mixed-Mode Fracture
-- 12 Mar - HW5 Due, HW4 Self-grade due
+- 17 Feb - Residual Strength, HW4 Due, HW 3 Self-grade due
+- 22 Feb - Multiple Site Damage, Mixed-Mode
+- 24 Feb - Exam 1 Review, HW5 Due, HW 4 Self-grade due 
+- 1 Mar - Exam 1 
+- 3 Mar - Stress-based Fatigue
 
 ----
 ## outline
@@ -105,13 +105,13 @@ Wichita State University, Department of Aerospace Engineering
 
 `$$\mu = \frac{A_S E_S}{A_S E_S + A E}$$`
 
--   Where *A*<sub>*S*</sub> is the cross-sectional area of a stiffener, *E*<sub>*S*</sub> is stiffener modulus
--   *A* is the skin cross-sectional area (per stiffener) *A*=*bt* and *E* is the modulus of the skin
+-   Where `$A_{S}$` is the cross-sectional area of a stiffener, `$E_{S}$` is stiffener modulus
+-   *A* is the skin cross-sectional area (per stiffener) `$A=bt$` and *E* is the modulus of the skin
 
 ----
 ## finite element analysis
 
--   pp 167 - 178 give `$\beta$` *L* and *L*<sub>*R*</sub> for various skin/stiffener configurations
+-   pp 167 - 178 give `$\beta$`, *L* and `$L_{R}$` for various skin/stiffener configurations
 -   These values were determined using a finite element model
 
 ----
@@ -119,7 +119,7 @@ Wichita State University, Department of Aerospace Engineering
 
 -   quantitative example (p. 179-180)
 -   qualitative notes on behavior (p. 181-182)
--   [worked](../examples/stiffener%20example.html)
+-   [worked](https://colab.research.google.com/drive/1QKnp580F_LD8ak7PALeYiOrBXX31nsP9?usp=sharing)
 
 ---
 # severed stiffeners
@@ -140,6 +140,9 @@ Wichita State University, Department of Aerospace Engineering
 -   We can find the critical value of remote stress at the outer flange as
 
 `$$\sigma_C = \frac{\sigma_U}{SCFO}$$`
+
+----
+## failure in stiffener
 
 -   And similarly at the inner flange
 

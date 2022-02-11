@@ -5,17 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-1 March, 2021
+15 February 2022
 
 
 ## schedule
 
-- 1 Mar - Residual Strength
-- 3 Mar - Residual Strength 
-- 5 Mar - HW4 Due, HW 3 Self-grade due
-- 8 Mar - Multiple Site Damage
-- 10 Mar - Mixed-Mode Fracture
-- 12 Mar - HW5 Due, HW4 Self-grade due
+- 15 Feb - Residual Strength
+- 17 Feb - Residual Strength, HW4 Due, HW 3 Self-grade due
+- 22 Feb - Multiple Site Damage, Mixed-Mode
+- 24 Feb - Exam 1 Review
 
 
 ## outline
@@ -24,9 +22,68 @@ Wichita State University, Department of Aerospace Engineering
 - fedderson approach
 - proof testing
 - residual strength review
-- stiffeners
 
 <!-- TOC END -->
+
+
+# R-curve
+
+
+## R-curve
+
+-   For materials with some plasticity, the \\(K_R\\) Curve, or R Curve, is very important
+-   Sometimes called a "resistance curve" it is generally dependent on
+    -   Thickness
+    -   Temperature
+    -   Strain rate
+
+
+## R-curve
+
+-   When done correctly, \\(K_R\\) curves are not dependent on initial crack size or the specimen type used
+-   ASTM E561 describes a general procedure
+
+
+## \\(K_{c}\\)
+
+-   While we can look up plane stress \\(K_c\\) for various materials, it is best if we have a \\(K_R\\) curve
+-   We may not know if the table uses \\(K_c\\) using the tangent intersection method, or maximum stress intensity
+-   Even if tangent intersection method is used, \\(K_c\\) will different somewhat based on initial crack length
+
+
+## R-curve
+
+-   There are two main methods for plotting the R-curve
+-   Crack size is measured directly (possibly with a drawn-on scale and camera)
+-   Effective crack size is calculated from the load-displacement data
+
+
+## physical crack
+
+-   When the physical crack size is measured, we need to calculate the effective crack length (and effective stress intensity factor) at each data point
+-   The effective crack length calculated from the load-displacement data already has the plastic zone effect built in
+
+
+## plane stress fracture toughness
+
+-   For a plane stress (or any thickness that is not plane strain) we can find \\(K_c\\) two ways
+-   One way is simply the maximum value of the \\(K_{R}\\) curve, but this does not account for unstable crack growth
+-   The more reliable way is to use the tangent intersection method
+
+
+## tangent intersection method
+
+-   Construct curves for \\(K_{I}\\) based on our specimen geometry with constant applied load and varying crack length
+-   Plot these curves on the same graph as \\(K_{R}\\)
+-   NOTE: \\(K_{R}\\) curve should be plotted vs. \\(a_{eff}\\), not \\(\Delta a\\) or \\(\Delta a_{eff}\\)
+-   \\(K_{c}\\) is the point at which one of the \\(K_{I}\\) curves is the tangent intersection with the \\(K_{R}\\) curve
+
+
+## R-Curve examples
+
+-   [example](https://colab.research.google.com/drive/1TlGuadrMRM5xSGic8soVFglPDyWuDaeP?usp=sharing)
+-   Excel Solver
+
 
 
 # residual strength
@@ -63,9 +120,9 @@ Wichita State University, Department of Aerospace Engineering
 -   Within the same family of materials (i.e. Aluminum), there is generally a trade-off between yield stress and fracture toughness
 -   As we increase the yield strength, we decrease the fracture toughness (and vice versa)
 -   Consider a comparison of the following aluminum alloys
-    1.  7178-T6, $K_C = 43 \text{ ksi} \sqrt{\text{in.}}$, \\(\sigma_{YS} = 74\\) ksi
-    2.  7075-T6, $K_C = 68 \text{ ksi} \sqrt{\text{in.}}$, \\(\sigma_{YS} = 63\\) ksi
-    3.  2024-T3, $K_C = 144 \text{ ksi} \sqrt{\text{in.}}$, \\(\sigma_{YS} = 42\\) ksi
+    1.  7178-T6, \\(K_C = 43 \text{ ksi} \sqrt{\text{in.}}\\), \\(\sigma_{YS} = 74\\) ksi
+    2.  7075-T6, \\(K_C = 68 \text{ ksi} \sqrt{\text{in.}}\\), \\(\sigma_{YS} = 63\\) ksi
+    3.  2024-T3, \\(K_C = 144 \text{ ksi} \sqrt{\text{in.}}\\), \\(\sigma_{YS} = 42\\) ksi
 
 
 ## residual strength
@@ -354,7 +411,7 @@ With
 
 -   Uses a different grain nomenclature
 
-| *K*<sub>*C*</sub> | \\(\sigma_{YS}\\) |
+| \\(K_c\\) | \\(\sigma_{YS}\\) |
 |:-----------------:|:---------------:|
 |        L-T        |           L     |
 |        T-L        |          L-T    |
@@ -365,23 +422,23 @@ With
 
 ## using MIL-handbook
 
--   *F*<sub>*tu*</sub> - ultimate tensile strength
--   *F*<sub>*ty*</sub> - tensile yield strength
--   *F*<sub>*cy*</sub> - compressive yield strength
--   *F*<sub>*su*</sub> - ultimate shear strength
--   *F*<sub>*bru*</sub> - ultimate bearing strength
--   *F*<sub>*bry*</sub> - bearing yield strength
+-   \\(F_{tu}\\) - ultimate tensile strength
+-   \\(F_{ty}\\) - tensile yield strength
+-   \\(F_{cy}\\) - compressive yield strength
+-   \\(F_{su}\\) - ultimate shear strength
+-   \\(F_{bru}\\) - ultimate bearing strength
+-   \\(F_{bry}\\) - bearing yield strength
 -   *E* - tensile Young's Modulus
--   *E*<sub>*c*</sub> - compressive Young's Modulus
+-   \\(E_c\\) - compressive Young's Modulus
 -   *G* - shear modulus
--   $\mu$ - Poisson's ratio
+-   \\(\mu\\) - Poisson's ratio
 
 
 ## data
 
 -   Fracture data is on pp. 111-121
 -   Tensile data is on pp. 138-143
--   *K*<sub>*c*</sub> charts are also available in interactive versions [here](../examples/Fracture%20Toughness%20Figures.html)
+-   \\(K_c\\) charts are also available in interactive versions [here](http://ndaman.github.io/damagetolerance/examples/Fracture%20Toughness%20Figures.html)
 
 
 
@@ -398,7 +455,7 @@ With
 
 ## Fedderson example
 
-worked example [here](../examples/Fedderson%20Approach.html)
+worked example [here](https://colab.research.google.com/drive/1qPFJt95_5DGR7wDuKX0ntGOoPwQXcGFU?usp=sharing)
 
 
 # proof testing
@@ -449,98 +506,3 @@ worked example [here](../examples/Fedderson%20Approach.html)
 ## residual strength review
 -   Group 4 - Sketch the Fedderson approach to residual strength. How is this different from the traditional approach? Why is it beneficial?
 
-
-# stiffeners
-
-
-## stiffened panels
-
--   In aircraft the skin/stringer system provides many benefits (resistance to buckling)
--   Stringers also act as stiffeners to resist crack propagation in the skin
--   Panels in these configurations are generally very wide relative to expected crack dimensions
--   Cracks are generally modeled either as centered between stiffeners or centered under a stiffener
--   We need to consider the residual strength of the panel, the stiffener, and the rivets
-
-
-## centered between stiffeners
-
-![A crack centered between two stiffeners. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-under.svg) <!-- .element width="80%" -->
-
-
-## centered under stiffener
-![A crack centered under a stiffener. Remote stress is labeled S and the rivet pitch is labeled p, the spacing between stiffeners is b.](../images/crack-between.svg) <!-- .element width="80%" -->
-
-
-## remote stress
-
--   For displacement continuity, we know that
-
-\\[\left(\frac{PL}{AE}\right)_{Skin} = \left(\frac{PL}{AE}\right)_{Stiffener}\\]
-
--   Since *L* is the same, we find
-
-\\[\frac{S}{E} = \frac{S_S}{E_S}\\]
-
--   Where the subscript <sub>*S*</sub> indicates stiffener values, we can express the remote stress in the stiffener as
-
-\\[S_S = S \frac{E_S}{E}\\]
-
-
-## skin
-
--   The critical stress in the skin is determined the same way as it was in the residual strength chapter
--   The only exception is that the stiffener contributes to \\(\beta\\)
-
-\\[S_C = \frac{K_C}{\sqrt{\pi a} \beta}\\]
-
-
-## stiffener
-
--   The maximum stress in a stiffener will be increased near a crack
--   We represent the ratio of maximum force in stiffener to remote force with the Stiffener Load Factor, *L*
-
-
-## stiffener
-
-\\[\small{\begin{aligned}
-  L &= \frac{\text{max force in stiffener}}{\text{remote force applied to stiffener}}\\
-  &= \frac{S_{S,max}A_S}{S_S A_S}\\
-  &= \frac{S_{S,max}}{S \frac{E_S}{E}}\\
-  L S \frac{E_S}{E} &= S_{S,max}\\
-  L S \frac{E_S}{E} &= \sigma_{YS}\\
-  S_C &= \frac{\sigma_{YS} E}{L E_S}
-\end{aligned}}\\]
-
-
-## rivet
-
--   We can define a similar rivet load factor to relate maximum stress in the rivet to remote stress in the skin
-
-\\[\begin{aligned}
-  L_R &= \frac{\tau_{max} A_R}{S b t}\\
-  L_R &= \frac{\tau_{YS} A_R}{S b t}\\
-  S_c &= \frac{\tau_{YS} A_R}{L_R b t}
-\end{aligned}\\]
-
-
-## finite element analysis
-
--   CC Poe found that panels could be related by a parameter he defines as \\(\mu\\)
-
-\\[\mu = \frac{A_S E_S}{A_S E_S + A E}\\]
-
--   Where *A*<sub>*S*</sub> is the cross-sectional area of a stiffener, *E*<sub>*S*</sub> is stiffener modulus
--   *A* is the skin cross-sectional area (per stiffener) *A*=*bt* and *E* is the modulus of the skin
-
-
-## finite element analysis
-
--   pp 167 - 178 give \\(\beta\\), *L* and *L*<sub>*R*</sub> for various skin/stiffener configurations
--   These values were determined using a finite element model
-
-
-## examples
-
--   quantitative example (p. 179-180)
--   qualitative notes on behavior (p. 181-182)
--   [worked](../examples/stiffener%20example.html)

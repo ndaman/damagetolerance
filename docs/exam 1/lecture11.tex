@@ -48,8 +48,8 @@
 }
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -110,7 +110,7 @@
 \makeatother
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{\Oldincludegraphics[width=\textwidth,height=0.7\textheight,keepaspectratio]{#2}}
-\ifluatex
+\ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 
@@ -127,7 +127,7 @@ Dr.~Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-8 March, 2021
+17 February 2022
 \end{frame}
 
 \begin{frame}{schedule}
@@ -135,17 +135,13 @@ Wichita State University, Department of Aerospace Engineering
 \begin{itemize}
 \tightlist
 \item
-  8 Mar - Multiple Site Damage
+  22 Feb - Multiple Site Damage, Mixed-Mode
 \item
-  10 Mar - Mixed-Mode Fracture
+  24 Feb - Exam 1 Review, HW5 Due, HW 4 Self-grade due
 \item
-  12 Mar - HW5 Due, HW4 Self-grade due
+  1 Mar - Exam 1
 \item
-  15 Mar - Exam 1 Review
-\item
-  17 Mar - Exam 1
-\item
-  19 Mar - HW5 Self-grade due
+  3 Mar - Stress-based Fatigue
 \end{itemize}
 \end{frame}
 
@@ -213,27 +209,27 @@ Wichita State University, Department of Aerospace Engineering
 \item
   Since fast cracking occurs when \(R_p + r_p = L\) we solve for the
   condition where \(R_p + r_p < L\)
-\item
 \end{itemize}
 
-\[\begin{aligned}
-  \frac{1}{2\pi}\left(\frac{K_{Ia}}{\sigma_{YS}}\right)^2 + \frac{1}{2\pi}\left(\frac{K_{Il}}{\sigma_{YS}}\right)^2 &&lt; L\\
-  \frac{1}{2\pi\sigma_{YS}^2} \left[K_{Ia}^2 + K_{Il}^2\right] &&lt; L
-\end{aligned}\]
+\[\begin{align}
+  \frac{1}{2\pi}\left(\frac{K_{Ia}}{\sigma_{YS}}\right)^2 + \frac{1}{2\pi}\left(\frac{K_{Il}}{\sigma_{YS}}\right)^2 & < L\\
+  \frac{1}{2\pi\sigma_{YS}^2} \left[K_{Ia}^2 + K_{Il}^2\right] & < L
+\end{align}\]
 \end{frame}
 
 \begin{frame}{linkup equation}
 \protect\hypertarget{linkup-equation-2}{}
-\[\begin{aligned}
-  \frac{1}{2\pi\sigma_{YS}^2} \left[\sigma^2 \pi a \beta_a^2 + \sigma^2 \pi l \beta_l^2\right] &&lt; L \\
-  \frac{\sigma^2}{2\sigma_{YS}^2} \left[a \beta_a^2 + l \beta_l^2\right] &&lt; L \\
+\[\begin{align}
+  \frac{1}{2\pi\sigma_{YS}^2} \left[\sigma^2 \pi a \beta_a^2 + \sigma^2 \pi l \beta_l^2\right] & < L \\
+  \frac{\sigma^2}{2\sigma_{YS}^2} \left[a \beta_a^2 + l \beta_l^2\right] & < L \\
           \sigma_c &= \sigma_{YS}\sqrt{\frac{2L}{a \beta_a^2 + l \beta_l^2}}
-\end{aligned}\]
+\end{align}\]
 \end{frame}
 
 \begin{frame}{example}
 \protect\hypertarget{example}{}
-worked link-up example \href{../examples/Link-Up.html}{here}
+worked link-up example
+\href{https://colab.research.google.com/drive/11Nt8oT53jTECs1JZO2FFhCpphy1gwXqi?usp=sharing}{here}
 \end{frame}
 
 \begin{frame}{modified linkup equations}
@@ -268,13 +264,12 @@ worked link-up example \href{../examples/Link-Up.html}{here}
 \begin{itemize}
 \tightlist
 \item
-  Where \emph{A}1 = 0.3065 and \emph{A}2 = 1.3123 for A-basis yield
-  strength and \emph{A}1 = 0.3054 and \emph{A}2 = 1.3502 for B-basis
-  yield strength
+  Where \(A_1=0.3065\) and \(A_2=1.3123\) for A-basis yield strength and
+  \(A_1=0.3054\) and \(A_2=1.3502\) for B-basis yield strength
 \item
-  The same equation can also be used for 2524 with \emph{A}1 = 0.1905,
-  \emph{A}2 = 0.9683 for A-basis yield and \emph{A}1 = 0.2024, \emph{A}2
-  = 1.0719 for B-basis yield
+  The same equation can also be used for 2524 with \(A_1=0.1905\),
+  \(A_2=0.9683\) for A-basis yield and \(A_1=0.2024\), \(A_2=1.0719\)
+  for B-basis yield
 \end{itemize}
 \end{frame}
 
@@ -291,8 +286,8 @@ worked link-up example \href{../examples/Link-Up.html}{here}
 \begin{itemize}
 \tightlist
 \item
-  Where \emph{B}1 = 1.377, \emph{B}2 = 1.042 for A-basis yield strength
-  and \emph{B}1 = 1.417, \emph{B}2 = 1.073 for B-basis yield strength
+  Where \(B_1=1.377\), \(B_2=1.042\) for A-basis yield strength and
+  \(B_1=1.417\), \(B_2=1.073\) for B-basis yield strength
 \end{itemize}
 \end{frame}
 
@@ -383,11 +378,11 @@ worked link-up example \href{../examples/Link-Up.html}{here}
   coordinates and combine them, we find
 \end{itemize}
 
-\[\small\{\begin{aligned}
+\[\small{\begin{aligned}
   \sigma_r &= \frac{K_I}{\sqrt{2\pi r}} \left(\frac{5}{4}\cos \frac{\theta}{2} - \frac{1}{4}\cos \frac{3\theta}{2}\right) + \frac{K_{II}}{\sqrt{2\pi r}}\left(-\frac{5}{4}\sin \frac{\theta}{2} + \frac{3}{4}\sin \frac{3\theta}{2}\right)\\
   \sigma_\theta &= \frac{K_I}{\sqrt{2\pi r}} \left(\frac{3}{4}\cos \frac{\theta}{2} + \frac{1}{4}\cos \frac{3\theta}{2}\right) + \frac{K_{II}}{\sqrt{2\pi r}}\left(-\frac{3}{4}\sin \frac{\theta}{2} - \frac{3}{4}\sin \frac{3\theta}{2}\right)\\
   \tau_{r\theta} &= \frac{K_I}{\sqrt{2\pi r}} \left(\frac{1}{4}\sin \frac{\theta}{2} + \frac{1}{4}\sin \frac{3\theta}{2}\right) + \frac{K_{II}}{\sqrt{2\pi r}}\left(\frac{1}{4}\cos \frac{\theta}{2} + \frac{3}{4}\cos \frac{3\theta}{2}\right)
-\end{aligned} \}\]
+\end{aligned} }\]
 \end{frame}
 
 \begin{frame}{max circumferential stress}
@@ -410,7 +405,7 @@ worked link-up example \href{../examples/Link-Up.html}{here}
 \begin{itemize}
 \tightlist
 \item
-  \textbf{Note:} In this discussion, we will use \emph{K}\emph{IC} to
+  \textbf{Note:} In this discussion, we will use \(K_{IC}\) to
   differentiate Mode I fracture toughness from Mode II fracture
   toughness. This does NOT necessarily mean we are referring to plane
   strain fracture toughness
@@ -429,9 +424,9 @@ worked link-up example \href{../examples/Link-Up.html}{here}
   Following the above assumptions, we can solve these equations to find
   \(\theta_p\)
 \item
-  Note: This assumes that we know both \emph{K}\emph{I} and
-  \emph{K}\emph{II}, in this class we have not discussed any Mode II
-  stress intensity factors, so they will be given.
+  Note: This assumes that we know both \(K_I\) and \(K_{II}\), in this
+  class we have not discussed any Mode II stress intensity factors, so
+  they will be given.
 \end{itemize}
 \end{frame}
 
@@ -467,8 +462,8 @@ worked link-up example \href{../examples/Link-Up.html}{here}
 
 \begin{frame}{example}
 \protect\hypertarget{example-1}{}
-Assuming \textbackslash(\sigma = 4\tau\$, \$K\_\{IC\} = 60 \text{ ksi}
-\sqrt{\text{in}}\textbackslash), and 2\emph{a} = 1.5 in.
+Assuming \(\sigma = 4\tau\),
+\(K_{IC} = 60 \text{ ksi} \sqrt{\text{in}}\), and 2\emph{a} = 1.5 in.
 
 \textbf{Note:} Assume \(\beta = \beta^\prime = 1\)
 \end{frame}
@@ -498,14 +493,14 @@ Assuming \textbackslash(\sigma = 4\tau\$, \$K\_\{IC\} = 60 \text{ ksi}
   equilibrium
 \end{itemize}
 
-\[\small\{\begin{aligned}
+\[\small{\begin{aligned}
       \begin{split}
   0 &= \sigma_\theta dA - \sigma_x dA \sin^2 \theta - \sigma_y dA \cos^2 \theta + 2\tau_{xy} dA \cos \theta \sin \theta\\
   \sigma_\theta &= \sigma_x \sin^2 \theta + \sigma_y \cos^2 \theta - 2 \tau_{xy} \sin \theta \cos \theta\\
   \frac{\partial \sigma_\theta}{\partial \theta} &= (\sigma_x - \sigma_y) \sin 2\theta_p - 2\tau_{xy} \cos 2\theta_P\\
   \tan 2\theta_P &= \frac{2 \tau_{xy}}{\sigma_x - \sigma_y}
   \end{split}
-\end{aligned}\}\]
+\end{aligned}}\]
 \end{frame}
 
 \begin{frame}{principal stress}
@@ -532,8 +527,8 @@ Assuming \textbackslash(\sigma = 4\tau\$, \$K\_\{IC\} = 60 \text{ ksi}
 
 \begin{frame}{example}
 \protect\hypertarget{example-2}{}
-Assuming \textbackslash(\sigma = 4\tau\$, \$K\_\{IC\} = 60 \text{ ksi}
-\sqrt{\text{in}}\textbackslash), and 2\emph{a} = 1.5 in.
+Assuming \(\sigma = 4\tau\),
+\(K_{IC} = 60 \text{ ksi} \sqrt{\text{in}}\), and 2\emph{a} = 1.5 in.
 
 \textbf{Note:} Assume \(\beta = \beta^\prime = 1\)
 \end{frame}
@@ -541,7 +536,7 @@ Assuming \textbackslash(\sigma = 4\tau\$, \$K\_\{IC\} = 60 \text{ ksi}
 \begin{frame}{example}
 \protect\hypertarget{example-3}{}
 worked mixed-mode fracture example
-\href{../examples/Mixed\%20Mode\%20Fracture.html}{here}
+\href{https://colab.research.google.com/drive/15vHyABV7Q98UF9ZRZhQoDnn2858nNE0F?usp=sharing}{here}
 \end{frame}
 
 \end{document}
