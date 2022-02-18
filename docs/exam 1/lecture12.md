@@ -5,17 +5,16 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-22 February 2022
+1 March 2022
 
 ----
 ## schedule
 
-- 22 Feb - Multiple Site Damage, Mixed-Mode
-- 24 Feb - Exam 1 Review, HW5 Due, HW 4 Self-grade due 
-- 1 Mar - Exam 1 
-- 3 Mar - Stress-based Fatigue
-- 8 Mar - Stress-based Fatigue 
-- 10 Mar - Strain-based Fatigue, HW6 Due, HW5 Self-grade due
+- 1 Mar - Exam 1 Review, HW5 Due, HW 4 Self-grade due 
+- 3 - Exam 1 
+- 8 Mar - Stress-based Fatigue
+- 10 Mar - Stress-based Fatigue, HW6 Due, HW5 Self-grade due 
+- 15 Mar - (Spring Break)
 
 ----
 ## outline

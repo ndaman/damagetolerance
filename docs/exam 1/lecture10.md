@@ -1,20 +1,20 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 10 - Residual Strength
+Lecture 10 - Stiffeners
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-17 February 2022
+22 February 2022
 
 ----
 ## schedule
 
-- 17 Feb - Residual Strength, HW4 Due, HW 3 Self-grade due
-- 22 Feb - Multiple Site Damage, Mixed-Mode
-- 24 Feb - Exam 1 Review, HW5 Due, HW 4 Self-grade due 
-- 1 Mar - Exam 1 
-- 3 Mar - Stress-based Fatigue
+- 22 Feb - Stiffeners
+- 24 Feb - Multiple Site Damage, Mixed-Mode, HW5 Due, HW 4 Self-grade due 
+- 1 Mar - Exam 1 Review
+- 3 Mar - Exam 1 
+- 8 Mar - Stress-based Fatigue
 
 ----
 ## outline
