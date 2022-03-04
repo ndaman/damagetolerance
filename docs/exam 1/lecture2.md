@@ -486,7 +486,7 @@ Also note that `$R$` indicates radius, `$R=\frac{D}{2}$`
 
 `$$\begin{aligned}
   M_1 &= 1.13 - 0.09 \left(\frac{a}{c}\right)\\
-  M_2 &= -0.52 + \frac{0.89}{0.2 + \frac{a}{c}}\\
+  M_2 &= -0.54 + \frac{0.89}{0.2 + \frac{a}{c}}\\
   M_3 &= 0.5 - \frac{1}{0.65 + \frac{a}{c}} + 14 \left(1-\frac{a}{c}\right)^4
 \end{aligned}$$`
 

@@ -5,18 +5,17 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 22, 2021
+10 March 2022
 
 
 ## schedule
 
-- 22 Mar - Stress-based Fatigue
-- 24 Mar - Stress-based Fatigue
-- 26 Mar - Project Abstract Due
-- 29 Mar - Strain-based Fatigue
-- 31 Mar - Crack Growth
-- 2 Apr - Homework 6 Due
-
+- 8 Mar - Project Discussion, Stress-based Fatigue
+- 10 Mar - Stress-based Fatigue, HW6 Due, HW5 Self-grade due 
+- 15 Mar - (Spring Break)
+- 17 Mar - (Spring Break)
+- 22 Mar - Strain-based Fatigue
+- 24 Mar - Crack Growth, HW7 Due, HW6 Self-grade due, Project Abstract Due
 
 
 ## outline
@@ -141,14 +140,14 @@ March 22, 2021
 
 -   Stress-life curves, or S-N curves, are generated from test data to predict the number of cycles to failure
 -   In general, one set (or family) of S-N curves is generated using the same \\(\sigma_m\\)
--   Usually *S*<sub>*a*</sub> (the nominal stress equivalent of \\(\sigma_a\\)) is plotted versus *N* (the number of cycles)
+-   Usually \\(S_a\\) (the nominal stress equivalent of \\(\sigma_a\\)) is plotted versus *N* (the number of cycles)
 
 
 ## stress life curves
 
 -   Each individual point on an S-N curve represents one fatigue experiment
 -   To find enough data to form statistical significance, as well as to fit a curve across all levels of fatigue is very time-consuming
--   In the following plot, if only one test was performed for each point, the total number of cycles tested would be about 7.3*x*10<sup>7</sup>
+-   In the following plot, if only one test was performed for each point, the total number of cycles tested would be about \\(7.3\times 10^7\\)
 -   For a 100 Hz machine, this represents over 200 hours of consecutive testing
 
 
@@ -206,7 +205,7 @@ March 22, 2021
 ## fatigue limit
 
 -   This phenomenon is not typical of aluminum or copper alloys
--   It is sometimes arbitrarily assigned using whatever the failure stress is at some large number of cycles (10<sup>7</sup> or 10<sup>8</sup>)
+-   It is sometimes arbitrarily assigned using whatever the failure stress is at some large number of cycles (\\(10^7\\) or \\(10^8\\))
 
 
 ## fatigue limit
@@ -283,7 +282,7 @@ March 22, 2021
 -   Since mean stress has an effect on fatigue life, sometimes a family of S-N curves at varying mean stress values is created
 -   S-N curves for these are reported in different ways, but commonly \\(\sigma_{max}\\) replaces \\(\sigma_a\\) on the y-axis
 -   One useful way of representing these data, instead of many S-N curves, is a constant-life diagram
--   It is created by taking points from the S-N curves and plotting a line through constant *N*<sub>*f*</sub> values
+-   It is created by taking points from the S-N curves and plotting a line through constant \\(N_f\\) values
 
 
 ## S-N curves at variable \\(\sigma_m\\)
