@@ -5,16 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-31 March, 2021
+24 March 2022
 
 
 ## schedule
 
-- 31 Mar - Crack Growth
-- 2 Apr - Homework 6 Due
-- 5 Apr - Boeing Method
-- 7 Apr - Cycle counting
-- 9 Apr - Homework 6 Self-grade, Homework 7 Due
+- 24 Mar - Crack Growth, HW 6 Due, Project Abstract Due
+- 29 Mar - Boeing Method 
+- 31 Mar - Cycle counting, HW 7 Due, HW 6 Self-grade Due
+- 5 April - Crack Retardation
 
 
 
@@ -368,7 +367,7 @@ Wichita State University, Department of Aerospace Engineering
 
 ## numerical algorithm
 
--   This method is quite tedious by hand (need many *a*<sub>*i*</sub> values for this to be accurate)
+-   This method is quite tedious by hand (need many \\(a_i\\) values for this to be accurate)
 -   But is simple to do in Excel, MATLAB, Python, or many other codes
 -   For most accurate results, use \\(\Delta N = 1\\), but this is often unnecessary
 -   When trying to use large \\(\Delta N\\), check convergence by using larger and smaller \\(\Delta N\\) values

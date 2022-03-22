@@ -5,23 +5,22 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-29 March, 2021
+22 March 2022 
 
 
 ## schedule
 
-- 29 Mar - Strain-based Fatigue
-- 31 Mar - Crack Growth
-- 2 Apr - Homework 6 Due
-- 5 Apr - Boeing Method
-- 7 Apr - Cycle counting
-- 9 Apr - Homework 6 Self-grade, Homework 7 Due
+- 22 Mar - Strain-based Fatigue
+- 24 Mar - Crack Growth, HW 6 Due, Project Abstract Due
+- 29 Mar - Boeing Method 
+- 31 Mar - Cycle counting, HW 7 Due, HW 6 Self-grade Due
 
 
 ## outline
 
 <!-- vim-markdown-toc GFM -->
 
+* fatigue review
 * strain based fatigue
 * variable amplitude strains
 * mean stress effects
@@ -31,6 +30,31 @@ Wichita State University, Department of Aerospace Engineering
 * other factors affecting fatigue
 
 <!-- vim-markdown-toc -->
+
+
+# fatigue review
+
+
+## group problem 1
+
+-   A part from AISI 4340 in a typical "block" undergoes 100,000 cycles with \\(\sigma_{min} = 0\\) ksi and \\(\sigma_{max} = 100\\) ksi and an additional 10 cycles with \\(\sigma_{min} = 50\\) ksi and \\(\sigma_{max} = 200\\) ksi
+-   How many "blocks" can this part support before failure?
+
+
+## group problem 2
+
+-   The fatigue limit for AISI 4142 steel is 58 ksi for completely reversed fatigue loads.
+-   What is the fatigue limit for fatigue loads with \\(\sigma_m = 10, 20, 30\\) ksi?
+
+
+## group problem 3
+
+-   A material made of 2024-T4 Aluminum undergoes the following load cycle
+    -   \\(\sigma_{x, min}=10\\), \\(\sigma_{x, max} = 50\\)
+    -   \\(\sigma_{y, min}=-20\\), \\(\sigma_{x, max} = 20\\)
+    -   \\(\tau_{xy, min}=0\\), \\(\tau_{xy, max} = 30\\)
+-   How many cycles can it support before failure?
+
 
 
 # strain based fatigue
@@ -55,6 +79,7 @@ Wichita State University, Department of Aerospace Engineering
 ## plastic and elastic strain
 
 -   We can separate the total strain into elastic and plastic components
+
 \\[ \epsilon_a = \epsilon_{ea} + \epsilon_{pa}\\]
 
 
@@ -97,20 +122,17 @@ Wichita State University, Department of Aerospace Engineering
 
 -   We notice that the data for elastic and plastic strains are represented by straight lines, in the log-log scale
 -   If we recall the form used for a straight line in log-log plots for S-N curves:
-
-\\[ \sigma_a = \sigma_f^\prime (2 N_f)^b\\]
-
+-   \\(\sigma_a = \sigma_f^\prime (2 N_f)^b\\)
 -   We can convert this to find the elastic component of strain
 
 \\[\epsilon_{ea} = \frac{\sigma_f^\prime}{E} (2N_f)^b\\]
 
 
+
 ## lines
 
 -   We can use the same form with new constants for the plastic component of strain
-
-\\[ \epsilon_{pa} = \epsilon_f^\prime (2 N_f)^c\\]
-
+-   \\(\epsilon_{pa} = \epsilon_f^\prime(2N_F)^c\\)
 -   We can combine the elastic and plastic portions to find the total strain-life curve
 
 \\[\epsilon_a = \frac{\sigma_f^\prime}{E} (2N_f)^b + \epsilon_f^\prime (2 N_f)^c\\]
@@ -132,7 +154,7 @@ Wichita State University, Department of Aerospace Engineering
 -   With the strain-based fatigue method we are better equipped to discuss the difference between high and low-cycle fatigue
 -   Low-cycle fatigue is dominated by plastic effects, while high-cycle fatigue has little plasticity
 -   We can find the intersection of the plastic strain and elastic strain lines
--   This point is *N*<sub>*t*</sub>, the transition fatigue life
+-   This point is \\(N_t\\), the transition fatigue life
 
 \\[N_t = \frac{1}{2}\left(\frac{\sigma_f^\prime}{\epsilon_f^\prime}\right)^{\frac{1}{c-b}}\\]
 
@@ -144,21 +166,16 @@ Wichita State University, Department of Aerospace Engineering
 \\[\epsilon_a = \frac{\sigma_a}{E} + \left(\frac{\sigma_a}{H^\prime}\right)^{\frac{1}{n^\prime}}\\]
 
 -   We can consider the plastic portion and solve for \\(\sigma_a\\)
-
-\\[\sigma_a = H^\prime \epsilon_{pa}^{n^\prime} \\]
+-   \\(\sigma_a = H^\prime \epsilon_{pa}^{n^\prime}\\)
 
 
 ## inconsistencies in constants
 
 -   We can eliminate \\(2N_f\\) from the plastic strain equation
-
-\\[ \epsilon_{pa} = \epsilon_f^\prime (2 N_f)^c\\]
-
--   By solving the stress-life relationship for \\(2 N_f\\)
-
-\\[ \sigma_a = \sigma_f^\prime (2 N_f)^b \\]
-
-and substituting that into the plastic strain
+-   \\(\epsilon_{pa} = \epsilon_f^\prime(2N_f)^c\\)
+-   By solving the stress-life relationship for \\(2N_f\\)
+-   \\(\sigma_a = \sigma_f^\prime (2NF)^b\\)
+-   and substituting that into the plastic strain
 
 
 ## inconsistencies in constants
@@ -196,10 +213,6 @@ and substituting that into the plastic strain
 ## tensile mean
 
 ![](../images/tensile_mean.jpg) <!-- .element width="50%" -->
-
-
-
-# mean stress effects
 
 
 ## mean stress in strain-based fatigue
@@ -243,7 +256,7 @@ and substituting that into the plastic strain
 -   While the Morrow equation agrees very well with many data, some are better fit with a modification
 -   In the modified version, it is assumed that the mean stress has no effect on the plastic term
 
-\\[\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_f}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c\\]
+\\[\epsilon_a = \frac{\sigma_f^\prime}{E}\left(1-\frac{\sigma_m}{\sigma_f^\prime}\right)(2N_f)^b + \epsilon_f^\prime (2N_f)^c\\]
 
 -   There is no convenient solution method for this form, and it generally must be solved numerically, or plotted with many families of \\(\sigma_m\\)
 
@@ -267,6 +280,10 @@ and substituting that into the plastic strain
 
 
 ## example p. 285
+
+RQC-100 Steel (material data from p. 272) is subjected to a strain amplitude of \\(\epsilon_a = 0.004\\)
+with a tensile mean stress of \\(\sigma_m = 100\\) MPa.
+Compare failure predictions among the three mean stress models we have learned.
 
 
 ## cycle counting
@@ -410,7 +427,7 @@ and substituting that into the plastic strain
 
 -   Some treatments improve fatigue life:
     -   Cold rolling improves surface finish, introduces residual compressive stress on surface (slows crack initiation on surface)
-    -   Shot peeing introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
+    -   Shot peening introduces many small divots on surface, which can be detrimental in corrosion, but it does cause a residual compressive stress on the surface
 
 
 ## size

@@ -5,16 +5,14 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-March 24, 2021
+March 22, 2022
 
 ----
 ## schedule
 
-- 24 Mar - Stress-based Fatigue
-- 26 Mar - Project Abstract Due
-- 29 Mar - Strain-based Fatigue
-- 31 Mar - Crack Growth
-- 2 Apr - Homework 6 Due
+- 22 Mar - Strain-based Fatigue
+- 24 Mar - Crack Growth, HW 6 Due, Project Abstract Due
+- 29 Mar - Crack Growth
 
 ----
 ## outline
