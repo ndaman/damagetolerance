@@ -5,18 +5,18 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-31 March 2022
+5 April 2022
 
 ----
 ## schedule
 
-- 31 Mar - Boeing Method, HW 6 Due
-- 5 Apr - Cycle counting
-- 7 Apr - Crack Retardation, HW 7 Due, HW 6 Self-grade Due
-- 12 Apr - Crack retardation
-- 14 Apr - Finite Elements in Fracture, HW 8 Due, HW 7 Self-grade Due
-- 19 Apr - Exam Review
-- 21 Apr - Exam 2
+- 5 Apr - Boeing Method, HW 6 Due
+- 7 Apr - Cycle Counting
+- 12 Apr - Crack Retardation, HW 6 Self-grade Due
+- 14 Apr - Finite Elements in Fracture
+- 19 Apr - Finite Elements in Fracture, HW 7 Due
+- 21 Apr - Exam Review
+- 26 Apr - Exam 2
 
 
 ----

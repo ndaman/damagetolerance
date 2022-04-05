@@ -5,16 +5,15 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 12-14, 2021
+14-19 April 2022
 
 ----
 ##  schedule
 
-- 12 Apr - Finite Elements in Fracture
 - 14 Apr - Finite Elements in Fracture
-- 16 Apr - Homework 7 Self-grade, Homework 8 Due
-- 19 Apr - Exam Review
-- 21 Apr - Exam 2
+- 19 Apr - Finite Elements in Fracture, HW 7 Due
+- 21 Apr - Exam Review
+- 26 Apr - Exam 2
 
 ---
 # finite element techniques
@@ -63,6 +62,13 @@ April 12-14, 2021
     -   eXtended Finite Element Method
     -   Can predict crack growth in any direction
     -   Adds extra physics model inside an element (fine mesh not necessarily required)
+
+----
+## other advanced techniques 
+
+- peridynamics
+- phase field 
+- remeshing
 
 ----
 ## direct method
