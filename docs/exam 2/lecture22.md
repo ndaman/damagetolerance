@@ -1,5 +1,5 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 22 - Exam 2 Review
+Lecture 21 - Exam 2 Review
 
 Dr. Nicholas Smith
 
