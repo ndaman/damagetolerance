@@ -1,20 +1,19 @@
 ## AE 737: Mechanics of Damage Tolerance
-Lecture 22 - Inspection 
+Lecture 23 - Inspection 
 
 Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 26, 2021
+April 28, 2022
 
 ----
 ## schedule
 
-- 26 Apr - Inspection
-- 28 Apr - Repair
-- 3 May - Fracture in Composites
-- 5 May - Class Canceled
-- 9 May - Final Projects Due
+- 28 Apr - Damage Tolerance
+- 3 May - Special Topics
+- 5 May - Special Topics
+- 6 May - Final Projects Due
 
 ----
 ## outline
@@ -33,7 +32,6 @@ April 26, 2021
 ----
 ## special topics
 
-- FEM
 - Repair of damaged structures
 - Fatigue of composites
 - NDE/NDT
