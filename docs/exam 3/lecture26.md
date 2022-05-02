@@ -5,13 +5,14 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-May 7, 2020
+3 May 2022
 
 ----
 ##  schedule
 
-- 7 May - My Research
-- 9 May - Damage Mechanics, Final Projects Due
+- 3 May - My Research
+- 5 May - J-Integral
+- 6 May - Final Projects Due
 
 ----
 ## outline

@@ -5,15 +5,14 @@ Dr. Nicholas Smith
 
 Wichita State University, Department of Aerospace Engineering
 
-April 28, 2021
+3 May 2022
 
 ----
 ##  schedule
 
-- 28 Apr - Repair
-- 3 May - Fracture in Composites
-- 5 May - Class Canceled
-- 9 May - Final Projects Due
+- 3 May - NDE, Repair, My Research
+- 5 May - J-Integral
+- 6 May - Final Projects Due
 
 ----
 ##  outline
